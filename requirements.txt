@@ -1,0 +1,15 @@
+# GraphKnowledge Phase 1 Requirements
+
+# LLM & APIs
+groq==0.4.1
+anthropic>=0.7.0
+
+# Graph & Data Processing
+networkx>=3.0
+numpy>=1.24.0
+
+# Embeddings & NLP
+sentence-transformers>=2.2.0
+
+# Utilities
+python-dotenv>=1.0.0
