@@ -275,7 +275,6 @@ Once Phase 1 is solid:
 
 - Check Groq API key is valid
 - Verify passage length (very short passages may fail)
-- Check JSON output from Groq — may not parse
 
 ### Deduplication Loses Information
 
