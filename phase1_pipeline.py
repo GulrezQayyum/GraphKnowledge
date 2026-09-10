@@ -12,10 +12,8 @@ Orchestrates the full Phase 1 workflow:
 
 import json
 import os
-from pathlib import Path
-
 # Local imports
-from src.chunker import chunk_meditations, save_chunks, load_chunks
+from src.chunker import chunk_meditations, save_chunks
 from src.extraction import EntityRelationshipExtractor, save_extractions, load_extractions
 from src.deduplication import EntityDeduplicator, save_canonical_entities, load_canonical_entities
 from src.graph_builder import KnowledgeGraph
@@ -106,15 +104,19 @@ def run_phase1(
 
     # Step 2: Deduplicate entities
     print("\n[Step 2] Deduplicating entities...")
-    deduplicator = EntityDeduplicator(
-        embedding_model="all-MiniLM-L6-v2",
-        similarity_threshold=0.85,
-        fuzzy_threshold=0.80,
-    )
-    canonical_map = deduplicator.deduplicate(entities)
-
     canonical_entities_file = os.path.join(output_dir, "canonical_entities.json")
-    save_canonical_entities(canonical_map, canonical_entities_file)
+    if os.path.exists(canonical_entities_file) and not force_dedup and not force_extraction:
+        print("Loading cached canonical entities...")
+        canonical_map = load_canonical_entities(canonical_entities_file)
+        deduplicator = None
+    else:
+        deduplicator = EntityDeduplicator(
+            embedding_model="all-MiniLM-L6-v2",
+            similarity_threshold=0.85,
+            fuzzy_threshold=0.80,
+        )
+        canonical_map = deduplicator.deduplicate(entities)
+        save_canonical_entities(canonical_map, canonical_entities_file)
 
     # Print entity type breakdown
     print("\nCanonical Entities by Type:")
@@ -128,7 +130,7 @@ def run_phase1(
 
     # Step 3: Remap relationships to canonical entities
     print("\n[Step 3] Remapping relationships to canonical entities...")
-    remapped_relationships = deduplicator.remap_relationships(relationships, canonical_map)
+    remapped_relationships = EntityDeduplicator.remap_relationships(relationships, canonical_map)
 
     remapped_relationships_file = os.path.join(output_dir, "relationships_remapped.json")
     rel_data = [

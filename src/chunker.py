@@ -3,7 +3,7 @@ import re
 from typing import Optional
 
 
-def chunk_meditations(text: str, min_chunk_size: int = 200) -> list[dict]:
+def chunk_meditations(text: str, min_chunk_size: int = 0) -> list[dict]:
     chunks = []
     chunk_id = 0
     
@@ -25,7 +25,7 @@ def chunk_meditations(text: str, min_chunk_size: int = 200) -> list[dict]:
             
             section_text = section_text.strip()
             
-            if len(section_text) < min_chunk_size:
+            if not section_text or len(section_text) < min_chunk_size:
                 j += 2
                 continue
             

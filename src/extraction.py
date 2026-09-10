@@ -9,7 +9,20 @@ import os
 from typing import Optional
 from dataclasses import dataclass
 
+from dotenv import load_dotenv
 from groq import Groq
+
+
+VALID_ENTITY_TYPES = {"CONCEPT", "PERSON", "PRACTICE", "STATE"}
+VALID_RELATIONSHIP_TYPES = {
+    "relates_to",
+    "leads_to",
+    "teaches",
+    "resolved_by",
+    "opposes",
+    "requires",
+    "embodies",
+}
 
 
 @dataclass
@@ -28,6 +41,13 @@ class Relationship:
     target_entity: str
     passage_id: str
     confidence: float = 1.0
+
+
+@dataclass
+class ExtractionFailure:
+    """Details for a passage that could not be extracted."""
+    passage_id: str
+    error: str
 
 
 class EntityRelationshipExtractor:
@@ -73,15 +93,70 @@ Passage:
 Return only the JSON object, no other text.
 """
 
-    def __init__(self, api_key: Optional[str] = None):
+    def __init__(
+        self,
+        api_key: Optional[str] = None,
+        client: Optional[Groq] = None,
+        model: str = "llama-3.1-8b-instant",
+    ):
         """
         Initialize Groq client.
         
         Args:
             api_key: Groq API key. If None, uses GROQ_API_KEY env var.
         """
-        self.client = Groq(api_key=api_key or os.getenv("GROQ_API_KEY"))
-        self.model = "mixtral-8x7b-32768"
+        load_dotenv()
+        self.client = client or Groq(api_key=api_key or os.getenv("GROQ_API_KEY"))
+        self.model = model
+        self.failures: list[ExtractionFailure] = []
+
+    def _parse_response(
+        self,
+        response_text: str,
+        passage_id: str,
+    ) -> tuple[list[Entity], list[Relationship]]:
+        data = json.loads(response_text)
+        if not isinstance(data, dict):
+            raise ValueError("response must be a JSON object")
+
+        raw_entities = data.get("entities", [])
+        raw_relationships = data.get("relationships", [])
+        if not isinstance(raw_entities, list) or not isinstance(raw_relationships, list):
+            raise ValueError("entities and relationships must be lists")
+
+        entities = []
+        for entity in raw_entities:
+            if not isinstance(entity, dict):
+                raise ValueError("each entity must be an object")
+            text = entity.get("text")
+            entity_type = entity.get("type")
+            if not isinstance(text, str) or not text.strip():
+                raise ValueError("entity text must be a non-empty string")
+            if entity_type not in VALID_ENTITY_TYPES:
+                raise ValueError(f"invalid entity type: {entity_type}")
+            entities.append(Entity(text=text.strip(), type=entity_type, passage_id=passage_id))
+
+        relationships = []
+        for relationship in raw_relationships:
+            if not isinstance(relationship, dict):
+                raise ValueError("each relationship must be an object")
+            source = relationship.get("source")
+            relationship_type = relationship.get("type")
+            target = relationship.get("target")
+            if not all(isinstance(value, str) and value.strip() for value in (source, target)):
+                raise ValueError("relationship source and target must be non-empty strings")
+            if relationship_type not in VALID_RELATIONSHIP_TYPES:
+                raise ValueError(f"invalid relationship type: {relationship_type}")
+            relationships.append(
+                Relationship(
+                    source_entity=source.strip(),
+                    relationship_type=relationship_type,
+                    target_entity=target.strip(),
+                    passage_id=passage_id,
+                )
+            )
+
+        return entities, relationships
 
     def extract(self, passage: str, passage_id: str) -> tuple[list[Entity], list[Relationship]]:
         """
@@ -97,7 +172,7 @@ Return only the JSON object, no other text.
         prompt = self.EXTRACTION_PROMPT.format(passage=passage)
 
         try:
-            message = self.client.messages.create(
+            response = self.client.chat.completions.create(
                 model=self.model,
                 max_tokens=1024,
                 messages=[
@@ -108,35 +183,12 @@ Return only the JSON object, no other text.
                 ],
             )
 
-            response_text = message.content[0].text.strip()
-
-            # Parse JSON response
-            data = json.loads(response_text)
-
-            # Convert to Entity and Relationship objects
-            entities = [
-                Entity(text=e["text"], type=e["type"], passage_id=passage_id)
-                for e in data.get("entities", [])
-            ]
-
-            relationships = [
-                Relationship(
-                    source_entity=r["source"],
-                    relationship_type=r["type"],
-                    target_entity=r["target"],
-                    passage_id=passage_id,
-                )
-                for r in data.get("relationships", [])
-            ]
-
-            return entities, relationships
-
-        except json.JSONDecodeError as e:
-            print(f"Failed to parse JSON for passage {passage_id}: {e}")
-            print(f"Response was: {response_text}")
-            return [], []
+            response_text = response.choices[0].message.content.strip()
+            return self._parse_response(response_text, passage_id)
         except Exception as e:
-            print(f"Error extracting from passage {passage_id}: {e}")
+            failure = ExtractionFailure(passage_id=passage_id, error=str(e))
+            self.failures.append(failure)
+            print(f"Extraction failed for {passage_id}: {e}")
             return [], []
 
     def extract_batch(self, passages: dict[str, str]) -> tuple[list[Entity], list[Relationship]]:
@@ -157,6 +209,9 @@ Return only the JSON object, no other text.
             entities, relationships = self.extract(passage_text, passage_id)
             all_entities.extend(entities)
             all_relationships.extend(relationships)
+
+        if self.failures:
+            print(f"Extraction failures: {len(self.failures)} of {len(passages)} passages")
 
         return all_entities, all_relationships
 
@@ -196,8 +251,8 @@ def save_extractions(
         for r in relationships
     ]
 
-    os.makedirs(os.path.dirname(entities_file), exist_ok=True)
-    os.makedirs(os.path.dirname(relationships_file), exist_ok=True)
+    os.makedirs(os.path.dirname(entities_file) or ".", exist_ok=True)
+    os.makedirs(os.path.dirname(relationships_file) or ".", exist_ok=True)
 
     with open(entities_file, "w") as f:
         json.dump(entities_data, f, indent=2)

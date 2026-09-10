@@ -26,25 +26,24 @@ See [Graphify](https://graphify.net/) — an open-source implementation for code
 ## Project Structure
 
 ```
-graphknowledge/
+GraphKnowledge/
 ├── src/
 │   ├── extraction.py          # Entity/relationship extraction with Groq
 │   ├── deduplication.py       # Entity linking & consolidation
 │   ├── graph_builder.py       # NetworkX graph construction
 │   ├── query_engine.py        # Graph traversal & retrieval
-│   └── utils.py               # Helpers (optional)
 ├── data/
-│   ├── chunks.json            # Meditations corpus (from ChunkLab)
+│   ├── meditations_raw.txt    # Input Meditations corpus
 │   └── graph/
 │       ├── entities.json
 │       ├── canonical_entities.json
 │       ├── relationships.json
 │       ├── relationships_remapped.json
 │       └── knowledge_graph.json
-├── notebooks/
-│   ├── 01_exploration.ipynb   # Understand extraction quality
-│   └── 02_evaluation.ipynb    # Test graph queries
-├── phase1_pipeline.py         # Main orchestrator
+├── notebooks/                 # Optional exploratory notebooks
+├── phase1_pipeline.py         # Pipeline implementation
+├── run_phase1.py              # CLI launcher
+├── tests/                     # Regression tests
 ├── requirements.txt
 └── README.md
 ```
@@ -71,20 +70,8 @@ Get your Groq API key from [https://console.groq.com](https://console.groq.com).
 
 ### 3. Prepare Corpus
 
-You need a chunked Meditations corpus from ChunkLab. Place it at `data/chunks.json`.
-
-Expected format (list of chunks):
-```json
-[
-  {
-    "text": "Book 1, Chapter 2: On losing Marcus's father...",
-    "metadata": { "book": 1, "chapter": 2 }
-  },
-  ...
-]
-```
-
-Or if you have a different format, modify `load_meditations_corpus()` in `phase1_pipeline.py`.
+The checked-in `data/meditations_raw.txt` is the default input. To use a
+different raw text file, pass its path to the launcher.
 
 ---
 
@@ -93,7 +80,7 @@ Or if you have a different format, modify `load_meditations_corpus()` in `phase1
 ### Run the Full Pipeline
 
 ```bash
-python phase1_pipeline.py data/chunks.json data/graph
+python run_phase1.py
 ```
 
 This runs:
@@ -101,7 +88,20 @@ This runs:
 2. **Deduplication**: Link entity variants (e.g., "virtue" ↔ "virtues") to canonical forms
 3. **Graph Building**: Build NetworkX directed graph from canonical entities
 4. **Queries**: Test the graph with sample queries
-5. **Interactive Session**: Try your own queries
+5. **Queries**: Test the graph with sample queries
+
+Generated artifacts are written to `data/graph/` and reused on later runs.
+Rebuild cached extraction and deduplication artifacts with:
+
+```bash
+python run_phase1.py --force-extraction --force-dedup
+```
+
+Use a custom input and output directory with:
+
+```bash
+python run_phase1.py path/to/meditations.txt path/to/output
+```
 
 ### Pipeline Steps (Detailed)
 
@@ -118,6 +118,8 @@ from src.extraction import EntityRelationshipExtractor
 
 extractor = EntityRelationshipExtractor()
 entities, relationships = extractor.extract_batch(passages)
+if extractor.failures:
+  print(f"Failed passages: {len(extractor.failures)}")
 ```
 
 #### Step 2: Entity Deduplication
@@ -162,6 +164,12 @@ from src.query_engine import QueryEngine
 query_engine = QueryEngine(kg, passages)
 result = query_engine.query_entity("fear", max_hops=2)
 # Returns: found entities, traversal paths, retrieved passages
+```
+
+Run the regression tests with:
+
+```bash
+pytest -q
 ```
 
 ---

@@ -6,7 +6,10 @@ from difflib import SequenceMatcher
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
-from extraction import Entity, Relationship
+try:
+    from .extraction import Entity, Relationship
+except ImportError:
+    from extraction import Entity, Relationship
 
 
 @dataclass
@@ -25,9 +28,9 @@ class EntityDeduplicator:
         embedding_model: str = "all-MiniLM-L6-v2",
         similarity_threshold: float = 0.85,
         fuzzy_threshold: float = 0.80,
+        model: Optional[SentenceTransformer] = None,
     ):
-        
-        self.model = SentenceTransformer(embedding_model)
+        self.model = model or SentenceTransformer(embedding_model)
         self.similarity_threshold = similarity_threshold
         self.fuzzy_threshold = fuzzy_threshold
 
@@ -52,7 +55,7 @@ class EntityDeduplicator:
         for entity_type, type_entities in entities_by_type.items():
             print(f"\nDeduplicating {entity_type} entities ({len(type_entities)} total)...")
 
-            unique_texts = list(set(e.text for e in type_entities))
+            unique_texts = sorted({e.text for e in type_entities})
 
             embeddings = self.model.encode(unique_texts, convert_to_numpy=True)
             embedding_map = {text: emb for text, emb in zip(unique_texts, embeddings)}
@@ -98,7 +101,7 @@ class EntityDeduplicator:
                     canonical_text=canonical,
                     entity_type=entity_type,
                     variants=variants,
-                    passage_ids=passage_ids,
+                    passage_ids=sorted(passage_ids),
                     embedding=embedding_map[canonical],
                 )
 
@@ -106,8 +109,8 @@ class EntityDeduplicator:
 
         return canonical_map
 
+    @staticmethod
     def remap_relationships(
-        self,
         relationships: list[Relationship],
         canonical_map: dict[str, CanonicalEntity],
     ) -> list[Relationship]:
@@ -123,9 +126,15 @@ class EntityDeduplicator:
             target_canon = variant_to_canonical.get(rel.target_entity, rel.target_entity)
 
             if source_canon in canonical_map and target_canon in canonical_map:
-                rel.source_entity = source_canon
-                rel.target_entity = target_canon
-                remapped.append(rel)
+                remapped.append(
+                    Relationship(
+                        source_entity=source_canon,
+                        relationship_type=rel.relationship_type,
+                        target_entity=target_canon,
+                        passage_id=rel.passage_id,
+                        confidence=rel.confidence,
+                    )
+                )
 
         print(f"Remapped {len(relationships)} relationships, kept {len(remapped)}")
         return remapped

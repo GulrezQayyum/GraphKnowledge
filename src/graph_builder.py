@@ -12,8 +12,12 @@ from dataclasses import dataclass
 
 import networkx as nx
 
-from deduplication import CanonicalEntity
-from extraction import Relationship
+try:
+    from .deduplication import CanonicalEntity
+    from .extraction import Relationship
+except ImportError:
+    from deduplication import CanonicalEntity
+    from extraction import Relationship
 
 
 @dataclass
@@ -32,7 +36,7 @@ class KnowledgeGraph:
 
     def __init__(self):
         """Initialize an empty directed graph."""
-        self.graph = nx.DiGraph()
+        self.graph = nx.MultiDiGraph()
         self.entity_to_passages = {}  # {canonical_text -> [passage_ids]}
         self.edge_metadata = {}  # {(source, target) -> [relationships]}
 
@@ -155,8 +159,8 @@ class KnowledgeGraph:
                 for neighbor in self.graph.successors(current):
                     if neighbor not in traversed:
                         traversed.add(neighbor)
-                        edge_data = self.graph[current][neighbor]
-                        edges.append((current, edge_data["relationship"], neighbor))
+                        for edge_data in self.graph[current][neighbor].values():
+                            edges.append((current, edge_data["relationship"], neighbor))
                         queue.append((neighbor, hops + 1))
 
             # Backward traversal (incoming edges)
@@ -164,8 +168,8 @@ class KnowledgeGraph:
                 for predecessor in self.graph.predecessors(current):
                     if predecessor not in traversed:
                         traversed.add(predecessor)
-                        edge_data = self.graph[predecessor][current]
-                        edges.append((predecessor, edge_data["relationship"], current))
+                        for edge_data in self.graph[predecessor][current].values():
+                            edges.append((predecessor, edge_data["relationship"], current))
                         queue.append((predecessor, hops + 1))
 
         # Collect all passages connected to traversed entities
@@ -175,9 +179,9 @@ class KnowledgeGraph:
 
         return TraversalResult(
             start_entity=start_entity,
-            traversed_entities=list(traversed),
+            traversed_entities=sorted(traversed),
             edges_traversed=edges,
-            passages_reached=list(passages),
+            passages_reached=sorted(passages),
         )
 
     def get_entity_info(self, entity_text: str) -> Optional[dict]:
@@ -247,10 +251,11 @@ class KnowledgeGraph:
             {
                 "source": source,
                 "target": target,
+                "key": key,
                 "relationship": data.get("relationship"),
                 "weight": data.get("weight", 1.0),
             }
-            for source, target, data in self.graph.edges(data=True)
+            for source, target, key, data in self.graph.edges(keys=True, data=True)
         ]
 
         data = {
@@ -293,8 +298,14 @@ class KnowledgeGraph:
             kg.graph.add_edge(
                 edge_data["source"],
                 edge_data["target"],
+                key=edge_data.get("key"),
                 relationship=edge_data.get("relationship"),
                 weight=edge_data.get("weight", 1.0),
+            )
+
+            metadata_key = (edge_data["source"], edge_data["target"])
+            kg.edge_metadata.setdefault(metadata_key, []).append(
+                edge_data.get("relationship")
             )
 
         # Load entity-to-passages mapping

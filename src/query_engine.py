@@ -7,7 +7,10 @@ Handles user queries, entity extraction, graph traversal, and passage retrieval.
 from dataclasses import dataclass
 from typing import Optional
 
-from graph_builder import KnowledgeGraph, TraversalResult
+try:
+    from .graph_builder import KnowledgeGraph, TraversalResult
+except ImportError:
+    from graph_builder import KnowledgeGraph, TraversalResult
 
 
 @dataclass
@@ -78,7 +81,7 @@ class QueryEngine:
             query_text=entity_name,
             found_entities=found_entities,
             traversal_results=traversals,
-            retrieved_passages=list(all_passages),
+            retrieved_passages=sorted(all_passages),
             explanation=f"Found {len(found_entities)} entities, traversed to {len(all_passages)} passages",
         )
 
