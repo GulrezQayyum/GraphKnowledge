@@ -1,0 +1,6216 @@
+{
+  "nodes": [
+    {
+      "id": "Alexander the Grammarian",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "An Antoninus Pius",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "Apollonius",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "Cadicianus",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "Catulus",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "Deity",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "Democritus",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "Diognetus",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "Epictetus",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "Fronto",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "Hadrian",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "Heraclitus",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "Marcus",
+      "type": "PERSON",
+      "passage_count": 4
+    },
+    {
+      "id": "Maximus",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "Monimus",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "Rusticus",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "Severus",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "Sextus",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "Socrates",
+      "type": "PERSON",
+      "passage_count": 2
+    },
+    {
+      "id": "Theophrastus",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "Zeus",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "alexander",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "children",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "citizen",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "enemy",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "father",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "friend",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "god",
+      "type": "PERSON",
+      "passage_count": 3
+    },
+    {
+      "id": "good man",
+      "type": "PERSON",
+      "passage_count": 2
+    },
+    {
+      "id": "good masters",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "governor",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "great-grandfather",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "ill men",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "mankind",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "mother",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "other men",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "patricians",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "reporter",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "self",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "the gods",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "trajan",
+      "type": "PERSON",
+      "passage_count": 1
+    },
+    {
+      "id": "Cynic philosophy",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "Grecian discipline",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "Nature",
+      "type": "CONCEPT",
+      "passage_count": 24
+    },
+    {
+      "id": "action",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "agency",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "air",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "alteration",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "ambition",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "aversions",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "bad",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "beastliness",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "beauty",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "behavior",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "body",
+      "type": "CONCEPT",
+      "passage_count": 3
+    },
+    {
+      "id": "body politic",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "breath",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "business",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "calamity",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "calumny",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "chance",
+      "type": "CONCEPT",
+      "passage_count": 6
+    },
+    {
+      "id": "character",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "commendation",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "common good",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "common interest",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "common notion",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "commonwealth",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "contingencies of fortune",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "contrivance",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "conviction",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "corporeal covering",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "cosmic cycle",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "death",
+      "type": "CONCEPT",
+      "passage_count": 13
+    },
+    {
+      "id": "destiny",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "dignity of nature",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "disease",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "disposition",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "dissimulation",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "divine things",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "divinity",
+      "type": "CONCEPT",
+      "passage_count": 5
+    },
+    {
+      "id": "divinity within",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "duty",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "education",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "equality",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "equanimity",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "error",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "eternity",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "event",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "evil",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "expectation",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "externals",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "fame",
+      "type": "CONCEPT",
+      "passage_count": 3
+    },
+    {
+      "id": "fate",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "fault",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "foreign assistance",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "form",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "fortitude",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "frankincense",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "freedom",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "freedom and plain-dealing",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "freedom of mind",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "friendship",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "function",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "future",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "general end",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "general good",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "generation",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "generative principle",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "generosity",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "glory",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "godlike way of living",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "good",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "good nature",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "gratitude",
+      "type": "STATE",
+      "passage_count": 2
+    },
+    {
+      "id": "greatness of mind",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "guided principle",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "happiness",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "harmony",
+      "type": "STATE",
+      "passage_count": 2
+    },
+    {
+      "id": "haste",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "higher beings",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "honesty",
+      "type": "CONCEPT",
+      "passage_count": 4
+    },
+    {
+      "id": "human nature",
+      "type": "CONCEPT",
+      "passage_count": 3
+    },
+    {
+      "id": "human things",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "ignorance",
+      "type": "STATE",
+      "passage_count": 7
+    },
+    {
+      "id": "ill deeds",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "imagination",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "impermanence",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "impossibility",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "indifference",
+      "type": "STATE",
+      "passage_count": 4
+    },
+    {
+      "id": "indifferent things",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "indirectness",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "individual nature",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "inner god",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "inner self",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "instability",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "intellectual honesty",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "intention",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "internal disposition",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "judgment",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "justice",
+      "type": "CONCEPT",
+      "passage_count": 8
+    },
+    {
+      "id": "knowledge",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "learning",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "liberality",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "life",
+      "type": "CONCEPT",
+      "passage_count": 4
+    },
+    {
+      "id": "loss",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "lower creation",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "luxury",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "man",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "manliness",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "materiality",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "matter",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "memorable action",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "mind",
+      "type": "CONCEPT",
+      "passage_count": 5
+    },
+    {
+      "id": "misfortune",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "modesty",
+      "type": "CONCEPT",
+      "passage_count": 3
+    },
+    {
+      "id": "mortality",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "mutual harmony",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "nature and reason",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "nature of the universe",
+      "type": "CONCEPT",
+      "passage_count": 3
+    },
+    {
+      "id": "necessity",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "oblivion",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "obstacle",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "opinion",
+      "type": "CONCEPT",
+      "passage_count": 4
+    },
+    {
+      "id": "opinionative faculty",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "opportunity",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "order",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "other's thoughts",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "outward object",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "own motions",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "own nature",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "part",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "partisanship",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "past",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "perception",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "philosophy",
+      "type": "PRACTICE",
+      "passage_count": 2
+    },
+    {
+      "id": "piety",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "pleasure",
+      "type": "CONCEPT",
+      "passage_count": 3
+    },
+    {
+      "id": "praise",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "present",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "principle",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "probity",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "proportion",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "propriety",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "providence",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "prudence",
+      "type": "CONCEPT",
+      "passage_count": 3
+    },
+    {
+      "id": "public good",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "public interest",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "purity",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "purpose",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "pursuits",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "rational constitution",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "rational mind",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "rational nature",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "reason",
+      "type": "CONCEPT",
+      "passage_count": 26
+    },
+    {
+      "id": "reasoning faculty",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "religion",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "remonstration",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "reputation",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "restraint",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "righteousness",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "roving",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "ruling part",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "seasonability",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "seed",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "self-command",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "self-kindness",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "self-mastery",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "self-sufficiency",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "simplicity",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "sincerity",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "slave",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "sobriety",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "social balance",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "social disposition",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "social duty",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "social nature",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "soul",
+      "type": "CONCEPT",
+      "passage_count": 7
+    },
+    {
+      "id": "soundness",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "spiritual release",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "strength",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "subordination",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "temperance",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "the divinity in the soul",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "the governing principle",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "the ruling faculty",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "things that subsist upon change",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "time",
+      "type": "CONCEPT",
+      "passage_count": 7
+    },
+    {
+      "id": "tradition",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "transformation",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "transience",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "transitoriness",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "tricking",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "true quality of people",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "truth",
+      "type": "CONCEPT",
+      "passage_count": 5
+    },
+    {
+      "id": "tyranny",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "tyrant",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "understanding",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "universal nature",
+      "type": "CONCEPT",
+      "passage_count": 3
+    },
+    {
+      "id": "universal reason",
+      "type": "CONCEPT",
+      "passage_count": 3
+    },
+    {
+      "id": "universe",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "utility",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "vain pursuits",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "vanity",
+      "type": "STATE",
+      "passage_count": 2
+    },
+    {
+      "id": "vine",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "virtue",
+      "type": "CONCEPT",
+      "passage_count": 13
+    },
+    {
+      "id": "whole",
+      "type": "CONCEPT",
+      "passage_count": 2
+    },
+    {
+      "id": "wisdom",
+      "type": "CONCEPT",
+      "passage_count": 1
+    },
+    {
+      "id": "acceptance",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "accommodation",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "beneficence",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "changing mind",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "chastened eyes",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "cheerful acceptance",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "consideration",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "contemplation",
+      "type": "PRACTICE",
+      "passage_count": 2
+    },
+    {
+      "id": "discharge thought",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "effort",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "examination",
+      "type": "PRACTICE",
+      "passage_count": 6
+    },
+    {
+      "id": "excuse",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "forgiveness",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "home education",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "industry",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "mutual assistance",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "objective view",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "observation",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "persuasion",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "plain style",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "postponement",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "practical correction",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "practice",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "preparation",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "reconciliation",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "reflection",
+      "type": "PRACTICE",
+      "passage_count": 3
+    },
+    {
+      "id": "regard",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "regret-free detachment",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "resignation",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "retirement",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "return",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "reverence",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "self-denial",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "self-discipline",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "self-help",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "self-inspection",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "serviceability",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "simpler living",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "steadfastness",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "transmutation",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "unaffected gravity",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "vigour",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "word keeping",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "work",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "worship",
+      "type": "PRACTICE",
+      "passage_count": 1
+    },
+    {
+      "id": "abundance",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "accident",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "acquiescence",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "affection",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "agreement",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "anger",
+      "type": "STATE",
+      "passage_count": 4
+    },
+    {
+      "id": "appetite",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "brutish character",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "calm",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "calmness",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "censure",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "complaint",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "conceit",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "concern",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "contempt",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "contentment",
+      "type": "STATE",
+      "passage_count": 4
+    },
+    {
+      "id": "critical",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "curiosity",
+      "type": "STATE",
+      "passage_count": 2
+    },
+    {
+      "id": "degradation",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "desire",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "discouragement",
+      "type": "STATE",
+      "passage_count": 2
+    },
+    {
+      "id": "dishonour",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "dissemble",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "dissolution",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "distracted mind",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "distress",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "disturbance",
+      "type": "STATE",
+      "passage_count": 3
+    },
+    {
+      "id": "dull fancy",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "ease",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "envy",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "equality of temper",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "fatigue",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "fear",
+      "type": "STATE",
+      "passage_count": 3
+    },
+    {
+      "id": "fulfillment",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "good humour",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "happy",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "hardship",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "harm",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "honest mind",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "hurt",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "imperfect",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "indifference to life and death",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "injury",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "kindliness",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "leisure",
+      "type": "STATE",
+      "passage_count": 3
+    },
+    {
+      "id": "madness",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "mercenary character",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "misbehavior",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "natural defect",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "obstinate character",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "pain",
+      "type": "STATE",
+      "passage_count": 2
+    },
+    {
+      "id": "passing",
+      "type": "STATE",
+      "passage_count": 5
+    },
+    {
+      "id": "patience",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "perplexity",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "poverty of spirit",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "prounce",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "quarrel",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "quiet",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "quiet mind",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "rashness",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "resentment",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "riot",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "satisfaction",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "savage character",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "selfish passions",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "selfishness",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "servile dependence",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "shame",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "short-lived",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "spirit",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "supposition",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "surprise",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "suspicion",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "temper",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "thoughts",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "tranquillity",
+      "type": "STATE",
+      "passage_count": 2
+    },
+    {
+      "id": "trouble",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "troublesome thought",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "tyrannical character",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "unnecessary desire",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "unthinking",
+      "type": "STATE",
+      "passage_count": 1
+    },
+    {
+      "id": "urgency",
+      "type": "STATE",
+      "passage_count": 2
+    },
+    {
+      "id": "vanish",
+      "type": "STATE",
+      "passage_count": 1
+    }
+  ],
+  "edges": [
+    {
+      "source": "Alexander the Grammarian",
+      "target": "practical correction",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "An Antoninus Pius",
+      "target": "self-mastery",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "An Antoninus Pius",
+      "target": "virtue",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "Apollonius",
+      "target": "freedom of mind",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "Apollonius",
+      "target": "equality of temper",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "Cadicianus",
+      "target": "death",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "Catulus",
+      "target": "friendship",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "Deity",
+      "target": "good",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "Democritus",
+      "target": "necessity",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "Diognetus",
+      "target": "freedom and plain-dealing",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "Diognetus",
+      "target": "philosophy",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "Diognetus",
+      "target": "vain pursuits",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "Fronto",
+      "target": "tyranny",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "Hadrian",
+      "target": "transience",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "Heraclitus",
+      "target": "cosmic cycle",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "Marcus",
+      "target": "liberality",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "Marcus",
+      "target": "great-grandfather",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "Marcus",
+      "target": "virtue",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "Marcus",
+      "target": "self-help",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "Marcus",
+      "target": "indifference",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "Marcus",
+      "target": "indifference",
+      "key": 1,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "Maximus",
+      "target": "self-command",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "Maximus",
+      "target": "greatness of mind",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "Maximus",
+      "target": "forgiveness",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "Monimus",
+      "target": "opinion",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "Monimus",
+      "target": "Cynic philosophy",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "Rusticus",
+      "target": "plain style",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "Rusticus",
+      "target": "vanity",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "Rusticus",
+      "target": "conceit",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "Rusticus",
+      "target": "reconciliation",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "Rusticus",
+      "target": "Epictetus",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "Severus",
+      "target": "justice",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "Severus",
+      "target": "truth",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "Severus",
+      "target": "philosophy",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "Severus",
+      "target": "generosity",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "Sextus",
+      "target": "good humour",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "Sextus",
+      "target": "nature and reason",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "Sextus",
+      "target": "unaffected gravity",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "Sextus",
+      "target": "calmness",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "Socrates",
+      "target": "self-mastery",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "Socrates",
+      "target": "rational mind",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "Theophrastus",
+      "target": "desire",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "Zeus",
+      "target": "Nature",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "father",
+      "target": "modesty",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "father",
+      "target": "modesty",
+      "key": 1,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "father",
+      "target": "manliness",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "father",
+      "target": "manliness",
+      "key": 1,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "friend",
+      "target": "reason",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "god",
+      "target": "death",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "god",
+      "target": "universe",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "good man",
+      "target": "prudence",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "good man",
+      "target": "temperance",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "good man",
+      "target": "justice",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "good man",
+      "target": "fortitude",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "good man",
+      "target": "luxury",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "good man",
+      "target": "self-denial",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "good man",
+      "target": "indifference",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "good man",
+      "target": "patience",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "good masters",
+      "target": "liberality",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "governor",
+      "target": "simplicity",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "governor",
+      "target": "self-discipline",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "ill men",
+      "target": "ill deeds",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "mankind",
+      "target": "vanity",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "mother",
+      "target": "religion",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "mother",
+      "target": "generosity",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "mother",
+      "target": "simpler living",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "other men",
+      "target": "dishonour",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "reporter",
+      "target": "short-lived",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "self",
+      "target": "regard",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "self",
+      "target": "reason",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "self",
+      "target": "social duty",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "the gods",
+      "target": "opportunity",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "trajan",
+      "target": "mankind",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "Nature",
+      "target": "providence",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "Nature",
+      "target": "contentment",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "Nature",
+      "target": "time",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "Nature",
+      "target": "freedom",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "Nature",
+      "target": "death",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "Nature",
+      "target": "death",
+      "key": 1,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "Nature",
+      "target": "general good",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "Nature",
+      "target": "action",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "Nature",
+      "target": "action",
+      "key": 1,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "Nature",
+      "target": "vanish",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "Nature",
+      "target": "universe",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "Nature",
+      "target": "alteration",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "Nature",
+      "target": "harmony",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "Nature",
+      "target": "fear",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "Nature",
+      "target": "gratitude",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "action",
+      "target": "nature of the universe",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "action",
+      "target": "purpose",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "action",
+      "target": "perception",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "action",
+      "target": "Nature",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "air",
+      "target": "death",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "beauty",
+      "target": "Nature",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "behavior",
+      "target": "divine things",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "body",
+      "target": "inner self",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "business",
+      "target": "leisure",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "business",
+      "target": "Nature",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "calamity",
+      "target": "harmony",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "calumny",
+      "target": "unthinking",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "chance",
+      "target": "order",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "chance",
+      "target": "passing",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "commendation",
+      "target": "utility",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "common interest",
+      "target": "common interest",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "common notion",
+      "target": "dull fancy",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "contingencies of fortune",
+      "target": "opinion",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "contrivance",
+      "target": "order",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "death",
+      "target": "god",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "death",
+      "target": "Nature",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "death",
+      "target": "Nature",
+      "key": 1,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "death",
+      "target": "contemplation",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "death",
+      "target": "generation",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "death",
+      "target": "urgency",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "death",
+      "target": "unthinking",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "death",
+      "target": "time",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "death",
+      "target": "time",
+      "key": 1,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "death",
+      "target": "death",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "destiny",
+      "target": "godlike way of living",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "disease",
+      "target": "unthinking",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "divine things",
+      "target": "human things",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "divinity",
+      "target": "reason",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "divinity",
+      "target": "nature of the universe",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "education",
+      "target": "affection",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "eternity",
+      "target": "time",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "event",
+      "target": "Nature",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "expectation",
+      "target": "madness",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "expectation",
+      "target": "impossibility",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "fame",
+      "target": "present",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "fame",
+      "target": "oblivion",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "fame",
+      "target": "vanity",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "fate",
+      "target": "purpose",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "fault",
+      "target": "fate",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "fault",
+      "target": "passing",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "form",
+      "target": "soul",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "fortitude",
+      "target": "virtue",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "frankincense",
+      "target": "indifference",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "freedom of mind",
+      "target": "reason",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "freedom of mind",
+      "target": "chance",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "friendship",
+      "target": "remonstration",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "function",
+      "target": "reason",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "future",
+      "target": "present",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "general good",
+      "target": "action",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "good nature",
+      "target": "virtue",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "gratitude",
+      "target": "death",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "greatness of mind",
+      "target": "trouble",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "guided principle",
+      "target": "Nature",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "happiness",
+      "target": "regard",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "happiness",
+      "target": "examination",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "harmony",
+      "target": "beauty",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "haste",
+      "target": "self-kindness",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "higher beings",
+      "target": "subordination",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "honesty",
+      "target": "righteousness",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "honesty",
+      "target": "virtue",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "honesty",
+      "target": "Nature",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "human nature",
+      "target": "indifference",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "ignorance",
+      "target": "other's thoughts",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "ignorance",
+      "target": "selfishness",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "ignorance",
+      "target": "reason",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "ignorance",
+      "target": "universal reason",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "ignorance",
+      "target": "transience",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "ignorance",
+      "target": "knowledge",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "imagination",
+      "target": "troublesome thought",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "impermanence",
+      "target": "passing",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "impermanence",
+      "target": "materiality",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "indifference",
+      "target": "equality",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "indifference",
+      "target": "quiet mind",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "indifference",
+      "target": "mind",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "indifference",
+      "target": "universal nature",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "indifference",
+      "target": "leisure",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "indifference",
+      "target": "glory",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "individual nature",
+      "target": "universal nature",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "intellectual honesty",
+      "target": "virtue",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "intellectual honesty",
+      "target": "wisdom",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "intention",
+      "target": "conviction",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "justice",
+      "target": "Nature",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "justice",
+      "target": "rational mind",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "justice",
+      "target": "reason",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "justice",
+      "target": "prudence",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "knowledge",
+      "target": "reason",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "learning",
+      "target": "reason",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "life",
+      "target": "present",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "life",
+      "target": "present",
+      "key": 1,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "loss",
+      "target": "present",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "loss",
+      "target": "Nature",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "lower creation",
+      "target": "higher beings",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "luxury",
+      "target": "simpler living",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "matter",
+      "target": "body",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "memorable action",
+      "target": "short-lived",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "mind",
+      "target": "quiet",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "mind",
+      "target": "contemplation",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "mind",
+      "target": "pursuits",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "mind",
+      "target": "aversions",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "mind",
+      "target": "obstacle",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "misfortune",
+      "target": "steadfastness",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "misfortune",
+      "target": "understanding",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "modesty",
+      "target": "freedom of mind",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "mortality",
+      "target": "enemy",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "mortality",
+      "target": "surprise",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "nature of the universe",
+      "target": "spirit",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "nature of the universe",
+      "target": "social disposition",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "nature of the universe",
+      "target": "mutual harmony",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "necessity",
+      "target": "excuse",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "opinion",
+      "target": "truth",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "opinion",
+      "target": "tranquillity",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "opinion",
+      "target": "equality",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "opinion",
+      "target": "strength",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "opinionative faculty",
+      "target": "guided principle",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "outward object",
+      "target": "soul",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "own motions",
+      "target": "examination",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "own nature",
+      "target": "nature of the universe",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "own nature",
+      "target": "part",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "part",
+      "target": "whole",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "past",
+      "target": "present",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "perception",
+      "target": "harmony",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "philosophy",
+      "target": "Grecian discipline",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "philosophy",
+      "target": "inner god",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "philosophy",
+      "target": "freedom",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "philosophy",
+      "target": "virtue",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "philosophy",
+      "target": "reason",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "philosophy",
+      "target": "human nature",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "philosophy",
+      "target": "simplicity",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "philosophy",
+      "target": "equanimity",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "philosophy",
+      "target": "piety",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "pleasure",
+      "target": "rational mind",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "principle",
+      "target": "wisdom",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "principle",
+      "target": "divinity",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "principle",
+      "target": "vanity",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "probity",
+      "target": "reason",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "probity",
+      "target": "contentment",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "probity",
+      "target": "resignation",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "probity",
+      "target": "divinity",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "proportion",
+      "target": "regret-free detachment",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "prudence",
+      "target": "ignorance",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "public interest",
+      "target": "reason",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "purity",
+      "target": "reverence",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "rational constitution",
+      "target": "rashness",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "rational constitution",
+      "target": "kindliness",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "rational mind",
+      "target": "judgment",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "rational nature",
+      "target": "social nature",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "reason",
+      "target": "thoughts",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "reason",
+      "target": "imagination",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "reason",
+      "target": "appetite",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "reason",
+      "target": "duty",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "reason",
+      "target": "justice",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "reason",
+      "target": "justice",
+      "key": 1,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "reason",
+      "target": "happy",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "reason",
+      "target": "fulfillment",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "reason",
+      "target": "necessity",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "reason",
+      "target": "abundance",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "reason",
+      "target": "reasoning faculty",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "reason",
+      "target": "foreign assistance",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "reason",
+      "target": "anger",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "reason",
+      "target": "freedom",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "reason",
+      "target": "Nature",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "reasoning faculty",
+      "target": "foreign assistance",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "restraint",
+      "target": "reason",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "roving",
+      "target": "general end",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "ruling part",
+      "target": "distracted mind",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "ruling part",
+      "target": "selfish passions",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "ruling part",
+      "target": "tyranny",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "ruling part",
+      "target": "beastliness",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "seed",
+      "target": "alteration",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "self-sufficiency",
+      "target": "tranquillity",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "simplicity",
+      "target": "hardship",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "sobriety",
+      "target": "virtue",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "social duty",
+      "target": "beneficence",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "soul",
+      "target": "reason",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "soul",
+      "target": "spiritual release",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "soul",
+      "target": "dissolution",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "soul",
+      "target": "generative principle",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "soul",
+      "target": "ruling part",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "soul",
+      "target": "opinion",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "soundness",
+      "target": "work",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "soundness",
+      "target": "fatigue",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "soundness",
+      "target": "quarrel",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "soundness",
+      "target": "dissemble",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "spiritual release",
+      "target": "soul",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "the divinity in the soul",
+      "target": "indifference to life and death",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "the governing principle",
+      "target": "worship",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "the ruling faculty",
+      "target": "Nature",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "things that subsist upon change",
+      "target": "instability",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "things that subsist upon change",
+      "target": "good",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "things that subsist upon change",
+      "target": "bad",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "time",
+      "target": "urgency",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "time",
+      "target": "chance",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "time",
+      "target": "impermanence",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "transformation",
+      "target": "eternity",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "transitoriness",
+      "target": "cheerful acceptance",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "true quality of people",
+      "target": "examination",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "truth",
+      "target": "virtue",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "tyranny",
+      "target": "envy",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "tyranny",
+      "target": "tricking",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "tyranny",
+      "target": "dissimulation",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "universal nature",
+      "target": "chance",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "universal nature",
+      "target": "universal reason",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "universal reason",
+      "target": "Nature",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "universe",
+      "target": "order",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "universe",
+      "target": "harmony",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "vanity",
+      "target": "dignity of nature",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "vanity",
+      "target": "honest mind",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "virtue",
+      "target": "godlike way of living",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "virtue",
+      "target": "externals",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "virtue",
+      "target": "death",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "virtue",
+      "target": "social balance",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "virtue",
+      "target": "indifferent things",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "virtue",
+      "target": "philosophy",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "virtue",
+      "target": "agency",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "virtue",
+      "target": "praise",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "virtue",
+      "target": "Nature",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "virtue",
+      "target": "effort",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "virtue",
+      "target": "indifference",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "acceptance",
+      "target": "truth",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "accommodation",
+      "target": "contentment",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "beneficence",
+      "target": "vine",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "beneficence",
+      "target": "gratitude",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "changing mind",
+      "target": "justice",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "changing mind",
+      "target": "public good",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "changing mind",
+      "target": "reputation",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "chastened eyes",
+      "target": "beauty",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "cheerful acceptance",
+      "target": "gratitude",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "contemplation",
+      "target": "destiny",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "contemplation",
+      "target": "justice",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "discharge thought",
+      "target": "calm",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "examination",
+      "target": "happiness",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "examination",
+      "target": "disturbance",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "examination",
+      "target": "virtue",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "examination",
+      "target": "virtue",
+      "key": 1,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "examination",
+      "target": "acquiescence",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "examination",
+      "target": "mind",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "examination",
+      "target": "ruling part",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "home education",
+      "target": "liberality",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "industry",
+      "target": "happy",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "mutual assistance",
+      "target": "resentment",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "objective view",
+      "target": "equality",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "observation",
+      "target": "justice",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "persuasion",
+      "target": "reason",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "persuasion",
+      "target": "persuasion",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "postponement",
+      "target": "opportunity",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "practical correction",
+      "target": "indirectness",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "practice",
+      "target": "disposition",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "preparation",
+      "target": "reason",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "reflection",
+      "target": "beneficence",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "reflection",
+      "target": "passing",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "reflection",
+      "target": "citizen",
+      "key": 0,
+      "relationship": "teaches",
+      "weight": 1.0
+    },
+    {
+      "source": "reflection",
+      "target": "chance",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "reflection",
+      "target": "distress",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "reflection",
+      "target": "prounce",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "regret-free detachment",
+      "target": "proportion",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "resignation",
+      "target": "god",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "resignation",
+      "target": "tyrant",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "resignation",
+      "target": "slave",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "retirement",
+      "target": "tranquillity",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "retirement",
+      "target": "virtue",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "return",
+      "target": "universal reason",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "reverence",
+      "target": "divinity within",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "self-discipline",
+      "target": "partisanship",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "self-help",
+      "target": "self-kindness",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "self-inspection",
+      "target": "ease",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "self-inspection",
+      "target": "time",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "serviceability",
+      "target": "human nature",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "steadfastness",
+      "target": "virtue",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "transmutation",
+      "target": "dissolution",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "vigour",
+      "target": "happy",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "word keeping",
+      "target": "modesty",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "work",
+      "target": "Nature",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "worship",
+      "target": "the governing principle",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "abundance",
+      "target": "discouragement",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "accident",
+      "target": "quiet",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "acquiescence",
+      "target": "fate",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "affection",
+      "target": "children",
+      "key": 0,
+      "relationship": "embodies",
+      "weight": 1.0
+    },
+    {
+      "source": "agreement",
+      "target": "Nature",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "anger",
+      "target": "reason",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "anger",
+      "target": "soul",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "calmness",
+      "target": "anger",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "censure",
+      "target": "Nature",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "complaint",
+      "target": "hurt",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "concern",
+      "target": "reason",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "contempt",
+      "target": "objective view",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "contentment",
+      "target": "gratitude",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "contentment",
+      "target": "effort",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "contentment",
+      "target": "accommodation",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "critical",
+      "target": "practical correction",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "curiosity",
+      "target": "happiness",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "curiosity",
+      "target": "guided principle",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "degradation",
+      "target": "principle",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "desire",
+      "target": "reason",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "dishonour",
+      "target": "happiness",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "disturbance",
+      "target": "purpose",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "disturbance",
+      "target": "reason",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "fear",
+      "target": "consideration",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "harm",
+      "target": "man",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "harm",
+      "target": "life",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "honest mind",
+      "target": "common good",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "imperfect",
+      "target": "virtue",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "indifference to life and death",
+      "target": "the divinity in the soul",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "injury",
+      "target": "body politic",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "leisure",
+      "target": "Nature",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "leisure",
+      "target": "action",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "mercenary character",
+      "target": "tyrannical character",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "misbehavior",
+      "target": "indifference",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "misbehavior",
+      "target": "internal disposition",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "natural defect",
+      "target": "virtue",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "obstinate character",
+      "target": "brutish character",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "pain",
+      "target": "Nature",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "pain",
+      "target": "judgment",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    },
+    {
+      "source": "pain",
+      "target": "corporeal covering",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "passing",
+      "target": "reason",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "passing",
+      "target": "reason",
+      "key": 1,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "passing",
+      "target": "tranquillity",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "poverty of spirit",
+      "target": "reason",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "quiet",
+      "target": "roving",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "quiet mind",
+      "target": "judgment",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "resentment",
+      "target": "good",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "riot",
+      "target": "intention",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "satisfaction",
+      "target": "resignation",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "selfishness",
+      "target": "universal reason",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "servile dependence",
+      "target": "Nature",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "shame",
+      "target": "rational nature",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "supposition",
+      "target": "complaint",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "surprise",
+      "target": "disposition",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "suspicion",
+      "target": "reason",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "temper",
+      "target": "happy",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "thoughts",
+      "target": "time",
+      "key": 0,
+      "relationship": "leads_to",
+      "weight": 1.0
+    },
+    {
+      "source": "tranquillity",
+      "target": "mind",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "troublesome thought",
+      "target": "discharge thought",
+      "key": 0,
+      "relationship": "resolved_by",
+      "weight": 1.0
+    },
+    {
+      "source": "unnecessary desire",
+      "target": "intellectual honesty",
+      "key": 0,
+      "relationship": "opposes",
+      "weight": 1.0
+    },
+    {
+      "source": "urgency",
+      "target": "haste",
+      "key": 0,
+      "relationship": "requires",
+      "weight": 1.0
+    },
+    {
+      "source": "vanish",
+      "target": "whole",
+      "key": 0,
+      "relationship": "relates_to",
+      "weight": 1.0
+    }
+  ],
+  "entity_passages": {
+    "Alexander the Grammarian": [
+      "bookI_10"
+    ],
+    "An Antoninus Pius": [
+      "bookI_16"
+    ],
+    "Apollonius": [
+      "bookI_8"
+    ],
+    "Cadicianus": [
+      "bookIV_50"
+    ],
+    "Catulus": [
+      "bookI_13"
+    ],
+    "Deity": [
+      "bookII_1"
+    ],
+    "Democritus": [
+      "bookIV_24"
+    ],
+    "Diognetus": [
+      "bookI_6"
+    ],
+    "Epictetus": [
+      "bookI_7"
+    ],
+    "Fronto": [
+      "bookI_11"
+    ],
+    "Hadrian": [
+      "bookIV_33"
+    ],
+    "Heraclitus": [
+      "bookIV_46"
+    ],
+    "Marcus": [
+      "bookIII_14",
+      "bookII_5",
+      "bookI_4",
+      "bookV_29"
+    ],
+    "Maximus": [
+      "bookI_15"
+    ],
+    "Monimus": [
+      "bookII_15"
+    ],
+    "Rusticus": [
+      "bookI_7"
+    ],
+    "Severus": [
+      "bookI_14"
+    ],
+    "Sextus": [
+      "bookI_9"
+    ],
+    "Socrates": [
+      "bookIII_6",
+      "bookI_16"
+    ],
+    "Theophrastus": [
+      "bookII_10"
+    ],
+    "Zeus": [
+      "bookV_8"
+    ],
+    "alexander": [
+      "bookIII_3"
+    ],
+    "children": [
+      "bookI_13"
+    ],
+    "citizen": [
+      "bookV_22"
+    ],
+    "enemy": [
+      "bookIV_6"
+    ],
+    "father": [
+      "bookI_2"
+    ],
+    "friend": [
+      "bookIV_12"
+    ],
+    "god": [
+      "bookII_11",
+      "bookIV_23",
+      "bookIV_31"
+    ],
+    "good man": [
+      "bookV_12",
+      "bookV_15"
+    ],
+    "good masters": [
+      "bookI_4"
+    ],
+    "governor": [
+      "bookI_5"
+    ],
+    "great-grandfather": [
+      "bookI_4"
+    ],
+    "ill men": [
+      "bookV_17"
+    ],
+    "mankind": [
+      "bookIV_32"
+    ],
+    "mother": [
+      "bookI_3"
+    ],
+    "other men": [
+      "bookII_6"
+    ],
+    "patricians": [
+      "bookI_11"
+    ],
+    "reporter": [
+      "bookIV_35"
+    ],
+    "self": [
+      "bookII_6",
+      "bookV_1"
+    ],
+    "the gods": [
+      "bookII_4"
+    ],
+    "trajan": [
+      "bookIV_32"
+    ],
+    "Cynic philosophy": [
+      "bookII_15"
+    ],
+    "Grecian discipline": [
+      "bookI_6"
+    ],
+    "Nature": [
+      "bookIII_2",
+      "bookIII_4",
+      "bookIII_9",
+      "bookII_14",
+      "bookII_16",
+      "bookII_17",
+      "bookII_3",
+      "bookIV_14",
+      "bookIV_19",
+      "bookIV_23",
+      "bookIV_31",
+      "bookIV_36",
+      "bookIV_44",
+      "bookIV_48",
+      "bookIV_49",
+      "bookIV_5",
+      "bookIV_51",
+      "bookIV_9",
+      "bookV_1",
+      "bookV_21",
+      "bookV_3",
+      "bookV_32",
+      "bookV_4",
+      "bookV_8"
+    ],
+    "action": [
+      "bookII_9"
+    ],
+    "agency": [
+      "bookIV_17"
+    ],
+    "air": [
+      "bookV_4"
+    ],
+    "alteration": [
+      "bookIV_36"
+    ],
+    "ambition": [
+      "bookV_12"
+    ],
+    "aversions": [
+      "bookIV_38"
+    ],
+    "bad": [
+      "bookIV_42"
+    ],
+    "beastliness": [
+      "bookV_11"
+    ],
+    "beauty": [
+      "bookIII_2"
+    ],
+    "behavior": [
+      "bookIII_13"
+    ],
+    "body": [
+      "bookIII_3",
+      "bookII_2",
+      "bookV_13"
+    ],
+    "body politic": [
+      "bookV_22"
+    ],
+    "breath": [
+      "bookII_2"
+    ],
+    "business": [
+      "bookIV_31",
+      "bookI_12"
+    ],
+    "calamity": [
+      "bookV_8"
+    ],
+    "calumny": [
+      "bookIV_44"
+    ],
+    "chance": [
+      "bookII_3",
+      "bookIV_27",
+      "bookIV_42",
+      "bookIV_43",
+      "bookI_8",
+      "bookV_23"
+    ],
+    "character": [
+      "bookI_2"
+    ],
+    "commendation": [
+      "bookIV_19"
+    ],
+    "common good": [
+      "bookIV_33"
+    ],
+    "common interest": [
+      "bookV_3"
+    ],
+    "common notion": [
+      "bookIV_36"
+    ],
+    "commonwealth": [
+      "bookI_14"
+    ],
+    "contingencies of fortune": [
+      "bookV_19"
+    ],
+    "contrivance": [
+      "bookIV_27"
+    ],
+    "conviction": [
+      "bookIV_22"
+    ],
+    "corporeal covering": [
+      "bookIV_39"
+    ],
+    "cosmic cycle": [
+      "bookIV_46"
+    ],
+    "death": [
+      "bookIII_1",
+      "bookIII_14",
+      "bookIII_8",
+      "bookII_11",
+      "bookII_17",
+      "bookIV_17",
+      "bookIV_44",
+      "bookIV_47",
+      "bookIV_48",
+      "bookIV_5",
+      "bookIV_50",
+      "bookV_29",
+      "bookV_4"
+    ],
+    "destiny": [
+      "bookIII_11",
+      "bookII_5"
+    ],
+    "dignity of nature": [
+      "bookIV_32"
+    ],
+    "disease": [
+      "bookIV_44"
+    ],
+    "disposition": [
+      "bookIV_6"
+    ],
+    "dissimulation": [
+      "bookI_11"
+    ],
+    "divine things": [
+      "bookIII_13"
+    ],
+    "divinity": [
+      "bookIII_12",
+      "bookIII_16",
+      "bookIII_5",
+      "bookIV_16",
+      "bookV_10"
+    ],
+    "divinity within": [
+      "bookII_13"
+    ],
+    "duty": [
+      "bookIII_1"
+    ],
+    "education": [
+      "bookI_13"
+    ],
+    "equality": [
+      "bookIV_11",
+      "bookIV_15"
+    ],
+    "equanimity": [
+      "bookV_9"
+    ],
+    "error": [
+      "bookV_28"
+    ],
+    "eternity": [
+      "bookIV_50"
+    ],
+    "event": [
+      "bookIV_44"
+    ],
+    "evil": [
+      "bookII_1"
+    ],
+    "expectation": [
+      "bookV_17"
+    ],
+    "externals": [
+      "bookII_11"
+    ],
+    "fame": [
+      "bookIII_10",
+      "bookIV_19",
+      "bookIV_33"
+    ],
+    "fate": [
+      "bookIV_25",
+      "bookIV_26"
+    ],
+    "fault": [
+      "bookIV_26",
+      "bookV_22"
+    ],
+    "foreign assistance": [
+      "bookV_14"
+    ],
+    "form": [
+      "bookV_13"
+    ],
+    "fortitude": [
+      "bookI_16"
+    ],
+    "frankincense": [
+      "bookIV_15"
+    ],
+    "freedom": [
+      "bookII_17"
+    ],
+    "freedom and plain-dealing": [
+      "bookI_6"
+    ],
+    "freedom of mind": [
+      "bookI_8"
+    ],
+    "friendship": [
+      "bookI_13"
+    ],
+    "function": [
+      "bookIV_13"
+    ],
+    "future": [
+      "bookIII_10"
+    ],
+    "general end": [
+      "bookII_7"
+    ],
+    "general good": [
+      "bookIV_9"
+    ],
+    "generation": [
+      "bookIV_5"
+    ],
+    "generative principle": [
+      "bookIV_21"
+    ],
+    "generosity": [
+      "bookI_14",
+      "bookI_3"
+    ],
+    "glory": [
+      "bookV_31"
+    ],
+    "godlike way of living": [
+      "bookII_5"
+    ],
+    "good": [
+      "bookII_1",
+      "bookIV_42"
+    ],
+    "good nature": [
+      "bookIV_20",
+      "bookIV_25"
+    ],
+    "gratitude": [
+      "bookII_3",
+      "bookV_4"
+    ],
+    "greatness of mind": [
+      "bookI_15"
+    ],
+    "guided principle": [
+      "bookIII_4",
+      "bookIII_9"
+    ],
+    "happiness": [
+      "bookII_8"
+    ],
+    "harmony": [
+      "bookIII_2",
+      "bookIV_48"
+    ],
+    "haste": [
+      "bookIII_14"
+    ],
+    "higher beings": [
+      "bookV_30"
+    ],
+    "honesty": [
+      "bookIV_18",
+      "bookIV_25",
+      "bookV_3",
+      "bookV_6"
+    ],
+    "human nature": [
+      "bookV_15",
+      "bookV_20",
+      "bookV_9"
+    ],
+    "human things": [
+      "bookIII_13"
+    ],
+    "ignorance": [
+      "bookII_1",
+      "bookII_13",
+      "bookII_8",
+      "bookIV_29",
+      "bookIV_46",
+      "bookV_10",
+      "bookV_18"
+    ],
+    "ill deeds": [
+      "bookV_17"
+    ],
+    "imagination": [
+      "bookIII_1"
+    ],
+    "impermanence": [
+      "bookIV_43",
+      "bookV_23"
+    ],
+    "impossibility": [
+      "bookV_17"
+    ],
+    "indifference": [
+      "bookIV_15",
+      "bookV_15",
+      "bookV_29",
+      "bookV_31"
+    ],
+    "indifferent things": [
+      "bookIII_11"
+    ],
+    "indirectness": [
+      "bookI_10"
+    ],
+    "individual nature": [
+      "bookV_25"
+    ],
+    "inner god": [
+      "bookII_17"
+    ],
+    "inner self": [
+      "bookIII_3"
+    ],
+    "instability": [
+      "bookIV_42"
+    ],
+    "intellectual honesty": [
+      "bookIV_37"
+    ],
+    "intention": [
+      "bookIV_22"
+    ],
+    "internal disposition": [
+      "bookV_25"
+    ],
+    "judgment": [
+      "bookV_32"
+    ],
+    "justice": [
+      "bookIII_11",
+      "bookIII_4",
+      "bookIII_6",
+      "bookIV_10",
+      "bookIV_12",
+      "bookIV_26",
+      "bookI_14",
+      "bookV_12"
+    ],
+    "knowledge": [
+      "bookV_32"
+    ],
+    "learning": [
+      "bookIV_30"
+    ],
+    "liberality": [
+      "bookI_4"
+    ],
+    "life": [
+      "bookIII_10",
+      "bookII_14",
+      "bookII_6",
+      "bookIV_8"
+    ],
+    "loss": [
+      "bookII_14"
+    ],
+    "lower creation": [
+      "bookV_30"
+    ],
+    "luxury": [
+      "bookI_3",
+      "bookV_12"
+    ],
+    "man": [
+      "bookIV_8"
+    ],
+    "manliness": [
+      "bookI_2"
+    ],
+    "materiality": [
+      "bookV_23"
+    ],
+    "matter": [
+      "bookV_13"
+    ],
+    "memorable action": [
+      "bookIV_35"
+    ],
+    "mind": [
+      "bookIII_1",
+      "bookII_7",
+      "bookIV_3",
+      "bookIV_38",
+      "bookV_20"
+    ],
+    "misfortune": [
+      "bookIV_49"
+    ],
+    "modesty": [
+      "bookIII_7",
+      "bookI_2",
+      "bookI_8"
+    ],
+    "mortality": [
+      "bookIII_3",
+      "bookIV_6"
+    ],
+    "mutual harmony": [
+      "bookV_30"
+    ],
+    "nature and reason": [
+      "bookI_9"
+    ],
+    "nature of the universe": [
+      "bookII_9",
+      "bookV_10",
+      "bookV_30"
+    ],
+    "necessity": [
+      "bookIV_24",
+      "bookI_12"
+    ],
+    "oblivion": [
+      "bookIV_33"
+    ],
+    "obstacle": [
+      "bookV_20"
+    ],
+    "opinion": [
+      "bookII_15",
+      "bookIV_11",
+      "bookIV_3",
+      "bookV_19"
+    ],
+    "opinionative faculty": [
+      "bookIII_9"
+    ],
+    "opportunity": [
+      "bookII_4"
+    ],
+    "order": [
+      "bookIV_27"
+    ],
+    "other's thoughts": [
+      "bookII_8"
+    ],
+    "outward object": [
+      "bookII_7",
+      "bookV_19"
+    ],
+    "own motions": [
+      "bookII_8"
+    ],
+    "own nature": [
+      "bookII_9"
+    ],
+    "part": [
+      "bookII_9"
+    ],
+    "partisanship": [
+      "bookI_5"
+    ],
+    "past": [
+      "bookIII_10"
+    ],
+    "perception": [
+      "bookIII_2",
+      "bookIV_2"
+    ],
+    "philosophy": [
+      "bookIII_8",
+      "bookV_9"
+    ],
+    "piety": [
+      "bookV_9"
+    ],
+    "pleasure": [
+      "bookIII_6",
+      "bookV_1",
+      "bookV_31"
+    ],
+    "praise": [
+      "bookIV_20"
+    ],
+    "present": [
+      "bookIII_10",
+      "bookII_14"
+    ],
+    "principle": [
+      "bookIV_16",
+      "bookV_18"
+    ],
+    "probity": [
+      "bookIII_16"
+    ],
+    "proportion": [
+      "bookIV_32"
+    ],
+    "propriety": [
+      "bookI_10"
+    ],
+    "providence": [
+      "bookII_3"
+    ],
+    "prudence": [
+      "bookIV_26",
+      "bookV_12",
+      "bookV_18"
+    ],
+    "public good": [
+      "bookIV_12"
+    ],
+    "public interest": [
+      "bookV_29"
+    ],
+    "purity": [
+      "bookII_13"
+    ],
+    "purpose": [
+      "bookIV_2",
+      "bookIV_26"
+    ],
+    "pursuits": [
+      "bookIV_38"
+    ],
+    "rational constitution": [
+      "bookIII_9"
+    ],
+    "rational mind": [
+      "bookIII_6"
+    ],
+    "rational nature": [
+      "bookIII_7",
+      "bookIV_5"
+    ],
+    "reason": [
+      "bookIII_1",
+      "bookIII_12",
+      "bookIII_13",
+      "bookIII_16",
+      "bookIII_4",
+      "bookIII_5",
+      "bookII_10",
+      "bookII_16",
+      "bookII_4",
+      "bookII_5",
+      "bookIV_10",
+      "bookIV_12",
+      "bookIV_13",
+      "bookIV_21",
+      "bookIV_24",
+      "bookIV_29",
+      "bookIV_30",
+      "bookIV_37",
+      "bookIV_47",
+      "bookI_8",
+      "bookV_14",
+      "bookV_28",
+      "bookV_29",
+      "bookV_32",
+      "bookV_5",
+      "bookV_9"
+    ],
+    "reasoning faculty": [
+      "bookV_14"
+    ],
+    "religion": [
+      "bookI_3"
+    ],
+    "remonstration": [
+      "bookI_13"
+    ],
+    "reputation": [
+      "bookIV_12"
+    ],
+    "restraint": [
+      "bookII_10"
+    ],
+    "righteousness": [
+      "bookIV_18"
+    ],
+    "roving": [
+      "bookII_7"
+    ],
+    "ruling part": [
+      "bookII_2",
+      "bookV_11"
+    ],
+    "seasonability": [
+      "bookIV_23"
+    ],
+    "seed": [
+      "bookIV_36"
+    ],
+    "self-command": [
+      "bookI_15"
+    ],
+    "self-kindness": [
+      "bookIII_14"
+    ],
+    "self-mastery": [
+      "bookI_16"
+    ],
+    "self-sufficiency": [
+      "bookIII_5"
+    ],
+    "simplicity": [
+      "bookI_5",
+      "bookV_9"
+    ],
+    "sincerity": [
+      "bookIII_4"
+    ],
+    "slave": [
+      "bookIV_31"
+    ],
+    "sobriety": [
+      "bookIV_20"
+    ],
+    "social balance": [
+      "bookIII_8"
+    ],
+    "social disposition": [
+      "bookV_30"
+    ],
+    "social duty": [
+      "bookV_1",
+      "bookV_6"
+    ],
+    "social nature": [
+      "bookIII_7"
+    ],
+    "soul": [
+      "bookIII_10",
+      "bookIII_3",
+      "bookII_16",
+      "bookIV_21",
+      "bookV_11",
+      "bookV_13",
+      "bookV_19"
+    ],
+    "soundness": [
+      "bookIV_51"
+    ],
+    "spiritual release": [
+      "bookIII_3"
+    ],
+    "strength": [
+      "bookV_19"
+    ],
+    "subordination": [
+      "bookV_30"
+    ],
+    "temperance": [
+      "bookIII_6",
+      "bookV_12"
+    ],
+    "the divinity in the soul": [
+      "bookIII_7"
+    ],
+    "the governing principle": [
+      "bookV_21"
+    ],
+    "the ruling faculty": [
+      "bookV_21"
+    ],
+    "things that subsist upon change": [
+      "bookIV_42"
+    ],
+    "time": [
+      "bookII_14",
+      "bookII_4",
+      "bookIV_17",
+      "bookIV_18",
+      "bookIV_43",
+      "bookIV_47",
+      "bookIV_50"
+    ],
+    "tradition": [
+      "bookIV_46"
+    ],
+    "transformation": [
+      "bookV_13"
+    ],
+    "transience": [
+      "bookIV_33",
+      "bookV_10"
+    ],
+    "transitoriness": [
+      "bookIV_48"
+    ],
+    "tricking": [
+      "bookI_11"
+    ],
+    "true quality of people": [
+      "bookIV_38"
+    ],
+    "truth": [
+      "bookIII_6",
+      "bookII_15",
+      "bookIV_20",
+      "bookI_14",
+      "bookI_15"
+    ],
+    "tyranny": [
+      "bookI_11",
+      "bookV_11"
+    ],
+    "tyrant": [
+      "bookIV_31"
+    ],
+    "understanding": [
+      "bookV_18"
+    ],
+    "universal nature": [
+      "bookII_3",
+      "bookIV_29",
+      "bookV_25"
+    ],
+    "universal reason": [
+      "bookIV_14",
+      "bookIV_29",
+      "bookIV_46"
+    ],
+    "universe": [
+      "bookIV_23",
+      "bookIV_27"
+    ],
+    "utility": [
+      "bookIV_19"
+    ],
+    "vain pursuits": [
+      "bookI_6"
+    ],
+    "vanity": [
+      "bookI_7",
+      "bookV_18"
+    ],
+    "vine": [
+      "bookV_6"
+    ],
+    "virtue": [
+      "bookIII_11",
+      "bookIII_8",
+      "bookII_11",
+      "bookII_5",
+      "bookIV_10",
+      "bookIV_17",
+      "bookIV_20",
+      "bookIV_25",
+      "bookIV_3",
+      "bookIV_49",
+      "bookI_16",
+      "bookV_31",
+      "bookV_5"
+    ],
+    "whole": [
+      "bookII_9",
+      "bookIV_14"
+    ],
+    "wisdom": [
+      "bookIV_16"
+    ],
+    "acceptance": [
+      "bookII_15"
+    ],
+    "accommodation": [
+      "bookV_8"
+    ],
+    "beneficence": [
+      "bookV_6"
+    ],
+    "changing mind": [
+      "bookIV_12"
+    ],
+    "chastened eyes": [
+      "bookIII_2"
+    ],
+    "cheerful acceptance": [
+      "bookIV_48"
+    ],
+    "consideration": [
+      "bookIV_50"
+    ],
+    "contemplation": [
+      "bookIII_1",
+      "bookIII_11"
+    ],
+    "discharge thought": [
+      "bookV_2"
+    ],
+    "effort": [
+      "bookV_5"
+    ],
+    "examination": [
+      "bookII_8",
+      "bookIV_24",
+      "bookIV_25",
+      "bookIV_38",
+      "bookV_11",
+      "bookV_31"
+    ],
+    "excuse": [
+      "bookI_12"
+    ],
+    "forgiveness": [
+      "bookI_15"
+    ],
+    "home education": [
+      "bookI_4"
+    ],
+    "industry": [
+      "bookIII_12"
+    ],
+    "mutual assistance": [
+      "bookII_1"
+    ],
+    "objective view": [
+      "bookIV_11"
+    ],
+    "observation": [
+      "bookIV_10"
+    ],
+    "persuasion": [
+      "bookV_28"
+    ],
+    "plain style": [
+      "bookI_7"
+    ],
+    "postponement": [
+      "bookII_4"
+    ],
+    "practical correction": [
+      "bookI_10"
+    ],
+    "practice": [
+      "bookIV_6"
+    ],
+    "preparation": [
+      "bookIII_13"
+    ],
+    "reconciliation": [
+      "bookI_7"
+    ],
+    "reflection": [
+      "bookV_22",
+      "bookV_23",
+      "bookV_6"
+    ],
+    "regard": [
+      "bookII_6"
+    ],
+    "regret-free detachment": [
+      "bookIV_32"
+    ],
+    "resignation": [
+      "bookIII_16"
+    ],
+    "retirement": [
+      "bookIV_3"
+    ],
+    "return": [
+      "bookIV_14"
+    ],
+    "reverence": [
+      "bookII_13"
+    ],
+    "self-denial": [
+      "bookV_15"
+    ],
+    "self-discipline": [
+      "bookI_5"
+    ],
+    "self-help": [
+      "bookIII_14"
+    ],
+    "self-inspection": [
+      "bookIV_18"
+    ],
+    "serviceability": [
+      "bookV_20"
+    ],
+    "simpler living": [
+      "bookI_3"
+    ],
+    "steadfastness": [
+      "bookIV_49"
+    ],
+    "transmutation": [
+      "bookIV_21"
+    ],
+    "unaffected gravity": [
+      "bookI_9"
+    ],
+    "vigour": [
+      "bookIII_12"
+    ],
+    "word keeping": [
+      "bookIII_7"
+    ],
+    "work": [
+      "bookIV_51"
+    ],
+    "worship": [
+      "bookV_21"
+    ],
+    "abundance": [
+      "bookIV_30"
+    ],
+    "accident": [
+      "bookII_7"
+    ],
+    "acquiescence": [
+      "bookIV_25"
+    ],
+    "affection": [
+      "bookI_13"
+    ],
+    "agreement": [
+      "bookIV_23"
+    ],
+    "anger": [
+      "bookII_10",
+      "bookII_16",
+      "bookI_9",
+      "bookV_28"
+    ],
+    "appetite": [
+      "bookIII_1"
+    ],
+    "brutish character": [
+      "bookIV_28"
+    ],
+    "calm": [
+      "bookV_2"
+    ],
+    "calmness": [
+      "bookI_9"
+    ],
+    "censure": [
+      "bookV_3"
+    ],
+    "complaint": [
+      "bookIV_7"
+    ],
+    "conceit": [
+      "bookI_7"
+    ],
+    "concern": [
+      "bookIV_47"
+    ],
+    "contempt": [
+      "bookIV_11"
+    ],
+    "contentment": [
+      "bookIII_16",
+      "bookII_3",
+      "bookV_5",
+      "bookV_8"
+    ],
+    "critical": [
+      "bookI_10"
+    ],
+    "curiosity": [
+      "bookIII_4",
+      "bookII_13"
+    ],
+    "degradation": [
+      "bookIV_16"
+    ],
+    "desire": [
+      "bookII_10"
+    ],
+    "discouragement": [
+      "bookIV_30",
+      "bookV_9"
+    ],
+    "dishonour": [
+      "bookII_6"
+    ],
+    "dissemble": [
+      "bookIV_51"
+    ],
+    "dissolution": [
+      "bookIV_21"
+    ],
+    "distracted mind": [
+      "bookII_2"
+    ],
+    "distress": [
+      "bookV_23"
+    ],
+    "disturbance": [
+      "bookIV_24",
+      "bookIV_26",
+      "bookIV_37"
+    ],
+    "dull fancy": [
+      "bookIV_36"
+    ],
+    "ease": [
+      "bookIV_18"
+    ],
+    "envy": [
+      "bookI_11"
+    ],
+    "equality of temper": [
+      "bookI_8"
+    ],
+    "fatigue": [
+      "bookIV_51"
+    ],
+    "fear": [
+      "bookII_11",
+      "bookIV_49",
+      "bookIV_50"
+    ],
+    "fulfillment": [
+      "bookIV_13"
+    ],
+    "good humour": [
+      "bookI_9"
+    ],
+    "happy": [
+      "bookIII_12"
+    ],
+    "hardship": [
+      "bookI_5"
+    ],
+    "harm": [
+      "bookIV_8"
+    ],
+    "honest mind": [
+      "bookIV_33"
+    ],
+    "hurt": [
+      "bookIV_7"
+    ],
+    "imperfect": [
+      "bookIII_8"
+    ],
+    "indifference to life and death": [
+      "bookIII_7"
+    ],
+    "injury": [
+      "bookV_22"
+    ],
+    "kindliness": [
+      "bookIII_9"
+    ],
+    "leisure": [
+      "bookII_10",
+      "bookII_16",
+      "bookI_12"
+    ],
+    "madness": [
+      "bookV_17"
+    ],
+    "mercenary character": [
+      "bookIV_28"
+    ],
+    "misbehavior": [
+      "bookV_25"
+    ],
+    "natural defect": [
+      "bookV_5"
+    ],
+    "obstinate character": [
+      "bookIV_28"
+    ],
+    "pain": [
+      "bookII_16",
+      "bookIV_39"
+    ],
+    "passing": [
+      "bookIII_16",
+      "bookIII_5",
+      "bookII_5",
+      "bookIV_43",
+      "bookV_22"
+    ],
+    "patience": [
+      "bookV_15"
+    ],
+    "perplexity": [
+      "bookV_10"
+    ],
+    "poverty of spirit": [
+      "bookIV_47"
+    ],
+    "prounce": [
+      "bookV_23"
+    ],
+    "quarrel": [
+      "bookIV_51"
+    ],
+    "quiet": [
+      "bookII_7"
+    ],
+    "quiet mind": [
+      "bookIV_39"
+    ],
+    "rashness": [
+      "bookIII_9"
+    ],
+    "resentment": [
+      "bookII_1"
+    ],
+    "riot": [
+      "bookIV_22"
+    ],
+    "satisfaction": [
+      "bookIV_31"
+    ],
+    "savage character": [
+      "bookIV_28"
+    ],
+    "selfish passions": [
+      "bookII_2"
+    ],
+    "selfishness": [
+      "bookIV_29"
+    ],
+    "servile dependence": [
+      "bookIV_19"
+    ],
+    "shame": [
+      "bookIV_5"
+    ],
+    "short-lived": [
+      "bookIV_35"
+    ],
+    "spirit": [
+      "bookV_10"
+    ],
+    "supposition": [
+      "bookIV_7"
+    ],
+    "surprise": [
+      "bookIV_6"
+    ],
+    "suspicion": [
+      "bookIV_37"
+    ],
+    "temper": [
+      "bookIII_12"
+    ],
+    "thoughts": [
+      "bookII_4"
+    ],
+    "tranquillity": [
+      "bookIII_5",
+      "bookIV_3"
+    ],
+    "trouble": [
+      "bookI_15"
+    ],
+    "troublesome thought": [
+      "bookV_2"
+    ],
+    "tyrannical character": [
+      "bookIV_28"
+    ],
+    "unnecessary desire": [
+      "bookIV_37"
+    ],
+    "unthinking": [
+      "bookIV_44"
+    ],
+    "urgency": [
+      "bookIII_14",
+      "bookIV_17"
+    ],
+    "vanish": [
+      "bookIV_14"
+    ]
+  }
+}

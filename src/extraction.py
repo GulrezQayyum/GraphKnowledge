@@ -97,7 +97,7 @@ Return only the JSON object, no other text.
         self,
         api_key: Optional[str] = None,
         client: Optional[Groq] = None,
-        model: str = "llama-3.3-70b-versatile",
+        model: str = "qwen/qwen3.8-27b",
     ):
         """
         Initialize Groq client.
@@ -174,7 +174,7 @@ Return only the JSON object, no other text.
         try:
             response = self.client.chat.completions.create(
                 model=self.model,
-                max_tokens=1024,
+                max_tokens=768,
                 messages=[
                     {
                         "role": "user",

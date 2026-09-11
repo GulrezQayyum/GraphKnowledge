@@ -1,0 +1,4363 @@
+{
+  "Alexander the Grammarian": {
+    "canonical_text": "Alexander the Grammarian",
+    "type": "PERSON",
+    "variants": [
+      "Alexander the Grammarian"
+    ],
+    "passage_ids": [
+      "bookI_10"
+    ],
+    "count": 1
+  },
+  "An Antoninus Pius": {
+    "canonical_text": "An Antoninus Pius",
+    "type": "PERSON",
+    "variants": [
+      "An Antoninus Pius"
+    ],
+    "passage_ids": [
+      "bookI_16"
+    ],
+    "count": 1
+  },
+  "Apollonius": {
+    "canonical_text": "Apollonius",
+    "type": "PERSON",
+    "variants": [
+      "Apollonius"
+    ],
+    "passage_ids": [
+      "bookI_8"
+    ],
+    "count": 1
+  },
+  "Cadicianus": {
+    "canonical_text": "Cadicianus",
+    "type": "PERSON",
+    "variants": [
+      "Cadicianus"
+    ],
+    "passage_ids": [
+      "bookIV_50"
+    ],
+    "count": 1
+  },
+  "Catulus": {
+    "canonical_text": "Catulus",
+    "type": "PERSON",
+    "variants": [
+      "Catulus"
+    ],
+    "passage_ids": [
+      "bookI_13"
+    ],
+    "count": 1
+  },
+  "Deity": {
+    "canonical_text": "Deity",
+    "type": "PERSON",
+    "variants": [
+      "Deity"
+    ],
+    "passage_ids": [
+      "bookII_1"
+    ],
+    "count": 1
+  },
+  "Democritus": {
+    "canonical_text": "Democritus",
+    "type": "PERSON",
+    "variants": [
+      "Democritus"
+    ],
+    "passage_ids": [
+      "bookIV_24"
+    ],
+    "count": 1
+  },
+  "Diognetus": {
+    "canonical_text": "Diognetus",
+    "type": "PERSON",
+    "variants": [
+      "Diognetus"
+    ],
+    "passage_ids": [
+      "bookI_6"
+    ],
+    "count": 1
+  },
+  "Epictetus": {
+    "canonical_text": "Epictetus",
+    "type": "PERSON",
+    "variants": [
+      "Epictetus"
+    ],
+    "passage_ids": [
+      "bookI_7"
+    ],
+    "count": 1
+  },
+  "Fronto": {
+    "canonical_text": "Fronto",
+    "type": "PERSON",
+    "variants": [
+      "Fronto"
+    ],
+    "passage_ids": [
+      "bookI_11"
+    ],
+    "count": 1
+  },
+  "Hadrian": {
+    "canonical_text": "Hadrian",
+    "type": "PERSON",
+    "variants": [
+      "Hadrian"
+    ],
+    "passage_ids": [
+      "bookIV_33"
+    ],
+    "count": 1
+  },
+  "Heraclitus": {
+    "canonical_text": "Heraclitus",
+    "type": "PERSON",
+    "variants": [
+      "Heraclitus"
+    ],
+    "passage_ids": [
+      "bookIV_46"
+    ],
+    "count": 1
+  },
+  "Marcus": {
+    "canonical_text": "Marcus",
+    "type": "PERSON",
+    "variants": [
+      "Marcus"
+    ],
+    "passage_ids": [
+      "bookIII_14",
+      "bookII_5",
+      "bookI_4",
+      "bookV_29"
+    ],
+    "count": 4
+  },
+  "Maximus": {
+    "canonical_text": "Maximus",
+    "type": "PERSON",
+    "variants": [
+      "Maximus"
+    ],
+    "passage_ids": [
+      "bookI_15"
+    ],
+    "count": 1
+  },
+  "Monimus": {
+    "canonical_text": "Monimus",
+    "type": "PERSON",
+    "variants": [
+      "Monimus"
+    ],
+    "passage_ids": [
+      "bookII_15"
+    ],
+    "count": 1
+  },
+  "Rusticus": {
+    "canonical_text": "Rusticus",
+    "type": "PERSON",
+    "variants": [
+      "Rusticus"
+    ],
+    "passage_ids": [
+      "bookI_7"
+    ],
+    "count": 1
+  },
+  "Severus": {
+    "canonical_text": "Severus",
+    "type": "PERSON",
+    "variants": [
+      "Severus"
+    ],
+    "passage_ids": [
+      "bookI_14"
+    ],
+    "count": 1
+  },
+  "Sextus": {
+    "canonical_text": "Sextus",
+    "type": "PERSON",
+    "variants": [
+      "Sextus"
+    ],
+    "passage_ids": [
+      "bookI_9"
+    ],
+    "count": 1
+  },
+  "Socrates": {
+    "canonical_text": "Socrates",
+    "type": "PERSON",
+    "variants": [
+      "Socrates"
+    ],
+    "passage_ids": [
+      "bookIII_6",
+      "bookI_16"
+    ],
+    "count": 2
+  },
+  "Theophrastus": {
+    "canonical_text": "Theophrastus",
+    "type": "PERSON",
+    "variants": [
+      "Theophrastus"
+    ],
+    "passage_ids": [
+      "bookII_10"
+    ],
+    "count": 1
+  },
+  "Zeus": {
+    "canonical_text": "Zeus",
+    "type": "PERSON",
+    "variants": [
+      "Zeus"
+    ],
+    "passage_ids": [
+      "bookV_8"
+    ],
+    "count": 1
+  },
+  "alexander": {
+    "canonical_text": "alexander",
+    "type": "PERSON",
+    "variants": [
+      "alexander"
+    ],
+    "passage_ids": [
+      "bookIII_3"
+    ],
+    "count": 1
+  },
+  "children": {
+    "canonical_text": "children",
+    "type": "PERSON",
+    "variants": [
+      "children"
+    ],
+    "passage_ids": [
+      "bookI_13"
+    ],
+    "count": 1
+  },
+  "citizen": {
+    "canonical_text": "citizen",
+    "type": "PERSON",
+    "variants": [
+      "citizen"
+    ],
+    "passage_ids": [
+      "bookV_22"
+    ],
+    "count": 1
+  },
+  "enemy": {
+    "canonical_text": "enemy",
+    "type": "PERSON",
+    "variants": [
+      "enemy"
+    ],
+    "passage_ids": [
+      "bookIV_6"
+    ],
+    "count": 1
+  },
+  "father": {
+    "canonical_text": "father",
+    "type": "PERSON",
+    "variants": [
+      "father"
+    ],
+    "passage_ids": [
+      "bookI_2"
+    ],
+    "count": 1
+  },
+  "friend": {
+    "canonical_text": "friend",
+    "type": "PERSON",
+    "variants": [
+      "friend"
+    ],
+    "passage_ids": [
+      "bookIV_12"
+    ],
+    "count": 1
+  },
+  "god": {
+    "canonical_text": "god",
+    "type": "PERSON",
+    "variants": [
+      "god",
+      "gods"
+    ],
+    "passage_ids": [
+      "bookII_11",
+      "bookIV_23",
+      "bookIV_31"
+    ],
+    "count": 3
+  },
+  "good man": {
+    "canonical_text": "good man",
+    "type": "PERSON",
+    "variants": [
+      "good man"
+    ],
+    "passage_ids": [
+      "bookV_12",
+      "bookV_15"
+    ],
+    "count": 2
+  },
+  "good masters": {
+    "canonical_text": "good masters",
+    "type": "PERSON",
+    "variants": [
+      "good masters"
+    ],
+    "passage_ids": [
+      "bookI_4"
+    ],
+    "count": 1
+  },
+  "governor": {
+    "canonical_text": "governor",
+    "type": "PERSON",
+    "variants": [
+      "governor"
+    ],
+    "passage_ids": [
+      "bookI_5"
+    ],
+    "count": 1
+  },
+  "great-grandfather": {
+    "canonical_text": "great-grandfather",
+    "type": "PERSON",
+    "variants": [
+      "great-grandfather"
+    ],
+    "passage_ids": [
+      "bookI_4"
+    ],
+    "count": 1
+  },
+  "ill men": {
+    "canonical_text": "ill men",
+    "type": "PERSON",
+    "variants": [
+      "ill men"
+    ],
+    "passage_ids": [
+      "bookV_17"
+    ],
+    "count": 1
+  },
+  "mankind": {
+    "canonical_text": "mankind",
+    "type": "PERSON",
+    "variants": [
+      "mankind"
+    ],
+    "passage_ids": [
+      "bookIV_32"
+    ],
+    "count": 1
+  },
+  "mother": {
+    "canonical_text": "mother",
+    "type": "PERSON",
+    "variants": [
+      "mother"
+    ],
+    "passage_ids": [
+      "bookI_3"
+    ],
+    "count": 1
+  },
+  "other men": {
+    "canonical_text": "other men",
+    "type": "PERSON",
+    "variants": [
+      "other men"
+    ],
+    "passage_ids": [
+      "bookII_6"
+    ],
+    "count": 1
+  },
+  "patricians": {
+    "canonical_text": "patricians",
+    "type": "PERSON",
+    "variants": [
+      "patricians"
+    ],
+    "passage_ids": [
+      "bookI_11"
+    ],
+    "count": 1
+  },
+  "reporter": {
+    "canonical_text": "reporter",
+    "type": "PERSON",
+    "variants": [
+      "reporter"
+    ],
+    "passage_ids": [
+      "bookIV_35"
+    ],
+    "count": 1
+  },
+  "self": {
+    "canonical_text": "self",
+    "type": "CONCEPT",
+    "variants": [
+      "self"
+    ],
+    "passage_ids": [
+      "bookII_6",
+      "bookV_1"
+    ],
+    "count": 2
+  },
+  "the gods": {
+    "canonical_text": "the gods",
+    "type": "PERSON",
+    "variants": [
+      "the gods"
+    ],
+    "passage_ids": [
+      "bookII_4"
+    ],
+    "count": 1
+  },
+  "trajan": {
+    "canonical_text": "trajan",
+    "type": "PERSON",
+    "variants": [
+      "trajan"
+    ],
+    "passage_ids": [
+      "bookIV_32"
+    ],
+    "count": 1
+  },
+  "Cynic philosophy": {
+    "canonical_text": "Cynic philosophy",
+    "type": "CONCEPT",
+    "variants": [
+      "Cynic philosophy"
+    ],
+    "passage_ids": [
+      "bookII_15"
+    ],
+    "count": 1
+  },
+  "Grecian discipline": {
+    "canonical_text": "Grecian discipline",
+    "type": "CONCEPT",
+    "variants": [
+      "Grecian discipline"
+    ],
+    "passage_ids": [
+      "bookI_6"
+    ],
+    "count": 1
+  },
+  "Nature": {
+    "canonical_text": "Nature",
+    "type": "CONCEPT",
+    "variants": [
+      "Nature",
+      "nature"
+    ],
+    "passage_ids": [
+      "bookIII_2",
+      "bookIII_4",
+      "bookIII_9",
+      "bookII_14",
+      "bookII_16",
+      "bookII_17",
+      "bookII_3",
+      "bookIV_14",
+      "bookIV_19",
+      "bookIV_23",
+      "bookIV_31",
+      "bookIV_36",
+      "bookIV_44",
+      "bookIV_48",
+      "bookIV_49",
+      "bookIV_5",
+      "bookIV_51",
+      "bookIV_9",
+      "bookV_1",
+      "bookV_21",
+      "bookV_3",
+      "bookV_32",
+      "bookV_4",
+      "bookV_8"
+    ],
+    "count": 24
+  },
+  "action": {
+    "canonical_text": "action",
+    "type": "PRACTICE",
+    "variants": [
+      "action"
+    ],
+    "passage_ids": [
+      "bookII_9"
+    ],
+    "count": 1
+  },
+  "agency": {
+    "canonical_text": "agency",
+    "type": "CONCEPT",
+    "variants": [
+      "agency"
+    ],
+    "passage_ids": [
+      "bookIV_17"
+    ],
+    "count": 1
+  },
+  "air": {
+    "canonical_text": "air",
+    "type": "CONCEPT",
+    "variants": [
+      "air"
+    ],
+    "passage_ids": [
+      "bookV_4"
+    ],
+    "count": 1
+  },
+  "alteration": {
+    "canonical_text": "alteration",
+    "type": "CONCEPT",
+    "variants": [
+      "alteration"
+    ],
+    "passage_ids": [
+      "bookIV_36"
+    ],
+    "count": 1
+  },
+  "ambition": {
+    "canonical_text": "ambition",
+    "type": "CONCEPT",
+    "variants": [
+      "ambition"
+    ],
+    "passage_ids": [
+      "bookV_12"
+    ],
+    "count": 1
+  },
+  "aversions": {
+    "canonical_text": "aversions",
+    "type": "CONCEPT",
+    "variants": [
+      "aversions"
+    ],
+    "passage_ids": [
+      "bookIV_38"
+    ],
+    "count": 1
+  },
+  "bad": {
+    "canonical_text": "bad",
+    "type": "CONCEPT",
+    "variants": [
+      "bad"
+    ],
+    "passage_ids": [
+      "bookIV_42"
+    ],
+    "count": 1
+  },
+  "beastliness": {
+    "canonical_text": "beastliness",
+    "type": "CONCEPT",
+    "variants": [
+      "beastliness"
+    ],
+    "passage_ids": [
+      "bookV_11"
+    ],
+    "count": 1
+  },
+  "beauty": {
+    "canonical_text": "beauty",
+    "type": "CONCEPT",
+    "variants": [
+      "beauty"
+    ],
+    "passage_ids": [
+      "bookIII_2"
+    ],
+    "count": 1
+  },
+  "behavior": {
+    "canonical_text": "behavior",
+    "type": "CONCEPT",
+    "variants": [
+      "behavior"
+    ],
+    "passage_ids": [
+      "bookIII_13"
+    ],
+    "count": 1
+  },
+  "body": {
+    "canonical_text": "body",
+    "type": "CONCEPT",
+    "variants": [
+      "body"
+    ],
+    "passage_ids": [
+      "bookIII_3",
+      "bookII_2",
+      "bookV_13"
+    ],
+    "count": 3
+  },
+  "body politic": {
+    "canonical_text": "body politic",
+    "type": "CONCEPT",
+    "variants": [
+      "body politic"
+    ],
+    "passage_ids": [
+      "bookV_22"
+    ],
+    "count": 1
+  },
+  "breath": {
+    "canonical_text": "breath",
+    "type": "CONCEPT",
+    "variants": [
+      "breath"
+    ],
+    "passage_ids": [
+      "bookII_2"
+    ],
+    "count": 1
+  },
+  "business": {
+    "canonical_text": "business",
+    "type": "CONCEPT",
+    "variants": [
+      "business"
+    ],
+    "passage_ids": [
+      "bookIV_31",
+      "bookI_12"
+    ],
+    "count": 2
+  },
+  "calamity": {
+    "canonical_text": "calamity",
+    "type": "CONCEPT",
+    "variants": [
+      "calamity"
+    ],
+    "passage_ids": [
+      "bookV_8"
+    ],
+    "count": 1
+  },
+  "calumny": {
+    "canonical_text": "calumny",
+    "type": "CONCEPT",
+    "variants": [
+      "calumny"
+    ],
+    "passage_ids": [
+      "bookIV_44"
+    ],
+    "count": 1
+  },
+  "chance": {
+    "canonical_text": "chance",
+    "type": "CONCEPT",
+    "variants": [
+      "chance",
+      "change"
+    ],
+    "passage_ids": [
+      "bookII_3",
+      "bookIV_27",
+      "bookIV_42",
+      "bookIV_43",
+      "bookI_8",
+      "bookV_23"
+    ],
+    "count": 6
+  },
+  "character": {
+    "canonical_text": "character",
+    "type": "CONCEPT",
+    "variants": [
+      "character"
+    ],
+    "passage_ids": [
+      "bookI_2"
+    ],
+    "count": 1
+  },
+  "commendation": {
+    "canonical_text": "commendation",
+    "type": "CONCEPT",
+    "variants": [
+      "commendation"
+    ],
+    "passage_ids": [
+      "bookIV_19"
+    ],
+    "count": 1
+  },
+  "common good": {
+    "canonical_text": "common good",
+    "type": "CONCEPT",
+    "variants": [
+      "common good"
+    ],
+    "passage_ids": [
+      "bookIV_33"
+    ],
+    "count": 1
+  },
+  "common interest": {
+    "canonical_text": "common interest",
+    "type": "CONCEPT",
+    "variants": [
+      "common interest",
+      "own interest"
+    ],
+    "passage_ids": [
+      "bookV_3"
+    ],
+    "count": 1
+  },
+  "common notion": {
+    "canonical_text": "common notion",
+    "type": "CONCEPT",
+    "variants": [
+      "common notion"
+    ],
+    "passage_ids": [
+      "bookIV_36"
+    ],
+    "count": 1
+  },
+  "commonwealth": {
+    "canonical_text": "commonwealth",
+    "type": "CONCEPT",
+    "variants": [
+      "commonwealth"
+    ],
+    "passage_ids": [
+      "bookI_14"
+    ],
+    "count": 1
+  },
+  "contingencies of fortune": {
+    "canonical_text": "contingencies of fortune",
+    "type": "CONCEPT",
+    "variants": [
+      "contingencies of fortune"
+    ],
+    "passage_ids": [
+      "bookV_19"
+    ],
+    "count": 1
+  },
+  "contrivance": {
+    "canonical_text": "contrivance",
+    "type": "CONCEPT",
+    "variants": [
+      "contrivance"
+    ],
+    "passage_ids": [
+      "bookIV_27"
+    ],
+    "count": 1
+  },
+  "conviction": {
+    "canonical_text": "conviction",
+    "type": "CONCEPT",
+    "variants": [
+      "conviction"
+    ],
+    "passage_ids": [
+      "bookIV_22"
+    ],
+    "count": 1
+  },
+  "corporeal covering": {
+    "canonical_text": "corporeal covering",
+    "type": "CONCEPT",
+    "variants": [
+      "corporeal covering"
+    ],
+    "passage_ids": [
+      "bookIV_39"
+    ],
+    "count": 1
+  },
+  "cosmic cycle": {
+    "canonical_text": "cosmic cycle",
+    "type": "CONCEPT",
+    "variants": [
+      "cosmic cycle"
+    ],
+    "passage_ids": [
+      "bookIV_46"
+    ],
+    "count": 1
+  },
+  "death": {
+    "canonical_text": "death",
+    "type": "CONCEPT",
+    "variants": [
+      "death",
+      "earth"
+    ],
+    "passage_ids": [
+      "bookIII_1",
+      "bookIII_14",
+      "bookIII_8",
+      "bookII_11",
+      "bookII_17",
+      "bookIV_17",
+      "bookIV_44",
+      "bookIV_47",
+      "bookIV_48",
+      "bookIV_5",
+      "bookIV_50",
+      "bookV_29",
+      "bookV_4"
+    ],
+    "count": 13
+  },
+  "destiny": {
+    "canonical_text": "destiny",
+    "type": "CONCEPT",
+    "variants": [
+      "destiny"
+    ],
+    "passage_ids": [
+      "bookIII_11",
+      "bookII_5"
+    ],
+    "count": 2
+  },
+  "dignity of nature": {
+    "canonical_text": "dignity of nature",
+    "type": "CONCEPT",
+    "variants": [
+      "dignity of nature"
+    ],
+    "passage_ids": [
+      "bookIV_32"
+    ],
+    "count": 1
+  },
+  "disease": {
+    "canonical_text": "disease",
+    "type": "CONCEPT",
+    "variants": [
+      "disease"
+    ],
+    "passage_ids": [
+      "bookIV_44"
+    ],
+    "count": 1
+  },
+  "disposition": {
+    "canonical_text": "disposition",
+    "type": "CONCEPT",
+    "variants": [
+      "disposition"
+    ],
+    "passage_ids": [
+      "bookIV_6"
+    ],
+    "count": 1
+  },
+  "dissimulation": {
+    "canonical_text": "dissimulation",
+    "type": "CONCEPT",
+    "variants": [
+      "dissimulation"
+    ],
+    "passage_ids": [
+      "bookI_11"
+    ],
+    "count": 1
+  },
+  "divine things": {
+    "canonical_text": "divine things",
+    "type": "CONCEPT",
+    "variants": [
+      "divine things"
+    ],
+    "passage_ids": [
+      "bookIII_13"
+    ],
+    "count": 1
+  },
+  "divinity": {
+    "canonical_text": "divinity",
+    "type": "CONCEPT",
+    "variants": [
+      "divinity"
+    ],
+    "passage_ids": [
+      "bookIII_12",
+      "bookIII_16",
+      "bookIII_5",
+      "bookIV_16",
+      "bookV_10"
+    ],
+    "count": 5
+  },
+  "divinity within": {
+    "canonical_text": "divinity within",
+    "type": "CONCEPT",
+    "variants": [
+      "divinity within"
+    ],
+    "passage_ids": [
+      "bookII_13"
+    ],
+    "count": 1
+  },
+  "duty": {
+    "canonical_text": "duty",
+    "type": "CONCEPT",
+    "variants": [
+      "duty"
+    ],
+    "passage_ids": [
+      "bookIII_1"
+    ],
+    "count": 1
+  },
+  "education": {
+    "canonical_text": "education",
+    "type": "CONCEPT",
+    "variants": [
+      "education"
+    ],
+    "passage_ids": [
+      "bookI_13"
+    ],
+    "count": 1
+  },
+  "equality": {
+    "canonical_text": "equality",
+    "type": "CONCEPT",
+    "variants": [
+      "equality",
+      "reality"
+    ],
+    "passage_ids": [
+      "bookIV_11",
+      "bookIV_15"
+    ],
+    "count": 2
+  },
+  "equanimity": {
+    "canonical_text": "equanimity",
+    "type": "CONCEPT",
+    "variants": [
+      "equanimity"
+    ],
+    "passage_ids": [
+      "bookV_9"
+    ],
+    "count": 1
+  },
+  "error": {
+    "canonical_text": "error",
+    "type": "CONCEPT",
+    "variants": [
+      "error"
+    ],
+    "passage_ids": [
+      "bookV_28"
+    ],
+    "count": 1
+  },
+  "eternity": {
+    "canonical_text": "eternity",
+    "type": "CONCEPT",
+    "variants": [
+      "eternity"
+    ],
+    "passage_ids": [
+      "bookIV_50"
+    ],
+    "count": 1
+  },
+  "event": {
+    "canonical_text": "event",
+    "type": "CONCEPT",
+    "variants": [
+      "event"
+    ],
+    "passage_ids": [
+      "bookIV_44"
+    ],
+    "count": 1
+  },
+  "evil": {
+    "canonical_text": "evil",
+    "type": "CONCEPT",
+    "variants": [
+      "evil"
+    ],
+    "passage_ids": [
+      "bookII_1"
+    ],
+    "count": 1
+  },
+  "expectation": {
+    "canonical_text": "expectation",
+    "type": "CONCEPT",
+    "variants": [
+      "expectation"
+    ],
+    "passage_ids": [
+      "bookV_17"
+    ],
+    "count": 1
+  },
+  "externals": {
+    "canonical_text": "externals",
+    "type": "CONCEPT",
+    "variants": [
+      "externals"
+    ],
+    "passage_ids": [
+      "bookII_11"
+    ],
+    "count": 1
+  },
+  "fame": {
+    "canonical_text": "fame",
+    "type": "CONCEPT",
+    "variants": [
+      "fame"
+    ],
+    "passage_ids": [
+      "bookIII_10",
+      "bookIV_19",
+      "bookIV_33"
+    ],
+    "count": 3
+  },
+  "fate": {
+    "canonical_text": "fate",
+    "type": "CONCEPT",
+    "variants": [
+      "fate"
+    ],
+    "passage_ids": [
+      "bookIV_25",
+      "bookIV_26"
+    ],
+    "count": 2
+  },
+  "fault": {
+    "canonical_text": "fault",
+    "type": "CONCEPT",
+    "variants": [
+      "fault"
+    ],
+    "passage_ids": [
+      "bookIV_26",
+      "bookV_22"
+    ],
+    "count": 2
+  },
+  "foreign assistance": {
+    "canonical_text": "foreign assistance",
+    "type": "CONCEPT",
+    "variants": [
+      "foreign assistance"
+    ],
+    "passage_ids": [
+      "bookV_14"
+    ],
+    "count": 1
+  },
+  "form": {
+    "canonical_text": "form",
+    "type": "CONCEPT",
+    "variants": [
+      "form"
+    ],
+    "passage_ids": [
+      "bookV_13"
+    ],
+    "count": 1
+  },
+  "fortitude": {
+    "canonical_text": "fortitude",
+    "type": "STATE",
+    "variants": [
+      "fortitude"
+    ],
+    "passage_ids": [
+      "bookI_16"
+    ],
+    "count": 1
+  },
+  "frankincense": {
+    "canonical_text": "frankincense",
+    "type": "CONCEPT",
+    "variants": [
+      "frankincense"
+    ],
+    "passage_ids": [
+      "bookIV_15"
+    ],
+    "count": 1
+  },
+  "freedom": {
+    "canonical_text": "freedom",
+    "type": "STATE",
+    "variants": [
+      "freedom"
+    ],
+    "passage_ids": [
+      "bookII_17"
+    ],
+    "count": 1
+  },
+  "freedom and plain-dealing": {
+    "canonical_text": "freedom and plain-dealing",
+    "type": "CONCEPT",
+    "variants": [
+      "freedom and plain-dealing"
+    ],
+    "passage_ids": [
+      "bookI_6"
+    ],
+    "count": 1
+  },
+  "freedom of mind": {
+    "canonical_text": "freedom of mind",
+    "type": "CONCEPT",
+    "variants": [
+      "freedom of mind"
+    ],
+    "passage_ids": [
+      "bookI_8"
+    ],
+    "count": 1
+  },
+  "friendship": {
+    "canonical_text": "friendship",
+    "type": "CONCEPT",
+    "variants": [
+      "friendship"
+    ],
+    "passage_ids": [
+      "bookI_13"
+    ],
+    "count": 1
+  },
+  "function": {
+    "canonical_text": "function",
+    "type": "CONCEPT",
+    "variants": [
+      "function"
+    ],
+    "passage_ids": [
+      "bookIV_13"
+    ],
+    "count": 1
+  },
+  "future": {
+    "canonical_text": "future",
+    "type": "CONCEPT",
+    "variants": [
+      "future"
+    ],
+    "passage_ids": [
+      "bookIII_10"
+    ],
+    "count": 1
+  },
+  "general end": {
+    "canonical_text": "general end",
+    "type": "CONCEPT",
+    "variants": [
+      "general end"
+    ],
+    "passage_ids": [
+      "bookII_7"
+    ],
+    "count": 1
+  },
+  "general good": {
+    "canonical_text": "general good",
+    "type": "CONCEPT",
+    "variants": [
+      "general good"
+    ],
+    "passage_ids": [
+      "bookIV_9"
+    ],
+    "count": 1
+  },
+  "generation": {
+    "canonical_text": "generation",
+    "type": "CONCEPT",
+    "variants": [
+      "generation"
+    ],
+    "passage_ids": [
+      "bookIV_5"
+    ],
+    "count": 1
+  },
+  "generative principle": {
+    "canonical_text": "generative principle",
+    "type": "CONCEPT",
+    "variants": [
+      "generative principle"
+    ],
+    "passage_ids": [
+      "bookIV_21"
+    ],
+    "count": 1
+  },
+  "generosity": {
+    "canonical_text": "generosity",
+    "type": "CONCEPT",
+    "variants": [
+      "generosity"
+    ],
+    "passage_ids": [
+      "bookI_14",
+      "bookI_3"
+    ],
+    "count": 2
+  },
+  "glory": {
+    "canonical_text": "glory",
+    "type": "CONCEPT",
+    "variants": [
+      "glory"
+    ],
+    "passage_ids": [
+      "bookV_31"
+    ],
+    "count": 1
+  },
+  "godlike way of living": {
+    "canonical_text": "godlike way of living",
+    "type": "CONCEPT",
+    "variants": [
+      "godlike way of living"
+    ],
+    "passage_ids": [
+      "bookII_5"
+    ],
+    "count": 1
+  },
+  "good": {
+    "canonical_text": "good",
+    "type": "CONCEPT",
+    "variants": [
+      "good"
+    ],
+    "passage_ids": [
+      "bookII_1",
+      "bookIV_42"
+    ],
+    "count": 2
+  },
+  "good nature": {
+    "canonical_text": "good nature",
+    "type": "CONCEPT",
+    "variants": [
+      "good nature"
+    ],
+    "passage_ids": [
+      "bookIV_20",
+      "bookIV_25"
+    ],
+    "count": 2
+  },
+  "gratitude": {
+    "canonical_text": "gratitude",
+    "type": "STATE",
+    "variants": [
+      "gratitude"
+    ],
+    "passage_ids": [
+      "bookII_3",
+      "bookV_4"
+    ],
+    "count": 2
+  },
+  "greatness of mind": {
+    "canonical_text": "greatness of mind",
+    "type": "CONCEPT",
+    "variants": [
+      "greatness of mind"
+    ],
+    "passage_ids": [
+      "bookI_15"
+    ],
+    "count": 1
+  },
+  "guided principle": {
+    "canonical_text": "guided principle",
+    "type": "CONCEPT",
+    "variants": [
+      "guided principle",
+      "guiding principle"
+    ],
+    "passage_ids": [
+      "bookIII_4",
+      "bookIII_9"
+    ],
+    "count": 2
+  },
+  "happiness": {
+    "canonical_text": "happiness",
+    "type": "STATE",
+    "variants": [
+      "happiness",
+      "unhappiness"
+    ],
+    "passage_ids": [
+      "bookII_8"
+    ],
+    "count": 1
+  },
+  "harmony": {
+    "canonical_text": "harmony",
+    "type": "STATE",
+    "variants": [
+      "harmony"
+    ],
+    "passage_ids": [
+      "bookIII_2",
+      "bookIV_48"
+    ],
+    "count": 2
+  },
+  "haste": {
+    "canonical_text": "haste",
+    "type": "CONCEPT",
+    "variants": [
+      "haste"
+    ],
+    "passage_ids": [
+      "bookIII_14"
+    ],
+    "count": 1
+  },
+  "higher beings": {
+    "canonical_text": "higher beings",
+    "type": "CONCEPT",
+    "variants": [
+      "higher beings"
+    ],
+    "passage_ids": [
+      "bookV_30"
+    ],
+    "count": 1
+  },
+  "honesty": {
+    "canonical_text": "honesty",
+    "type": "CONCEPT",
+    "variants": [
+      "honesty",
+      "honey"
+    ],
+    "passage_ids": [
+      "bookIV_18",
+      "bookIV_25",
+      "bookV_3",
+      "bookV_6"
+    ],
+    "count": 4
+  },
+  "human nature": {
+    "canonical_text": "human nature",
+    "type": "CONCEPT",
+    "variants": [
+      "human nature"
+    ],
+    "passage_ids": [
+      "bookV_15",
+      "bookV_20",
+      "bookV_9"
+    ],
+    "count": 3
+  },
+  "human things": {
+    "canonical_text": "human things",
+    "type": "CONCEPT",
+    "variants": [
+      "human things"
+    ],
+    "passage_ids": [
+      "bookIII_13"
+    ],
+    "count": 1
+  },
+  "ignorance": {
+    "canonical_text": "ignorance",
+    "type": "STATE",
+    "variants": [
+      "ignorance"
+    ],
+    "passage_ids": [
+      "bookII_1",
+      "bookII_13",
+      "bookII_8",
+      "bookIV_29",
+      "bookIV_46",
+      "bookV_10",
+      "bookV_18"
+    ],
+    "count": 7
+  },
+  "ill deeds": {
+    "canonical_text": "ill deeds",
+    "type": "CONCEPT",
+    "variants": [
+      "ill deeds"
+    ],
+    "passage_ids": [
+      "bookV_17"
+    ],
+    "count": 1
+  },
+  "imagination": {
+    "canonical_text": "imagination",
+    "type": "STATE",
+    "variants": [
+      "imagination"
+    ],
+    "passage_ids": [
+      "bookIII_1"
+    ],
+    "count": 1
+  },
+  "impermanence": {
+    "canonical_text": "impermanence",
+    "type": "CONCEPT",
+    "variants": [
+      "impermanence"
+    ],
+    "passage_ids": [
+      "bookIV_43",
+      "bookV_23"
+    ],
+    "count": 2
+  },
+  "impossibility": {
+    "canonical_text": "impossibility",
+    "type": "CONCEPT",
+    "variants": [
+      "impossibility"
+    ],
+    "passage_ids": [
+      "bookV_17"
+    ],
+    "count": 1
+  },
+  "indifference": {
+    "canonical_text": "indifference",
+    "type": "STATE",
+    "variants": [
+      "indifference"
+    ],
+    "passage_ids": [
+      "bookIV_15",
+      "bookV_15",
+      "bookV_29",
+      "bookV_31"
+    ],
+    "count": 4
+  },
+  "indifferent things": {
+    "canonical_text": "indifferent things",
+    "type": "CONCEPT",
+    "variants": [
+      "indifferent things"
+    ],
+    "passage_ids": [
+      "bookIII_11"
+    ],
+    "count": 1
+  },
+  "indirectness": {
+    "canonical_text": "indirectness",
+    "type": "CONCEPT",
+    "variants": [
+      "indirectness"
+    ],
+    "passage_ids": [
+      "bookI_10"
+    ],
+    "count": 1
+  },
+  "individual nature": {
+    "canonical_text": "individual nature",
+    "type": "CONCEPT",
+    "variants": [
+      "individual nature"
+    ],
+    "passage_ids": [
+      "bookV_25"
+    ],
+    "count": 1
+  },
+  "inner god": {
+    "canonical_text": "inner god",
+    "type": "CONCEPT",
+    "variants": [
+      "inner god"
+    ],
+    "passage_ids": [
+      "bookII_17"
+    ],
+    "count": 1
+  },
+  "inner self": {
+    "canonical_text": "inner self",
+    "type": "CONCEPT",
+    "variants": [
+      "inner self"
+    ],
+    "passage_ids": [
+      "bookIII_3"
+    ],
+    "count": 1
+  },
+  "instability": {
+    "canonical_text": "instability",
+    "type": "CONCEPT",
+    "variants": [
+      "instability"
+    ],
+    "passage_ids": [
+      "bookIV_42"
+    ],
+    "count": 1
+  },
+  "intellectual honesty": {
+    "canonical_text": "intellectual honesty",
+    "type": "CONCEPT",
+    "variants": [
+      "intellectual honesty"
+    ],
+    "passage_ids": [
+      "bookIV_37"
+    ],
+    "count": 1
+  },
+  "intention": {
+    "canonical_text": "intention",
+    "type": "CONCEPT",
+    "variants": [
+      "intention"
+    ],
+    "passage_ids": [
+      "bookIV_22"
+    ],
+    "count": 1
+  },
+  "internal disposition": {
+    "canonical_text": "internal disposition",
+    "type": "CONCEPT",
+    "variants": [
+      "internal disposition"
+    ],
+    "passage_ids": [
+      "bookV_25"
+    ],
+    "count": 1
+  },
+  "judgment": {
+    "canonical_text": "judgment",
+    "type": "STATE",
+    "variants": [
+      "judgment"
+    ],
+    "passage_ids": [
+      "bookV_32"
+    ],
+    "count": 1
+  },
+  "justice": {
+    "canonical_text": "justice",
+    "type": "CONCEPT",
+    "variants": [
+      "justice"
+    ],
+    "passage_ids": [
+      "bookIII_11",
+      "bookIII_4",
+      "bookIII_6",
+      "bookIV_10",
+      "bookIV_12",
+      "bookIV_26",
+      "bookI_14",
+      "bookV_12"
+    ],
+    "count": 8
+  },
+  "knowledge": {
+    "canonical_text": "knowledge",
+    "type": "CONCEPT",
+    "variants": [
+      "knowledge"
+    ],
+    "passage_ids": [
+      "bookV_32"
+    ],
+    "count": 1
+  },
+  "learning": {
+    "canonical_text": "learning",
+    "type": "CONCEPT",
+    "variants": [
+      "learning"
+    ],
+    "passage_ids": [
+      "bookIV_30"
+    ],
+    "count": 1
+  },
+  "liberality": {
+    "canonical_text": "liberality",
+    "type": "CONCEPT",
+    "variants": [
+      "liberality"
+    ],
+    "passage_ids": [
+      "bookI_4"
+    ],
+    "count": 1
+  },
+  "life": {
+    "canonical_text": "life",
+    "type": "CONCEPT",
+    "variants": [
+      "life"
+    ],
+    "passage_ids": [
+      "bookIII_10",
+      "bookII_14",
+      "bookII_6",
+      "bookIV_8"
+    ],
+    "count": 4
+  },
+  "loss": {
+    "canonical_text": "loss",
+    "type": "CONCEPT",
+    "variants": [
+      "loss"
+    ],
+    "passage_ids": [
+      "bookII_14"
+    ],
+    "count": 1
+  },
+  "lower creation": {
+    "canonical_text": "lower creation",
+    "type": "CONCEPT",
+    "variants": [
+      "lower creation"
+    ],
+    "passage_ids": [
+      "bookV_30"
+    ],
+    "count": 1
+  },
+  "luxury": {
+    "canonical_text": "luxury",
+    "type": "CONCEPT",
+    "variants": [
+      "luxury"
+    ],
+    "passage_ids": [
+      "bookI_3",
+      "bookV_12"
+    ],
+    "count": 2
+  },
+  "man": {
+    "canonical_text": "man",
+    "type": "CONCEPT",
+    "variants": [
+      "man"
+    ],
+    "passage_ids": [
+      "bookIV_8"
+    ],
+    "count": 1
+  },
+  "manliness": {
+    "canonical_text": "manliness",
+    "type": "CONCEPT",
+    "variants": [
+      "manliness"
+    ],
+    "passage_ids": [
+      "bookI_2"
+    ],
+    "count": 1
+  },
+  "materiality": {
+    "canonical_text": "materiality",
+    "type": "CONCEPT",
+    "variants": [
+      "materiality"
+    ],
+    "passage_ids": [
+      "bookV_23"
+    ],
+    "count": 1
+  },
+  "matter": {
+    "canonical_text": "matter",
+    "type": "CONCEPT",
+    "variants": [
+      "matter"
+    ],
+    "passage_ids": [
+      "bookV_13"
+    ],
+    "count": 1
+  },
+  "memorable action": {
+    "canonical_text": "memorable action",
+    "type": "CONCEPT",
+    "variants": [
+      "memorable action"
+    ],
+    "passage_ids": [
+      "bookIV_35"
+    ],
+    "count": 1
+  },
+  "mind": {
+    "canonical_text": "mind",
+    "type": "CONCEPT",
+    "variants": [
+      "mind",
+      "minds"
+    ],
+    "passage_ids": [
+      "bookIII_1",
+      "bookII_7",
+      "bookIV_3",
+      "bookIV_38",
+      "bookV_20"
+    ],
+    "count": 5
+  },
+  "misfortune": {
+    "canonical_text": "misfortune",
+    "type": "STATE",
+    "variants": [
+      "misfortune"
+    ],
+    "passage_ids": [
+      "bookIV_49"
+    ],
+    "count": 1
+  },
+  "modesty": {
+    "canonical_text": "modesty",
+    "type": "CONCEPT",
+    "variants": [
+      "modesty"
+    ],
+    "passage_ids": [
+      "bookIII_7",
+      "bookI_2",
+      "bookI_8"
+    ],
+    "count": 3
+  },
+  "mortality": {
+    "canonical_text": "mortality",
+    "type": "CONCEPT",
+    "variants": [
+      "mortality"
+    ],
+    "passage_ids": [
+      "bookIII_3",
+      "bookIV_6"
+    ],
+    "count": 2
+  },
+  "mutual harmony": {
+    "canonical_text": "mutual harmony",
+    "type": "CONCEPT",
+    "variants": [
+      "mutual harmony"
+    ],
+    "passage_ids": [
+      "bookV_30"
+    ],
+    "count": 1
+  },
+  "nature and reason": {
+    "canonical_text": "nature and reason",
+    "type": "CONCEPT",
+    "variants": [
+      "nature and reason"
+    ],
+    "passage_ids": [
+      "bookI_9"
+    ],
+    "count": 1
+  },
+  "nature of the universe": {
+    "canonical_text": "nature of the universe",
+    "type": "CONCEPT",
+    "variants": [
+      "nature of the universe",
+      "soul of the universe",
+      "universe nature"
+    ],
+    "passage_ids": [
+      "bookII_9",
+      "bookV_10",
+      "bookV_30"
+    ],
+    "count": 3
+  },
+  "necessity": {
+    "canonical_text": "necessity",
+    "type": "CONCEPT",
+    "variants": [
+      "necessity"
+    ],
+    "passage_ids": [
+      "bookIV_24",
+      "bookI_12"
+    ],
+    "count": 2
+  },
+  "oblivion": {
+    "canonical_text": "oblivion",
+    "type": "CONCEPT",
+    "variants": [
+      "oblivion"
+    ],
+    "passage_ids": [
+      "bookIV_33"
+    ],
+    "count": 1
+  },
+  "obstacle": {
+    "canonical_text": "obstacle",
+    "type": "CONCEPT",
+    "variants": [
+      "obstacle"
+    ],
+    "passage_ids": [
+      "bookV_20"
+    ],
+    "count": 1
+  },
+  "opinion": {
+    "canonical_text": "opinion",
+    "type": "CONCEPT",
+    "variants": [
+      "opinion"
+    ],
+    "passage_ids": [
+      "bookII_15",
+      "bookIV_11",
+      "bookIV_3",
+      "bookV_19"
+    ],
+    "count": 4
+  },
+  "opinionative faculty": {
+    "canonical_text": "opinionative faculty",
+    "type": "CONCEPT",
+    "variants": [
+      "opinionative faculty"
+    ],
+    "passage_ids": [
+      "bookIII_9"
+    ],
+    "count": 1
+  },
+  "opportunity": {
+    "canonical_text": "opportunity",
+    "type": "CONCEPT",
+    "variants": [
+      "opportunity"
+    ],
+    "passage_ids": [
+      "bookII_4"
+    ],
+    "count": 1
+  },
+  "order": {
+    "canonical_text": "order",
+    "type": "CONCEPT",
+    "variants": [
+      "order"
+    ],
+    "passage_ids": [
+      "bookIV_27"
+    ],
+    "count": 1
+  },
+  "other's thoughts": {
+    "canonical_text": "other's thoughts",
+    "type": "CONCEPT",
+    "variants": [
+      "other's thoughts"
+    ],
+    "passage_ids": [
+      "bookII_8"
+    ],
+    "count": 1
+  },
+  "outward object": {
+    "canonical_text": "outward object",
+    "type": "CONCEPT",
+    "variants": [
+      "outward object",
+      "outward objects"
+    ],
+    "passage_ids": [
+      "bookII_7",
+      "bookV_19"
+    ],
+    "count": 2
+  },
+  "own motions": {
+    "canonical_text": "own motions",
+    "type": "CONCEPT",
+    "variants": [
+      "own motions"
+    ],
+    "passage_ids": [
+      "bookII_8"
+    ],
+    "count": 1
+  },
+  "own nature": {
+    "canonical_text": "own nature",
+    "type": "CONCEPT",
+    "variants": [
+      "own nature"
+    ],
+    "passage_ids": [
+      "bookII_9"
+    ],
+    "count": 1
+  },
+  "part": {
+    "canonical_text": "part",
+    "type": "CONCEPT",
+    "variants": [
+      "part"
+    ],
+    "passage_ids": [
+      "bookII_9"
+    ],
+    "count": 1
+  },
+  "partisanship": {
+    "canonical_text": "partisanship",
+    "type": "CONCEPT",
+    "variants": [
+      "partisanship"
+    ],
+    "passage_ids": [
+      "bookI_5"
+    ],
+    "count": 1
+  },
+  "past": {
+    "canonical_text": "past",
+    "type": "CONCEPT",
+    "variants": [
+      "past"
+    ],
+    "passage_ids": [
+      "bookIII_10"
+    ],
+    "count": 1
+  },
+  "perception": {
+    "canonical_text": "perception",
+    "type": "CONCEPT",
+    "variants": [
+      "perception",
+      "perfection"
+    ],
+    "passage_ids": [
+      "bookIII_2",
+      "bookIV_2"
+    ],
+    "count": 2
+  },
+  "philosophy": {
+    "canonical_text": "philosophy",
+    "type": "PRACTICE",
+    "variants": [
+      "philosophy"
+    ],
+    "passage_ids": [
+      "bookIII_8",
+      "bookV_9"
+    ],
+    "count": 2
+  },
+  "piety": {
+    "canonical_text": "piety",
+    "type": "CONCEPT",
+    "variants": [
+      "piety"
+    ],
+    "passage_ids": [
+      "bookV_9"
+    ],
+    "count": 1
+  },
+  "pleasure": {
+    "canonical_text": "pleasure",
+    "type": "CONCEPT",
+    "variants": [
+      "pleasure",
+      "pleasures"
+    ],
+    "passage_ids": [
+      "bookIII_6",
+      "bookV_1",
+      "bookV_31"
+    ],
+    "count": 3
+  },
+  "praise": {
+    "canonical_text": "praise",
+    "type": "CONCEPT",
+    "variants": [
+      "praise"
+    ],
+    "passage_ids": [
+      "bookIV_20"
+    ],
+    "count": 1
+  },
+  "present": {
+    "canonical_text": "present",
+    "type": "CONCEPT",
+    "variants": [
+      "present"
+    ],
+    "passage_ids": [
+      "bookIII_10",
+      "bookII_14"
+    ],
+    "count": 2
+  },
+  "principle": {
+    "canonical_text": "principle",
+    "type": "CONCEPT",
+    "variants": [
+      "principle"
+    ],
+    "passage_ids": [
+      "bookIV_16",
+      "bookV_18"
+    ],
+    "count": 2
+  },
+  "probity": {
+    "canonical_text": "probity",
+    "type": "CONCEPT",
+    "variants": [
+      "probity"
+    ],
+    "passage_ids": [
+      "bookIII_16"
+    ],
+    "count": 1
+  },
+  "proportion": {
+    "canonical_text": "proportion",
+    "type": "CONCEPT",
+    "variants": [
+      "proportion"
+    ],
+    "passage_ids": [
+      "bookIV_32"
+    ],
+    "count": 1
+  },
+  "propriety": {
+    "canonical_text": "propriety",
+    "type": "CONCEPT",
+    "variants": [
+      "propriety"
+    ],
+    "passage_ids": [
+      "bookI_10"
+    ],
+    "count": 1
+  },
+  "providence": {
+    "canonical_text": "providence",
+    "type": "CONCEPT",
+    "variants": [
+      "providence"
+    ],
+    "passage_ids": [
+      "bookII_3"
+    ],
+    "count": 1
+  },
+  "prudence": {
+    "canonical_text": "prudence",
+    "type": "CONCEPT",
+    "variants": [
+      "prudence"
+    ],
+    "passage_ids": [
+      "bookIV_26",
+      "bookV_12",
+      "bookV_18"
+    ],
+    "count": 3
+  },
+  "public good": {
+    "canonical_text": "public good",
+    "type": "CONCEPT",
+    "variants": [
+      "public good"
+    ],
+    "passage_ids": [
+      "bookIV_12"
+    ],
+    "count": 1
+  },
+  "public interest": {
+    "canonical_text": "public interest",
+    "type": "CONCEPT",
+    "variants": [
+      "public interest"
+    ],
+    "passage_ids": [
+      "bookV_29"
+    ],
+    "count": 1
+  },
+  "purity": {
+    "canonical_text": "purity",
+    "type": "CONCEPT",
+    "variants": [
+      "purity"
+    ],
+    "passage_ids": [
+      "bookII_13"
+    ],
+    "count": 1
+  },
+  "purpose": {
+    "canonical_text": "purpose",
+    "type": "CONCEPT",
+    "variants": [
+      "purpose"
+    ],
+    "passage_ids": [
+      "bookIV_2",
+      "bookIV_26"
+    ],
+    "count": 2
+  },
+  "pursuits": {
+    "canonical_text": "pursuits",
+    "type": "CONCEPT",
+    "variants": [
+      "pursuits"
+    ],
+    "passage_ids": [
+      "bookIV_38"
+    ],
+    "count": 1
+  },
+  "rational constitution": {
+    "canonical_text": "rational constitution",
+    "type": "CONCEPT",
+    "variants": [
+      "rational constitution"
+    ],
+    "passage_ids": [
+      "bookIII_9"
+    ],
+    "count": 1
+  },
+  "rational mind": {
+    "canonical_text": "rational mind",
+    "type": "CONCEPT",
+    "variants": [
+      "rational mind"
+    ],
+    "passage_ids": [
+      "bookIII_6"
+    ],
+    "count": 1
+  },
+  "rational nature": {
+    "canonical_text": "rational nature",
+    "type": "CONCEPT",
+    "variants": [
+      "rational nature",
+      "rationality"
+    ],
+    "passage_ids": [
+      "bookIII_7",
+      "bookIV_5"
+    ],
+    "count": 2
+  },
+  "reason": {
+    "canonical_text": "reason",
+    "type": "CONCEPT",
+    "variants": [
+      "reason"
+    ],
+    "passage_ids": [
+      "bookIII_1",
+      "bookIII_12",
+      "bookIII_13",
+      "bookIII_16",
+      "bookIII_4",
+      "bookIII_5",
+      "bookII_10",
+      "bookII_16",
+      "bookII_4",
+      "bookII_5",
+      "bookIV_10",
+      "bookIV_12",
+      "bookIV_13",
+      "bookIV_21",
+      "bookIV_24",
+      "bookIV_29",
+      "bookIV_30",
+      "bookIV_37",
+      "bookIV_47",
+      "bookI_8",
+      "bookV_14",
+      "bookV_28",
+      "bookV_29",
+      "bookV_32",
+      "bookV_5",
+      "bookV_9"
+    ],
+    "count": 26
+  },
+  "reasoning faculty": {
+    "canonical_text": "reasoning faculty",
+    "type": "CONCEPT",
+    "variants": [
+      "reasoning faculty"
+    ],
+    "passage_ids": [
+      "bookV_14"
+    ],
+    "count": 1
+  },
+  "religion": {
+    "canonical_text": "religion",
+    "type": "CONCEPT",
+    "variants": [
+      "religion"
+    ],
+    "passage_ids": [
+      "bookI_3"
+    ],
+    "count": 1
+  },
+  "remonstration": {
+    "canonical_text": "remonstration",
+    "type": "CONCEPT",
+    "variants": [
+      "remonstration"
+    ],
+    "passage_ids": [
+      "bookI_13"
+    ],
+    "count": 1
+  },
+  "reputation": {
+    "canonical_text": "reputation",
+    "type": "CONCEPT",
+    "variants": [
+      "reputation"
+    ],
+    "passage_ids": [
+      "bookIV_12"
+    ],
+    "count": 1
+  },
+  "restraint": {
+    "canonical_text": "restraint",
+    "type": "CONCEPT",
+    "variants": [
+      "restraint"
+    ],
+    "passage_ids": [
+      "bookII_10"
+    ],
+    "count": 1
+  },
+  "righteousness": {
+    "canonical_text": "righteousness",
+    "type": "CONCEPT",
+    "variants": [
+      "righteousness"
+    ],
+    "passage_ids": [
+      "bookIV_18"
+    ],
+    "count": 1
+  },
+  "roving": {
+    "canonical_text": "roving",
+    "type": "CONCEPT",
+    "variants": [
+      "roving"
+    ],
+    "passage_ids": [
+      "bookII_7"
+    ],
+    "count": 1
+  },
+  "ruling part": {
+    "canonical_text": "ruling part",
+    "type": "CONCEPT",
+    "variants": [
+      "ruling part"
+    ],
+    "passage_ids": [
+      "bookII_2",
+      "bookV_11"
+    ],
+    "count": 2
+  },
+  "seasonability": {
+    "canonical_text": "seasonability",
+    "type": "CONCEPT",
+    "variants": [
+      "seasonability"
+    ],
+    "passage_ids": [
+      "bookIV_23"
+    ],
+    "count": 1
+  },
+  "seed": {
+    "canonical_text": "seed",
+    "type": "CONCEPT",
+    "variants": [
+      "seed"
+    ],
+    "passage_ids": [
+      "bookIV_36"
+    ],
+    "count": 1
+  },
+  "self-command": {
+    "canonical_text": "self-command",
+    "type": "CONCEPT",
+    "variants": [
+      "self-command"
+    ],
+    "passage_ids": [
+      "bookI_15"
+    ],
+    "count": 1
+  },
+  "self-kindness": {
+    "canonical_text": "self-kindness",
+    "type": "CONCEPT",
+    "variants": [
+      "self-kindness"
+    ],
+    "passage_ids": [
+      "bookIII_14"
+    ],
+    "count": 1
+  },
+  "self-mastery": {
+    "canonical_text": "self-mastery",
+    "type": "CONCEPT",
+    "variants": [
+      "self-mastery"
+    ],
+    "passage_ids": [
+      "bookI_16"
+    ],
+    "count": 1
+  },
+  "self-sufficiency": {
+    "canonical_text": "self-sufficiency",
+    "type": "CONCEPT",
+    "variants": [
+      "self-sufficiency"
+    ],
+    "passage_ids": [
+      "bookIII_5"
+    ],
+    "count": 1
+  },
+  "simplicity": {
+    "canonical_text": "simplicity",
+    "type": "CONCEPT",
+    "variants": [
+      "simplicity"
+    ],
+    "passage_ids": [
+      "bookI_5",
+      "bookV_9"
+    ],
+    "count": 2
+  },
+  "sincerity": {
+    "canonical_text": "sincerity",
+    "type": "CONCEPT",
+    "variants": [
+      "sincerity"
+    ],
+    "passage_ids": [
+      "bookIII_4"
+    ],
+    "count": 1
+  },
+  "slave": {
+    "canonical_text": "slave",
+    "type": "CONCEPT",
+    "variants": [
+      "slave"
+    ],
+    "passage_ids": [
+      "bookIV_31"
+    ],
+    "count": 1
+  },
+  "sobriety": {
+    "canonical_text": "sobriety",
+    "type": "CONCEPT",
+    "variants": [
+      "sobriety"
+    ],
+    "passage_ids": [
+      "bookIV_20"
+    ],
+    "count": 1
+  },
+  "social balance": {
+    "canonical_text": "social balance",
+    "type": "CONCEPT",
+    "variants": [
+      "social balance"
+    ],
+    "passage_ids": [
+      "bookIII_8"
+    ],
+    "count": 1
+  },
+  "social disposition": {
+    "canonical_text": "social disposition",
+    "type": "CONCEPT",
+    "variants": [
+      "social disposition"
+    ],
+    "passage_ids": [
+      "bookV_30"
+    ],
+    "count": 1
+  },
+  "social duty": {
+    "canonical_text": "social duty",
+    "type": "CONCEPT",
+    "variants": [
+      "social duty"
+    ],
+    "passage_ids": [
+      "bookV_1",
+      "bookV_6"
+    ],
+    "count": 2
+  },
+  "social nature": {
+    "canonical_text": "social nature",
+    "type": "CONCEPT",
+    "variants": [
+      "social nature"
+    ],
+    "passage_ids": [
+      "bookIII_7"
+    ],
+    "count": 1
+  },
+  "soul": {
+    "canonical_text": "soul",
+    "type": "CONCEPT",
+    "variants": [
+      "soul"
+    ],
+    "passage_ids": [
+      "bookIII_10",
+      "bookIII_3",
+      "bookII_16",
+      "bookIV_21",
+      "bookV_11",
+      "bookV_13",
+      "bookV_19"
+    ],
+    "count": 7
+  },
+  "soundness": {
+    "canonical_text": "soundness",
+    "type": "CONCEPT",
+    "variants": [
+      "soundness"
+    ],
+    "passage_ids": [
+      "bookIV_51"
+    ],
+    "count": 1
+  },
+  "spiritual release": {
+    "canonical_text": "spiritual release",
+    "type": "CONCEPT",
+    "variants": [
+      "spiritual release"
+    ],
+    "passage_ids": [
+      "bookIII_3"
+    ],
+    "count": 1
+  },
+  "strength": {
+    "canonical_text": "strength",
+    "type": "CONCEPT",
+    "variants": [
+      "strength"
+    ],
+    "passage_ids": [
+      "bookV_19"
+    ],
+    "count": 1
+  },
+  "subordination": {
+    "canonical_text": "subordination",
+    "type": "CONCEPT",
+    "variants": [
+      "subordination"
+    ],
+    "passage_ids": [
+      "bookV_30"
+    ],
+    "count": 1
+  },
+  "temperance": {
+    "canonical_text": "temperance",
+    "type": "CONCEPT",
+    "variants": [
+      "temperance"
+    ],
+    "passage_ids": [
+      "bookIII_6",
+      "bookV_12"
+    ],
+    "count": 2
+  },
+  "the divinity in the soul": {
+    "canonical_text": "the divinity in the soul",
+    "type": "CONCEPT",
+    "variants": [
+      "the divinity in the soul"
+    ],
+    "passage_ids": [
+      "bookIII_7"
+    ],
+    "count": 1
+  },
+  "the governing principle": {
+    "canonical_text": "the governing principle",
+    "type": "CONCEPT",
+    "variants": [
+      "the governing principle"
+    ],
+    "passage_ids": [
+      "bookV_21"
+    ],
+    "count": 1
+  },
+  "the ruling faculty": {
+    "canonical_text": "the ruling faculty",
+    "type": "CONCEPT",
+    "variants": [
+      "the ruling faculty"
+    ],
+    "passage_ids": [
+      "bookV_21"
+    ],
+    "count": 1
+  },
+  "things that subsist upon change": {
+    "canonical_text": "things that subsist upon change",
+    "type": "CONCEPT",
+    "variants": [
+      "things that subsist upon change"
+    ],
+    "passage_ids": [
+      "bookIV_42"
+    ],
+    "count": 1
+  },
+  "time": {
+    "canonical_text": "time",
+    "type": "CONCEPT",
+    "variants": [
+      "time"
+    ],
+    "passage_ids": [
+      "bookII_14",
+      "bookII_4",
+      "bookIV_17",
+      "bookIV_18",
+      "bookIV_43",
+      "bookIV_47",
+      "bookIV_50"
+    ],
+    "count": 7
+  },
+  "tradition": {
+    "canonical_text": "tradition",
+    "type": "CONCEPT",
+    "variants": [
+      "tradition"
+    ],
+    "passage_ids": [
+      "bookIV_46"
+    ],
+    "count": 1
+  },
+  "transformation": {
+    "canonical_text": "transformation",
+    "type": "CONCEPT",
+    "variants": [
+      "transformation"
+    ],
+    "passage_ids": [
+      "bookV_13"
+    ],
+    "count": 1
+  },
+  "transience": {
+    "canonical_text": "transience",
+    "type": "CONCEPT",
+    "variants": [
+      "transience"
+    ],
+    "passage_ids": [
+      "bookIV_33",
+      "bookV_10"
+    ],
+    "count": 2
+  },
+  "transitoriness": {
+    "canonical_text": "transitoriness",
+    "type": "CONCEPT",
+    "variants": [
+      "transitoriness"
+    ],
+    "passage_ids": [
+      "bookIV_48"
+    ],
+    "count": 1
+  },
+  "tricking": {
+    "canonical_text": "tricking",
+    "type": "CONCEPT",
+    "variants": [
+      "tricking"
+    ],
+    "passage_ids": [
+      "bookI_11"
+    ],
+    "count": 1
+  },
+  "true quality of people": {
+    "canonical_text": "true quality of people",
+    "type": "CONCEPT",
+    "variants": [
+      "true quality of people"
+    ],
+    "passage_ids": [
+      "bookIV_38"
+    ],
+    "count": 1
+  },
+  "truth": {
+    "canonical_text": "truth",
+    "type": "CONCEPT",
+    "variants": [
+      "truth"
+    ],
+    "passage_ids": [
+      "bookIII_6",
+      "bookII_15",
+      "bookIV_20",
+      "bookI_14",
+      "bookI_15"
+    ],
+    "count": 5
+  },
+  "tyranny": {
+    "canonical_text": "tyranny",
+    "type": "CONCEPT",
+    "variants": [
+      "tyranny"
+    ],
+    "passage_ids": [
+      "bookI_11",
+      "bookV_11"
+    ],
+    "count": 2
+  },
+  "tyrant": {
+    "canonical_text": "tyrant",
+    "type": "CONCEPT",
+    "variants": [
+      "tyrant"
+    ],
+    "passage_ids": [
+      "bookIV_31"
+    ],
+    "count": 1
+  },
+  "understanding": {
+    "canonical_text": "understanding",
+    "type": "CONCEPT",
+    "variants": [
+      "understanding"
+    ],
+    "passage_ids": [
+      "bookV_18"
+    ],
+    "count": 1
+  },
+  "universal nature": {
+    "canonical_text": "universal nature",
+    "type": "CONCEPT",
+    "variants": [
+      "universal nature",
+      "universality"
+    ],
+    "passage_ids": [
+      "bookII_3",
+      "bookIV_29",
+      "bookV_25"
+    ],
+    "count": 3
+  },
+  "universal reason": {
+    "canonical_text": "universal reason",
+    "type": "CONCEPT",
+    "variants": [
+      "universal reason",
+      "universal soul"
+    ],
+    "passage_ids": [
+      "bookIV_14",
+      "bookIV_29",
+      "bookIV_46"
+    ],
+    "count": 3
+  },
+  "universe": {
+    "canonical_text": "universe",
+    "type": "CONCEPT",
+    "variants": [
+      "universe"
+    ],
+    "passage_ids": [
+      "bookIV_23",
+      "bookIV_27"
+    ],
+    "count": 2
+  },
+  "utility": {
+    "canonical_text": "utility",
+    "type": "CONCEPT",
+    "variants": [
+      "utility"
+    ],
+    "passage_ids": [
+      "bookIV_19"
+    ],
+    "count": 1
+  },
+  "vain pursuits": {
+    "canonical_text": "vain pursuits",
+    "type": "CONCEPT",
+    "variants": [
+      "vain pursuits"
+    ],
+    "passage_ids": [
+      "bookI_6"
+    ],
+    "count": 1
+  },
+  "vanity": {
+    "canonical_text": "vanity",
+    "type": "STATE",
+    "variants": [
+      "vanity"
+    ],
+    "passage_ids": [
+      "bookI_7",
+      "bookV_18"
+    ],
+    "count": 2
+  },
+  "vine": {
+    "canonical_text": "vine",
+    "type": "CONCEPT",
+    "variants": [
+      "vine"
+    ],
+    "passage_ids": [
+      "bookV_6"
+    ],
+    "count": 1
+  },
+  "virtue": {
+    "canonical_text": "virtue",
+    "type": "CONCEPT",
+    "variants": [
+      "virtue"
+    ],
+    "passage_ids": [
+      "bookIII_11",
+      "bookIII_8",
+      "bookII_11",
+      "bookII_5",
+      "bookIV_10",
+      "bookIV_17",
+      "bookIV_20",
+      "bookIV_25",
+      "bookIV_3",
+      "bookIV_49",
+      "bookI_16",
+      "bookV_31",
+      "bookV_5"
+    ],
+    "count": 13
+  },
+  "whole": {
+    "canonical_text": "whole",
+    "type": "CONCEPT",
+    "variants": [
+      "whole"
+    ],
+    "passage_ids": [
+      "bookII_9",
+      "bookIV_14"
+    ],
+    "count": 2
+  },
+  "wisdom": {
+    "canonical_text": "wisdom",
+    "type": "CONCEPT",
+    "variants": [
+      "wisdom"
+    ],
+    "passage_ids": [
+      "bookIV_16"
+    ],
+    "count": 1
+  },
+  "acceptance": {
+    "canonical_text": "acceptance",
+    "type": "PRACTICE",
+    "variants": [
+      "acceptance"
+    ],
+    "passage_ids": [
+      "bookII_15"
+    ],
+    "count": 1
+  },
+  "accommodation": {
+    "canonical_text": "accommodation",
+    "type": "PRACTICE",
+    "variants": [
+      "accommodation"
+    ],
+    "passage_ids": [
+      "bookV_8"
+    ],
+    "count": 1
+  },
+  "beneficence": {
+    "canonical_text": "beneficence",
+    "type": "PRACTICE",
+    "variants": [
+      "beneficence"
+    ],
+    "passage_ids": [
+      "bookV_6"
+    ],
+    "count": 1
+  },
+  "changing mind": {
+    "canonical_text": "changing mind",
+    "type": "PRACTICE",
+    "variants": [
+      "changing mind"
+    ],
+    "passage_ids": [
+      "bookIV_12"
+    ],
+    "count": 1
+  },
+  "chastened eyes": {
+    "canonical_text": "chastened eyes",
+    "type": "PRACTICE",
+    "variants": [
+      "chastened eyes"
+    ],
+    "passage_ids": [
+      "bookIII_2"
+    ],
+    "count": 1
+  },
+  "cheerful acceptance": {
+    "canonical_text": "cheerful acceptance",
+    "type": "PRACTICE",
+    "variants": [
+      "cheerful acceptance"
+    ],
+    "passage_ids": [
+      "bookIV_48"
+    ],
+    "count": 1
+  },
+  "consideration": {
+    "canonical_text": "consideration",
+    "type": "PRACTICE",
+    "variants": [
+      "consideration"
+    ],
+    "passage_ids": [
+      "bookIV_50"
+    ],
+    "count": 1
+  },
+  "contemplation": {
+    "canonical_text": "contemplation",
+    "type": "PRACTICE",
+    "variants": [
+      "contemplation"
+    ],
+    "passage_ids": [
+      "bookIII_1",
+      "bookIII_11"
+    ],
+    "count": 2
+  },
+  "discharge thought": {
+    "canonical_text": "discharge thought",
+    "type": "PRACTICE",
+    "variants": [
+      "discharge thought"
+    ],
+    "passage_ids": [
+      "bookV_2"
+    ],
+    "count": 1
+  },
+  "effort": {
+    "canonical_text": "effort",
+    "type": "PRACTICE",
+    "variants": [
+      "effort"
+    ],
+    "passage_ids": [
+      "bookV_5"
+    ],
+    "count": 1
+  },
+  "examination": {
+    "canonical_text": "examination",
+    "type": "PRACTICE",
+    "variants": [
+      "examination",
+      "self-examination"
+    ],
+    "passage_ids": [
+      "bookII_8",
+      "bookIV_24",
+      "bookIV_25",
+      "bookIV_38",
+      "bookV_11",
+      "bookV_31"
+    ],
+    "count": 6
+  },
+  "excuse": {
+    "canonical_text": "excuse",
+    "type": "PRACTICE",
+    "variants": [
+      "excuse"
+    ],
+    "passage_ids": [
+      "bookI_12"
+    ],
+    "count": 1
+  },
+  "forgiveness": {
+    "canonical_text": "forgiveness",
+    "type": "PRACTICE",
+    "variants": [
+      "forgiveness"
+    ],
+    "passage_ids": [
+      "bookI_15"
+    ],
+    "count": 1
+  },
+  "home education": {
+    "canonical_text": "home education",
+    "type": "PRACTICE",
+    "variants": [
+      "home education"
+    ],
+    "passage_ids": [
+      "bookI_4"
+    ],
+    "count": 1
+  },
+  "industry": {
+    "canonical_text": "industry",
+    "type": "PRACTICE",
+    "variants": [
+      "industry"
+    ],
+    "passage_ids": [
+      "bookIII_12"
+    ],
+    "count": 1
+  },
+  "mutual assistance": {
+    "canonical_text": "mutual assistance",
+    "type": "PRACTICE",
+    "variants": [
+      "mutual assistance"
+    ],
+    "passage_ids": [
+      "bookII_1"
+    ],
+    "count": 1
+  },
+  "objective view": {
+    "canonical_text": "objective view",
+    "type": "PRACTICE",
+    "variants": [
+      "objective view"
+    ],
+    "passage_ids": [
+      "bookIV_11"
+    ],
+    "count": 1
+  },
+  "observation": {
+    "canonical_text": "observation",
+    "type": "PRACTICE",
+    "variants": [
+      "observation"
+    ],
+    "passage_ids": [
+      "bookIV_10"
+    ],
+    "count": 1
+  },
+  "persuasion": {
+    "canonical_text": "persuasion",
+    "type": "PRACTICE",
+    "variants": [
+      "persuasion"
+    ],
+    "passage_ids": [
+      "bookV_28"
+    ],
+    "count": 1
+  },
+  "plain style": {
+    "canonical_text": "plain style",
+    "type": "PRACTICE",
+    "variants": [
+      "plain style"
+    ],
+    "passage_ids": [
+      "bookI_7"
+    ],
+    "count": 1
+  },
+  "postponement": {
+    "canonical_text": "postponement",
+    "type": "PRACTICE",
+    "variants": [
+      "postponement"
+    ],
+    "passage_ids": [
+      "bookII_4"
+    ],
+    "count": 1
+  },
+  "practical correction": {
+    "canonical_text": "practical correction",
+    "type": "PRACTICE",
+    "variants": [
+      "practical correction"
+    ],
+    "passage_ids": [
+      "bookI_10"
+    ],
+    "count": 1
+  },
+  "practice": {
+    "canonical_text": "practice",
+    "type": "PRACTICE",
+    "variants": [
+      "practice"
+    ],
+    "passage_ids": [
+      "bookIV_6"
+    ],
+    "count": 1
+  },
+  "preparation": {
+    "canonical_text": "preparation",
+    "type": "PRACTICE",
+    "variants": [
+      "preparation"
+    ],
+    "passage_ids": [
+      "bookIII_13"
+    ],
+    "count": 1
+  },
+  "reconciliation": {
+    "canonical_text": "reconciliation",
+    "type": "PRACTICE",
+    "variants": [
+      "reconciliation"
+    ],
+    "passage_ids": [
+      "bookI_7"
+    ],
+    "count": 1
+  },
+  "reflection": {
+    "canonical_text": "reflection",
+    "type": "PRACTICE",
+    "variants": [
+      "reflection"
+    ],
+    "passage_ids": [
+      "bookV_22",
+      "bookV_23",
+      "bookV_6"
+    ],
+    "count": 3
+  },
+  "regard": {
+    "canonical_text": "regard",
+    "type": "PRACTICE",
+    "variants": [
+      "regard"
+    ],
+    "passage_ids": [
+      "bookII_6"
+    ],
+    "count": 1
+  },
+  "regret-free detachment": {
+    "canonical_text": "regret-free detachment",
+    "type": "PRACTICE",
+    "variants": [
+      "regret-free detachment"
+    ],
+    "passage_ids": [
+      "bookIV_32"
+    ],
+    "count": 1
+  },
+  "resignation": {
+    "canonical_text": "resignation",
+    "type": "STATE",
+    "variants": [
+      "resignation"
+    ],
+    "passage_ids": [
+      "bookIII_16"
+    ],
+    "count": 1
+  },
+  "retirement": {
+    "canonical_text": "retirement",
+    "type": "PRACTICE",
+    "variants": [
+      "retirement"
+    ],
+    "passage_ids": [
+      "bookIV_3"
+    ],
+    "count": 1
+  },
+  "return": {
+    "canonical_text": "return",
+    "type": "PRACTICE",
+    "variants": [
+      "return"
+    ],
+    "passage_ids": [
+      "bookIV_14"
+    ],
+    "count": 1
+  },
+  "reverence": {
+    "canonical_text": "reverence",
+    "type": "PRACTICE",
+    "variants": [
+      "reverence"
+    ],
+    "passage_ids": [
+      "bookII_13"
+    ],
+    "count": 1
+  },
+  "self-denial": {
+    "canonical_text": "self-denial",
+    "type": "PRACTICE",
+    "variants": [
+      "self-denial"
+    ],
+    "passage_ids": [
+      "bookV_15"
+    ],
+    "count": 1
+  },
+  "self-discipline": {
+    "canonical_text": "self-discipline",
+    "type": "PRACTICE",
+    "variants": [
+      "self-discipline"
+    ],
+    "passage_ids": [
+      "bookI_5"
+    ],
+    "count": 1
+  },
+  "self-help": {
+    "canonical_text": "self-help",
+    "type": "PRACTICE",
+    "variants": [
+      "self-help"
+    ],
+    "passage_ids": [
+      "bookIII_14"
+    ],
+    "count": 1
+  },
+  "self-inspection": {
+    "canonical_text": "self-inspection",
+    "type": "PRACTICE",
+    "variants": [
+      "self-inspection"
+    ],
+    "passage_ids": [
+      "bookIV_18"
+    ],
+    "count": 1
+  },
+  "serviceability": {
+    "canonical_text": "serviceability",
+    "type": "PRACTICE",
+    "variants": [
+      "serviceability"
+    ],
+    "passage_ids": [
+      "bookV_20"
+    ],
+    "count": 1
+  },
+  "simpler living": {
+    "canonical_text": "simpler living",
+    "type": "PRACTICE",
+    "variants": [
+      "simpler living"
+    ],
+    "passage_ids": [
+      "bookI_3"
+    ],
+    "count": 1
+  },
+  "steadfastness": {
+    "canonical_text": "steadfastness",
+    "type": "PRACTICE",
+    "variants": [
+      "steadfastness"
+    ],
+    "passage_ids": [
+      "bookIV_49"
+    ],
+    "count": 1
+  },
+  "transmutation": {
+    "canonical_text": "transmutation",
+    "type": "PRACTICE",
+    "variants": [
+      "transmutation"
+    ],
+    "passage_ids": [
+      "bookIV_21"
+    ],
+    "count": 1
+  },
+  "unaffected gravity": {
+    "canonical_text": "unaffected gravity",
+    "type": "PRACTICE",
+    "variants": [
+      "unaffected gravity"
+    ],
+    "passage_ids": [
+      "bookI_9"
+    ],
+    "count": 1
+  },
+  "vigour": {
+    "canonical_text": "vigour",
+    "type": "PRACTICE",
+    "variants": [
+      "vigour"
+    ],
+    "passage_ids": [
+      "bookIII_12"
+    ],
+    "count": 1
+  },
+  "word keeping": {
+    "canonical_text": "word keeping",
+    "type": "PRACTICE",
+    "variants": [
+      "word keeping"
+    ],
+    "passage_ids": [
+      "bookIII_7"
+    ],
+    "count": 1
+  },
+  "work": {
+    "canonical_text": "work",
+    "type": "PRACTICE",
+    "variants": [
+      "work"
+    ],
+    "passage_ids": [
+      "bookIV_51"
+    ],
+    "count": 1
+  },
+  "worship": {
+    "canonical_text": "worship",
+    "type": "PRACTICE",
+    "variants": [
+      "worship"
+    ],
+    "passage_ids": [
+      "bookV_21"
+    ],
+    "count": 1
+  },
+  "abundance": {
+    "canonical_text": "abundance",
+    "type": "STATE",
+    "variants": [
+      "abundance"
+    ],
+    "passage_ids": [
+      "bookIV_30"
+    ],
+    "count": 1
+  },
+  "accident": {
+    "canonical_text": "accident",
+    "type": "STATE",
+    "variants": [
+      "accident"
+    ],
+    "passage_ids": [
+      "bookII_7"
+    ],
+    "count": 1
+  },
+  "acquiescence": {
+    "canonical_text": "acquiescence",
+    "type": "STATE",
+    "variants": [
+      "acquiescence"
+    ],
+    "passage_ids": [
+      "bookIV_25"
+    ],
+    "count": 1
+  },
+  "affection": {
+    "canonical_text": "affection",
+    "type": "STATE",
+    "variants": [
+      "affection"
+    ],
+    "passage_ids": [
+      "bookI_13"
+    ],
+    "count": 1
+  },
+  "agreement": {
+    "canonical_text": "agreement",
+    "type": "STATE",
+    "variants": [
+      "agreement"
+    ],
+    "passage_ids": [
+      "bookIV_23"
+    ],
+    "count": 1
+  },
+  "anger": {
+    "canonical_text": "anger",
+    "type": "STATE",
+    "variants": [
+      "anger"
+    ],
+    "passage_ids": [
+      "bookII_10",
+      "bookII_16",
+      "bookI_9",
+      "bookV_28"
+    ],
+    "count": 4
+  },
+  "appetite": {
+    "canonical_text": "appetite",
+    "type": "STATE",
+    "variants": [
+      "appetite"
+    ],
+    "passage_ids": [
+      "bookIII_1"
+    ],
+    "count": 1
+  },
+  "brutish character": {
+    "canonical_text": "brutish character",
+    "type": "STATE",
+    "variants": [
+      "brutish character"
+    ],
+    "passage_ids": [
+      "bookIV_28"
+    ],
+    "count": 1
+  },
+  "calm": {
+    "canonical_text": "calm",
+    "type": "STATE",
+    "variants": [
+      "calm"
+    ],
+    "passage_ids": [
+      "bookV_2"
+    ],
+    "count": 1
+  },
+  "calmness": {
+    "canonical_text": "calmness",
+    "type": "STATE",
+    "variants": [
+      "calmness"
+    ],
+    "passage_ids": [
+      "bookI_9"
+    ],
+    "count": 1
+  },
+  "censure": {
+    "canonical_text": "censure",
+    "type": "STATE",
+    "variants": [
+      "censure"
+    ],
+    "passage_ids": [
+      "bookV_3"
+    ],
+    "count": 1
+  },
+  "complaint": {
+    "canonical_text": "complaint",
+    "type": "STATE",
+    "variants": [
+      "complaint"
+    ],
+    "passage_ids": [
+      "bookIV_7"
+    ],
+    "count": 1
+  },
+  "conceit": {
+    "canonical_text": "conceit",
+    "type": "STATE",
+    "variants": [
+      "conceit"
+    ],
+    "passage_ids": [
+      "bookI_7"
+    ],
+    "count": 1
+  },
+  "concern": {
+    "canonical_text": "concern",
+    "type": "STATE",
+    "variants": [
+      "concern"
+    ],
+    "passage_ids": [
+      "bookIV_47"
+    ],
+    "count": 1
+  },
+  "contempt": {
+    "canonical_text": "contempt",
+    "type": "STATE",
+    "variants": [
+      "contempt"
+    ],
+    "passage_ids": [
+      "bookIV_11"
+    ],
+    "count": 1
+  },
+  "contentment": {
+    "canonical_text": "contentment",
+    "type": "STATE",
+    "variants": [
+      "contentment",
+      "self-contentment"
+    ],
+    "passage_ids": [
+      "bookIII_16",
+      "bookII_3",
+      "bookV_5",
+      "bookV_8"
+    ],
+    "count": 4
+  },
+  "critical": {
+    "canonical_text": "critical",
+    "type": "STATE",
+    "variants": [
+      "critical"
+    ],
+    "passage_ids": [
+      "bookI_10"
+    ],
+    "count": 1
+  },
+  "curiosity": {
+    "canonical_text": "curiosity",
+    "type": "STATE",
+    "variants": [
+      "curiosity"
+    ],
+    "passage_ids": [
+      "bookIII_4",
+      "bookII_13"
+    ],
+    "count": 2
+  },
+  "degradation": {
+    "canonical_text": "degradation",
+    "type": "STATE",
+    "variants": [
+      "degradation"
+    ],
+    "passage_ids": [
+      "bookIV_16"
+    ],
+    "count": 1
+  },
+  "desire": {
+    "canonical_text": "desire",
+    "type": "STATE",
+    "variants": [
+      "desire"
+    ],
+    "passage_ids": [
+      "bookII_10"
+    ],
+    "count": 1
+  },
+  "discouragement": {
+    "canonical_text": "discouragement",
+    "type": "STATE",
+    "variants": [
+      "discouragement",
+      "encouragement"
+    ],
+    "passage_ids": [
+      "bookIV_30",
+      "bookV_9"
+    ],
+    "count": 2
+  },
+  "dishonour": {
+    "canonical_text": "dishonour",
+    "type": "STATE",
+    "variants": [
+      "dishonour"
+    ],
+    "passage_ids": [
+      "bookII_6"
+    ],
+    "count": 1
+  },
+  "dissemble": {
+    "canonical_text": "dissemble",
+    "type": "STATE",
+    "variants": [
+      "dissemble"
+    ],
+    "passage_ids": [
+      "bookIV_51"
+    ],
+    "count": 1
+  },
+  "dissolution": {
+    "canonical_text": "dissolution",
+    "type": "STATE",
+    "variants": [
+      "dissolution"
+    ],
+    "passage_ids": [
+      "bookIV_21"
+    ],
+    "count": 1
+  },
+  "distracted mind": {
+    "canonical_text": "distracted mind",
+    "type": "STATE",
+    "variants": [
+      "distracted mind"
+    ],
+    "passage_ids": [
+      "bookII_2"
+    ],
+    "count": 1
+  },
+  "distress": {
+    "canonical_text": "distress",
+    "type": "STATE",
+    "variants": [
+      "distress"
+    ],
+    "passage_ids": [
+      "bookV_23"
+    ],
+    "count": 1
+  },
+  "disturbance": {
+    "canonical_text": "disturbance",
+    "type": "STATE",
+    "variants": [
+      "disturbance"
+    ],
+    "passage_ids": [
+      "bookIV_24",
+      "bookIV_26",
+      "bookIV_37"
+    ],
+    "count": 3
+  },
+  "dull fancy": {
+    "canonical_text": "dull fancy",
+    "type": "STATE",
+    "variants": [
+      "dull fancy"
+    ],
+    "passage_ids": [
+      "bookIV_36"
+    ],
+    "count": 1
+  },
+  "ease": {
+    "canonical_text": "ease",
+    "type": "STATE",
+    "variants": [
+      "ease"
+    ],
+    "passage_ids": [
+      "bookIV_18"
+    ],
+    "count": 1
+  },
+  "envy": {
+    "canonical_text": "envy",
+    "type": "STATE",
+    "variants": [
+      "envy"
+    ],
+    "passage_ids": [
+      "bookI_11"
+    ],
+    "count": 1
+  },
+  "equality of temper": {
+    "canonical_text": "equality of temper",
+    "type": "STATE",
+    "variants": [
+      "equality of temper"
+    ],
+    "passage_ids": [
+      "bookI_8"
+    ],
+    "count": 1
+  },
+  "fatigue": {
+    "canonical_text": "fatigue",
+    "type": "STATE",
+    "variants": [
+      "fatigue"
+    ],
+    "passage_ids": [
+      "bookIV_51"
+    ],
+    "count": 1
+  },
+  "fear": {
+    "canonical_text": "fear",
+    "type": "STATE",
+    "variants": [
+      "fear"
+    ],
+    "passage_ids": [
+      "bookII_11",
+      "bookIV_49",
+      "bookIV_50"
+    ],
+    "count": 3
+  },
+  "fulfillment": {
+    "canonical_text": "fulfillment",
+    "type": "STATE",
+    "variants": [
+      "fulfillment"
+    ],
+    "passage_ids": [
+      "bookIV_13"
+    ],
+    "count": 1
+  },
+  "good humour": {
+    "canonical_text": "good humour",
+    "type": "STATE",
+    "variants": [
+      "good humour"
+    ],
+    "passage_ids": [
+      "bookI_9"
+    ],
+    "count": 1
+  },
+  "happy": {
+    "canonical_text": "happy",
+    "type": "STATE",
+    "variants": [
+      "happy"
+    ],
+    "passage_ids": [
+      "bookIII_12"
+    ],
+    "count": 1
+  },
+  "hardship": {
+    "canonical_text": "hardship",
+    "type": "STATE",
+    "variants": [
+      "hardship"
+    ],
+    "passage_ids": [
+      "bookI_5"
+    ],
+    "count": 1
+  },
+  "harm": {
+    "canonical_text": "harm",
+    "type": "STATE",
+    "variants": [
+      "harm"
+    ],
+    "passage_ids": [
+      "bookIV_8"
+    ],
+    "count": 1
+  },
+  "honest mind": {
+    "canonical_text": "honest mind",
+    "type": "STATE",
+    "variants": [
+      "honest mind"
+    ],
+    "passage_ids": [
+      "bookIV_33"
+    ],
+    "count": 1
+  },
+  "hurt": {
+    "canonical_text": "hurt",
+    "type": "STATE",
+    "variants": [
+      "hurt"
+    ],
+    "passage_ids": [
+      "bookIV_7"
+    ],
+    "count": 1
+  },
+  "imperfect": {
+    "canonical_text": "imperfect",
+    "type": "STATE",
+    "variants": [
+      "imperfect"
+    ],
+    "passage_ids": [
+      "bookIII_8"
+    ],
+    "count": 1
+  },
+  "indifference to life and death": {
+    "canonical_text": "indifference to life and death",
+    "type": "STATE",
+    "variants": [
+      "indifference to life and death"
+    ],
+    "passage_ids": [
+      "bookIII_7"
+    ],
+    "count": 1
+  },
+  "injury": {
+    "canonical_text": "injury",
+    "type": "STATE",
+    "variants": [
+      "injury"
+    ],
+    "passage_ids": [
+      "bookV_22"
+    ],
+    "count": 1
+  },
+  "kindliness": {
+    "canonical_text": "kindliness",
+    "type": "STATE",
+    "variants": [
+      "kindliness"
+    ],
+    "passage_ids": [
+      "bookIII_9"
+    ],
+    "count": 1
+  },
+  "leisure": {
+    "canonical_text": "leisure",
+    "type": "STATE",
+    "variants": [
+      "leisure",
+      "pleasure"
+    ],
+    "passage_ids": [
+      "bookII_10",
+      "bookII_16",
+      "bookI_12"
+    ],
+    "count": 3
+  },
+  "madness": {
+    "canonical_text": "madness",
+    "type": "STATE",
+    "variants": [
+      "madness"
+    ],
+    "passage_ids": [
+      "bookV_17"
+    ],
+    "count": 1
+  },
+  "mercenary character": {
+    "canonical_text": "mercenary character",
+    "type": "STATE",
+    "variants": [
+      "mercenary character"
+    ],
+    "passage_ids": [
+      "bookIV_28"
+    ],
+    "count": 1
+  },
+  "misbehavior": {
+    "canonical_text": "misbehavior",
+    "type": "STATE",
+    "variants": [
+      "misbehavior"
+    ],
+    "passage_ids": [
+      "bookV_25"
+    ],
+    "count": 1
+  },
+  "natural defect": {
+    "canonical_text": "natural defect",
+    "type": "STATE",
+    "variants": [
+      "natural defect"
+    ],
+    "passage_ids": [
+      "bookV_5"
+    ],
+    "count": 1
+  },
+  "obstinate character": {
+    "canonical_text": "obstinate character",
+    "type": "STATE",
+    "variants": [
+      "obstinate character"
+    ],
+    "passage_ids": [
+      "bookIV_28"
+    ],
+    "count": 1
+  },
+  "pain": {
+    "canonical_text": "pain",
+    "type": "STATE",
+    "variants": [
+      "pain"
+    ],
+    "passage_ids": [
+      "bookII_16",
+      "bookIV_39"
+    ],
+    "count": 2
+  },
+  "passing": {
+    "canonical_text": "passing",
+    "type": "STATE",
+    "variants": [
+      "passing",
+      "passion",
+      "passions"
+    ],
+    "passage_ids": [
+      "bookIII_16",
+      "bookIII_5",
+      "bookII_5",
+      "bookIV_43",
+      "bookV_22"
+    ],
+    "count": 5
+  },
+  "patience": {
+    "canonical_text": "patience",
+    "type": "STATE",
+    "variants": [
+      "patience"
+    ],
+    "passage_ids": [
+      "bookV_15"
+    ],
+    "count": 1
+  },
+  "perplexity": {
+    "canonical_text": "perplexity",
+    "type": "STATE",
+    "variants": [
+      "perplexity"
+    ],
+    "passage_ids": [
+      "bookV_10"
+    ],
+    "count": 1
+  },
+  "poverty of spirit": {
+    "canonical_text": "poverty of spirit",
+    "type": "STATE",
+    "variants": [
+      "poverty of spirit"
+    ],
+    "passage_ids": [
+      "bookIV_47"
+    ],
+    "count": 1
+  },
+  "prounce": {
+    "canonical_text": "prounce",
+    "type": "STATE",
+    "variants": [
+      "prounce"
+    ],
+    "passage_ids": [
+      "bookV_23"
+    ],
+    "count": 1
+  },
+  "quarrel": {
+    "canonical_text": "quarrel",
+    "type": "STATE",
+    "variants": [
+      "quarrel"
+    ],
+    "passage_ids": [
+      "bookIV_51"
+    ],
+    "count": 1
+  },
+  "quiet": {
+    "canonical_text": "quiet",
+    "type": "STATE",
+    "variants": [
+      "quiet"
+    ],
+    "passage_ids": [
+      "bookII_7"
+    ],
+    "count": 1
+  },
+  "quiet mind": {
+    "canonical_text": "quiet mind",
+    "type": "STATE",
+    "variants": [
+      "quiet mind"
+    ],
+    "passage_ids": [
+      "bookIV_39"
+    ],
+    "count": 1
+  },
+  "rashness": {
+    "canonical_text": "rashness",
+    "type": "STATE",
+    "variants": [
+      "rashness"
+    ],
+    "passage_ids": [
+      "bookIII_9"
+    ],
+    "count": 1
+  },
+  "resentment": {
+    "canonical_text": "resentment",
+    "type": "STATE",
+    "variants": [
+      "resentment"
+    ],
+    "passage_ids": [
+      "bookII_1"
+    ],
+    "count": 1
+  },
+  "riot": {
+    "canonical_text": "riot",
+    "type": "STATE",
+    "variants": [
+      "riot"
+    ],
+    "passage_ids": [
+      "bookIV_22"
+    ],
+    "count": 1
+  },
+  "satisfaction": {
+    "canonical_text": "satisfaction",
+    "type": "STATE",
+    "variants": [
+      "satisfaction"
+    ],
+    "passage_ids": [
+      "bookIV_31"
+    ],
+    "count": 1
+  },
+  "savage character": {
+    "canonical_text": "savage character",
+    "type": "STATE",
+    "variants": [
+      "savage character"
+    ],
+    "passage_ids": [
+      "bookIV_28"
+    ],
+    "count": 1
+  },
+  "selfish passions": {
+    "canonical_text": "selfish passions",
+    "type": "STATE",
+    "variants": [
+      "selfish passions"
+    ],
+    "passage_ids": [
+      "bookII_2"
+    ],
+    "count": 1
+  },
+  "selfishness": {
+    "canonical_text": "selfishness",
+    "type": "STATE",
+    "variants": [
+      "selfishness"
+    ],
+    "passage_ids": [
+      "bookIV_29"
+    ],
+    "count": 1
+  },
+  "servile dependence": {
+    "canonical_text": "servile dependence",
+    "type": "STATE",
+    "variants": [
+      "servile dependence"
+    ],
+    "passage_ids": [
+      "bookIV_19"
+    ],
+    "count": 1
+  },
+  "shame": {
+    "canonical_text": "shame",
+    "type": "STATE",
+    "variants": [
+      "shame"
+    ],
+    "passage_ids": [
+      "bookIV_5"
+    ],
+    "count": 1
+  },
+  "short-lived": {
+    "canonical_text": "short-lived",
+    "type": "STATE",
+    "variants": [
+      "short-lived"
+    ],
+    "passage_ids": [
+      "bookIV_35"
+    ],
+    "count": 1
+  },
+  "spirit": {
+    "canonical_text": "spirit",
+    "type": "STATE",
+    "variants": [
+      "spirit"
+    ],
+    "passage_ids": [
+      "bookV_10"
+    ],
+    "count": 1
+  },
+  "supposition": {
+    "canonical_text": "supposition",
+    "type": "STATE",
+    "variants": [
+      "supposition"
+    ],
+    "passage_ids": [
+      "bookIV_7"
+    ],
+    "count": 1
+  },
+  "surprise": {
+    "canonical_text": "surprise",
+    "type": "STATE",
+    "variants": [
+      "surprise"
+    ],
+    "passage_ids": [
+      "bookIV_6"
+    ],
+    "count": 1
+  },
+  "suspicion": {
+    "canonical_text": "suspicion",
+    "type": "STATE",
+    "variants": [
+      "suspicion"
+    ],
+    "passage_ids": [
+      "bookIV_37"
+    ],
+    "count": 1
+  },
+  "temper": {
+    "canonical_text": "temper",
+    "type": "STATE",
+    "variants": [
+      "temper"
+    ],
+    "passage_ids": [
+      "bookIII_12"
+    ],
+    "count": 1
+  },
+  "thoughts": {
+    "canonical_text": "thoughts",
+    "type": "STATE",
+    "variants": [
+      "thoughts"
+    ],
+    "passage_ids": [
+      "bookII_4"
+    ],
+    "count": 1
+  },
+  "tranquillity": {
+    "canonical_text": "tranquillity",
+    "type": "STATE",
+    "variants": [
+      "tranquillity"
+    ],
+    "passage_ids": [
+      "bookIII_5",
+      "bookIV_3"
+    ],
+    "count": 2
+  },
+  "trouble": {
+    "canonical_text": "trouble",
+    "type": "STATE",
+    "variants": [
+      "trouble"
+    ],
+    "passage_ids": [
+      "bookI_15"
+    ],
+    "count": 1
+  },
+  "troublesome thought": {
+    "canonical_text": "troublesome thought",
+    "type": "STATE",
+    "variants": [
+      "troublesome thought"
+    ],
+    "passage_ids": [
+      "bookV_2"
+    ],
+    "count": 1
+  },
+  "tyrannical character": {
+    "canonical_text": "tyrannical character",
+    "type": "STATE",
+    "variants": [
+      "tyrannical character"
+    ],
+    "passage_ids": [
+      "bookIV_28"
+    ],
+    "count": 1
+  },
+  "unnecessary desire": {
+    "canonical_text": "unnecessary desire",
+    "type": "STATE",
+    "variants": [
+      "unnecessary desire"
+    ],
+    "passage_ids": [
+      "bookIV_37"
+    ],
+    "count": 1
+  },
+  "unthinking": {
+    "canonical_text": "unthinking",
+    "type": "STATE",
+    "variants": [
+      "unthinking"
+    ],
+    "passage_ids": [
+      "bookIV_44"
+    ],
+    "count": 1
+  },
+  "urgency": {
+    "canonical_text": "urgency",
+    "type": "STATE",
+    "variants": [
+      "urgency"
+    ],
+    "passage_ids": [
+      "bookIII_14",
+      "bookIV_17"
+    ],
+    "count": 2
+  },
+  "vanish": {
+    "canonical_text": "vanish",
+    "type": "STATE",
+    "variants": [
+      "vanish"
+    ],
+    "passage_ids": [
+      "bookIV_14"
+    ],
+    "count": 1
+  }
+}

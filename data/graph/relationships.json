@@ -1,0 +1,3103 @@
+[
+  {
+    "source": "father",
+    "type": "embodies",
+    "target": "modesty",
+    "passage_id": "bookI_2",
+    "confidence": 1.0
+  },
+  {
+    "source": "father",
+    "type": "embodies",
+    "target": "manliness",
+    "passage_id": "bookI_2",
+    "confidence": 1.0
+  },
+  {
+    "source": "father",
+    "type": "teaches",
+    "target": "modesty",
+    "passage_id": "bookI_2",
+    "confidence": 1.0
+  },
+  {
+    "source": "father",
+    "type": "teaches",
+    "target": "manliness",
+    "passage_id": "bookI_2",
+    "confidence": 1.0
+  },
+  {
+    "source": "mother",
+    "type": "teaches",
+    "target": "religion",
+    "passage_id": "bookI_3",
+    "confidence": 1.0
+  },
+  {
+    "source": "mother",
+    "type": "teaches",
+    "target": "generosity",
+    "passage_id": "bookI_3",
+    "confidence": 1.0
+  },
+  {
+    "source": "mother",
+    "type": "teaches",
+    "target": "simpler living",
+    "passage_id": "bookI_3",
+    "confidence": 1.0
+  },
+  {
+    "source": "luxury",
+    "type": "opposes",
+    "target": "simpler living",
+    "passage_id": "bookI_3",
+    "confidence": 1.0
+  },
+  {
+    "source": "Marcus",
+    "type": "teaches",
+    "target": "liberality",
+    "passage_id": "bookI_4",
+    "confidence": 1.0
+  },
+  {
+    "source": "good masters",
+    "type": "teaches",
+    "target": "liberality",
+    "passage_id": "bookI_4",
+    "confidence": 1.0
+  },
+  {
+    "source": "home education",
+    "type": "embodies",
+    "target": "liberality",
+    "passage_id": "bookI_4",
+    "confidence": 1.0
+  },
+  {
+    "source": "Marcus",
+    "type": "relates_to",
+    "target": "great-grandfather",
+    "passage_id": "bookI_4",
+    "confidence": 1.0
+  },
+  {
+    "source": "governor",
+    "type": "teaches",
+    "target": "simplicity",
+    "passage_id": "bookI_5",
+    "confidence": 1.0
+  },
+  {
+    "source": "governor",
+    "type": "teaches",
+    "target": "self-discipline",
+    "passage_id": "bookI_5",
+    "confidence": 1.0
+  },
+  {
+    "source": "self-discipline",
+    "type": "opposes",
+    "target": "partisanship",
+    "passage_id": "bookI_5",
+    "confidence": 1.0
+  },
+  {
+    "source": "simplicity",
+    "type": "resolved_by",
+    "target": "hardship",
+    "passage_id": "bookI_5",
+    "confidence": 1.0
+  },
+  {
+    "source": "Diognetus",
+    "type": "teaches",
+    "target": "freedom and plain-dealing",
+    "passage_id": "bookI_6",
+    "confidence": 1.0
+  },
+  {
+    "source": "Diognetus",
+    "type": "teaches",
+    "target": "philosophy",
+    "passage_id": "bookI_6",
+    "confidence": 1.0
+  },
+  {
+    "source": "Diognetus",
+    "type": "opposes",
+    "target": "vain pursuits",
+    "passage_id": "bookI_6",
+    "confidence": 1.0
+  },
+  {
+    "source": "philosophy",
+    "type": "embodies",
+    "target": "Grecian discipline",
+    "passage_id": "bookI_6",
+    "confidence": 1.0
+  },
+  {
+    "source": "Rusticus",
+    "type": "teaches",
+    "target": "plain style",
+    "passage_id": "bookI_7",
+    "confidence": 1.0
+  },
+  {
+    "source": "Rusticus",
+    "type": "opposes",
+    "target": "vanity",
+    "passage_id": "bookI_7",
+    "confidence": 1.0
+  },
+  {
+    "source": "Rusticus",
+    "type": "opposes",
+    "target": "conceit",
+    "passage_id": "bookI_7",
+    "confidence": 1.0
+  },
+  {
+    "source": "Rusticus",
+    "type": "teaches",
+    "target": "reconciliation",
+    "passage_id": "bookI_7",
+    "confidence": 1.0
+  },
+  {
+    "source": "Rusticus",
+    "type": "relates_to",
+    "target": "Epictetus",
+    "passage_id": "bookI_7",
+    "confidence": 1.0
+  },
+  {
+    "source": "Apollonius",
+    "type": "teaches",
+    "target": "freedom of mind",
+    "passage_id": "bookI_8",
+    "confidence": 1.0
+  },
+  {
+    "source": "freedom of mind",
+    "type": "requires",
+    "target": "reason",
+    "passage_id": "bookI_8",
+    "confidence": 1.0
+  },
+  {
+    "source": "freedom of mind",
+    "type": "opposes",
+    "target": "chance",
+    "passage_id": "bookI_8",
+    "confidence": 1.0
+  },
+  {
+    "source": "Apollonius",
+    "type": "embodies",
+    "target": "equality of temper",
+    "passage_id": "bookI_8",
+    "confidence": 1.0
+  },
+  {
+    "source": "modesty",
+    "type": "resolved_by",
+    "target": "freedom of mind",
+    "passage_id": "bookI_8",
+    "confidence": 1.0
+  },
+  {
+    "source": "Sextus",
+    "type": "teaches",
+    "target": "good humour",
+    "passage_id": "bookI_9",
+    "confidence": 1.0
+  },
+  {
+    "source": "Sextus",
+    "type": "relates_to",
+    "target": "nature and reason",
+    "passage_id": "bookI_9",
+    "confidence": 1.0
+  },
+  {
+    "source": "Sextus",
+    "type": "embodies",
+    "target": "unaffected gravity",
+    "passage_id": "bookI_9",
+    "confidence": 1.0
+  },
+  {
+    "source": "Sextus",
+    "type": "embodies",
+    "target": "calmness",
+    "passage_id": "bookI_9",
+    "confidence": 1.0
+  },
+  {
+    "source": "calmness",
+    "type": "opposes",
+    "target": "anger",
+    "passage_id": "bookI_9",
+    "confidence": 1.0
+  },
+  {
+    "source": "Alexander the Grammarian",
+    "type": "teaches",
+    "target": "practical correction",
+    "passage_id": "bookI_10",
+    "confidence": 1.0
+  },
+  {
+    "source": "practical correction",
+    "type": "embodies",
+    "target": "indirectness",
+    "passage_id": "bookI_10",
+    "confidence": 1.0
+  },
+  {
+    "source": "critical",
+    "type": "opposes",
+    "target": "practical correction",
+    "passage_id": "bookI_10",
+    "confidence": 1.0
+  },
+  {
+    "source": "Fronto",
+    "type": "teaches",
+    "target": "tyranny",
+    "passage_id": "bookI_11",
+    "confidence": 1.0
+  },
+  {
+    "source": "tyranny",
+    "type": "embodies",
+    "target": "envy",
+    "passage_id": "bookI_11",
+    "confidence": 1.0
+  },
+  {
+    "source": "tyranny",
+    "type": "embodies",
+    "target": "tricking",
+    "passage_id": "bookI_11",
+    "confidence": 1.0
+  },
+  {
+    "source": "tyranny",
+    "type": "embodies",
+    "target": "dissimulation",
+    "passage_id": "bookI_11",
+    "confidence": 1.0
+  },
+  {
+    "source": "patricians",
+    "type": "opposes",
+    "target": "fatherly feeling",
+    "passage_id": "bookI_11",
+    "confidence": 1.0
+  },
+  {
+    "source": "necessity",
+    "type": "requires",
+    "target": "excuse",
+    "passage_id": "bookI_12",
+    "confidence": 1.0
+  },
+  {
+    "source": "business",
+    "type": "opposes",
+    "target": "leisure",
+    "passage_id": "bookI_12",
+    "confidence": 1.0
+  },
+  {
+    "source": "Catulus",
+    "type": "teaches",
+    "target": "friendship",
+    "passage_id": "bookI_13",
+    "confidence": 1.0
+  },
+  {
+    "source": "friendship",
+    "type": "requires",
+    "target": "remonstration",
+    "passage_id": "bookI_13",
+    "confidence": 1.0
+  },
+  {
+    "source": "education",
+    "type": "leads_to",
+    "target": "affection",
+    "passage_id": "bookI_13",
+    "confidence": 1.0
+  },
+  {
+    "source": "affection",
+    "type": "embodies",
+    "target": "children",
+    "passage_id": "bookI_13",
+    "confidence": 1.0
+  },
+  {
+    "source": "Severus",
+    "type": "teaches",
+    "target": "justice",
+    "passage_id": "bookI_14",
+    "confidence": 1.0
+  },
+  {
+    "source": "Severus",
+    "type": "teaches",
+    "target": "truth",
+    "passage_id": "bookI_14",
+    "confidence": 1.0
+  },
+  {
+    "source": "Severus",
+    "type": "teaches",
+    "target": "philosophy",
+    "passage_id": "bookI_14",
+    "confidence": 1.0
+  },
+  {
+    "source": "Severus",
+    "type": "teaches",
+    "target": "generosity",
+    "passage_id": "bookI_14",
+    "confidence": 1.0
+  },
+  {
+    "source": "philosophy",
+    "type": "leads_to",
+    "target": "improvement",
+    "passage_id": "bookI_14",
+    "confidence": 1.0
+  },
+  {
+    "source": "Maximus",
+    "type": "teaches",
+    "target": "self-command",
+    "passage_id": "bookI_15",
+    "confidence": 1.0
+  },
+  {
+    "source": "Maximus",
+    "type": "embodies",
+    "target": "greatness of mind",
+    "passage_id": "bookI_15",
+    "confidence": 1.0
+  },
+  {
+    "source": "greatness of mind",
+    "type": "resolved_by",
+    "target": "trouble",
+    "passage_id": "bookI_15",
+    "confidence": 1.0
+  },
+  {
+    "source": "Maximus",
+    "type": "requires",
+    "target": "forgiveness",
+    "passage_id": "bookI_15",
+    "confidence": 1.0
+  },
+  {
+    "source": "An Antoninus Pius",
+    "type": "embodies",
+    "target": "self-mastery",
+    "passage_id": "bookI_16",
+    "confidence": 1.0
+  },
+  {
+    "source": "Socrates",
+    "type": "relates_to",
+    "target": "self-mastery",
+    "passage_id": "bookI_16",
+    "confidence": 1.0
+  },
+  {
+    "source": "An Antoninus Pius",
+    "type": "embodies",
+    "target": "virtue",
+    "passage_id": "bookI_16",
+    "confidence": 1.0
+  },
+  {
+    "source": "fortitude",
+    "type": "leads_to",
+    "target": "virtue",
+    "passage_id": "bookI_16",
+    "confidence": 1.0
+  },
+  {
+    "source": "ignorance",
+    "type": "leads_to",
+    "target": "perverseness",
+    "passage_id": "bookII_1",
+    "confidence": 1.0
+  },
+  {
+    "source": "Deity",
+    "type": "embodies",
+    "target": "good",
+    "passage_id": "bookII_1",
+    "confidence": 1.0
+  },
+  {
+    "source": "mutual assistance",
+    "type": "opposes",
+    "target": "resentment",
+    "passage_id": "bookII_1",
+    "confidence": 1.0
+  },
+  {
+    "source": "resentment",
+    "type": "opposes",
+    "target": "good",
+    "passage_id": "bookII_1",
+    "confidence": 1.0
+  },
+  {
+    "source": "ruling part",
+    "type": "leads_to",
+    "target": "distracted mind",
+    "passage_id": "bookII_2",
+    "confidence": 1.0
+  },
+  {
+    "source": "ruling part",
+    "type": "opposes",
+    "target": "selfish passions",
+    "passage_id": "bookII_2",
+    "confidence": 1.0
+  },
+  {
+    "source": "nature",
+    "type": "embodies",
+    "target": "providence",
+    "passage_id": "bookII_3",
+    "confidence": 1.0
+  },
+  {
+    "source": "universality",
+    "type": "requires",
+    "target": "change",
+    "passage_id": "bookII_3",
+    "confidence": 1.0
+  },
+  {
+    "source": "nature",
+    "type": "leads_to",
+    "target": "contentment",
+    "passage_id": "bookII_3",
+    "confidence": 1.0
+  },
+  {
+    "source": "contentment",
+    "type": "leads_to",
+    "target": "gratitude",
+    "passage_id": "bookII_3",
+    "confidence": 1.0
+  },
+  {
+    "source": "the gods",
+    "type": "teaches",
+    "target": "opportunity",
+    "passage_id": "bookII_4",
+    "confidence": 1.0
+  },
+  {
+    "source": "postponement",
+    "type": "opposes",
+    "target": "opportunity",
+    "passage_id": "bookII_4",
+    "confidence": 1.0
+  },
+  {
+    "source": "reason",
+    "type": "resolved_by",
+    "target": "thoughts",
+    "passage_id": "bookII_4",
+    "confidence": 1.0
+  },
+  {
+    "source": "thoughts",
+    "type": "leads_to",
+    "target": "time",
+    "passage_id": "bookII_4",
+    "confidence": 1.0
+  },
+  {
+    "source": "passions",
+    "type": "opposes",
+    "target": "reason",
+    "passage_id": "bookII_5",
+    "confidence": 1.0
+  },
+  {
+    "source": "virtue",
+    "type": "leads_to",
+    "target": "godlike way of living",
+    "passage_id": "bookII_5",
+    "confidence": 1.0
+  },
+  {
+    "source": "Marcus",
+    "type": "teaches",
+    "target": "virtue",
+    "passage_id": "bookII_5",
+    "confidence": 1.0
+  },
+  {
+    "source": "destiny",
+    "type": "relates_to",
+    "target": "godlike way of living",
+    "passage_id": "bookII_5",
+    "confidence": 1.0
+  },
+  {
+    "source": "happiness",
+    "type": "requires",
+    "target": "regard",
+    "passage_id": "bookII_6",
+    "confidence": 1.0
+  },
+  {
+    "source": "self",
+    "type": "resolved_by",
+    "target": "regard",
+    "passage_id": "bookII_6",
+    "confidence": 1.0
+  },
+  {
+    "source": "dishonour",
+    "type": "opposes",
+    "target": "happiness",
+    "passage_id": "bookII_6",
+    "confidence": 1.0
+  },
+  {
+    "source": "other men",
+    "type": "leads_to",
+    "target": "dishonour",
+    "passage_id": "bookII_6",
+    "confidence": 1.0
+  },
+  {
+    "source": "mind",
+    "type": "resolved_by",
+    "target": "quiet",
+    "passage_id": "bookII_7",
+    "confidence": 1.0
+  },
+  {
+    "source": "quiet",
+    "type": "opposes",
+    "target": "roving",
+    "passage_id": "bookII_7",
+    "confidence": 1.0
+  },
+  {
+    "source": "roving",
+    "type": "resolved_by",
+    "target": "general end",
+    "passage_id": "bookII_7",
+    "confidence": 1.0
+  },
+  {
+    "source": "accident",
+    "type": "opposes",
+    "target": "quiet",
+    "passage_id": "bookII_7",
+    "confidence": 1.0
+  },
+  {
+    "source": "ignorance",
+    "type": "relates_to",
+    "target": "other's thoughts",
+    "passage_id": "bookII_8",
+    "confidence": 1.0
+  },
+  {
+    "source": "self-examination",
+    "type": "leads_to",
+    "target": "happiness",
+    "passage_id": "bookII_8",
+    "confidence": 1.0
+  },
+  {
+    "source": "own motions",
+    "type": "requires",
+    "target": "self-examination",
+    "passage_id": "bookII_8",
+    "confidence": 1.0
+  },
+  {
+    "source": "unhappiness",
+    "type": "leads_to",
+    "target": "self-examination",
+    "passage_id": "bookII_8",
+    "confidence": 1.0
+  },
+  {
+    "source": "part",
+    "type": "relates_to",
+    "target": "whole",
+    "passage_id": "bookII_9",
+    "confidence": 1.0
+  },
+  {
+    "source": "own nature",
+    "type": "relates_to",
+    "target": "nature of the universe",
+    "passage_id": "bookII_9",
+    "confidence": 1.0
+  },
+  {
+    "source": "action",
+    "type": "requires",
+    "target": "nature of the universe",
+    "passage_id": "bookII_9",
+    "confidence": 1.0
+  },
+  {
+    "source": "own nature",
+    "type": "embodies",
+    "target": "part",
+    "passage_id": "bookII_9",
+    "confidence": 1.0
+  },
+  {
+    "source": "Theophrastus",
+    "type": "teaches",
+    "target": "desire",
+    "passage_id": "bookII_10",
+    "confidence": 1.0
+  },
+  {
+    "source": "desire",
+    "type": "opposes",
+    "target": "reason",
+    "passage_id": "bookII_10",
+    "confidence": 1.0
+  },
+  {
+    "source": "anger",
+    "type": "opposes",
+    "target": "reason",
+    "passage_id": "bookII_10",
+    "confidence": 1.0
+  },
+  {
+    "source": "restraint",
+    "type": "requires",
+    "target": "reason",
+    "passage_id": "bookII_10",
+    "confidence": 1.0
+  },
+  {
+    "source": "gods",
+    "type": "relates_to",
+    "target": "death",
+    "passage_id": "bookII_11",
+    "confidence": 1.0
+  },
+  {
+    "source": "virtue",
+    "type": "requires",
+    "target": "externals",
+    "passage_id": "bookII_11",
+    "confidence": 1.0
+  },
+  {
+    "source": "death",
+    "type": "resolved_by",
+    "target": "gods",
+    "passage_id": "bookII_11",
+    "confidence": 1.0
+  },
+  {
+    "source": "curiosity",
+    "type": "relates_to",
+    "target": "unhappiness",
+    "passage_id": "bookII_13",
+    "confidence": 1.0
+  },
+  {
+    "source": "reverence",
+    "type": "leads_to",
+    "target": "divinity within",
+    "passage_id": "bookII_13",
+    "confidence": 1.0
+  },
+  {
+    "source": "purity",
+    "type": "requires",
+    "target": "reverence",
+    "passage_id": "bookII_13",
+    "confidence": 1.0
+  },
+  {
+    "source": "ignorance",
+    "type": "opposes",
+    "target": "discernment",
+    "passage_id": "bookII_13",
+    "confidence": 1.0
+  },
+  {
+    "source": "loss",
+    "type": "resolved_by",
+    "target": "present",
+    "passage_id": "bookII_14",
+    "confidence": 1.0
+  },
+  {
+    "source": "nature",
+    "type": "embodies",
+    "target": "time",
+    "passage_id": "bookII_14",
+    "confidence": 1.0
+  },
+  {
+    "source": "life",
+    "type": "relates_to",
+    "target": "present",
+    "passage_id": "bookII_14",
+    "confidence": 1.0
+  },
+  {
+    "source": "loss",
+    "type": "opposes",
+    "target": "nature",
+    "passage_id": "bookII_14",
+    "confidence": 1.0
+  },
+  {
+    "source": "Monimus",
+    "type": "teaches",
+    "target": "opinion",
+    "passage_id": "bookII_15",
+    "confidence": 1.0
+  },
+  {
+    "source": "Monimus",
+    "type": "embodies",
+    "target": "Cynic philosophy",
+    "passage_id": "bookII_15",
+    "confidence": 1.0
+  },
+  {
+    "source": "acceptance",
+    "type": "requires",
+    "target": "truth",
+    "passage_id": "bookII_15",
+    "confidence": 1.0
+  },
+  {
+    "source": "opinion",
+    "type": "opposes",
+    "target": "truth",
+    "passage_id": "bookII_15",
+    "confidence": 1.0
+  },
+  {
+    "source": "anger",
+    "type": "leads_to",
+    "target": "soul",
+    "passage_id": "bookII_16",
+    "confidence": 1.0
+  },
+  {
+    "source": "pleasure",
+    "type": "opposes",
+    "target": "nature",
+    "passage_id": "bookII_16",
+    "confidence": 1.0
+  },
+  {
+    "source": "pain",
+    "type": "opposes",
+    "target": "nature",
+    "passage_id": "bookII_16",
+    "confidence": 1.0
+  },
+  {
+    "source": "soul",
+    "type": "requires",
+    "target": "reason",
+    "passage_id": "bookII_16",
+    "confidence": 1.0
+  },
+  {
+    "source": "philosophy",
+    "type": "requires",
+    "target": "inner god",
+    "passage_id": "bookII_17",
+    "confidence": 1.0
+  },
+  {
+    "source": "philosophy",
+    "type": "teaches",
+    "target": "freedom",
+    "passage_id": "bookII_17",
+    "confidence": 1.0
+  },
+  {
+    "source": "death",
+    "type": "relates_to",
+    "target": "nature",
+    "passage_id": "bookII_17",
+    "confidence": 1.0
+  },
+  {
+    "source": "nature",
+    "type": "leads_to",
+    "target": "freedom",
+    "passage_id": "bookII_17",
+    "confidence": 1.0
+  },
+  {
+    "source": "reason",
+    "type": "opposes",
+    "target": "imagination",
+    "passage_id": "bookIII_1",
+    "confidence": 1.0
+  },
+  {
+    "source": "reason",
+    "type": "opposes",
+    "target": "appetite",
+    "passage_id": "bookIII_1",
+    "confidence": 1.0
+  },
+  {
+    "source": "mind",
+    "type": "leads_to",
+    "target": "contemplation",
+    "passage_id": "bookIII_1",
+    "confidence": 1.0
+  },
+  {
+    "source": "reason",
+    "type": "embodies",
+    "target": "duty",
+    "passage_id": "bookIII_1",
+    "confidence": 1.0
+  },
+  {
+    "source": "death",
+    "type": "resolved_by",
+    "target": "contemplation",
+    "passage_id": "bookIII_1",
+    "confidence": 1.0
+  },
+  {
+    "source": "chastened eyes",
+    "type": "leads_to",
+    "target": "beauty",
+    "passage_id": "bookIII_2",
+    "confidence": 1.0
+  },
+  {
+    "source": "beauty",
+    "type": "relates_to",
+    "target": "nature",
+    "passage_id": "bookIII_2",
+    "confidence": 1.0
+  },
+  {
+    "source": "harmony",
+    "type": "embodies",
+    "target": "beauty",
+    "passage_id": "bookIII_2",
+    "confidence": 1.0
+  },
+  {
+    "source": "perception",
+    "type": "requires",
+    "target": "harmony",
+    "passage_id": "bookIII_2",
+    "confidence": 1.0
+  },
+  {
+    "source": "spiritual release",
+    "type": "leads_to",
+    "target": "soul",
+    "passage_id": "bookIII_3",
+    "confidence": 1.0
+  },
+  {
+    "source": "body",
+    "type": "relates_to",
+    "target": "inner self",
+    "passage_id": "bookIII_3",
+    "confidence": 1.0
+  },
+  {
+    "source": "soul",
+    "type": "embodies",
+    "target": "spiritual release",
+    "passage_id": "bookIII_3",
+    "confidence": 1.0
+  },
+  {
+    "source": "curiosity",
+    "type": "opposes",
+    "target": "guided principle",
+    "passage_id": "bookIII_4",
+    "confidence": 1.0
+  },
+  {
+    "source": "sincerity",
+    "type": "leads_to",
+    "target": "peace",
+    "passage_id": "bookIII_4",
+    "confidence": 1.0
+  },
+  {
+    "source": "reason",
+    "type": "embodies",
+    "target": "justice",
+    "passage_id": "bookIII_4",
+    "confidence": 1.0
+  },
+  {
+    "source": "justice",
+    "type": "requires",
+    "target": "nature",
+    "passage_id": "bookIII_4",
+    "confidence": 1.0
+  },
+  {
+    "source": "divinity",
+    "type": "relates_to",
+    "target": "reason",
+    "passage_id": "bookIII_5",
+    "confidence": 1.0
+  },
+  {
+    "source": "passion",
+    "type": "opposes",
+    "target": "tranquillity",
+    "passage_id": "bookIII_5",
+    "confidence": 1.0
+  },
+  {
+    "source": "self-sufficiency",
+    "type": "leads_to",
+    "target": "tranquillity",
+    "passage_id": "bookIII_5",
+    "confidence": 1.0
+  },
+  {
+    "source": "external supports",
+    "type": "opposes",
+    "target": "self-sufficiency",
+    "passage_id": "bookIII_5",
+    "confidence": 1.0
+  },
+  {
+    "source": "pleasures",
+    "type": "opposes",
+    "target": "rational mind",
+    "passage_id": "bookIII_6",
+    "confidence": 1.0
+  },
+  {
+    "source": "Socrates",
+    "type": "teaches",
+    "target": "rational mind",
+    "passage_id": "bookIII_6",
+    "confidence": 1.0
+  },
+  {
+    "source": "justice",
+    "type": "embodies",
+    "target": "rational mind",
+    "passage_id": "bookIII_6",
+    "confidence": 1.0
+  },
+  {
+    "source": "pleasures",
+    "type": "leads_to",
+    "target": "perverted mind",
+    "passage_id": "bookIII_6",
+    "confidence": 1.0
+  },
+  {
+    "source": "rational mind",
+    "type": "resolved_by",
+    "target": "judgment",
+    "passage_id": "bookIII_6",
+    "confidence": 1.0
+  },
+  {
+    "source": "the divinity in the soul",
+    "type": "leads_to",
+    "target": "indifference to life and death",
+    "passage_id": "bookIII_7",
+    "confidence": 1.0
+  },
+  {
+    "source": "rational nature",
+    "type": "embodies",
+    "target": "social nature",
+    "passage_id": "bookIII_7",
+    "confidence": 1.0
+  },
+  {
+    "source": "indifference to life and death",
+    "type": "resolved_by",
+    "target": "the divinity in the soul",
+    "passage_id": "bookIII_7",
+    "confidence": 1.0
+  },
+  {
+    "source": "word keeping",
+    "type": "requires",
+    "target": "modesty",
+    "passage_id": "bookIII_7",
+    "confidence": 1.0
+  },
+  {
+    "source": "philosophy",
+    "type": "leads_to",
+    "target": "virtue",
+    "passage_id": "bookIII_8",
+    "confidence": 1.0
+  },
+  {
+    "source": "virtue",
+    "type": "resolved_by",
+    "target": "death",
+    "passage_id": "bookIII_8",
+    "confidence": 1.0
+  },
+  {
+    "source": "virtue",
+    "type": "embodies",
+    "target": "social balance",
+    "passage_id": "bookIII_8",
+    "confidence": 1.0
+  },
+  {
+    "source": "imperfect",
+    "type": "opposes",
+    "target": "virtue",
+    "passage_id": "bookIII_8",
+    "confidence": 1.0
+  },
+  {
+    "source": "opinionative faculty",
+    "type": "leads_to",
+    "target": "guiding principle",
+    "passage_id": "bookIII_9",
+    "confidence": 1.0
+  },
+  {
+    "source": "guiding principle",
+    "type": "relates_to",
+    "target": "Nature",
+    "passage_id": "bookIII_9",
+    "confidence": 1.0
+  },
+  {
+    "source": "rational constitution",
+    "type": "opposes",
+    "target": "rashness",
+    "passage_id": "bookIII_9",
+    "confidence": 1.0
+  },
+  {
+    "source": "rational constitution",
+    "type": "leads_to",
+    "target": "kindliness",
+    "passage_id": "bookIII_9",
+    "confidence": 1.0
+  },
+  {
+    "source": "life",
+    "type": "embodies",
+    "target": "present",
+    "passage_id": "bookIII_10",
+    "confidence": 1.0
+  },
+  {
+    "source": "past",
+    "type": "relates_to",
+    "target": "present",
+    "passage_id": "bookIII_10",
+    "confidence": 1.0
+  },
+  {
+    "source": "future",
+    "type": "relates_to",
+    "target": "present",
+    "passage_id": "bookIII_10",
+    "confidence": 1.0
+  },
+  {
+    "source": "fame",
+    "type": "opposes",
+    "target": "present",
+    "passage_id": "bookIII_10",
+    "confidence": 1.0
+  },
+  {
+    "source": "contemplation",
+    "type": "requires",
+    "target": "destiny",
+    "passage_id": "bookIII_11",
+    "confidence": 1.0
+  },
+  {
+    "source": "contemplation",
+    "type": "leads_to",
+    "target": "justice",
+    "passage_id": "bookIII_11",
+    "confidence": 1.0
+  },
+  {
+    "source": "virtue",
+    "type": "relates_to",
+    "target": "indifferent things",
+    "passage_id": "bookIII_11",
+    "confidence": 1.0
+  },
+  {
+    "source": "reason",
+    "type": "leads_to",
+    "target": "happy",
+    "passage_id": "bookIII_12",
+    "confidence": 1.0
+  },
+  {
+    "source": "industry",
+    "type": "leads_to",
+    "target": "happy",
+    "passage_id": "bookIII_12",
+    "confidence": 1.0
+  },
+  {
+    "source": "vigour",
+    "type": "leads_to",
+    "target": "happy",
+    "passage_id": "bookIII_12",
+    "confidence": 1.0
+  },
+  {
+    "source": "temper",
+    "type": "leads_to",
+    "target": "happy",
+    "passage_id": "bookIII_12",
+    "confidence": 1.0
+  },
+  {
+    "source": "preparation",
+    "type": "requires",
+    "target": "reason",
+    "passage_id": "bookIII_13",
+    "confidence": 1.0
+  },
+  {
+    "source": "divine things",
+    "type": "relates_to",
+    "target": "human things",
+    "passage_id": "bookIII_13",
+    "confidence": 1.0
+  },
+  {
+    "source": "behavior",
+    "type": "requires",
+    "target": "divine things",
+    "passage_id": "bookIII_13",
+    "confidence": 1.0
+  },
+  {
+    "source": "urgency",
+    "type": "requires",
+    "target": "haste",
+    "passage_id": "bookIII_14",
+    "confidence": 1.0
+  },
+  {
+    "source": "Marcus",
+    "type": "teaches",
+    "target": "self-help",
+    "passage_id": "bookIII_14",
+    "confidence": 1.0
+  },
+  {
+    "source": "self-help",
+    "type": "relates_to",
+    "target": "self-kindness",
+    "passage_id": "bookIII_14",
+    "confidence": 1.0
+  },
+  {
+    "source": "haste",
+    "type": "resolved_by",
+    "target": "self-kindness",
+    "passage_id": "bookIII_14",
+    "confidence": 1.0
+  },
+  {
+    "source": "death",
+    "type": "opposes",
+    "target": "procrastination",
+    "passage_id": "bookIII_14",
+    "confidence": 1.0
+  },
+  {
+    "source": "probity",
+    "type": "requires",
+    "target": "reason",
+    "passage_id": "bookIII_16",
+    "confidence": 1.0
+  },
+  {
+    "source": "probity",
+    "type": "embodies",
+    "target": "contentment",
+    "passage_id": "bookIII_16",
+    "confidence": 1.0
+  },
+  {
+    "source": "passion",
+    "type": "opposes",
+    "target": "reason",
+    "passage_id": "bookIII_16",
+    "confidence": 1.0
+  },
+  {
+    "source": "probity",
+    "type": "requires",
+    "target": "resignation",
+    "passage_id": "bookIII_16",
+    "confidence": 1.0
+  },
+  {
+    "source": "probity",
+    "type": "requires",
+    "target": "divinity",
+    "passage_id": "bookIII_16",
+    "confidence": 1.0
+  },
+  {
+    "source": "action",
+    "type": "requires",
+    "target": "purpose",
+    "passage_id": "bookIV_2",
+    "confidence": 1.0
+  },
+  {
+    "source": "action",
+    "type": "leads_to",
+    "target": "perfection",
+    "passage_id": "bookIV_2",
+    "confidence": 1.0
+  },
+  {
+    "source": "retirement",
+    "type": "leads_to",
+    "target": "tranquillity",
+    "passage_id": "bookIV_3",
+    "confidence": 1.0
+  },
+  {
+    "source": "tranquillity",
+    "type": "requires",
+    "target": "mind",
+    "passage_id": "bookIV_3",
+    "confidence": 1.0
+  },
+  {
+    "source": "retirement",
+    "type": "leads_to",
+    "target": "virtue",
+    "passage_id": "bookIV_3",
+    "confidence": 1.0
+  },
+  {
+    "source": "opinion",
+    "type": "relates_to",
+    "target": "tranquillity",
+    "passage_id": "bookIV_3",
+    "confidence": 1.0
+  },
+  {
+    "source": "death",
+    "type": "relates_to",
+    "target": "generation",
+    "passage_id": "bookIV_5",
+    "confidence": 1.0
+  },
+  {
+    "source": "nature",
+    "type": "embodies",
+    "target": "death",
+    "passage_id": "bookIV_5",
+    "confidence": 1.0
+  },
+  {
+    "source": "shame",
+    "type": "resolved_by",
+    "target": "rationality",
+    "passage_id": "bookIV_5",
+    "confidence": 1.0
+  },
+  {
+    "source": "practice",
+    "type": "relates_to",
+    "target": "disposition",
+    "passage_id": "bookIV_6",
+    "confidence": 1.0
+  },
+  {
+    "source": "surprise",
+    "type": "opposes",
+    "target": "disposition",
+    "passage_id": "bookIV_6",
+    "confidence": 1.0
+  },
+  {
+    "source": "mortality",
+    "type": "relates_to",
+    "target": "enemy",
+    "passage_id": "bookIV_6",
+    "confidence": 1.0
+  },
+  {
+    "source": "mortality",
+    "type": "leads_to",
+    "target": "surprise",
+    "passage_id": "bookIV_6",
+    "confidence": 1.0
+  },
+  {
+    "source": "complaint",
+    "type": "relates_to",
+    "target": "hurt",
+    "passage_id": "bookIV_7",
+    "confidence": 1.0
+  },
+  {
+    "source": "supposition",
+    "type": "leads_to",
+    "target": "complaint",
+    "passage_id": "bookIV_7",
+    "confidence": 1.0
+  },
+  {
+    "source": "harm",
+    "type": "opposes",
+    "target": "man",
+    "passage_id": "bookIV_8",
+    "confidence": 1.0
+  },
+  {
+    "source": "harm",
+    "type": "opposes",
+    "target": "life",
+    "passage_id": "bookIV_8",
+    "confidence": 1.0
+  },
+  {
+    "source": "nature",
+    "type": "relates_to",
+    "target": "general good",
+    "passage_id": "bookIV_9",
+    "confidence": 1.0
+  },
+  {
+    "source": "general good",
+    "type": "leads_to",
+    "target": "action",
+    "passage_id": "bookIV_9",
+    "confidence": 1.0
+  },
+  {
+    "source": "nature",
+    "type": "teaches",
+    "target": "action",
+    "passage_id": "bookIV_9",
+    "confidence": 1.0
+  },
+  {
+    "source": "observation",
+    "type": "leads_to",
+    "target": "justice",
+    "passage_id": "bookIV_10",
+    "confidence": 1.0
+  },
+  {
+    "source": "reason",
+    "type": "embodies",
+    "target": "justice",
+    "passage_id": "bookIV_10",
+    "confidence": 1.0
+  },
+  {
+    "source": "virtue",
+    "type": "requires",
+    "target": "philosophy",
+    "passage_id": "bookIV_10",
+    "confidence": 1.0
+  },
+  {
+    "source": "justice",
+    "type": "relates_to",
+    "target": "reason",
+    "passage_id": "bookIV_10",
+    "confidence": 1.0
+  },
+  {
+    "source": "contempt",
+    "type": "opposes",
+    "target": "objective view",
+    "passage_id": "bookIV_11",
+    "confidence": 1.0
+  },
+  {
+    "source": "objective view",
+    "type": "requires",
+    "target": "reality",
+    "passage_id": "bookIV_11",
+    "confidence": 1.0
+  },
+  {
+    "source": "opinion",
+    "type": "opposes",
+    "target": "reality",
+    "passage_id": "bookIV_11",
+    "confidence": 1.0
+  },
+  {
+    "source": "changing mind",
+    "type": "requires",
+    "target": "justice",
+    "passage_id": "bookIV_12",
+    "confidence": 1.0
+  },
+  {
+    "source": "changing mind",
+    "type": "requires",
+    "target": "public good",
+    "passage_id": "bookIV_12",
+    "confidence": 1.0
+  },
+  {
+    "source": "changing mind",
+    "type": "opposes",
+    "target": "reputation",
+    "passage_id": "bookIV_12",
+    "confidence": 1.0
+  },
+  {
+    "source": "friend",
+    "type": "teaches",
+    "target": "reason",
+    "passage_id": "bookIV_12",
+    "confidence": 1.0
+  },
+  {
+    "source": "self",
+    "type": "requires",
+    "target": "reason",
+    "passage_id": "bookIV_13",
+    "confidence": 1.0
+  },
+  {
+    "source": "reason",
+    "type": "leads_to",
+    "target": "fulfillment",
+    "passage_id": "bookIV_13",
+    "confidence": 1.0
+  },
+  {
+    "source": "function",
+    "type": "embodies",
+    "target": "reason",
+    "passage_id": "bookIV_13",
+    "confidence": 1.0
+  },
+  {
+    "source": "nature",
+    "type": "leads_to",
+    "target": "vanish",
+    "passage_id": "bookIV_14",
+    "confidence": 1.0
+  },
+  {
+    "source": "vanish",
+    "type": "relates_to",
+    "target": "whole",
+    "passage_id": "bookIV_14",
+    "confidence": 1.0
+  },
+  {
+    "source": "universal reason",
+    "type": "leads_to",
+    "target": "nature",
+    "passage_id": "bookIV_14",
+    "confidence": 1.0
+  },
+  {
+    "source": "return",
+    "type": "resolved_by",
+    "target": "universal reason",
+    "passage_id": "bookIV_14",
+    "confidence": 1.0
+  },
+  {
+    "source": "frankincense",
+    "type": "embodies",
+    "target": "indifference",
+    "passage_id": "bookIV_15",
+    "confidence": 1.0
+  },
+  {
+    "source": "indifference",
+    "type": "relates_to",
+    "target": "equality",
+    "passage_id": "bookIV_15",
+    "confidence": 1.0
+  },
+  {
+    "source": "degradation",
+    "type": "resolved_by",
+    "target": "principle",
+    "passage_id": "bookIV_16",
+    "confidence": 1.0
+  },
+  {
+    "source": "principle",
+    "type": "requires",
+    "target": "wisdom",
+    "passage_id": "bookIV_16",
+    "confidence": 1.0
+  },
+  {
+    "source": "principle",
+    "type": "leads_to",
+    "target": "divinity",
+    "passage_id": "bookIV_16",
+    "confidence": 1.0
+  },
+  {
+    "source": "death",
+    "type": "leads_to",
+    "target": "urgency",
+    "passage_id": "bookIV_17",
+    "confidence": 1.0
+  },
+  {
+    "source": "virtue",
+    "type": "requires",
+    "target": "agency",
+    "passage_id": "bookIV_17",
+    "confidence": 1.0
+  },
+  {
+    "source": "time",
+    "type": "opposes",
+    "target": "urgency",
+    "passage_id": "bookIV_17",
+    "confidence": 1.0
+  },
+  {
+    "source": "self-inspection",
+    "type": "leads_to",
+    "target": "ease",
+    "passage_id": "bookIV_18",
+    "confidence": 1.0
+  },
+  {
+    "source": "honesty",
+    "type": "embodies",
+    "target": "righteousness",
+    "passage_id": "bookIV_18",
+    "confidence": 1.0
+  },
+  {
+    "source": "self-inspection",
+    "type": "requires",
+    "target": "time",
+    "passage_id": "bookIV_18",
+    "confidence": 1.0
+  },
+  {
+    "source": "servile dependence",
+    "type": "opposes",
+    "target": "nature",
+    "passage_id": "bookIV_19",
+    "confidence": 1.0
+  },
+  {
+    "source": "commendation",
+    "type": "requires",
+    "target": "utility",
+    "passage_id": "bookIV_19",
+    "confidence": 1.0
+  },
+  {
+    "source": "fame",
+    "type": "relates_to",
+    "target": "memory",
+    "passage_id": "bookIV_19",
+    "confidence": 1.0
+  },
+  {
+    "source": "virtue",
+    "type": "opposes",
+    "target": "praise",
+    "passage_id": "bookIV_20",
+    "confidence": 1.0
+  },
+  {
+    "source": "truth",
+    "type": "relates_to",
+    "target": "virtue",
+    "passage_id": "bookIV_20",
+    "confidence": 1.0
+  },
+  {
+    "source": "sobriety",
+    "type": "relates_to",
+    "target": "virtue",
+    "passage_id": "bookIV_20",
+    "confidence": 1.0
+  },
+  {
+    "source": "good nature",
+    "type": "relates_to",
+    "target": "virtue",
+    "passage_id": "bookIV_20",
+    "confidence": 1.0
+  },
+  {
+    "source": "soul",
+    "type": "resolved_by",
+    "target": "dissolution",
+    "passage_id": "bookIV_21",
+    "confidence": 1.0
+  },
+  {
+    "source": "soul",
+    "type": "embodies",
+    "target": "generative principle",
+    "passage_id": "bookIV_21",
+    "confidence": 1.0
+  },
+  {
+    "source": "transmutation",
+    "type": "leads_to",
+    "target": "dissolution",
+    "passage_id": "bookIV_21",
+    "confidence": 1.0
+  },
+  {
+    "source": "investigation",
+    "type": "requires",
+    "target": "reason",
+    "passage_id": "bookIV_21",
+    "confidence": 1.0
+  },
+  {
+    "source": "riot",
+    "type": "opposes",
+    "target": "intention",
+    "passage_id": "bookIV_22",
+    "confidence": 1.0
+  },
+  {
+    "source": "intention",
+    "type": "requires",
+    "target": "conviction",
+    "passage_id": "bookIV_22",
+    "confidence": 1.0
+  },
+  {
+    "source": "nature",
+    "type": "embodies",
+    "target": "universe",
+    "passage_id": "bookIV_23",
+    "confidence": 1.0
+  },
+  {
+    "source": "agreement",
+    "type": "leads_to",
+    "target": "nature",
+    "passage_id": "bookIV_23",
+    "confidence": 1.0
+  },
+  {
+    "source": "god",
+    "type": "relates_to",
+    "target": "universe",
+    "passage_id": "bookIV_23",
+    "confidence": 1.0
+  },
+  {
+    "source": "Democritus",
+    "type": "relates_to",
+    "target": "necessity",
+    "passage_id": "bookIV_24",
+    "confidence": 1.0
+  },
+  {
+    "source": "self-examination",
+    "type": "resolved_by",
+    "target": "disturbance",
+    "passage_id": "bookIV_24",
+    "confidence": 1.0
+  },
+  {
+    "source": "reason",
+    "type": "leads_to",
+    "target": "necessity",
+    "passage_id": "bookIV_24",
+    "confidence": 1.0
+  },
+  {
+    "source": "self-examination",
+    "type": "leads_to",
+    "target": "virtue",
+    "passage_id": "bookIV_25",
+    "confidence": 1.0
+  },
+  {
+    "source": "acquiescence",
+    "type": "relates_to",
+    "target": "fate",
+    "passage_id": "bookIV_25",
+    "confidence": 1.0
+  },
+  {
+    "source": "honesty",
+    "type": "embodies",
+    "target": "virtue",
+    "passage_id": "bookIV_25",
+    "confidence": 1.0
+  },
+  {
+    "source": "self-examination",
+    "type": "requires",
+    "target": "acquiescence",
+    "passage_id": "bookIV_25",
+    "confidence": 1.0
+  },
+  {
+    "source": "disturbance",
+    "type": "resolved_by",
+    "target": "purpose",
+    "passage_id": "bookIV_26",
+    "confidence": 1.0
+  },
+  {
+    "source": "fault",
+    "type": "relates_to",
+    "target": "fate",
+    "passage_id": "bookIV_26",
+    "confidence": 1.0
+  },
+  {
+    "source": "justice",
+    "type": "requires",
+    "target": "prudence",
+    "passage_id": "bookIV_26",
+    "confidence": 1.0
+  },
+  {
+    "source": "fate",
+    "type": "leads_to",
+    "target": "purpose",
+    "passage_id": "bookIV_26",
+    "confidence": 1.0
+  },
+  {
+    "source": "universe",
+    "type": "embodies",
+    "target": "order",
+    "passage_id": "bookIV_27",
+    "confidence": 1.0
+  },
+  {
+    "source": "chance",
+    "type": "leads_to",
+    "target": "order",
+    "passage_id": "bookIV_27",
+    "confidence": 1.0
+  },
+  {
+    "source": "contrivance",
+    "type": "leads_to",
+    "target": "order",
+    "passage_id": "bookIV_27",
+    "confidence": 1.0
+  },
+  {
+    "source": "universe",
+    "type": "resolved_by",
+    "target": "harmony",
+    "passage_id": "bookIV_27",
+    "confidence": 1.0
+  },
+  {
+    "source": "obstinate character",
+    "type": "relates_to",
+    "target": "brutish character",
+    "passage_id": "bookIV_28",
+    "confidence": 1.0
+  },
+  {
+    "source": "mercenary character",
+    "type": "relates_to",
+    "target": "tyrannical character",
+    "passage_id": "bookIV_28",
+    "confidence": 1.0
+  },
+  {
+    "source": "ignorance",
+    "type": "leads_to",
+    "target": "selfishness",
+    "passage_id": "bookIV_29",
+    "confidence": 1.0
+  },
+  {
+    "source": "selfishness",
+    "type": "opposes",
+    "target": "universal soul",
+    "passage_id": "bookIV_29",
+    "confidence": 1.0
+  },
+  {
+    "source": "universal nature",
+    "type": "relates_to",
+    "target": "universal soul",
+    "passage_id": "bookIV_29",
+    "confidence": 1.0
+  },
+  {
+    "source": "ignorance",
+    "type": "resolved_by",
+    "target": "reason",
+    "passage_id": "bookIV_29",
+    "confidence": 1.0
+  },
+  {
+    "source": "abundance",
+    "type": "opposes",
+    "target": "encouragement",
+    "passage_id": "bookIV_30",
+    "confidence": 1.0
+  },
+  {
+    "source": "reason",
+    "type": "resolved_by",
+    "target": "abundance",
+    "passage_id": "bookIV_30",
+    "confidence": 1.0
+  },
+  {
+    "source": "learning",
+    "type": "requires",
+    "target": "reason",
+    "passage_id": "bookIV_30",
+    "confidence": 1.0
+  },
+  {
+    "source": "satisfaction",
+    "type": "leads_to",
+    "target": "resignation",
+    "passage_id": "bookIV_31",
+    "confidence": 1.0
+  },
+  {
+    "source": "business",
+    "type": "relates_to",
+    "target": "nature",
+    "passage_id": "bookIV_31",
+    "confidence": 1.0
+  },
+  {
+    "source": "resignation",
+    "type": "resolved_by",
+    "target": "gods",
+    "passage_id": "bookIV_31",
+    "confidence": 1.0
+  },
+  {
+    "source": "resignation",
+    "type": "opposes",
+    "target": "tyrant",
+    "passage_id": "bookIV_31",
+    "confidence": 1.0
+  },
+  {
+    "source": "resignation",
+    "type": "opposes",
+    "target": "slave",
+    "passage_id": "bookIV_31",
+    "confidence": 1.0
+  },
+  {
+    "source": "mankind",
+    "type": "relates_to",
+    "target": "vanity",
+    "passage_id": "bookIV_32",
+    "confidence": 1.0
+  },
+  {
+    "source": "vanity",
+    "type": "opposes",
+    "target": "dignity of nature",
+    "passage_id": "bookIV_32",
+    "confidence": 1.0
+  },
+  {
+    "source": "proportion",
+    "type": "leads_to",
+    "target": "regret-free detachment",
+    "passage_id": "bookIV_32",
+    "confidence": 1.0
+  },
+  {
+    "source": "regret-free detachment",
+    "type": "requires",
+    "target": "proportion",
+    "passage_id": "bookIV_32",
+    "confidence": 1.0
+  },
+  {
+    "source": "trajan",
+    "type": "relates_to",
+    "target": "mankind",
+    "passage_id": "bookIV_32",
+    "confidence": 1.0
+  },
+  {
+    "source": "fame",
+    "type": "relates_to",
+    "target": "oblivion",
+    "passage_id": "bookIV_33",
+    "confidence": 1.0
+  },
+  {
+    "source": "fame",
+    "type": "embodies",
+    "target": "vanity",
+    "passage_id": "bookIV_33",
+    "confidence": 1.0
+  },
+  {
+    "source": "honest mind",
+    "type": "relates_to",
+    "target": "common good",
+    "passage_id": "bookIV_33",
+    "confidence": 1.0
+  },
+  {
+    "source": "Hadrian",
+    "type": "relates_to",
+    "target": "transience",
+    "passage_id": "bookIV_33",
+    "confidence": 1.0
+  },
+  {
+    "source": "vanity",
+    "type": "opposes",
+    "target": "honest mind",
+    "passage_id": "bookIV_33",
+    "confidence": 1.0
+  },
+  {
+    "source": "memorable action",
+    "type": "leads_to",
+    "target": "short-lived",
+    "passage_id": "bookIV_35",
+    "confidence": 1.0
+  },
+  {
+    "source": "reporter",
+    "type": "leads_to",
+    "target": "short-lived",
+    "passage_id": "bookIV_35",
+    "confidence": 1.0
+  },
+  {
+    "source": "nature",
+    "type": "embodies",
+    "target": "alteration",
+    "passage_id": "bookIV_36",
+    "confidence": 1.0
+  },
+  {
+    "source": "common notion",
+    "type": "leads_to",
+    "target": "dull fancy",
+    "passage_id": "bookIV_36",
+    "confidence": 1.0
+  },
+  {
+    "source": "seed",
+    "type": "relates_to",
+    "target": "alteration",
+    "passage_id": "bookIV_36",
+    "confidence": 1.0
+  },
+  {
+    "source": "unnecessary desire",
+    "type": "opposes",
+    "target": "intellectual honesty",
+    "passage_id": "bookIV_37",
+    "confidence": 1.0
+  },
+  {
+    "source": "disturbance",
+    "type": "resolved_by",
+    "target": "reason",
+    "passage_id": "bookIV_37",
+    "confidence": 1.0
+  },
+  {
+    "source": "suspicion",
+    "type": "resolved_by",
+    "target": "reason",
+    "passage_id": "bookIV_37",
+    "confidence": 1.0
+  },
+  {
+    "source": "intellectual honesty",
+    "type": "embodies",
+    "target": "virtue",
+    "passage_id": "bookIV_37",
+    "confidence": 1.0
+  },
+  {
+    "source": "intellectual honesty",
+    "type": "leads_to",
+    "target": "wisdom",
+    "passage_id": "bookIV_37",
+    "confidence": 1.0
+  },
+  {
+    "source": "true quality of people",
+    "type": "resolved_by",
+    "target": "examination",
+    "passage_id": "bookIV_38",
+    "confidence": 1.0
+  },
+  {
+    "source": "examination",
+    "type": "requires",
+    "target": "minds",
+    "passage_id": "bookIV_38",
+    "confidence": 1.0
+  },
+  {
+    "source": "minds",
+    "type": "embodies",
+    "target": "pursuits",
+    "passage_id": "bookIV_38",
+    "confidence": 1.0
+  },
+  {
+    "source": "minds",
+    "type": "embodies",
+    "target": "aversions",
+    "passage_id": "bookIV_38",
+    "confidence": 1.0
+  },
+  {
+    "source": "pain",
+    "type": "relates_to",
+    "target": "judgment",
+    "passage_id": "bookIV_39",
+    "confidence": 1.0
+  },
+  {
+    "source": "pain",
+    "type": "opposes",
+    "target": "corporeal covering",
+    "passage_id": "bookIV_39",
+    "confidence": 1.0
+  },
+  {
+    "source": "quiet mind",
+    "type": "resolved_by",
+    "target": "judgment",
+    "passage_id": "bookIV_39",
+    "confidence": 1.0
+  },
+  {
+    "source": "indifference",
+    "type": "leads_to",
+    "target": "quiet mind",
+    "passage_id": "bookIV_39",
+    "confidence": 1.0
+  },
+  {
+    "source": "things that subsist upon change",
+    "type": "relates_to",
+    "target": "instability",
+    "passage_id": "bookIV_42",
+    "confidence": 1.0
+  },
+  {
+    "source": "things that subsist upon change",
+    "type": "opposes",
+    "target": "good",
+    "passage_id": "bookIV_42",
+    "confidence": 1.0
+  },
+  {
+    "source": "things that subsist upon change",
+    "type": "opposes",
+    "target": "bad",
+    "passage_id": "bookIV_42",
+    "confidence": 1.0
+  },
+  {
+    "source": "time",
+    "type": "embodies",
+    "target": "change",
+    "passage_id": "bookIV_43",
+    "confidence": 1.0
+  },
+  {
+    "source": "change",
+    "type": "leads_to",
+    "target": "passing",
+    "passage_id": "bookIV_43",
+    "confidence": 1.0
+  },
+  {
+    "source": "impermanence",
+    "type": "relates_to",
+    "target": "passing",
+    "passage_id": "bookIV_43",
+    "confidence": 1.0
+  },
+  {
+    "source": "time",
+    "type": "relates_to",
+    "target": "impermanence",
+    "passage_id": "bookIV_43",
+    "confidence": 1.0
+  },
+  {
+    "source": "event",
+    "type": "embodies",
+    "target": "nature",
+    "passage_id": "bookIV_44",
+    "confidence": 1.0
+  },
+  {
+    "source": "death",
+    "type": "leads_to",
+    "target": "unthinking",
+    "passage_id": "bookIV_44",
+    "confidence": 1.0
+  },
+  {
+    "source": "disease",
+    "type": "leads_to",
+    "target": "unthinking",
+    "passage_id": "bookIV_44",
+    "confidence": 1.0
+  },
+  {
+    "source": "calumny",
+    "type": "leads_to",
+    "target": "unthinking",
+    "passage_id": "bookIV_44",
+    "confidence": 1.0
+  },
+  {
+    "source": "Heraclitus",
+    "type": "teaches",
+    "target": "cosmic cycle",
+    "passage_id": "bookIV_46",
+    "confidence": 1.0
+  },
+  {
+    "source": "people",
+    "type": "opposes",
+    "target": "universal reason",
+    "passage_id": "bookIV_46",
+    "confidence": 1.0
+  },
+  {
+    "source": "tradition",
+    "type": "requires",
+    "target": "childlike belief",
+    "passage_id": "bookIV_46",
+    "confidence": 1.0
+  },
+  {
+    "source": "ignorance",
+    "type": "relates_to",
+    "target": "universal reason",
+    "passage_id": "bookIV_46",
+    "confidence": 1.0
+  },
+  {
+    "source": "concern",
+    "type": "resolved_by",
+    "target": "reason",
+    "passage_id": "bookIV_47",
+    "confidence": 1.0
+  },
+  {
+    "source": "death",
+    "type": "relates_to",
+    "target": "time",
+    "passage_id": "bookIV_47",
+    "confidence": 1.0
+  },
+  {
+    "source": "poverty of spirit",
+    "type": "opposes",
+    "target": "reason",
+    "passage_id": "bookIV_47",
+    "confidence": 1.0
+  },
+  {
+    "source": "death",
+    "type": "resolved_by",
+    "target": "nature",
+    "passage_id": "bookIV_48",
+    "confidence": 1.0
+  },
+  {
+    "source": "transitoriness",
+    "type": "leads_to",
+    "target": "cheerful acceptance",
+    "passage_id": "bookIV_48",
+    "confidence": 1.0
+  },
+  {
+    "source": "nature",
+    "type": "relates_to",
+    "target": "harmony",
+    "passage_id": "bookIV_48",
+    "confidence": 1.0
+  },
+  {
+    "source": "cheerful acceptance",
+    "type": "requires",
+    "target": "gratitude",
+    "passage_id": "bookIV_48",
+    "confidence": 1.0
+  },
+  {
+    "source": "steadfastness",
+    "type": "leads_to",
+    "target": "virtue",
+    "passage_id": "bookIV_49",
+    "confidence": 1.0
+  },
+  {
+    "source": "misfortune",
+    "type": "resolved_by",
+    "target": "steadfastness",
+    "passage_id": "bookIV_49",
+    "confidence": 1.0
+  },
+  {
+    "source": "nature",
+    "type": "opposes",
+    "target": "fear",
+    "passage_id": "bookIV_49",
+    "confidence": 1.0
+  },
+  {
+    "source": "virtue",
+    "type": "embodies",
+    "target": "nature",
+    "passage_id": "bookIV_49",
+    "confidence": 1.0
+  },
+  {
+    "source": "fear",
+    "type": "resolved_by",
+    "target": "consideration",
+    "passage_id": "bookIV_50",
+    "confidence": 1.0
+  },
+  {
+    "source": "Cadicianus",
+    "type": "embodies",
+    "target": "death",
+    "passage_id": "bookIV_50",
+    "confidence": 1.0
+  },
+  {
+    "source": "death",
+    "type": "relates_to",
+    "target": "time",
+    "passage_id": "bookIV_50",
+    "confidence": 1.0
+  },
+  {
+    "source": "eternity",
+    "type": "relates_to",
+    "target": "time",
+    "passage_id": "bookIV_50",
+    "confidence": 1.0
+  },
+  {
+    "source": "work",
+    "type": "relates_to",
+    "target": "nature",
+    "passage_id": "bookIV_51",
+    "confidence": 1.0
+  },
+  {
+    "source": "soundness",
+    "type": "leads_to",
+    "target": "work",
+    "passage_id": "bookIV_51",
+    "confidence": 1.0
+  },
+  {
+    "source": "soundness",
+    "type": "opposes",
+    "target": "fatigue",
+    "passage_id": "bookIV_51",
+    "confidence": 1.0
+  },
+  {
+    "source": "soundness",
+    "type": "opposes",
+    "target": "quarrel",
+    "passage_id": "bookIV_51",
+    "confidence": 1.0
+  },
+  {
+    "source": "soundness",
+    "type": "opposes",
+    "target": "dissemble",
+    "passage_id": "bookIV_51",
+    "confidence": 1.0
+  },
+  {
+    "source": "action",
+    "type": "embodies",
+    "target": "nature",
+    "passage_id": "bookV_1",
+    "confidence": 1.0
+  },
+  {
+    "source": "pleasure",
+    "type": "opposes",
+    "target": "action",
+    "passage_id": "bookV_1",
+    "confidence": 1.0
+  },
+  {
+    "source": "self",
+    "type": "requires",
+    "target": "social duty",
+    "passage_id": "bookV_1",
+    "confidence": 1.0
+  },
+  {
+    "source": "nature",
+    "type": "leads_to",
+    "target": "action",
+    "passage_id": "bookV_1",
+    "confidence": 1.0
+  },
+  {
+    "source": "imagination",
+    "type": "leads_to",
+    "target": "troublesome thought",
+    "passage_id": "bookV_2",
+    "confidence": 1.0
+  },
+  {
+    "source": "troublesome thought",
+    "type": "resolved_by",
+    "target": "discharge thought",
+    "passage_id": "bookV_2",
+    "confidence": 1.0
+  },
+  {
+    "source": "discharge thought",
+    "type": "leads_to",
+    "target": "calm",
+    "passage_id": "bookV_2",
+    "confidence": 1.0
+  },
+  {
+    "source": "censure",
+    "type": "resolved_by",
+    "target": "nature",
+    "passage_id": "bookV_3",
+    "confidence": 1.0
+  },
+  {
+    "source": "honesty",
+    "type": "embodies",
+    "target": "nature",
+    "passage_id": "bookV_3",
+    "confidence": 1.0
+  },
+  {
+    "source": "common interest",
+    "type": "relates_to",
+    "target": "own interest",
+    "passage_id": "bookV_3",
+    "confidence": 1.0
+  },
+  {
+    "source": "nature",
+    "type": "leads_to",
+    "target": "death",
+    "passage_id": "bookV_4",
+    "confidence": 1.0
+  },
+  {
+    "source": "earth",
+    "type": "leads_to",
+    "target": "death",
+    "passage_id": "bookV_4",
+    "confidence": 1.0
+  },
+  {
+    "source": "gratitude",
+    "type": "relates_to",
+    "target": "earth",
+    "passage_id": "bookV_4",
+    "confidence": 1.0
+  },
+  {
+    "source": "air",
+    "type": "relates_to",
+    "target": "death",
+    "passage_id": "bookV_4",
+    "confidence": 1.0
+  },
+  {
+    "source": "nature",
+    "type": "teaches",
+    "target": "gratitude",
+    "passage_id": "bookV_4",
+    "confidence": 1.0
+  },
+  {
+    "source": "virtue",
+    "type": "resolved_by",
+    "target": "effort",
+    "passage_id": "bookV_5",
+    "confidence": 1.0
+  },
+  {
+    "source": "natural defect",
+    "type": "opposes",
+    "target": "virtue",
+    "passage_id": "bookV_5",
+    "confidence": 1.0
+  },
+  {
+    "source": "self-contentment",
+    "type": "opposes",
+    "target": "effort",
+    "passage_id": "bookV_5",
+    "confidence": 1.0
+  },
+  {
+    "source": "beneficence",
+    "type": "embodies",
+    "target": "vine",
+    "passage_id": "bookV_6",
+    "confidence": 1.0
+  },
+  {
+    "source": "beneficence",
+    "type": "opposes",
+    "target": "gratitude",
+    "passage_id": "bookV_6",
+    "confidence": 1.0
+  },
+  {
+    "source": "reflection",
+    "type": "leads_to",
+    "target": "beneficence",
+    "passage_id": "bookV_6",
+    "confidence": 1.0
+  },
+  {
+    "source": "social duty",
+    "type": "requires",
+    "target": "beneficence",
+    "passage_id": "bookV_6",
+    "confidence": 1.0
+  },
+  {
+    "source": "calamity",
+    "type": "embodies",
+    "target": "harmony",
+    "passage_id": "bookV_8",
+    "confidence": 1.0
+  },
+  {
+    "source": "accommodation",
+    "type": "leads_to",
+    "target": "contentment",
+    "passage_id": "bookV_8",
+    "confidence": 1.0
+  },
+  {
+    "source": "Zeus",
+    "type": "embodies",
+    "target": "nature",
+    "passage_id": "bookV_8",
+    "confidence": 1.0
+  },
+  {
+    "source": "contentment",
+    "type": "requires",
+    "target": "accommodation",
+    "passage_id": "bookV_8",
+    "confidence": 1.0
+  },
+  {
+    "source": "philosophy",
+    "type": "resolved_by",
+    "target": "reason",
+    "passage_id": "bookV_9",
+    "confidence": 1.0
+  },
+  {
+    "source": "philosophy",
+    "type": "embodies",
+    "target": "human nature",
+    "passage_id": "bookV_9",
+    "confidence": 1.0
+  },
+  {
+    "source": "philosophy",
+    "type": "leads_to",
+    "target": "simplicity",
+    "passage_id": "bookV_9",
+    "confidence": 1.0
+  },
+  {
+    "source": "philosophy",
+    "type": "leads_to",
+    "target": "equanimity",
+    "passage_id": "bookV_9",
+    "confidence": 1.0
+  },
+  {
+    "source": "philosophy",
+    "type": "leads_to",
+    "target": "piety",
+    "passage_id": "bookV_9",
+    "confidence": 1.0
+  },
+  {
+    "source": "ignorance",
+    "type": "resolved_by",
+    "target": "transience",
+    "passage_id": "bookV_10",
+    "confidence": 1.0
+  },
+  {
+    "source": "universe nature",
+    "type": "requires",
+    "target": "spirit",
+    "passage_id": "bookV_10",
+    "confidence": 1.0
+  },
+  {
+    "source": "divinity",
+    "type": "embodies",
+    "target": "universe nature",
+    "passage_id": "bookV_10",
+    "confidence": 1.0
+  },
+  {
+    "source": "soul",
+    "type": "embodies",
+    "target": "ruling part",
+    "passage_id": "bookV_11",
+    "confidence": 1.0
+  },
+  {
+    "source": "self-examination",
+    "type": "relates_to",
+    "target": "ruling part",
+    "passage_id": "bookV_11",
+    "confidence": 1.0
+  },
+  {
+    "source": "ruling part",
+    "type": "opposes",
+    "target": "tyranny",
+    "passage_id": "bookV_11",
+    "confidence": 1.0
+  },
+  {
+    "source": "ruling part",
+    "type": "opposes",
+    "target": "beastliness",
+    "passage_id": "bookV_11",
+    "confidence": 1.0
+  },
+  {
+    "source": "good man",
+    "type": "embodies",
+    "target": "prudence",
+    "passage_id": "bookV_12",
+    "confidence": 1.0
+  },
+  {
+    "source": "good man",
+    "type": "embodies",
+    "target": "temperance",
+    "passage_id": "bookV_12",
+    "confidence": 1.0
+  },
+  {
+    "source": "good man",
+    "type": "embodies",
+    "target": "justice",
+    "passage_id": "bookV_12",
+    "confidence": 1.0
+  },
+  {
+    "source": "good man",
+    "type": "embodies",
+    "target": "fortitude",
+    "passage_id": "bookV_12",
+    "confidence": 1.0
+  },
+  {
+    "source": "luxury",
+    "type": "opposes",
+    "target": "comfort",
+    "passage_id": "bookV_12",
+    "confidence": 1.0
+  },
+  {
+    "source": "good man",
+    "type": "opposes",
+    "target": "luxury",
+    "passage_id": "bookV_12",
+    "confidence": 1.0
+  },
+  {
+    "source": "matter",
+    "type": "relates_to",
+    "target": "body",
+    "passage_id": "bookV_13",
+    "confidence": 1.0
+  },
+  {
+    "source": "form",
+    "type": "relates_to",
+    "target": "soul",
+    "passage_id": "bookV_13",
+    "confidence": 1.0
+  },
+  {
+    "source": "transformation",
+    "type": "leads_to",
+    "target": "eternity",
+    "passage_id": "bookV_13",
+    "confidence": 1.0
+  },
+  {
+    "source": "reason",
+    "type": "relates_to",
+    "target": "reasoning faculty",
+    "passage_id": "bookV_14",
+    "confidence": 1.0
+  },
+  {
+    "source": "reason",
+    "type": "opposes",
+    "target": "foreign assistance",
+    "passage_id": "bookV_14",
+    "confidence": 1.0
+  },
+  {
+    "source": "reasoning faculty",
+    "type": "opposes",
+    "target": "foreign assistance",
+    "passage_id": "bookV_14",
+    "confidence": 1.0
+  },
+  {
+    "source": "good man",
+    "type": "embodies",
+    "target": "self-denial",
+    "passage_id": "bookV_15",
+    "confidence": 1.0
+  },
+  {
+    "source": "good man",
+    "type": "embodies",
+    "target": "indifference",
+    "passage_id": "bookV_15",
+    "confidence": 1.0
+  },
+  {
+    "source": "good man",
+    "type": "embodies",
+    "target": "patience",
+    "passage_id": "bookV_15",
+    "confidence": 1.0
+  },
+  {
+    "source": "human nature",
+    "type": "teaches",
+    "target": "indifference",
+    "passage_id": "bookV_15",
+    "confidence": 1.0
+  },
+  {
+    "source": "expectation",
+    "type": "leads_to",
+    "target": "madness",
+    "passage_id": "bookV_17",
+    "confidence": 1.0
+  },
+  {
+    "source": "ill men",
+    "type": "embodies",
+    "target": "ill deeds",
+    "passage_id": "bookV_17",
+    "confidence": 1.0
+  },
+  {
+    "source": "expectation",
+    "type": "requires",
+    "target": "impossibility",
+    "passage_id": "bookV_17",
+    "confidence": 1.0
+  },
+  {
+    "source": "prudence",
+    "type": "opposes",
+    "target": "ignorance",
+    "passage_id": "bookV_18",
+    "confidence": 1.0
+  },
+  {
+    "source": "principle",
+    "type": "opposes",
+    "target": "vanity",
+    "passage_id": "bookV_18",
+    "confidence": 1.0
+  },
+  {
+    "source": "misfortune",
+    "type": "requires",
+    "target": "understanding",
+    "passage_id": "bookV_18",
+    "confidence": 1.0
+  },
+  {
+    "source": "outward objects",
+    "type": "relates_to",
+    "target": "soul",
+    "passage_id": "bookV_19",
+    "confidence": 1.0
+  },
+  {
+    "source": "soul",
+    "type": "embodies",
+    "target": "opinion",
+    "passage_id": "bookV_19",
+    "confidence": 1.0
+  },
+  {
+    "source": "opinion",
+    "type": "requires",
+    "target": "strength",
+    "passage_id": "bookV_19",
+    "confidence": 1.0
+  },
+  {
+    "source": "contingencies of fortune",
+    "type": "relates_to",
+    "target": "opinion",
+    "passage_id": "bookV_19",
+    "confidence": 1.0
+  },
+  {
+    "source": "serviceability",
+    "type": "requires",
+    "target": "human nature",
+    "passage_id": "bookV_20",
+    "confidence": 1.0
+  },
+  {
+    "source": "indifference",
+    "type": "resolved_by",
+    "target": "mind",
+    "passage_id": "bookV_20",
+    "confidence": 1.0
+  },
+  {
+    "source": "mind",
+    "type": "leads_to",
+    "target": "obstacle",
+    "passage_id": "bookV_20",
+    "confidence": 1.0
+  },
+  {
+    "source": "obstacle",
+    "type": "embodies",
+    "target": "help",
+    "passage_id": "bookV_20",
+    "confidence": 1.0
+  },
+  {
+    "source": "worship",
+    "type": "relates_to",
+    "target": "the governing principle",
+    "passage_id": "bookV_21",
+    "confidence": 1.0
+  },
+  {
+    "source": "the ruling faculty",
+    "type": "embodies",
+    "target": "nature",
+    "passage_id": "bookV_21",
+    "confidence": 1.0
+  },
+  {
+    "source": "the ruling faculty",
+    "type": "leads_to",
+    "target": "actions",
+    "passage_id": "bookV_21",
+    "confidence": 1.0
+  },
+  {
+    "source": "the governing principle",
+    "type": "requires",
+    "target": "worship",
+    "passage_id": "bookV_21",
+    "confidence": 1.0
+  },
+  {
+    "source": "reflection",
+    "type": "resolved_by",
+    "target": "passion",
+    "passage_id": "bookV_22",
+    "confidence": 1.0
+  },
+  {
+    "source": "injury",
+    "type": "relates_to",
+    "target": "body politic",
+    "passage_id": "bookV_22",
+    "confidence": 1.0
+  },
+  {
+    "source": "fault",
+    "type": "leads_to",
+    "target": "passion",
+    "passage_id": "bookV_22",
+    "confidence": 1.0
+  },
+  {
+    "source": "reflection",
+    "type": "teaches",
+    "target": "citizen",
+    "passage_id": "bookV_22",
+    "confidence": 1.0
+  },
+  {
+    "source": "reflection",
+    "type": "requires",
+    "target": "change",
+    "passage_id": "bookV_23",
+    "confidence": 1.0
+  },
+  {
+    "source": "reflection",
+    "type": "resolved_by",
+    "target": "distress",
+    "passage_id": "bookV_23",
+    "confidence": 1.0
+  },
+  {
+    "source": "reflection",
+    "type": "resolved_by",
+    "target": "prounce",
+    "passage_id": "bookV_23",
+    "confidence": 1.0
+  },
+  {
+    "source": "impermanence",
+    "type": "leads_to",
+    "target": "materiality",
+    "passage_id": "bookV_23",
+    "confidence": 1.0
+  },
+  {
+    "source": "misbehavior",
+    "type": "relates_to",
+    "target": "indifference",
+    "passage_id": "bookV_25",
+    "confidence": 1.0
+  },
+  {
+    "source": "indifference",
+    "type": "resolved_by",
+    "target": "universal nature",
+    "passage_id": "bookV_25",
+    "confidence": 1.0
+  },
+  {
+    "source": "individual nature",
+    "type": "embodies",
+    "target": "universal nature",
+    "passage_id": "bookV_25",
+    "confidence": 1.0
+  },
+  {
+    "source": "misbehavior",
+    "type": "leads_to",
+    "target": "internal disposition",
+    "passage_id": "bookV_25",
+    "confidence": 1.0
+  },
+  {
+    "source": "reason",
+    "type": "opposes",
+    "target": "anger",
+    "passage_id": "bookV_28",
+    "confidence": 1.0
+  },
+  {
+    "source": "persuasion",
+    "type": "resolved_by",
+    "target": "reason",
+    "passage_id": "bookV_28",
+    "confidence": 1.0
+  },
+  {
+    "source": "persuasion",
+    "type": "leads_to",
+    "target": "persuasion",
+    "passage_id": "bookV_28",
+    "confidence": 1.0
+  },
+  {
+    "source": "Marcus",
+    "type": "embodies",
+    "target": "indifference",
+    "passage_id": "bookV_29",
+    "confidence": 1.0
+  },
+  {
+    "source": "reason",
+    "type": "leads_to",
+    "target": "freedom",
+    "passage_id": "bookV_29",
+    "confidence": 1.0
+  },
+  {
+    "source": "public interest",
+    "type": "relates_to",
+    "target": "reason",
+    "passage_id": "bookV_29",
+    "confidence": 1.0
+  },
+  {
+    "source": "Marcus",
+    "type": "teaches",
+    "target": "indifference",
+    "passage_id": "bookV_29",
+    "confidence": 1.0
+  },
+  {
+    "source": "soul of the universe",
+    "type": "embodies",
+    "target": "social disposition",
+    "passage_id": "bookV_30",
+    "confidence": 1.0
+  },
+  {
+    "source": "soul of the universe",
+    "type": "leads_to",
+    "target": "mutual harmony",
+    "passage_id": "bookV_30",
+    "confidence": 1.0
+  },
+  {
+    "source": "lower creation",
+    "type": "requires",
+    "target": "higher beings",
+    "passage_id": "bookV_30",
+    "confidence": 1.0
+  },
+  {
+    "source": "higher beings",
+    "type": "relates_to",
+    "target": "subordination",
+    "passage_id": "bookV_30",
+    "confidence": 1.0
+  },
+  {
+    "source": "self-examination",
+    "type": "relates_to",
+    "target": "virtue",
+    "passage_id": "bookV_31",
+    "confidence": 1.0
+  },
+  {
+    "source": "indifference",
+    "type": "opposes",
+    "target": "pleasure",
+    "passage_id": "bookV_31",
+    "confidence": 1.0
+  },
+  {
+    "source": "indifference",
+    "type": "opposes",
+    "target": "glory",
+    "passage_id": "bookV_31",
+    "confidence": 1.0
+  },
+  {
+    "source": "virtue",
+    "type": "embodies",
+    "target": "indifference",
+    "passage_id": "bookV_31",
+    "confidence": 1.0
+  },
+  {
+    "source": "ignorance",
+    "type": "opposes",
+    "target": "knowledge",
+    "passage_id": "bookV_32",
+    "confidence": 1.0
+  },
+  {
+    "source": "knowledge",
+    "type": "requires",
+    "target": "reason",
+    "passage_id": "bookV_32",
+    "confidence": 1.0
+  },
+  {
+    "source": "reason",
+    "type": "embodies",
+    "target": "nature",
+    "passage_id": "bookV_32",
+    "confidence": 1.0
+  }
+]

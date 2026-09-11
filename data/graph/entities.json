@@ -1,0 +1,3087 @@
+[
+  {
+    "text": "father",
+    "type": "PERSON",
+    "passage_id": "bookI_2"
+  },
+  {
+    "text": "modesty",
+    "type": "CONCEPT",
+    "passage_id": "bookI_2"
+  },
+  {
+    "text": "manliness",
+    "type": "CONCEPT",
+    "passage_id": "bookI_2"
+  },
+  {
+    "text": "character",
+    "type": "CONCEPT",
+    "passage_id": "bookI_2"
+  },
+  {
+    "text": "mother",
+    "type": "PERSON",
+    "passage_id": "bookI_3"
+  },
+  {
+    "text": "religion",
+    "type": "CONCEPT",
+    "passage_id": "bookI_3"
+  },
+  {
+    "text": "generosity",
+    "type": "CONCEPT",
+    "passage_id": "bookI_3"
+  },
+  {
+    "text": "simpler living",
+    "type": "PRACTICE",
+    "passage_id": "bookI_3"
+  },
+  {
+    "text": "luxury",
+    "type": "CONCEPT",
+    "passage_id": "bookI_3"
+  },
+  {
+    "text": "Marcus",
+    "type": "PERSON",
+    "passage_id": "bookI_4"
+  },
+  {
+    "text": "great-grandfather",
+    "type": "PERSON",
+    "passage_id": "bookI_4"
+  },
+  {
+    "text": "good masters",
+    "type": "PERSON",
+    "passage_id": "bookI_4"
+  },
+  {
+    "text": "liberality",
+    "type": "CONCEPT",
+    "passage_id": "bookI_4"
+  },
+  {
+    "text": "home education",
+    "type": "PRACTICE",
+    "passage_id": "bookI_4"
+  },
+  {
+    "text": "governor",
+    "type": "PERSON",
+    "passage_id": "bookI_5"
+  },
+  {
+    "text": "partisanship",
+    "type": "CONCEPT",
+    "passage_id": "bookI_5"
+  },
+  {
+    "text": "simplicity",
+    "type": "CONCEPT",
+    "passage_id": "bookI_5"
+  },
+  {
+    "text": "hardship",
+    "type": "STATE",
+    "passage_id": "bookI_5"
+  },
+  {
+    "text": "self-discipline",
+    "type": "PRACTICE",
+    "passage_id": "bookI_5"
+  },
+  {
+    "text": "Diognetus",
+    "type": "PERSON",
+    "passage_id": "bookI_6"
+  },
+  {
+    "text": "philosophy",
+    "type": "CONCEPT",
+    "passage_id": "bookI_6"
+  },
+  {
+    "text": "freedom and plain-dealing",
+    "type": "CONCEPT",
+    "passage_id": "bookI_6"
+  },
+  {
+    "text": "Grecian discipline",
+    "type": "CONCEPT",
+    "passage_id": "bookI_6"
+  },
+  {
+    "text": "vain pursuits",
+    "type": "CONCEPT",
+    "passage_id": "bookI_6"
+  },
+  {
+    "text": "Rusticus",
+    "type": "PERSON",
+    "passage_id": "bookI_7"
+  },
+  {
+    "text": "Epictetus",
+    "type": "PERSON",
+    "passage_id": "bookI_7"
+  },
+  {
+    "text": "vanity",
+    "type": "STATE",
+    "passage_id": "bookI_7"
+  },
+  {
+    "text": "conceit",
+    "type": "STATE",
+    "passage_id": "bookI_7"
+  },
+  {
+    "text": "plain style",
+    "type": "PRACTICE",
+    "passage_id": "bookI_7"
+  },
+  {
+    "text": "reconciliation",
+    "type": "PRACTICE",
+    "passage_id": "bookI_7"
+  },
+  {
+    "text": "Apollonius",
+    "type": "PERSON",
+    "passage_id": "bookI_8"
+  },
+  {
+    "text": "freedom of mind",
+    "type": "CONCEPT",
+    "passage_id": "bookI_8"
+  },
+  {
+    "text": "chance",
+    "type": "CONCEPT",
+    "passage_id": "bookI_8"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookI_8"
+  },
+  {
+    "text": "equality of temper",
+    "type": "STATE",
+    "passage_id": "bookI_8"
+  },
+  {
+    "text": "modesty",
+    "type": "CONCEPT",
+    "passage_id": "bookI_8"
+  },
+  {
+    "text": "Sextus",
+    "type": "PERSON",
+    "passage_id": "bookI_9"
+  },
+  {
+    "text": "good humour",
+    "type": "STATE",
+    "passage_id": "bookI_9"
+  },
+  {
+    "text": "nature and reason",
+    "type": "CONCEPT",
+    "passage_id": "bookI_9"
+  },
+  {
+    "text": "unaffected gravity",
+    "type": "PRACTICE",
+    "passage_id": "bookI_9"
+  },
+  {
+    "text": "calmness",
+    "type": "STATE",
+    "passage_id": "bookI_9"
+  },
+  {
+    "text": "anger",
+    "type": "STATE",
+    "passage_id": "bookI_9"
+  },
+  {
+    "text": "Alexander the Grammarian",
+    "type": "PERSON",
+    "passage_id": "bookI_10"
+  },
+  {
+    "text": "critical",
+    "type": "STATE",
+    "passage_id": "bookI_10"
+  },
+  {
+    "text": "practical correction",
+    "type": "PRACTICE",
+    "passage_id": "bookI_10"
+  },
+  {
+    "text": "indirectness",
+    "type": "CONCEPT",
+    "passage_id": "bookI_10"
+  },
+  {
+    "text": "propriety",
+    "type": "CONCEPT",
+    "passage_id": "bookI_10"
+  },
+  {
+    "text": "Fronto",
+    "type": "PERSON",
+    "passage_id": "bookI_11"
+  },
+  {
+    "text": "envy",
+    "type": "STATE",
+    "passage_id": "bookI_11"
+  },
+  {
+    "text": "tricking",
+    "type": "CONCEPT",
+    "passage_id": "bookI_11"
+  },
+  {
+    "text": "dissimulation",
+    "type": "CONCEPT",
+    "passage_id": "bookI_11"
+  },
+  {
+    "text": "tyranny",
+    "type": "CONCEPT",
+    "passage_id": "bookI_11"
+  },
+  {
+    "text": "patricians",
+    "type": "PERSON",
+    "passage_id": "bookI_11"
+  },
+  {
+    "text": "leisure",
+    "type": "STATE",
+    "passage_id": "bookI_12"
+  },
+  {
+    "text": "necessity",
+    "type": "CONCEPT",
+    "passage_id": "bookI_12"
+  },
+  {
+    "text": "excuse",
+    "type": "PRACTICE",
+    "passage_id": "bookI_12"
+  },
+  {
+    "text": "business",
+    "type": "CONCEPT",
+    "passage_id": "bookI_12"
+  },
+  {
+    "text": "friendship",
+    "type": "CONCEPT",
+    "passage_id": "bookI_13"
+  },
+  {
+    "text": "remonstration",
+    "type": "CONCEPT",
+    "passage_id": "bookI_13"
+  },
+  {
+    "text": "affection",
+    "type": "STATE",
+    "passage_id": "bookI_13"
+  },
+  {
+    "text": "education",
+    "type": "CONCEPT",
+    "passage_id": "bookI_13"
+  },
+  {
+    "text": "Catulus",
+    "type": "PERSON",
+    "passage_id": "bookI_13"
+  },
+  {
+    "text": "children",
+    "type": "PERSON",
+    "passage_id": "bookI_13"
+  },
+  {
+    "text": "Severus",
+    "type": "PERSON",
+    "passage_id": "bookI_14"
+  },
+  {
+    "text": "justice",
+    "type": "CONCEPT",
+    "passage_id": "bookI_14"
+  },
+  {
+    "text": "truth",
+    "type": "CONCEPT",
+    "passage_id": "bookI_14"
+  },
+  {
+    "text": "philosophy",
+    "type": "CONCEPT",
+    "passage_id": "bookI_14"
+  },
+  {
+    "text": "commonwealth",
+    "type": "CONCEPT",
+    "passage_id": "bookI_14"
+  },
+  {
+    "text": "generosity",
+    "type": "CONCEPT",
+    "passage_id": "bookI_14"
+  },
+  {
+    "text": "Maximus",
+    "type": "PERSON",
+    "passage_id": "bookI_15"
+  },
+  {
+    "text": "self-command",
+    "type": "CONCEPT",
+    "passage_id": "bookI_15"
+  },
+  {
+    "text": "greatness of mind",
+    "type": "CONCEPT",
+    "passage_id": "bookI_15"
+  },
+  {
+    "text": "trouble",
+    "type": "STATE",
+    "passage_id": "bookI_15"
+  },
+  {
+    "text": "forgiveness",
+    "type": "PRACTICE",
+    "passage_id": "bookI_15"
+  },
+  {
+    "text": "truth",
+    "type": "CONCEPT",
+    "passage_id": "bookI_15"
+  },
+  {
+    "text": "An Antoninus Pius",
+    "type": "PERSON",
+    "passage_id": "bookI_16"
+  },
+  {
+    "text": "Socrates",
+    "type": "PERSON",
+    "passage_id": "bookI_16"
+  },
+  {
+    "text": "self-mastery",
+    "type": "CONCEPT",
+    "passage_id": "bookI_16"
+  },
+  {
+    "text": "virtue",
+    "type": "CONCEPT",
+    "passage_id": "bookI_16"
+  },
+  {
+    "text": "fortitude",
+    "type": "STATE",
+    "passage_id": "bookI_16"
+  },
+  {
+    "text": "ignorance",
+    "type": "STATE",
+    "passage_id": "bookII_1"
+  },
+  {
+    "text": "good",
+    "type": "CONCEPT",
+    "passage_id": "bookII_1"
+  },
+  {
+    "text": "evil",
+    "type": "CONCEPT",
+    "passage_id": "bookII_1"
+  },
+  {
+    "text": "Deity",
+    "type": "PERSON",
+    "passage_id": "bookII_1"
+  },
+  {
+    "text": "mutual assistance",
+    "type": "PRACTICE",
+    "passage_id": "bookII_1"
+  },
+  {
+    "text": "resentment",
+    "type": "STATE",
+    "passage_id": "bookII_1"
+  },
+  {
+    "text": "ruling part",
+    "type": "CONCEPT",
+    "passage_id": "bookII_2"
+  },
+  {
+    "text": "distracted mind",
+    "type": "STATE",
+    "passage_id": "bookII_2"
+  },
+  {
+    "text": "body",
+    "type": "CONCEPT",
+    "passage_id": "bookII_2"
+  },
+  {
+    "text": "breath",
+    "type": "CONCEPT",
+    "passage_id": "bookII_2"
+  },
+  {
+    "text": "selfish passions",
+    "type": "STATE",
+    "passage_id": "bookII_2"
+  },
+  {
+    "text": "providence",
+    "type": "CONCEPT",
+    "passage_id": "bookII_3"
+  },
+  {
+    "text": "nature",
+    "type": "CONCEPT",
+    "passage_id": "bookII_3"
+  },
+  {
+    "text": "change",
+    "type": "CONCEPT",
+    "passage_id": "bookII_3"
+  },
+  {
+    "text": "universality",
+    "type": "CONCEPT",
+    "passage_id": "bookII_3"
+  },
+  {
+    "text": "contentment",
+    "type": "STATE",
+    "passage_id": "bookII_3"
+  },
+  {
+    "text": "gratitude",
+    "type": "STATE",
+    "passage_id": "bookII_3"
+  },
+  {
+    "text": "postponement",
+    "type": "PRACTICE",
+    "passage_id": "bookII_4"
+  },
+  {
+    "text": "opportunity",
+    "type": "CONCEPT",
+    "passage_id": "bookII_4"
+  },
+  {
+    "text": "the gods",
+    "type": "PERSON",
+    "passage_id": "bookII_4"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookII_4"
+  },
+  {
+    "text": "time",
+    "type": "CONCEPT",
+    "passage_id": "bookII_4"
+  },
+  {
+    "text": "thoughts",
+    "type": "STATE",
+    "passage_id": "bookII_4"
+  },
+  {
+    "text": "virtue",
+    "type": "CONCEPT",
+    "passage_id": "bookII_5"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookII_5"
+  },
+  {
+    "text": "passions",
+    "type": "STATE",
+    "passage_id": "bookII_5"
+  },
+  {
+    "text": "godlike way of living",
+    "type": "CONCEPT",
+    "passage_id": "bookII_5"
+  },
+  {
+    "text": "destiny",
+    "type": "CONCEPT",
+    "passage_id": "bookII_5"
+  },
+  {
+    "text": "Marcus",
+    "type": "PERSON",
+    "passage_id": "bookII_5"
+  },
+  {
+    "text": "self",
+    "type": "CONCEPT",
+    "passage_id": "bookII_6"
+  },
+  {
+    "text": "happiness",
+    "type": "CONCEPT",
+    "passage_id": "bookII_6"
+  },
+  {
+    "text": "other men",
+    "type": "PERSON",
+    "passage_id": "bookII_6"
+  },
+  {
+    "text": "life",
+    "type": "CONCEPT",
+    "passage_id": "bookII_6"
+  },
+  {
+    "text": "dishonour",
+    "type": "STATE",
+    "passage_id": "bookII_6"
+  },
+  {
+    "text": "regard",
+    "type": "PRACTICE",
+    "passage_id": "bookII_6"
+  },
+  {
+    "text": "mind",
+    "type": "CONCEPT",
+    "passage_id": "bookII_7"
+  },
+  {
+    "text": "quiet",
+    "type": "STATE",
+    "passage_id": "bookII_7"
+  },
+  {
+    "text": "accident",
+    "type": "STATE",
+    "passage_id": "bookII_7"
+  },
+  {
+    "text": "outward object",
+    "type": "CONCEPT",
+    "passage_id": "bookII_7"
+  },
+  {
+    "text": "roving",
+    "type": "CONCEPT",
+    "passage_id": "bookII_7"
+  },
+  {
+    "text": "general end",
+    "type": "CONCEPT",
+    "passage_id": "bookII_7"
+  },
+  {
+    "text": "happiness",
+    "type": "STATE",
+    "passage_id": "bookII_8"
+  },
+  {
+    "text": "ignorance",
+    "type": "STATE",
+    "passage_id": "bookII_8"
+  },
+  {
+    "text": "other's thoughts",
+    "type": "CONCEPT",
+    "passage_id": "bookII_8"
+  },
+  {
+    "text": "self-examination",
+    "type": "PRACTICE",
+    "passage_id": "bookII_8"
+  },
+  {
+    "text": "unhappiness",
+    "type": "STATE",
+    "passage_id": "bookII_8"
+  },
+  {
+    "text": "own motions",
+    "type": "CONCEPT",
+    "passage_id": "bookII_8"
+  },
+  {
+    "text": "nature of the universe",
+    "type": "CONCEPT",
+    "passage_id": "bookII_9"
+  },
+  {
+    "text": "own nature",
+    "type": "CONCEPT",
+    "passage_id": "bookII_9"
+  },
+  {
+    "text": "part",
+    "type": "CONCEPT",
+    "passage_id": "bookII_9"
+  },
+  {
+    "text": "whole",
+    "type": "CONCEPT",
+    "passage_id": "bookII_9"
+  },
+  {
+    "text": "action",
+    "type": "PRACTICE",
+    "passage_id": "bookII_9"
+  },
+  {
+    "text": "Theophrastus",
+    "type": "PERSON",
+    "passage_id": "bookII_10"
+  },
+  {
+    "text": "desire",
+    "type": "STATE",
+    "passage_id": "bookII_10"
+  },
+  {
+    "text": "anger",
+    "type": "STATE",
+    "passage_id": "bookII_10"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookII_10"
+  },
+  {
+    "text": "pleasure",
+    "type": "STATE",
+    "passage_id": "bookII_10"
+  },
+  {
+    "text": "restraint",
+    "type": "CONCEPT",
+    "passage_id": "bookII_10"
+  },
+  {
+    "text": "death",
+    "type": "CONCEPT",
+    "passage_id": "bookII_11"
+  },
+  {
+    "text": "gods",
+    "type": "PERSON",
+    "passage_id": "bookII_11"
+  },
+  {
+    "text": "virtue",
+    "type": "CONCEPT",
+    "passage_id": "bookII_11"
+  },
+  {
+    "text": "externals",
+    "type": "CONCEPT",
+    "passage_id": "bookII_11"
+  },
+  {
+    "text": "fear",
+    "type": "STATE",
+    "passage_id": "bookII_11"
+  },
+  {
+    "text": "curiosity",
+    "type": "STATE",
+    "passage_id": "bookII_13"
+  },
+  {
+    "text": "divinity within",
+    "type": "CONCEPT",
+    "passage_id": "bookII_13"
+  },
+  {
+    "text": "purity",
+    "type": "CONCEPT",
+    "passage_id": "bookII_13"
+  },
+  {
+    "text": "reverence",
+    "type": "PRACTICE",
+    "passage_id": "bookII_13"
+  },
+  {
+    "text": "ignorance",
+    "type": "STATE",
+    "passage_id": "bookII_13"
+  },
+  {
+    "text": "present",
+    "type": "CONCEPT",
+    "passage_id": "bookII_14"
+  },
+  {
+    "text": "life",
+    "type": "CONCEPT",
+    "passage_id": "bookII_14"
+  },
+  {
+    "text": "nature",
+    "type": "CONCEPT",
+    "passage_id": "bookII_14"
+  },
+  {
+    "text": "time",
+    "type": "CONCEPT",
+    "passage_id": "bookII_14"
+  },
+  {
+    "text": "loss",
+    "type": "CONCEPT",
+    "passage_id": "bookII_14"
+  },
+  {
+    "text": "Monimus",
+    "type": "PERSON",
+    "passage_id": "bookII_15"
+  },
+  {
+    "text": "Cynic philosophy",
+    "type": "CONCEPT",
+    "passage_id": "bookII_15"
+  },
+  {
+    "text": "opinion",
+    "type": "CONCEPT",
+    "passage_id": "bookII_15"
+  },
+  {
+    "text": "truth",
+    "type": "CONCEPT",
+    "passage_id": "bookII_15"
+  },
+  {
+    "text": "acceptance",
+    "type": "PRACTICE",
+    "passage_id": "bookII_15"
+  },
+  {
+    "text": "soul",
+    "type": "CONCEPT",
+    "passage_id": "bookII_16"
+  },
+  {
+    "text": "nature",
+    "type": "CONCEPT",
+    "passage_id": "bookII_16"
+  },
+  {
+    "text": "anger",
+    "type": "STATE",
+    "passage_id": "bookII_16"
+  },
+  {
+    "text": "pleasure",
+    "type": "STATE",
+    "passage_id": "bookII_16"
+  },
+  {
+    "text": "pain",
+    "type": "STATE",
+    "passage_id": "bookII_16"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookII_16"
+  },
+  {
+    "text": "philosophy",
+    "type": "CONCEPT",
+    "passage_id": "bookII_17"
+  },
+  {
+    "text": "inner god",
+    "type": "CONCEPT",
+    "passage_id": "bookII_17"
+  },
+  {
+    "text": "freedom",
+    "type": "STATE",
+    "passage_id": "bookII_17"
+  },
+  {
+    "text": "nature",
+    "type": "CONCEPT",
+    "passage_id": "bookII_17"
+  },
+  {
+    "text": "death",
+    "type": "CONCEPT",
+    "passage_id": "bookII_17"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_1"
+  },
+  {
+    "text": "death",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_1"
+  },
+  {
+    "text": "mind",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_1"
+  },
+  {
+    "text": "imagination",
+    "type": "STATE",
+    "passage_id": "bookIII_1"
+  },
+  {
+    "text": "appetite",
+    "type": "STATE",
+    "passage_id": "bookIII_1"
+  },
+  {
+    "text": "contemplation",
+    "type": "PRACTICE",
+    "passage_id": "bookIII_1"
+  },
+  {
+    "text": "duty",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_1"
+  },
+  {
+    "text": "nature",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_2"
+  },
+  {
+    "text": "beauty",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_2"
+  },
+  {
+    "text": "chastened eyes",
+    "type": "PRACTICE",
+    "passage_id": "bookIII_2"
+  },
+  {
+    "text": "harmony",
+    "type": "STATE",
+    "passage_id": "bookIII_2"
+  },
+  {
+    "text": "perception",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_2"
+  },
+  {
+    "text": "mortality",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_3"
+  },
+  {
+    "text": "soul",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_3"
+  },
+  {
+    "text": "body",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_3"
+  },
+  {
+    "text": "inner self",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_3"
+  },
+  {
+    "text": "spiritual release",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_3"
+  },
+  {
+    "text": "alexander",
+    "type": "PERSON",
+    "passage_id": "bookIII_3"
+  },
+  {
+    "text": "curiosity",
+    "type": "STATE",
+    "passage_id": "bookIII_4"
+  },
+  {
+    "text": "guided principle",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_4"
+  },
+  {
+    "text": "sincerity",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_4"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_4"
+  },
+  {
+    "text": "nature",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_4"
+  },
+  {
+    "text": "justice",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_4"
+  },
+  {
+    "text": "divinity",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_5"
+  },
+  {
+    "text": "passion",
+    "type": "STATE",
+    "passage_id": "bookIII_5"
+  },
+  {
+    "text": "tranquillity",
+    "type": "STATE",
+    "passage_id": "bookIII_5"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_5"
+  },
+  {
+    "text": "self-sufficiency",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_5"
+  },
+  {
+    "text": "justice",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_6"
+  },
+  {
+    "text": "truth",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_6"
+  },
+  {
+    "text": "temperance",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_6"
+  },
+  {
+    "text": "fortitude",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_6"
+  },
+  {
+    "text": "rational mind",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_6"
+  },
+  {
+    "text": "pleasures",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_6"
+  },
+  {
+    "text": "Socrates",
+    "type": "PERSON",
+    "passage_id": "bookIII_6"
+  },
+  {
+    "text": "word keeping",
+    "type": "PRACTICE",
+    "passage_id": "bookIII_7"
+  },
+  {
+    "text": "modesty",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_7"
+  },
+  {
+    "text": "the divinity in the soul",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_7"
+  },
+  {
+    "text": "indifference to life and death",
+    "type": "STATE",
+    "passage_id": "bookIII_7"
+  },
+  {
+    "text": "rational nature",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_7"
+  },
+  {
+    "text": "social nature",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_7"
+  },
+  {
+    "text": "philosophy",
+    "type": "PRACTICE",
+    "passage_id": "bookIII_8"
+  },
+  {
+    "text": "virtue",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_8"
+  },
+  {
+    "text": "death",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_8"
+  },
+  {
+    "text": "imperfect",
+    "type": "STATE",
+    "passage_id": "bookIII_8"
+  },
+  {
+    "text": "social balance",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_8"
+  },
+  {
+    "text": "opinionative faculty",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_9"
+  },
+  {
+    "text": "guiding principle",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_9"
+  },
+  {
+    "text": "Nature",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_9"
+  },
+  {
+    "text": "rational constitution",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_9"
+  },
+  {
+    "text": "rashness",
+    "type": "STATE",
+    "passage_id": "bookIII_9"
+  },
+  {
+    "text": "kindliness",
+    "type": "STATE",
+    "passage_id": "bookIII_9"
+  },
+  {
+    "text": "present",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_10"
+  },
+  {
+    "text": "life",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_10"
+  },
+  {
+    "text": "past",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_10"
+  },
+  {
+    "text": "future",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_10"
+  },
+  {
+    "text": "fame",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_10"
+  },
+  {
+    "text": "soul",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_10"
+  },
+  {
+    "text": "contemplation",
+    "type": "PRACTICE",
+    "passage_id": "bookIII_11"
+  },
+  {
+    "text": "virtue",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_11"
+  },
+  {
+    "text": "destiny",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_11"
+  },
+  {
+    "text": "justice",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_11"
+  },
+  {
+    "text": "indifferent things",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_11"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_12"
+  },
+  {
+    "text": "industry",
+    "type": "PRACTICE",
+    "passage_id": "bookIII_12"
+  },
+  {
+    "text": "vigour",
+    "type": "PRACTICE",
+    "passage_id": "bookIII_12"
+  },
+  {
+    "text": "temper",
+    "type": "STATE",
+    "passage_id": "bookIII_12"
+  },
+  {
+    "text": "divinity",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_12"
+  },
+  {
+    "text": "happy",
+    "type": "STATE",
+    "passage_id": "bookIII_12"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_13"
+  },
+  {
+    "text": "divine things",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_13"
+  },
+  {
+    "text": "human things",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_13"
+  },
+  {
+    "text": "preparation",
+    "type": "PRACTICE",
+    "passage_id": "bookIII_13"
+  },
+  {
+    "text": "behavior",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_13"
+  },
+  {
+    "text": "haste",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_14"
+  },
+  {
+    "text": "self-kindness",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_14"
+  },
+  {
+    "text": "self-help",
+    "type": "PRACTICE",
+    "passage_id": "bookIII_14"
+  },
+  {
+    "text": "urgency",
+    "type": "STATE",
+    "passage_id": "bookIII_14"
+  },
+  {
+    "text": "Marcus",
+    "type": "PERSON",
+    "passage_id": "bookIII_14"
+  },
+  {
+    "text": "death",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_14"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_16"
+  },
+  {
+    "text": "passion",
+    "type": "STATE",
+    "passage_id": "bookIII_16"
+  },
+  {
+    "text": "probity",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_16"
+  },
+  {
+    "text": "contentment",
+    "type": "STATE",
+    "passage_id": "bookIII_16"
+  },
+  {
+    "text": "divinity",
+    "type": "CONCEPT",
+    "passage_id": "bookIII_16"
+  },
+  {
+    "text": "resignation",
+    "type": "STATE",
+    "passage_id": "bookIII_16"
+  },
+  {
+    "text": "action",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_2"
+  },
+  {
+    "text": "purpose",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_2"
+  },
+  {
+    "text": "perfection",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_2"
+  },
+  {
+    "text": "retirement",
+    "type": "PRACTICE",
+    "passage_id": "bookIV_3"
+  },
+  {
+    "text": "mind",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_3"
+  },
+  {
+    "text": "tranquillity",
+    "type": "STATE",
+    "passage_id": "bookIV_3"
+  },
+  {
+    "text": "virtue",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_3"
+  },
+  {
+    "text": "opinion",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_3"
+  },
+  {
+    "text": "death",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_5"
+  },
+  {
+    "text": "generation",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_5"
+  },
+  {
+    "text": "nature",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_5"
+  },
+  {
+    "text": "rationality",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_5"
+  },
+  {
+    "text": "shame",
+    "type": "STATE",
+    "passage_id": "bookIV_5"
+  },
+  {
+    "text": "practice",
+    "type": "PRACTICE",
+    "passage_id": "bookIV_6"
+  },
+  {
+    "text": "disposition",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_6"
+  },
+  {
+    "text": "surprise",
+    "type": "STATE",
+    "passage_id": "bookIV_6"
+  },
+  {
+    "text": "mortality",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_6"
+  },
+  {
+    "text": "enemy",
+    "type": "PERSON",
+    "passage_id": "bookIV_6"
+  },
+  {
+    "text": "complaint",
+    "type": "STATE",
+    "passage_id": "bookIV_7"
+  },
+  {
+    "text": "hurt",
+    "type": "STATE",
+    "passage_id": "bookIV_7"
+  },
+  {
+    "text": "supposition",
+    "type": "STATE",
+    "passage_id": "bookIV_7"
+  },
+  {
+    "text": "harm",
+    "type": "STATE",
+    "passage_id": "bookIV_8"
+  },
+  {
+    "text": "man",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_8"
+  },
+  {
+    "text": "life",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_8"
+  },
+  {
+    "text": "general good",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_9"
+  },
+  {
+    "text": "nature",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_9"
+  },
+  {
+    "text": "action",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_9"
+  },
+  {
+    "text": "justice",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_10"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_10"
+  },
+  {
+    "text": "virtue",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_10"
+  },
+  {
+    "text": "philosophy",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_10"
+  },
+  {
+    "text": "observation",
+    "type": "PRACTICE",
+    "passage_id": "bookIV_10"
+  },
+  {
+    "text": "opinion",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_11"
+  },
+  {
+    "text": "reality",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_11"
+  },
+  {
+    "text": "contempt",
+    "type": "STATE",
+    "passage_id": "bookIV_11"
+  },
+  {
+    "text": "objective view",
+    "type": "PRACTICE",
+    "passage_id": "bookIV_11"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_12"
+  },
+  {
+    "text": "justice",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_12"
+  },
+  {
+    "text": "public good",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_12"
+  },
+  {
+    "text": "friend",
+    "type": "PERSON",
+    "passage_id": "bookIV_12"
+  },
+  {
+    "text": "changing mind",
+    "type": "PRACTICE",
+    "passage_id": "bookIV_12"
+  },
+  {
+    "text": "reputation",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_12"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_13"
+  },
+  {
+    "text": "self",
+    "type": "PERSON",
+    "passage_id": "bookIV_13"
+  },
+  {
+    "text": "fulfillment",
+    "type": "STATE",
+    "passage_id": "bookIV_13"
+  },
+  {
+    "text": "function",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_13"
+  },
+  {
+    "text": "nature",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_14"
+  },
+  {
+    "text": "vanish",
+    "type": "STATE",
+    "passage_id": "bookIV_14"
+  },
+  {
+    "text": "whole",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_14"
+  },
+  {
+    "text": "universal reason",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_14"
+  },
+  {
+    "text": "return",
+    "type": "PRACTICE",
+    "passage_id": "bookIV_14"
+  },
+  {
+    "text": "frankincense",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_15"
+  },
+  {
+    "text": "indifference",
+    "type": "STATE",
+    "passage_id": "bookIV_15"
+  },
+  {
+    "text": "equality",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_15"
+  },
+  {
+    "text": "wisdom",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_16"
+  },
+  {
+    "text": "principle",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_16"
+  },
+  {
+    "text": "divinity",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_16"
+  },
+  {
+    "text": "degradation",
+    "type": "STATE",
+    "passage_id": "bookIV_16"
+  },
+  {
+    "text": "death",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_17"
+  },
+  {
+    "text": "time",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_17"
+  },
+  {
+    "text": "virtue",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_17"
+  },
+  {
+    "text": "urgency",
+    "type": "STATE",
+    "passage_id": "bookIV_17"
+  },
+  {
+    "text": "agency",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_17"
+  },
+  {
+    "text": "self-inspection",
+    "type": "PRACTICE",
+    "passage_id": "bookIV_18"
+  },
+  {
+    "text": "honesty",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_18"
+  },
+  {
+    "text": "righteousness",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_18"
+  },
+  {
+    "text": "ease",
+    "type": "STATE",
+    "passage_id": "bookIV_18"
+  },
+  {
+    "text": "time",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_18"
+  },
+  {
+    "text": "fame",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_19"
+  },
+  {
+    "text": "nature",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_19"
+  },
+  {
+    "text": "servile dependence",
+    "type": "STATE",
+    "passage_id": "bookIV_19"
+  },
+  {
+    "text": "commendation",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_19"
+  },
+  {
+    "text": "utility",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_19"
+  },
+  {
+    "text": "virtue",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_20"
+  },
+  {
+    "text": "praise",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_20"
+  },
+  {
+    "text": "truth",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_20"
+  },
+  {
+    "text": "sobriety",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_20"
+  },
+  {
+    "text": "good nature",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_20"
+  },
+  {
+    "text": "soul",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_21"
+  },
+  {
+    "text": "dissolution",
+    "type": "STATE",
+    "passage_id": "bookIV_21"
+  },
+  {
+    "text": "generative principle",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_21"
+  },
+  {
+    "text": "transmutation",
+    "type": "PRACTICE",
+    "passage_id": "bookIV_21"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_21"
+  },
+  {
+    "text": "riot",
+    "type": "STATE",
+    "passage_id": "bookIV_22"
+  },
+  {
+    "text": "intention",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_22"
+  },
+  {
+    "text": "conviction",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_22"
+  },
+  {
+    "text": "universe",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_23"
+  },
+  {
+    "text": "seasonability",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_23"
+  },
+  {
+    "text": "nature",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_23"
+  },
+  {
+    "text": "god",
+    "type": "PERSON",
+    "passage_id": "bookIV_23"
+  },
+  {
+    "text": "agreement",
+    "type": "STATE",
+    "passage_id": "bookIV_23"
+  },
+  {
+    "text": "Democritus",
+    "type": "PERSON",
+    "passage_id": "bookIV_24"
+  },
+  {
+    "text": "necessity",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_24"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_24"
+  },
+  {
+    "text": "disturbance",
+    "type": "STATE",
+    "passage_id": "bookIV_24"
+  },
+  {
+    "text": "self-examination",
+    "type": "PRACTICE",
+    "passage_id": "bookIV_24"
+  },
+  {
+    "text": "virtue",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_25"
+  },
+  {
+    "text": "fate",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_25"
+  },
+  {
+    "text": "acquiescence",
+    "type": "STATE",
+    "passage_id": "bookIV_25"
+  },
+  {
+    "text": "honesty",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_25"
+  },
+  {
+    "text": "good nature",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_25"
+  },
+  {
+    "text": "self-examination",
+    "type": "PRACTICE",
+    "passage_id": "bookIV_25"
+  },
+  {
+    "text": "disturbance",
+    "type": "STATE",
+    "passage_id": "bookIV_26"
+  },
+  {
+    "text": "purpose",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_26"
+  },
+  {
+    "text": "fault",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_26"
+  },
+  {
+    "text": "fate",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_26"
+  },
+  {
+    "text": "justice",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_26"
+  },
+  {
+    "text": "prudence",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_26"
+  },
+  {
+    "text": "universe",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_27"
+  },
+  {
+    "text": "order",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_27"
+  },
+  {
+    "text": "chance",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_27"
+  },
+  {
+    "text": "contrivance",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_27"
+  },
+  {
+    "text": "harmony",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_27"
+  },
+  {
+    "text": "obstinate character",
+    "type": "STATE",
+    "passage_id": "bookIV_28"
+  },
+  {
+    "text": "brutish character",
+    "type": "STATE",
+    "passage_id": "bookIV_28"
+  },
+  {
+    "text": "savage character",
+    "type": "STATE",
+    "passage_id": "bookIV_28"
+  },
+  {
+    "text": "mercenary character",
+    "type": "STATE",
+    "passage_id": "bookIV_28"
+  },
+  {
+    "text": "tyrannical character",
+    "type": "STATE",
+    "passage_id": "bookIV_28"
+  },
+  {
+    "text": "universal nature",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_29"
+  },
+  {
+    "text": "universal soul",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_29"
+  },
+  {
+    "text": "ignorance",
+    "type": "STATE",
+    "passage_id": "bookIV_29"
+  },
+  {
+    "text": "selfishness",
+    "type": "STATE",
+    "passage_id": "bookIV_29"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_29"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_30"
+  },
+  {
+    "text": "encouragement",
+    "type": "STATE",
+    "passage_id": "bookIV_30"
+  },
+  {
+    "text": "abundance",
+    "type": "STATE",
+    "passage_id": "bookIV_30"
+  },
+  {
+    "text": "learning",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_30"
+  },
+  {
+    "text": "satisfaction",
+    "type": "STATE",
+    "passage_id": "bookIV_31"
+  },
+  {
+    "text": "business",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_31"
+  },
+  {
+    "text": "nature",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_31"
+  },
+  {
+    "text": "resignation",
+    "type": "PRACTICE",
+    "passage_id": "bookIV_31"
+  },
+  {
+    "text": "gods",
+    "type": "PERSON",
+    "passage_id": "bookIV_31"
+  },
+  {
+    "text": "slave",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_31"
+  },
+  {
+    "text": "tyrant",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_31"
+  },
+  {
+    "text": "mankind",
+    "type": "PERSON",
+    "passage_id": "bookIV_32"
+  },
+  {
+    "text": "vanity",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_32"
+  },
+  {
+    "text": "dignity of nature",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_32"
+  },
+  {
+    "text": "proportion",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_32"
+  },
+  {
+    "text": "regret-free detachment",
+    "type": "PRACTICE",
+    "passage_id": "bookIV_32"
+  },
+  {
+    "text": "trajan",
+    "type": "PERSON",
+    "passage_id": "bookIV_32"
+  },
+  {
+    "text": "fame",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_33"
+  },
+  {
+    "text": "transience",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_33"
+  },
+  {
+    "text": "oblivion",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_33"
+  },
+  {
+    "text": "vanity",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_33"
+  },
+  {
+    "text": "honest mind",
+    "type": "STATE",
+    "passage_id": "bookIV_33"
+  },
+  {
+    "text": "common good",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_33"
+  },
+  {
+    "text": "Hadrian",
+    "type": "PERSON",
+    "passage_id": "bookIV_33"
+  },
+  {
+    "text": "memorable action",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_35"
+  },
+  {
+    "text": "reporter",
+    "type": "PERSON",
+    "passage_id": "bookIV_35"
+  },
+  {
+    "text": "short-lived",
+    "type": "STATE",
+    "passage_id": "bookIV_35"
+  },
+  {
+    "text": "alteration",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_36"
+  },
+  {
+    "text": "nature",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_36"
+  },
+  {
+    "text": "seed",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_36"
+  },
+  {
+    "text": "dull fancy",
+    "type": "STATE",
+    "passage_id": "bookIV_36"
+  },
+  {
+    "text": "common notion",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_36"
+  },
+  {
+    "text": "unnecessary desire",
+    "type": "STATE",
+    "passage_id": "bookIV_37"
+  },
+  {
+    "text": "disturbance",
+    "type": "STATE",
+    "passage_id": "bookIV_37"
+  },
+  {
+    "text": "suspicion",
+    "type": "STATE",
+    "passage_id": "bookIV_37"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_37"
+  },
+  {
+    "text": "intellectual honesty",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_37"
+  },
+  {
+    "text": "true quality of people",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_38"
+  },
+  {
+    "text": "minds",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_38"
+  },
+  {
+    "text": "pursuits",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_38"
+  },
+  {
+    "text": "aversions",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_38"
+  },
+  {
+    "text": "examination",
+    "type": "PRACTICE",
+    "passage_id": "bookIV_38"
+  },
+  {
+    "text": "pain",
+    "type": "STATE",
+    "passage_id": "bookIV_39"
+  },
+  {
+    "text": "judgment",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_39"
+  },
+  {
+    "text": "corporeal covering",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_39"
+  },
+  {
+    "text": "indifference",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_39"
+  },
+  {
+    "text": "quiet mind",
+    "type": "STATE",
+    "passage_id": "bookIV_39"
+  },
+  {
+    "text": "change",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_42"
+  },
+  {
+    "text": "instability",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_42"
+  },
+  {
+    "text": "good",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_42"
+  },
+  {
+    "text": "bad",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_42"
+  },
+  {
+    "text": "things that subsist upon change",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_42"
+  },
+  {
+    "text": "time",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_43"
+  },
+  {
+    "text": "change",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_43"
+  },
+  {
+    "text": "impermanence",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_43"
+  },
+  {
+    "text": "passing",
+    "type": "STATE",
+    "passage_id": "bookIV_43"
+  },
+  {
+    "text": "event",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_44"
+  },
+  {
+    "text": "nature",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_44"
+  },
+  {
+    "text": "death",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_44"
+  },
+  {
+    "text": "disease",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_44"
+  },
+  {
+    "text": "calumny",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_44"
+  },
+  {
+    "text": "unthinking",
+    "type": "STATE",
+    "passage_id": "bookIV_44"
+  },
+  {
+    "text": "cosmic cycle",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_46"
+  },
+  {
+    "text": "universal reason",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_46"
+  },
+  {
+    "text": "tradition",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_46"
+  },
+  {
+    "text": "ignorance",
+    "type": "STATE",
+    "passage_id": "bookIV_46"
+  },
+  {
+    "text": "Heraclitus",
+    "type": "PERSON",
+    "passage_id": "bookIV_46"
+  },
+  {
+    "text": "death",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_47"
+  },
+  {
+    "text": "time",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_47"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_47"
+  },
+  {
+    "text": "concern",
+    "type": "STATE",
+    "passage_id": "bookIV_47"
+  },
+  {
+    "text": "poverty of spirit",
+    "type": "STATE",
+    "passage_id": "bookIV_47"
+  },
+  {
+    "text": "death",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_48"
+  },
+  {
+    "text": "nature",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_48"
+  },
+  {
+    "text": "transitoriness",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_48"
+  },
+  {
+    "text": "harmony",
+    "type": "STATE",
+    "passage_id": "bookIV_48"
+  },
+  {
+    "text": "cheerful acceptance",
+    "type": "PRACTICE",
+    "passage_id": "bookIV_48"
+  },
+  {
+    "text": "gratitude",
+    "type": "PRACTICE",
+    "passage_id": "bookIV_48"
+  },
+  {
+    "text": "virtue",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_49"
+  },
+  {
+    "text": "nature",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_49"
+  },
+  {
+    "text": "misfortune",
+    "type": "STATE",
+    "passage_id": "bookIV_49"
+  },
+  {
+    "text": "steadfastness",
+    "type": "PRACTICE",
+    "passage_id": "bookIV_49"
+  },
+  {
+    "text": "fear",
+    "type": "STATE",
+    "passage_id": "bookIV_49"
+  },
+  {
+    "text": "death",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_50"
+  },
+  {
+    "text": "fear",
+    "type": "STATE",
+    "passage_id": "bookIV_50"
+  },
+  {
+    "text": "time",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_50"
+  },
+  {
+    "text": "eternity",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_50"
+  },
+  {
+    "text": "Cadicianus",
+    "type": "PERSON",
+    "passage_id": "bookIV_50"
+  },
+  {
+    "text": "consideration",
+    "type": "PRACTICE",
+    "passage_id": "bookIV_50"
+  },
+  {
+    "text": "nature",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_51"
+  },
+  {
+    "text": "soundness",
+    "type": "CONCEPT",
+    "passage_id": "bookIV_51"
+  },
+  {
+    "text": "fatigue",
+    "type": "STATE",
+    "passage_id": "bookIV_51"
+  },
+  {
+    "text": "quarrel",
+    "type": "STATE",
+    "passage_id": "bookIV_51"
+  },
+  {
+    "text": "dissemble",
+    "type": "STATE",
+    "passage_id": "bookIV_51"
+  },
+  {
+    "text": "work",
+    "type": "PRACTICE",
+    "passage_id": "bookIV_51"
+  },
+  {
+    "text": "nature",
+    "type": "CONCEPT",
+    "passage_id": "bookV_1"
+  },
+  {
+    "text": "action",
+    "type": "CONCEPT",
+    "passage_id": "bookV_1"
+  },
+  {
+    "text": "pleasure",
+    "type": "CONCEPT",
+    "passage_id": "bookV_1"
+  },
+  {
+    "text": "self",
+    "type": "CONCEPT",
+    "passage_id": "bookV_1"
+  },
+  {
+    "text": "social duty",
+    "type": "CONCEPT",
+    "passage_id": "bookV_1"
+  },
+  {
+    "text": "imagination",
+    "type": "CONCEPT",
+    "passage_id": "bookV_2"
+  },
+  {
+    "text": "troublesome thought",
+    "type": "STATE",
+    "passage_id": "bookV_2"
+  },
+  {
+    "text": "calm",
+    "type": "STATE",
+    "passage_id": "bookV_2"
+  },
+  {
+    "text": "discharge thought",
+    "type": "PRACTICE",
+    "passage_id": "bookV_2"
+  },
+  {
+    "text": "nature",
+    "type": "CONCEPT",
+    "passage_id": "bookV_3"
+  },
+  {
+    "text": "honesty",
+    "type": "CONCEPT",
+    "passage_id": "bookV_3"
+  },
+  {
+    "text": "censure",
+    "type": "STATE",
+    "passage_id": "bookV_3"
+  },
+  {
+    "text": "common interest",
+    "type": "CONCEPT",
+    "passage_id": "bookV_3"
+  },
+  {
+    "text": "own interest",
+    "type": "CONCEPT",
+    "passage_id": "bookV_3"
+  },
+  {
+    "text": "nature",
+    "type": "CONCEPT",
+    "passage_id": "bookV_4"
+  },
+  {
+    "text": "death",
+    "type": "CONCEPT",
+    "passage_id": "bookV_4"
+  },
+  {
+    "text": "earth",
+    "type": "CONCEPT",
+    "passage_id": "bookV_4"
+  },
+  {
+    "text": "air",
+    "type": "CONCEPT",
+    "passage_id": "bookV_4"
+  },
+  {
+    "text": "gratitude",
+    "type": "STATE",
+    "passage_id": "bookV_4"
+  },
+  {
+    "text": "virtue",
+    "type": "CONCEPT",
+    "passage_id": "bookV_5"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookV_5"
+  },
+  {
+    "text": "effort",
+    "type": "PRACTICE",
+    "passage_id": "bookV_5"
+  },
+  {
+    "text": "natural defect",
+    "type": "STATE",
+    "passage_id": "bookV_5"
+  },
+  {
+    "text": "self-contentment",
+    "type": "STATE",
+    "passage_id": "bookV_5"
+  },
+  {
+    "text": "gratitude",
+    "type": "CONCEPT",
+    "passage_id": "bookV_6"
+  },
+  {
+    "text": "beneficence",
+    "type": "PRACTICE",
+    "passage_id": "bookV_6"
+  },
+  {
+    "text": "reflection",
+    "type": "PRACTICE",
+    "passage_id": "bookV_6"
+  },
+  {
+    "text": "vine",
+    "type": "CONCEPT",
+    "passage_id": "bookV_6"
+  },
+  {
+    "text": "honey",
+    "type": "CONCEPT",
+    "passage_id": "bookV_6"
+  },
+  {
+    "text": "social duty",
+    "type": "CONCEPT",
+    "passage_id": "bookV_6"
+  },
+  {
+    "text": "nature",
+    "type": "CONCEPT",
+    "passage_id": "bookV_8"
+  },
+  {
+    "text": "calamity",
+    "type": "CONCEPT",
+    "passage_id": "bookV_8"
+  },
+  {
+    "text": "harmony",
+    "type": "CONCEPT",
+    "passage_id": "bookV_8"
+  },
+  {
+    "text": "contentment",
+    "type": "STATE",
+    "passage_id": "bookV_8"
+  },
+  {
+    "text": "accommodation",
+    "type": "PRACTICE",
+    "passage_id": "bookV_8"
+  },
+  {
+    "text": "Zeus",
+    "type": "PERSON",
+    "passage_id": "bookV_8"
+  },
+  {
+    "text": "philosophy",
+    "type": "PRACTICE",
+    "passage_id": "bookV_9"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookV_9"
+  },
+  {
+    "text": "human nature",
+    "type": "CONCEPT",
+    "passage_id": "bookV_9"
+  },
+  {
+    "text": "simplicity",
+    "type": "CONCEPT",
+    "passage_id": "bookV_9"
+  },
+  {
+    "text": "equanimity",
+    "type": "CONCEPT",
+    "passage_id": "bookV_9"
+  },
+  {
+    "text": "piety",
+    "type": "CONCEPT",
+    "passage_id": "bookV_9"
+  },
+  {
+    "text": "discouragement",
+    "type": "STATE",
+    "passage_id": "bookV_9"
+  },
+  {
+    "text": "perplexity",
+    "type": "STATE",
+    "passage_id": "bookV_10"
+  },
+  {
+    "text": "ignorance",
+    "type": "STATE",
+    "passage_id": "bookV_10"
+  },
+  {
+    "text": "transience",
+    "type": "CONCEPT",
+    "passage_id": "bookV_10"
+  },
+  {
+    "text": "universe nature",
+    "type": "CONCEPT",
+    "passage_id": "bookV_10"
+  },
+  {
+    "text": "divinity",
+    "type": "CONCEPT",
+    "passage_id": "bookV_10"
+  },
+  {
+    "text": "spirit",
+    "type": "STATE",
+    "passage_id": "bookV_10"
+  },
+  {
+    "text": "soul",
+    "type": "CONCEPT",
+    "passage_id": "bookV_11"
+  },
+  {
+    "text": "ruling part",
+    "type": "CONCEPT",
+    "passage_id": "bookV_11"
+  },
+  {
+    "text": "self-examination",
+    "type": "PRACTICE",
+    "passage_id": "bookV_11"
+  },
+  {
+    "text": "tyranny",
+    "type": "CONCEPT",
+    "passage_id": "bookV_11"
+  },
+  {
+    "text": "beastliness",
+    "type": "CONCEPT",
+    "passage_id": "bookV_11"
+  },
+  {
+    "text": "prudence",
+    "type": "CONCEPT",
+    "passage_id": "bookV_12"
+  },
+  {
+    "text": "temperance",
+    "type": "CONCEPT",
+    "passage_id": "bookV_12"
+  },
+  {
+    "text": "justice",
+    "type": "CONCEPT",
+    "passage_id": "bookV_12"
+  },
+  {
+    "text": "fortitude",
+    "type": "CONCEPT",
+    "passage_id": "bookV_12"
+  },
+  {
+    "text": "luxury",
+    "type": "CONCEPT",
+    "passage_id": "bookV_12"
+  },
+  {
+    "text": "ambition",
+    "type": "CONCEPT",
+    "passage_id": "bookV_12"
+  },
+  {
+    "text": "good man",
+    "type": "PERSON",
+    "passage_id": "bookV_12"
+  },
+  {
+    "text": "matter",
+    "type": "CONCEPT",
+    "passage_id": "bookV_13"
+  },
+  {
+    "text": "form",
+    "type": "CONCEPT",
+    "passage_id": "bookV_13"
+  },
+  {
+    "text": "soul",
+    "type": "CONCEPT",
+    "passage_id": "bookV_13"
+  },
+  {
+    "text": "body",
+    "type": "CONCEPT",
+    "passage_id": "bookV_13"
+  },
+  {
+    "text": "transformation",
+    "type": "CONCEPT",
+    "passage_id": "bookV_13"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookV_14"
+  },
+  {
+    "text": "reasoning faculty",
+    "type": "CONCEPT",
+    "passage_id": "bookV_14"
+  },
+  {
+    "text": "foreign assistance",
+    "type": "CONCEPT",
+    "passage_id": "bookV_14"
+  },
+  {
+    "text": "human nature",
+    "type": "CONCEPT",
+    "passage_id": "bookV_15"
+  },
+  {
+    "text": "self-denial",
+    "type": "PRACTICE",
+    "passage_id": "bookV_15"
+  },
+  {
+    "text": "indifference",
+    "type": "STATE",
+    "passage_id": "bookV_15"
+  },
+  {
+    "text": "patience",
+    "type": "STATE",
+    "passage_id": "bookV_15"
+  },
+  {
+    "text": "good man",
+    "type": "PERSON",
+    "passage_id": "bookV_15"
+  },
+  {
+    "text": "impossibility",
+    "type": "CONCEPT",
+    "passage_id": "bookV_17"
+  },
+  {
+    "text": "madness",
+    "type": "STATE",
+    "passage_id": "bookV_17"
+  },
+  {
+    "text": "ill men",
+    "type": "PERSON",
+    "passage_id": "bookV_17"
+  },
+  {
+    "text": "ill deeds",
+    "type": "CONCEPT",
+    "passage_id": "bookV_17"
+  },
+  {
+    "text": "expectation",
+    "type": "CONCEPT",
+    "passage_id": "bookV_17"
+  },
+  {
+    "text": "prudence",
+    "type": "CONCEPT",
+    "passage_id": "bookV_18"
+  },
+  {
+    "text": "principle",
+    "type": "CONCEPT",
+    "passage_id": "bookV_18"
+  },
+  {
+    "text": "ignorance",
+    "type": "STATE",
+    "passage_id": "bookV_18"
+  },
+  {
+    "text": "vanity",
+    "type": "STATE",
+    "passage_id": "bookV_18"
+  },
+  {
+    "text": "misfortune",
+    "type": "CONCEPT",
+    "passage_id": "bookV_18"
+  },
+  {
+    "text": "understanding",
+    "type": "CONCEPT",
+    "passage_id": "bookV_18"
+  },
+  {
+    "text": "outward objects",
+    "type": "CONCEPT",
+    "passage_id": "bookV_19"
+  },
+  {
+    "text": "soul",
+    "type": "CONCEPT",
+    "passage_id": "bookV_19"
+  },
+  {
+    "text": "opinion",
+    "type": "CONCEPT",
+    "passage_id": "bookV_19"
+  },
+  {
+    "text": "strength",
+    "type": "CONCEPT",
+    "passage_id": "bookV_19"
+  },
+  {
+    "text": "contingencies of fortune",
+    "type": "CONCEPT",
+    "passage_id": "bookV_19"
+  },
+  {
+    "text": "serviceability",
+    "type": "PRACTICE",
+    "passage_id": "bookV_20"
+  },
+  {
+    "text": "human nature",
+    "type": "CONCEPT",
+    "passage_id": "bookV_20"
+  },
+  {
+    "text": "indifference",
+    "type": "CONCEPT",
+    "passage_id": "bookV_20"
+  },
+  {
+    "text": "obstacle",
+    "type": "CONCEPT",
+    "passage_id": "bookV_20"
+  },
+  {
+    "text": "mind",
+    "type": "CONCEPT",
+    "passage_id": "bookV_20"
+  },
+  {
+    "text": "worship",
+    "type": "PRACTICE",
+    "passage_id": "bookV_21"
+  },
+  {
+    "text": "the governing principle",
+    "type": "CONCEPT",
+    "passage_id": "bookV_21"
+  },
+  {
+    "text": "the ruling faculty",
+    "type": "CONCEPT",
+    "passage_id": "bookV_21"
+  },
+  {
+    "text": "actions",
+    "type": "CONCEPT",
+    "passage_id": "bookV_21"
+  },
+  {
+    "text": "nature",
+    "type": "CONCEPT",
+    "passage_id": "bookV_21"
+  },
+  {
+    "text": "body politic",
+    "type": "CONCEPT",
+    "passage_id": "bookV_22"
+  },
+  {
+    "text": "citizen",
+    "type": "PERSON",
+    "passage_id": "bookV_22"
+  },
+  {
+    "text": "reflection",
+    "type": "PRACTICE",
+    "passage_id": "bookV_22"
+  },
+  {
+    "text": "passion",
+    "type": "STATE",
+    "passage_id": "bookV_22"
+  },
+  {
+    "text": "injury",
+    "type": "STATE",
+    "passage_id": "bookV_22"
+  },
+  {
+    "text": "fault",
+    "type": "CONCEPT",
+    "passage_id": "bookV_22"
+  },
+  {
+    "text": "change",
+    "type": "CONCEPT",
+    "passage_id": "bookV_23"
+  },
+  {
+    "text": "materiality",
+    "type": "CONCEPT",
+    "passage_id": "bookV_23"
+  },
+  {
+    "text": "prounce",
+    "type": "STATE",
+    "passage_id": "bookV_23"
+  },
+  {
+    "text": "distress",
+    "type": "STATE",
+    "passage_id": "bookV_23"
+  },
+  {
+    "text": "reflection",
+    "type": "PRACTICE",
+    "passage_id": "bookV_23"
+  },
+  {
+    "text": "impermanence",
+    "type": "CONCEPT",
+    "passage_id": "bookV_23"
+  },
+  {
+    "text": "misbehavior",
+    "type": "STATE",
+    "passage_id": "bookV_25"
+  },
+  {
+    "text": "universal nature",
+    "type": "CONCEPT",
+    "passage_id": "bookV_25"
+  },
+  {
+    "text": "individual nature",
+    "type": "CONCEPT",
+    "passage_id": "bookV_25"
+  },
+  {
+    "text": "indifference",
+    "type": "CONCEPT",
+    "passage_id": "bookV_25"
+  },
+  {
+    "text": "internal disposition",
+    "type": "CONCEPT",
+    "passage_id": "bookV_25"
+  },
+  {
+    "text": "anger",
+    "type": "STATE",
+    "passage_id": "bookV_28"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookV_28"
+  },
+  {
+    "text": "persuasion",
+    "type": "PRACTICE",
+    "passage_id": "bookV_28"
+  },
+  {
+    "text": "error",
+    "type": "CONCEPT",
+    "passage_id": "bookV_28"
+  },
+  {
+    "text": "death",
+    "type": "CONCEPT",
+    "passage_id": "bookV_29"
+  },
+  {
+    "text": "freedom",
+    "type": "CONCEPT",
+    "passage_id": "bookV_29"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookV_29"
+  },
+  {
+    "text": "public interest",
+    "type": "CONCEPT",
+    "passage_id": "bookV_29"
+  },
+  {
+    "text": "indifference",
+    "type": "STATE",
+    "passage_id": "bookV_29"
+  },
+  {
+    "text": "Marcus",
+    "type": "PERSON",
+    "passage_id": "bookV_29"
+  },
+  {
+    "text": "soul of the universe",
+    "type": "CONCEPT",
+    "passage_id": "bookV_30"
+  },
+  {
+    "text": "social disposition",
+    "type": "CONCEPT",
+    "passage_id": "bookV_30"
+  },
+  {
+    "text": "mutual harmony",
+    "type": "CONCEPT",
+    "passage_id": "bookV_30"
+  },
+  {
+    "text": "subordination",
+    "type": "CONCEPT",
+    "passage_id": "bookV_30"
+  },
+  {
+    "text": "higher beings",
+    "type": "CONCEPT",
+    "passage_id": "bookV_30"
+  },
+  {
+    "text": "lower creation",
+    "type": "CONCEPT",
+    "passage_id": "bookV_30"
+  },
+  {
+    "text": "self-examination",
+    "type": "PRACTICE",
+    "passage_id": "bookV_31"
+  },
+  {
+    "text": "virtue",
+    "type": "CONCEPT",
+    "passage_id": "bookV_31"
+  },
+  {
+    "text": "pleasure",
+    "type": "CONCEPT",
+    "passage_id": "bookV_31"
+  },
+  {
+    "text": "glory",
+    "type": "CONCEPT",
+    "passage_id": "bookV_31"
+  },
+  {
+    "text": "indifference",
+    "type": "STATE",
+    "passage_id": "bookV_31"
+  },
+  {
+    "text": "judgment",
+    "type": "STATE",
+    "passage_id": "bookV_32"
+  },
+  {
+    "text": "ignorance",
+    "type": "CONCEPT",
+    "passage_id": "bookV_32"
+  },
+  {
+    "text": "knowledge",
+    "type": "CONCEPT",
+    "passage_id": "bookV_32"
+  },
+  {
+    "text": "reason",
+    "type": "CONCEPT",
+    "passage_id": "bookV_32"
+  },
+  {
+    "text": "nature",
+    "type": "CONCEPT",
+    "passage_id": "bookV_32"
+  }
+]
