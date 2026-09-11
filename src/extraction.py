@@ -97,7 +97,7 @@ Return only the JSON object, no other text.
         self,
         api_key: Optional[str] = None,
         client: Optional[Groq] = None,
-        model: str = "llama-3.1-8b-instant",
+        model: str = "llama-3.3-70b-versatile",
     ):
         """
         Initialize Groq client.
