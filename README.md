@@ -295,9 +295,3 @@ Once Phase 1 is solid:
 
 - Check relationship extraction — may be filtering too aggressively
 - Increase max_hops in queries to reach distant entities
-
----
-
-## Questions?
-
-See project notes in `/areas/graphknowledge.md` or refer to [Graphify](https://graphify.net/) for real-world patterns.
