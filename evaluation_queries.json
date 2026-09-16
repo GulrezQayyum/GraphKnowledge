@@ -1,0 +1,122 @@
+[
+  {
+    "id": "q1",
+    "question": "How does Marcus connect fear and reason?",
+    "expected_entities": ["fear", "reason"],
+    "expected_relationship_chain": "fear --[resolved_by]--> reason",
+    "difficulty": "medium",
+    "reasoning": "Multi-hop: fear → what resolves it → reason"
+  },
+  {
+    "id": "q2",
+    "question": "What practices did Marcus's teachers teach to develop virtue?",
+    "expected_entities": ["mother", "virtue", "teachers", "discipline"],
+    "expected_relationship_chain": "teachers --[teaches]--> practices --[leads_to]--> virtue",
+    "difficulty": "hard",
+    "reasoning": "Multi-hop: teachers → practices → virtue outcome"
+  },
+  {
+    "id": "q3",
+    "question": "How does discipline lead to tranquility?",
+    "expected_entities": ["discipline", "tranquility"],
+    "expected_relationship_chain": "discipline --[leads_to]--> tranquility",
+    "difficulty": "medium",
+    "reasoning": "Single-hop but requires finding the path"
+  },
+  {
+    "id": "q4",
+    "question": "What does nature teach about virtue?",
+    "expected_entities": ["nature", "virtue"],
+    "expected_relationship_chain": "nature --[teaches/embodies]--> virtue",
+    "difficulty": "medium",
+    "reasoning": "Concept relationship: nature and virtue connection"
+  },
+  {
+    "id": "q5",
+    "question": "How did Marcus's mother influence his character?",
+    "expected_entities": ["mother", "Marcus", "religion", "generosity", "plain living"],
+    "expected_relationship_chain": "mother --[teaches]--> [religion, generosity, plain living]",
+    "difficulty": "medium",
+    "reasoning": "Single entity with multiple teaches relationships"
+  },
+  {
+    "id": "q6",
+    "question": "What emotions oppose virtue?",
+    "expected_entities": ["virtue", "anger", "envy", "fear"],
+    "expected_relationship_chain": "[emotions] --[opposes]--> virtue",
+    "difficulty": "medium",
+    "reasoning": "Reverse relationship: find what opposes virtue"
+  },
+  {
+    "id": "q7",
+    "question": "How does reason help when facing hardship?",
+    "expected_entities": ["reason", "hardship", "temper"],
+    "expected_relationship_chain": "reason --[resolves/enables]--> hardship/pain",
+    "difficulty": "hard",
+    "reasoning": "Abstract concept relationships"
+  },
+  {
+    "id": "q8",
+    "question": "What is the connection between duty and justice?",
+    "expected_entities": ["duty", "justice"],
+    "expected_relationship_chain": "duty --[relates_to]--> justice",
+    "difficulty": "medium",
+    "reasoning": "Concept-to-concept connection"
+  },
+  {
+    "id": "q9",
+    "question": "How does acceptance of fate relate to virtue?",
+    "expected_entities": ["acceptance", "fate", "virtue"],
+    "expected_relationship_chain": "acceptance --[relates_to/leads_to]--> virtue",
+    "difficulty": "hard",
+    "reasoning": "Abstract philosophical connection"
+  },
+  {
+    "id": "q10",
+    "question": "What role does the ruling part play in managing emotions?",
+    "expected_entities": ["ruling part", "emotions", "judgment"],
+    "expected_relationship_chain": "ruling part --[governs]--> emotions",
+    "difficulty": "hard",
+    "reasoning": "Central Stoic concept: mind governs emotions"
+  },
+  {
+    "id": "q11",
+    "question": "How does philosophy help Marcus live well?",
+    "expected_entities": ["philosophy", "virtue", "Marcus"],
+    "expected_relationship_chain": "philosophy --[teaches/enables]--> virtue --[leads_to]--> living well",
+    "difficulty": "hard",
+    "reasoning": "2-hop: philosophy → virtue → living well"
+  },
+  {
+    "id": "q12",
+    "question": "What practices does Marcus recommend for dealing with anger?",
+    "expected_entities": ["anger", "discipline", "reason"],
+    "expected_relationship_chain": "anger --[resolved_by]--> [discipline, reason]",
+    "difficulty": "medium",
+    "reasoning": "Emotion resolution through practices"
+  },
+  {
+    "id": "q13",
+    "question": "How does nature support the rational being?",
+    "expected_entities": ["nature", "reason", "rational being"],
+    "expected_relationship_chain": "nature --[supports/provides]--> reason",
+    "difficulty": "hard",
+    "reasoning": "Stoic metaphysics: nature and reason connection"
+  },
+  {
+    "id": "q14",
+    "question": "What did Epictetus teach Marcus about control?",
+    "expected_entities": ["Epictetus", "Marcus", "control", "power"],
+    "expected_relationship_chain": "Epictetus --[teaches]--> [control principles]",
+    "difficulty": "medium",
+    "reasoning": "Person-to-concept teaching relationship"
+  },
+  {
+    "id": "q15",
+    "question": "How are death and transformation related in Marcus's view?",
+    "expected_entities": ["death", "transformation", "nature"],
+    "expected_relationship_chain": "death --[is_form_of]--> transformation --[governed_by]--> nature",
+    "difficulty": "hard",
+    "reasoning": "Complex philosophical relationship (2-hop)"
+  }
+]
