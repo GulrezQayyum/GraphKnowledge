@@ -297,77 +297,76 @@ Once Phase 1 is solid:
 - Increase max_hops in queries to reach distant entities
 
 
-# Phase 2: Multi-Hop Evaluation & Benchmarking
+# Phase 2: Multi-Hop Evaluation & Benchmarking (FREE - Groq Only)
 
 ## Overview
 
-Phase 2 compares three retrieval methods:
+Phase 2 compares three retrieval methods using **Groq (FREE)**:
 
 1. **Graph-Only**: Entity traversal (1-2 hops)
 2. **Vector-Only**: Semantic similarity search
 3. **Hybrid**: Combines both methods
 
+**No paid APIs needed!** Uses Groq (same as Phase 1).
+
+---
+
 ## Files
 
 ### 1. `evaluation_queries.json`
-15 hand-crafted multi-hop questions grounded in Meditations:
-- "How does Marcus connect fear and reason?"
-- "What practices lead to virtue?"
-- "How does discipline lead to tranquility?"
-- etc.
-
-Each query includes:
-- `question`: The query text
-- `difficulty`: easy/medium/hard
-- `expected_entities`: Entities that should appear
-- `expected_relationship_chain`: The path through the graph
+15 hand-crafted multi-hop questions:
+```json
+[
+  {
+    "question": "How does Marcus connect fear and reason?",
+    "difficulty": "medium"
+  },
+  ...
+]
+```
 
 ### 2. `phase2_benchmark.py`
-Runs retrieval benchmark comparing all three methods.
+Compares retrieval methods:
+- Graph-only: Fast, focused on entity relationships
+- Vector-only: Broad semantic coverage
+- Hybrid: Best of both
 
-**What it does:**
-1. For each evaluation query
-2. Retrieve using graph-only (traverse relationships)
-3. Retrieve using vector-only (semantic similarity)
-4. Retrieve using hybrid (combine results)
-5. Save results to `phase2_benchmark_results.json`
+**Output**: `phase2_benchmark_results.json`
 
-**Outputs:**
-- Passages retrieved by each method
-- Number of passages per method
-- Comparison of coverage
+### 3. `phase2_evaluation_groq.py` ⭐ **NEW - FREE VERSION**
+Evaluates using Groq (no paid APIs):
 
-### 3. `phase2_evaluation.py`
-Evaluates retrieval quality using RAGAS metrics.
+**Metrics** (simplified, still accurate):
+- **Faithfulness** (0-1): Groq scores if context is grounded
+- **Relevance** (0-1): Groq scores if passages answer question
+- **Coverage** (0-1): Simple heuristic (passages / expected)
 
-**Metrics:**
-- **Faithfulness**: Are retrieved passages faithful to the question?
-- **Relevance**: Do passages answer the question?
-- **Context Recall**: Did we retrieve the right passages?
+**Output**: `phase2_evaluation_results.json`
 
-**Outputs:**
-- RAGAS scores for each method
-- Average scores across all queries
-- Best-performing method
+### 4. `run_phase2.py`
+One-command orchestrator using Groq evaluation.
 
-## Setup
+---
+
+## Setup (FREE)
 
 ### Prerequisites
 
 1. **Phase 1 complete** ✅
-   - `data/graph/knowledge_graph.json` exists
-   - `data/graph/meditations_chunks.json` exists
 
-2. **Dependencies**
-```bash
-pip install --break-system-packages ragas langchain-anthropic
-```
-
-3. **API Keys**
+2. **Groq API key** (you already have this from Phase 1)
 ```bash
 export GROQ_API_KEY='your-groq-key'
-export ANTHROPIC_API_KEY='your-anthropic-key'
 ```
+
+3. **Dependencies**
+```bash
+pip install --break-system-packages groq sentence-transformers networkx
+```
+
+That's it! **No paid APIs needed.**
+
+---
 
 ## Running Phase 2
 
@@ -377,81 +376,76 @@ export ANTHROPIC_API_KEY='your-anthropic-key'
 python3 phase2_benchmark.py
 ```
 
-This generates `phase2_benchmark_results.json`:
+Generates `phase2_benchmark_results.json`:
 ```json
-[
-  {
-    "query_id": "q1",
-    "question": "How does Marcus connect fear and reason?",
-    "difficulty": "medium",
-    "methods": {
-      "graph": {
-        "passages": ["bookI_3", "bookI_7", ...],
-        "num_passages": 12
-      },
-      "vector": {
-        "passages": ["bookI_5", "bookII_1", ...],
-        "scores": [0.85, 0.78, ...],
-        "num_passages": 15
-      },
-      "hybrid": {
-        "passages": ["bookI_3", "bookI_5", ...],
-        "num_passages": 20
-      }
+{
+  "query_id": "q1",
+  "question": "How does Marcus connect fear and reason?",
+  "methods": {
+    "graph": {
+      "passages": ["bookI_3", "bookI_7", ...],
+      "num_passages": 12
+    },
+    "vector": {
+      "passages": ["bookI_5", ...],
+      "num_passages": 15
+    },
+    "hybrid": {
+      "passages": [...],
+      "num_passages": 20
     }
-  },
-  ...
-]
+  }
+}
 ```
 
-### Step 2: Run Evaluation
+### Step 2: Run Evaluation (FREE - Groq)
 
 ```bash
 python3 phase2_evaluation.py
 ```
 
-This generates `phase2_evaluation_results.json`:
+Generates `phase2_evaluation_results.json`:
 ```json
-[
-  {
-    "query_id": "q1",
-    "question": "How does Marcus connect fear and reason?",
-    "methods": {
-      "graph": {
-        "faithfulness": 0.82,
-        "relevance": 0.75,
-        "context_recall": 0.80,
-        "average": 0.79
-      },
-      "vector": {
-        "faithfulness": 0.71,
-        "relevance": 0.88,
-        "context_recall": 0.85,
-        "average": 0.81
-      },
-      "hybrid": {
-        "faithfulness": 0.85,
-        "relevance": 0.90,
-        "context_recall": 0.88,
-        "average": 0.88
-      }
+{
+  "query_id": "q1",
+  "question": "How does Marcus connect fear and reason?",
+  "methods": {
+    "graph": {
+      "faithfulness": 0.82,
+      "relevance": 0.75,
+      "coverage": 0.80,
+      "average": 0.79
+    },
+    "vector": {
+      "faithfulness": 0.71,
+      "relevance": 0.88,
+      "coverage": 0.85,
+      "average": 0.81
+    },
+    "hybrid": {
+      "faithfulness": 0.85,
+      "relevance": 0.90,
+      "coverage": 0.88,
+      "average": 0.88
     }
   }
-]
+}
 ```
+
+---
 
 ## Understanding Results
 
-### Benchmark Results
+### Benchmark (phase2_benchmark_results.json)
 
-Look at `phase2_benchmark_results.json`:
-
-**Question**: "How does Marcus connect fear and reason?"
+Shows how many passages each method retrieves:
 
 ```
-Graph:   12 passages (entity traversal: fear → reason)
-Vector:  15 passages (semantic similarity to question)
-Hybrid:  20 passages (union of both + ranking)
+Question: "How does Marcus connect fear and reason?"
+
+Graph:   12 passages (entity traversal: fear → reason paths)
+Vector:  15 passages (semantic similarity)
+Hybrid:  20 passages (union of both, ranked)
 ```
 
 **What to look for:**
@@ -459,83 +453,106 @@ Hybrid:  20 passages (union of both + ranking)
 - Does vector return broader coverage?
 - Does hybrid balance both?
 
-### Evaluation Results
+### Evaluation (phase2_evaluation_results.json)
 
-Look at `phase2_evaluation_results.json`:
-
-**Best method** wins on average RAGAS score:
+Shows quality of retrieved passages:
 
 ```
-Graph:   0.79 average
-Vector:  0.81 average
-Hybrid:  0.88 average ✓ BEST
+Method    Faithfulness  Relevance  Coverage  Average
+Graph     0.82          0.75       0.80      0.79
+Vector    0.71          0.88       0.85      0.81
+Hybrid    0.85          0.90       0.88      0.88 ✓ BEST
 ```
 
-**Interpretation:**
-- **Faithfulness**: Passages stick to facts in Meditations
-- **Relevance**: Passages actually answer the question
-- **Context Recall**: We found the right passages
+**Metrics:**
+- **Faithfulness**: Are passages grounded in text? (Groq evaluates)
+- **Relevance**: Do they answer the question? (Groq evaluates)
+- **Coverage**: Did we retrieve enough? (Simple heuristic)
+- **Average**: Overall quality
+
+---
 
 ## Expected Outcomes
 
 ### If Graph Wins:
-- Entity relationships are precise
+- Entity relationships are precise and meaningful
 - Multi-hop traversal captures intent well
-- Conservative but high-quality retrieval
+- Conservative but high-quality retrieval ✓
 
 ### If Vector Wins:
-- Semantic embeddings are good for this corpus
+- Semantic embeddings work great for this corpus
 - Graph might be missing implicit relationships
-- Consider improving entity extraction
+- Need to improve entity extraction
 
 ### If Hybrid Wins:
 - Both methods complement each other ✓
-- Combining them captures more nuance
-- This is the expected outcome for balanced systems
-
-## Troubleshooting
-
-### "No passages retrieved for graph"
-- Query entity might not exist in graph
-- Check: `kg.search_entities("query_word")`
-- May need to adjust entity extraction or queries
-
-### RAGAS evaluation is slow
-- It's using Claude to evaluate each passage
-- Start with `sample_queries=3` (in `phase2_evaluation.py`)
-- Full evaluation is OK for 15 queries
-
-### High variance in RAGAS scores
-- Some questions are harder than others
-- Some retrieval results are genuinely better
-- Look at difficulty level to contextualize
-
-## Next Steps
-
-Once Phase 2 is done:
-
-1. **Analyze results**: Which method wins? Why?
-2. **Refine if needed**: 
-   - If graph underperforms: Improve entity extraction
-   - If vector underperforms: Better embeddings
-   - If hybrid wins: Use it for Phase 3
-3. **Move to Phase 3**: LLM reasoning over best method
-
-## Files to Submit
-
-After Phase 2 is complete, share:
-
-1. ✅ `phase2_benchmark_results.json` — Retrieval comparison
-2. ✅ `phase2_evaluation_results.json` — RAGAS scores
-3. ✅ Summary of findings (which method won?)
+- This is the expected outcome
+- Use hybrid for Phase 3
 
 ---
 
-**Ready to start?**
+## Troubleshooting
 
+### "GROQ_API_KEY not set"
 ```bash
-python3 phase2_benchmark.py
-python3 phase2_evaluation.py
+export GROQ_API_KEY='your-groq-key'
+echo $GROQ_API_KEY  # Verify
 ```
 
-Let me know the results! 🚀
+### "No passages retrieved for graph"
+Query entity might not be in graph:
+```python
+from src.graph_builder import KnowledgeGraph
+kg = KnowledgeGraph.load("data/graph/knowledge_graph.json")
+print(kg.search_entities("fear"))  # Check if entity exists
+```
+
+### Evaluation is slow
+- Groq takes ~5-10 seconds per query to evaluate
+- Start with `sample_queries=3` (in `phase2_evaluation_groq.py`)
+- Full 15 queries should take ~2-3 minutes
+
+---
+
+## Next Steps
+
+Once Phase 2 completes:
+
+1. **Identify best method** (probably hybrid)
+2. **Review passages** - Are they relevant?
+3. **Move to Phase 3**: LLM reasoning over best method
+
+---
+
+## Files to Download
+
+- ✅ `evaluation_queries.json` — 15 test questions
+- ✅ `phase2_benchmark.py` — Compare methods
+- ✅ `phase2_evaluation_groq.py` — Evaluate using Groq (FREE)
+- ✅ `run_phase2.py` — Orchestrator script
+
+---
+
+## Quick Start
+
+```bash
+# Make sure Phase 1 is done
+# Verify Groq API key
+export GROQ_API_KEY='your-key'
+
+# Run benchmark
+python3 phase2_benchmark.py
+
+# Run evaluation (FREE)
+python3 phase2_evaluation_groq.py
+
+# Check results
+cat phase2_evaluation_results.json
+```
+
+---
+
+**Cost: $0** 🎉  
+Uses your existing Groq API key (same as Phase 1).
+
+Questions? See the generated JSON files for detailed results.

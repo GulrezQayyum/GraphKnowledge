@@ -1,0 +1,92 @@
+[
+  {
+    "query_id": "q1",
+    "question": "How does Marcus connect fear and reason?",
+    "methods": {
+      "graph": {
+        "method": "graph",
+        "num_passages": 0,
+        "faithfulness": 0.0,
+        "relevance": 0.0,
+        "coverage": 0.0,
+        "average": 0.0
+      },
+      "vector": {
+        "method": "vector",
+        "num_passages": 20,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      },
+      "hybrid": {
+        "method": "hybrid",
+        "num_passages": 20,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      }
+    }
+  },
+  {
+    "query_id": "q2",
+    "question": "What practices did Marcus's teachers teach to develop virtue?",
+    "methods": {
+      "graph": {
+        "method": "graph",
+        "num_passages": 0,
+        "faithfulness": 0.0,
+        "relevance": 0.0,
+        "coverage": 0.0,
+        "average": 0.0
+      },
+      "vector": {
+        "method": "vector",
+        "num_passages": 20,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      },
+      "hybrid": {
+        "method": "hybrid",
+        "num_passages": 20,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      }
+    }
+  },
+  {
+    "query_id": "q3",
+    "question": "How does discipline lead to tranquility?",
+    "methods": {
+      "graph": {
+        "method": "graph",
+        "num_passages": 0,
+        "faithfulness": 0.0,
+        "relevance": 0.0,
+        "coverage": 0.0,
+        "average": 0.0
+      },
+      "vector": {
+        "method": "vector",
+        "num_passages": 20,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      },
+      "hybrid": {
+        "method": "hybrid",
+        "num_passages": 20,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      }
+    }
+  }
+]
