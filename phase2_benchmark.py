@@ -73,8 +73,8 @@ class HybridRetriever:
         Returns:
             RetrievalResult with passages from graph traversal
         """
-        # Find entities matching query
-        found_entities = self.graph.search_entities(query)
+        # Natural-language questions contain entity names alongside other words.
+        found_entities = self.graph.search_entities_in_text(query)
         
         if not found_entities:
             return RetrievalResult(

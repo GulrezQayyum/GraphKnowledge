@@ -121,3 +121,13 @@ def test_query_engine_returns_connected_passages():
     assert result.found_entities == ["reason"]
     assert result.retrieved_passages == ["p1", "p2"]
     assert engine.get_passages(["p1"]) == {"p1": "Reason leads to peace."}
+
+
+def test_graph_finds_entities_in_natural_language_questions():
+    graph = KnowledgeGraph()
+    graph.build_from_canonical(graph_entities(), [])
+
+    assert graph.search_entities_in_text("How does reason lead to peace?") == [
+        "reason",
+        "peace",
+    ]

@@ -7,6 +7,7 @@ Provides graph persistence (JSON export) and basic traversal utilities.
 
 import json
 import os
+import re
 from typing import Optional
 from dataclasses import dataclass
 
@@ -226,6 +227,16 @@ class KnowledgeGraph:
             for entity in self.graph.nodes()
             if query_lower in entity.lower()
         ]
+        return matches
+
+    def search_entities_in_text(self, text: str) -> list[str]:
+        """Find canonical entities explicitly mentioned in natural-language text."""
+        text_lower = text.lower()
+        matches = []
+        for entity in self.graph.nodes():
+            entity_pattern = r"(?<!\w)" + re.escape(entity.lower()) + r"(?!\w)"
+            if re.search(entity_pattern, text_lower):
+                matches.append(entity)
         return matches
 
     def save(self, output_file: str):
