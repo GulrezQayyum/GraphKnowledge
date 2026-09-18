@@ -11,6 +11,7 @@ No external paid APIs needed!
 
 import json
 import os
+import re
 from typing import Optional
 from dataclasses import dataclass
 
@@ -40,7 +41,7 @@ class GroqEvaluator:
     def __init__(self, api_key: Optional[str] = None):
         """Initialize Groq client."""
         self.client = Groq(api_key=api_key or os.getenv("GROQ_API_KEY"))
-        self.model = "mixtral-8x7b-32768"
+        self.model = os.getenv("GROQ_MODEL", "openai/gpt-oss-20b")
     
     def score_faithfulness(self, question: str, passages: list[str]) -> float:
         """
@@ -60,19 +61,20 @@ Question: {question}
 Passages:
 {context}
 
-Answer with ONLY a number 0-1 (e.g., 0.85)"""
+Return ONLY valid JSON in this exact format: {{"score": 0.85}}"""
         
         try:
-            response = self.client.messages.create(
+            response = self.client.chat.completions.create(
                 model=self.model,
-                max_tokens=10,
+                max_tokens=256,
+                response_format={"type": "json_object"},
                 messages=[{"role": "user", "content": prompt}],
             )
-            score_text = response.content[0].text.strip()
-            score = float(score_text.split()[0])
-            return min(1.0, max(0.0, score))
-        except:
-            return 0.5
+            return self._parse_score(response, "faithfulness")
+        except Exception as exc:
+            raise RuntimeError(
+                f"Groq faithfulness scoring failed for question {question!r}: {exc}"
+            ) from exc
     
     def score_relevance(self, question: str, passages: list[str]) -> float:
         """
@@ -92,19 +94,43 @@ Question: {question}
 Passages:
 {context}
 
-Answer with ONLY a number 0-1 (e.g., 0.82)"""
+Return ONLY valid JSON in this exact format: {{"score": 0.82}}"""
         
         try:
-            response = self.client.messages.create(
+            response = self.client.chat.completions.create(
                 model=self.model,
-                max_tokens=10,
+                max_tokens=256,
+                response_format={"type": "json_object"},
                 messages=[{"role": "user", "content": prompt}],
             )
-            score_text = response.content[0].text.strip()
-            score = float(score_text.split()[0])
-            return min(1.0, max(0.0, score))
-        except:
-            return 0.5
+            return self._parse_score(response, "relevance")
+        except Exception as exc:
+            raise RuntimeError(
+                f"Groq relevance scoring failed for question {question!r}: {exc}"
+            ) from exc
+
+    @staticmethod
+    def _parse_score(response, metric: str) -> float:
+        """Parse the numeric score returned by Groq's chat-completions API."""
+        message = response.choices[0].message
+        response_parts = [
+            getattr(message, "content", "") or "",
+            getattr(message, "reasoning", "") or "",
+            getattr(message, "reasoning_content", "") or "",
+        ]
+        score_text = "\n".join(response_parts).strip()
+        try:
+            parsed = json.loads(score_text)
+            score = float(parsed["score"])
+            if 0.0 <= score <= 1.0:
+                return score
+        except (json.JSONDecodeError, KeyError, TypeError, ValueError):
+            pass
+
+        matches = re.findall(r"(?<![\d.])(?:0(?:\.\d+)?|1(?:\.0+)?)(?![\d.])", score_text)
+        if not matches:
+            raise ValueError(f"Groq returned an invalid {metric} score: {score_text!r}")
+        return min(1.0, max(0.0, float(matches[-1])))
     
     def score_coverage(self, num_passages: int, expected: int = 10) -> float:
         """
@@ -123,6 +149,7 @@ def run_evaluation(
     passages_file: str = "data/graph/meditations_chunks.json",
     output_file: str = "phase2_evaluation_results.json",
     sample_queries: Optional[int] = None,
+    top_k: int = 20,
 ):
     """
     Run evaluation on benchmark results using Groq (FREE).
@@ -132,6 +159,7 @@ def run_evaluation(
         passages_file: Path to passages
         output_file: Where to save evaluation
         sample_queries: Limit queries (for testing)
+        top_k: Maximum passages used for LLM precision/relevance scoring
     """
     print("=" * 70)
     print("PHASE 2: EVALUATION (Using Groq - FREE)")
@@ -174,6 +202,7 @@ def run_evaluation(
         # Evaluate each method
         for method in ["graph", "vector", "hybrid"]:
             passage_ids = result["methods"][method]["passages"]
+            passage_ids = passage_ids[:top_k]
             passage_texts = [passages_dict[pid] for pid in passage_ids if pid in passages_dict]
             
             num_passages = len(passage_texts)
