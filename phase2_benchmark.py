@@ -60,7 +60,7 @@ class HybridRetriever:
         self,
         query: str,
         max_hops: int = 2,
-        top_k: Optional[int] = None,
+        top_k: Optional[int] = 20,
     ) -> RetrievalResult:
         """
         Retrieve using graph traversal only.
@@ -84,14 +84,24 @@ class HybridRetriever:
             )
         
         # Traverse from each found entity
-        all_passages = set()
+        passage_scores = {}
         for entity in found_entities:
             traversal = self.graph.traverse(entity, max_hops=max_hops, direction="both")
-            all_passages.update(traversal.passages_reached)
+            for passage_id in traversal.passages_reached:
+                passage_scores[passage_id] = passage_scores.get(passage_id, 0) + len(
+                    traversal.traversed_entities
+                )
+
+            # Passages that explicitly mention a query entity are more useful
+            # than passages reached only through a neighboring graph node.
+            for passage_id in self.graph.entity_to_passages.get(entity, []):
+                passage_scores[passage_id] = passage_scores.get(passage_id, 0) + 2
         
-        passages = list(all_passages)
-        if top_k:
-            passages = passages[:top_k]
+        ranked_passages = sorted(
+            passage_scores,
+            key=lambda passage_id: (-passage_scores[passage_id], passage_id),
+        )
+        passages = ranked_passages if top_k is None else ranked_passages[:top_k]
         
         return RetrievalResult(
             method="graph",
@@ -159,7 +169,9 @@ class HybridRetriever:
             RetrievalResult combining both methods
         """
         # Get graph results
-        graph_result = self.retrieve_graph_only(query, max_hops=max_hops)
+        graph_result = self.retrieve_graph_only(
+            query, max_hops=max_hops, top_k=vector_top_k
+        )
         
         # Get vector results
         vector_result = self.retrieve_vector_only(query, top_k=vector_top_k)
@@ -183,7 +195,8 @@ class HybridRetriever:
             combined_passages.append((pid, score))
         
         # Sort by score
-        combined_passages.sort(key=lambda x: x[1], reverse=True)
+        combined_passages.sort(key=lambda x: (-x[1], x[0]))
+        combined_passages = combined_passages[:vector_top_k]
         passages = [p[0] for p in combined_passages]
         scores = [p[1] for p in combined_passages]
         
