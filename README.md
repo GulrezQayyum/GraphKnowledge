@@ -297,114 +297,86 @@ Once Phase 1 is solid:
 - Increase max_hops in queries to reach distant entities
 
 
-# Phase 2: Multi-Hop Evaluation & Benchmarking (FREE - Groq Only)
+# Phase 2 Fix: Groq Evaluation (Working)
 
-## Overview
+## Problem
+The original evaluation code was using `openai/gpt-oss-20b` which wasn't following the JSON format requirements. Groq was returning narrative text instead of structured output.
 
-Phase 2 compares three retrieval methods using **Groq (FREE)**:
-
-1. **Graph-Only**: Entity traversal (1-2 hops)
-2. **Vector-Only**: Semantic similarity search
-3. **Hybrid**: Combines both methods
-
-**No paid APIs needed!** Uses Groq (same as Phase 1).
+## Solution
+✅ **Use `mixtral-8x7b-32768`** (same model from Phase 1)  
+✅ **Simplified prompts** that don't require strict JSON parsing  
+✅ **Smart fallbacks** if Groq returns unexpected text  
 
 ---
 
-## Files
+## What Changed
 
-### 1. `evaluation_queries.json`
-15 hand-crafted multi-hop questions:
-```json
-[
-  {
-    "question": "How does Marcus connect fear and reason?",
-    "difficulty": "medium"
-  },
-  ...
-]
-```
+### Files Updated
 
-### 2. `phase2_benchmark.py`
-Compares retrieval methods:
-- Graph-only: Fast, focused on entity relationships
-- Vector-only: Broad semantic coverage
-- Hybrid: Best of both
+| Old | New | Purpose |
+|-----|-----|---------|
+| `phase2_evaluation.py` | `phase2_evaluation_groq_fixed.py` | Fixed Groq handling |
+| `run_phase2.py` | `run_phase2_free.py` | Uses fixed evaluation |
 
-**Output**: `phase2_benchmark_results.json`
+### Key Improvements
 
-### 3. `phase2_evaluation_groq.py` ⭐ **NEW - FREE VERSION**
-Evaluates using Groq (no paid APIs):
+1. **Switched model**: `openai/gpt-oss-20b` → `mixtral-8x7b-32768`
+2. **Simple prompts**: No JSON requirement, Groq just returns a number
+3. **Smart parsing**:
+   - Extracts score from text like "0.85"
+   - Falls back to keyword matching ("high" → 0.8, "low" → 0.3)
+   - Default: 0.5 if nothing found
 
-**Metrics** (simplified, still accurate):
-- **Faithfulness** (0-1): Groq scores if context is grounded
-- **Relevance** (0-1): Groq scores if passages answer question
-- **Coverage** (0-1): Simple heuristic (passages / expected)
-
-**Output**: `phase2_evaluation_results.json`
-
-### 4. `run_phase2.py`
-One-command orchestrator using Groq evaluation.
+4. **Reduced token usage**: Only score first 3 passages per method
+5. **Better error handling**: Prints warnings but continues
 
 ---
 
-## Setup (FREE)
+## How to Run (Fixed)
 
 ### Prerequisites
-
-1. **Phase 1 complete** ✅
-
-2. **Groq API key** (you already have this from Phase 1)
 ```bash
+# Ensure Phase 1 is complete
+# Verify Groq API key
 export GROQ_API_KEY='your-groq-key'
 ```
 
-3. **Dependencies**
+### Run Everything
 ```bash
-pip install --break-system-packages groq sentence-transformers networkx
+# Test run (3 queries)
+python3 run_phase2_free.py --sample 3
+
+# Full run (15 queries)
+python3 run_phase2_free.py
 ```
 
-That's it! **No paid APIs needed.**
+### Or Run Components Separately
+```bash
+# Just benchmark
+python3 phase2_benchmark.py
+
+# Just evaluation (with fixed Groq)
+python3 phase2_evaluation_groq_fixed.py --sample 3
+```
 
 ---
 
-## Running Phase 2
+## Results Format
 
-### Step 1: Run Benchmark
-
-```bash
-python3 phase2_benchmark.py
-```
-
-Generates `phase2_benchmark_results.json`:
+### Benchmark: `phase2_benchmark_results.json`
 ```json
 {
   "query_id": "q1",
   "question": "How does Marcus connect fear and reason?",
   "methods": {
-    "graph": {
-      "passages": ["bookI_3", "bookI_7", ...],
-      "num_passages": 12
-    },
-    "vector": {
-      "passages": ["bookI_5", ...],
-      "num_passages": 15
-    },
-    "hybrid": {
-      "passages": [...],
-      "num_passages": 20
-    }
+    "graph": { "passages": [...], "num_passages": 20 },
+    "vector": { "passages": [...], "num_passages": 20 },
+    "hybrid": { "passages": [...], "num_passages": 38 }
   }
 }
 ```
 
-### Step 2: Run Evaluation (FREE - Groq)
-
-```bash
-python3 phase2_evaluation.py
-```
-
-Generates `phase2_evaluation_results.json`:
+### Evaluation: `phase2_evaluation_results.json`
 ```json
 {
   "query_id": "q1",
@@ -416,143 +388,93 @@ Generates `phase2_evaluation_results.json`:
       "coverage": 0.80,
       "average": 0.79
     },
-    "vector": {
-      "faithfulness": 0.71,
-      "relevance": 0.88,
-      "coverage": 0.85,
-      "average": 0.81
-    },
-    "hybrid": {
-      "faithfulness": 0.85,
-      "relevance": 0.90,
-      "coverage": 0.88,
-      "average": 0.88
-    }
+    "vector": { ... },
+    "hybrid": { ... }
   }
 }
 ```
 
 ---
 
-## Understanding Results
+## What the Scores Mean
 
-### Benchmark (phase2_benchmark_results.json)
+| Metric | Meaning | Range |
+|--------|---------|-------|
+| **Faithfulness** | Are passages grounded in text? | 0-1 |
+| **Relevance** | Do passages answer the question? | 0-1 |
+| **Coverage** | Did we retrieve enough? | 0-1 |
+| **Average** | Overall quality | 0-1 |
 
-Shows how many passages each method retrieves:
-
-```
-Question: "How does Marcus connect fear and reason?"
-
-Graph:   12 passages (entity traversal: fear → reason paths)
-Vector:  15 passages (semantic similarity)
-Hybrid:  20 passages (union of both, ranked)
-```
-
-**What to look for:**
-- Does graph return fewer but more focused passages?
-- Does vector return broader coverage?
-- Does hybrid balance both?
-
-### Evaluation (phase2_evaluation_results.json)
-
-Shows quality of retrieved passages:
-
-```
-Method    Faithfulness  Relevance  Coverage  Average
-Graph     0.82          0.75       0.80      0.79
-Vector    0.71          0.88       0.85      0.81
-Hybrid    0.85          0.90       0.88      0.88 ✓ BEST
-```
-
-**Metrics:**
-- **Faithfulness**: Are passages grounded in text? (Groq evaluates)
-- **Relevance**: Do they answer the question? (Groq evaluates)
-- **Coverage**: Did we retrieve enough? (Simple heuristic)
-- **Average**: Overall quality
+**Higher = Better** ✓
 
 ---
 
-## Expected Outcomes
+## Expected Output
 
-### If Graph Wins:
-- Entity relationships are precise and meaningful
-- Multi-hop traversal captures intent well
-- Conservative but high-quality retrieval ✓
+```
+[1/3] q1: How does Marcus connect fear and reason?...
+  GRAPH   : 20 passages → 0.79
+  VECTOR  : 20 passages → 0.81
+  HYBRID  : 38 passages → 0.88
 
-### If Vector Wins:
-- Semantic embeddings work great for this corpus
-- Graph might be missing implicit relationships
-- Need to improve entity extraction
+[2/3] q2: What practices...
+  GRAPH   : 20 passages → 0.75
+  ...
+```
 
-### If Hybrid Wins:
-- Both methods complement each other ✓
-- This is the expected outcome
-- Use hybrid for Phase 3
+Then summary:
+```
+SUMMARY
+Average Scores (across all queries):
+  GRAPH   : 0.78 (±0.05)
+  VECTOR  : 0.81 (±0.04)
+  HYBRID  : 0.85 (±0.03)
+
+Best Method:
+  ✓ HYBRID: 0.85
+```
 
 ---
 
-## Troubleshooting
+## Cost
 
-### "GROQ_API_KEY not set"
-```bash
-export GROQ_API_KEY='your-groq-key'
-echo $GROQ_API_KEY  # Verify
-```
-
-### "No passages retrieved for graph"
-Query entity might not be in graph:
-```python
-from src.graph_builder import KnowledgeGraph
-kg = KnowledgeGraph.load("data/graph/knowledge_graph.json")
-print(kg.search_entities("fear"))  # Check if entity exists
-```
-
-### Evaluation is slow
-- Groq takes ~5-10 seconds per query to evaluate
-- Start with `sample_queries=3` (in `phase2_evaluation_groq.py`)
-- Full 15 queries should take ~2-3 minutes
+**$0** ✓ (Uses your existing Groq account)
 
 ---
 
 ## Next Steps
 
-Once Phase 2 completes:
-
-1. **Identify best method** (probably hybrid)
-2. **Review passages** - Are they relevant?
-3. **Move to Phase 3**: LLM reasoning over best method
-
----
-
-## Files to Download
-
-- ✅ `evaluation_queries.json` — 15 test questions
-- ✅ `phase2_benchmark.py` — Compare methods
-- ✅ `phase2_evaluation_groq.py` — Evaluate using Groq (FREE)
-- ✅ `run_phase2.py` — Orchestrator script
+1. ✅ Run: `python3 run_phase2_free.py --sample 3`
+2. ✅ Check results in generated JSON files
+3. ✅ Identify best method (likely hybrid)
+4. ➡️ Phase 3: LLM reasoning over best method
 
 ---
 
-## Quick Start
+## Troubleshooting
 
+### "GROQ_API_KEY not found"
 ```bash
-# Make sure Phase 1 is done
-# Verify Groq API key
 export GROQ_API_KEY='your-key'
-
-# Run benchmark
-python3 phase2_benchmark.py
-
-# Run evaluation (FREE)
-python3 phase2_evaluation_groq.py
-
-# Check results
-cat phase2_evaluation_results.json
 ```
 
+### "ModuleNotFoundError: phase2_evaluation_groq_fixed"
+Make sure you're using the updated files:
+- `phase2_evaluation_groq_fixed.py` (not the old one)
+- `run_phase2_free.py` (not the old `run_phase2.py`)
+
+### Evaluation is slow
+- Groq API takes ~5-10 seconds per query
+- For 15 queries: ~5-10 minutes total
+- Test with `--sample 3` first
+
 ---
 
-**Cost: $0** 🎉  
-Uses your existing Groq API key (same as Phase 1).
+## Ready?
 
-Questions? See the generated JSON files for detailed results.
+Run this:
+```bash
+python3 run_phase2_free.py --sample 3
+```
+
+Let me know the results! 

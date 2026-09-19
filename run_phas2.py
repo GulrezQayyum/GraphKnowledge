@@ -3,9 +3,9 @@
 Phase 2 Orchestrator (FREE - Groq Only)
 
 Usage:
-  python3 run_phase2_free.py                # Full run (15 queries)
-  python3 run_phase2_free.py --sample 3     # Test run (3 queries)
-  python3 run_phase2_free.py --benchmark-only  # Skip evaluation
+  python3 run_phase2.py                # Full run (15 queries)
+  python3 run_phase2.py --sample 3     # Test run (3 queries)
+  python3 run_phase2.py --benchmark-only  # Skip evaluation
 """
 
 import sys
@@ -22,7 +22,7 @@ from phase2_evaluation import run_evaluation
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Phase 2: Benchmark & Evaluate (FREE - Groq Only)"
+        description="Phase 2: Benchmark & Evaluate (FREE - Groq)"
     )
     parser.add_argument(
         "--sample",
@@ -78,30 +78,33 @@ def main():
             print("✓ Benchmark done")
         except Exception as e:
             print(f"❌ Benchmark failed: {e}")
+            import traceback
+            traceback.print_exc()
             sys.exit(1)
     
     # Run evaluation
-    print("\n[4/4] Running evaluation (Groq - FREE)...")
-    try:
-        run_evaluation(
-            sample_queries=args.sample,
-        )
-        print("✓ Evaluation done")
-    except Exception as e:
-        print(f"❌ Evaluation failed: {e}")
-        sys.exit(1)
+    if not args.benchmark_only:
+        print("\n[4/4] Running evaluation (Groq - FREE)...")
+        try:
+            run_evaluation(sample_queries=args.sample)
+            print("✓ Evaluation done")
+        except Exception as e:
+            print(f"❌ Evaluation failed: {e}")
+            import traceback
+            traceback.print_exc()
+            sys.exit(1)
     
     # Summary
     print("\n" + "=" * 80)
     print("PHASE 2 COMPLETE (Cost: $0)")
     print("=" * 80)
-    print("\nResults:")
+    print("\nGenerated files:")
     print("  ✓ phase2_benchmark_results.json")
     print("  ✓ phase2_evaluation_results.json")
-    print("\nBest method analysis:")
+    print("\nAnalysis:")
     print("  → Check 'average' scores in evaluation results")
-    print("  → Hybrid typically wins")
-    print("\nNext: Phase 3 (LLM reasoning)")
+    print("  → Hybrid typically scores best")
+    print("\nNext: Phase 3 (LLM reasoning over best method)")
     print("=" * 80 + "\n")
 
 

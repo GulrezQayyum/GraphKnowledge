@@ -15,7 +15,6 @@ from typing import Optional
 from dataclasses import dataclass
 
 import numpy as np
-import networkx as nx
 from sentence_transformers import SentenceTransformer
 
 
@@ -61,7 +60,7 @@ class HybridRetriever:
         self,
         query: str,
         max_hops: int = 2,
-        top_k: int = 20,
+        top_k: Optional[int] = None,
     ) -> RetrievalResult:
         """
         Retrieve using graph traversal only.
@@ -69,12 +68,12 @@ class HybridRetriever:
         Args:
             query: Query text (entity name to start from)
             max_hops: Maximum hops in graph
-            top_k: Return top K ranked passages
+            top_k: Return top K passages (None = all)
             
         Returns:
             RetrievalResult with passages from graph traversal
         """
-        # Natural-language questions contain entity names alongside other words.
+        # Find entities matching query
         found_entities = self.graph.search_entities_in_text(query)
         
         if not found_entities:
@@ -84,38 +83,20 @@ class HybridRetriever:
                 passages=[],
             )
         
-        # Rank passages by graph distance to matched entities. This keeps
-        # broad multi-entity traversals useful without returning an unordered set.
-        passage_scores = {}
+        # Traverse from each found entity
+        all_passages = set()
         for entity in found_entities:
-            distances = self._entity_distances(entity, max_hops)
-            for reached_entity, distance in distances.items():
-                entity_passages = self.graph.entity_to_passages.get(reached_entity, [])
-                for passage_id in entity_passages:
-                    score = (max_hops - distance + 1) / (distance + 1)
-                    passage_scores[passage_id] = passage_scores.get(passage_id, 0.0) + score
+            traversal = self.graph.traverse(entity, max_hops=max_hops, direction="both")
+            all_passages.update(traversal.passages_reached)
         
-        ranked_passages = sorted(
-            passage_scores.items(),
-            key=lambda item: (-item[1], item[0]),
-        )
-        passages = [passage_id for passage_id, _ in ranked_passages[:top_k]]
-        scores = [score for _, score in ranked_passages[:top_k]]
+        passages = list(all_passages)
+        if top_k:
+            passages = passages[:top_k]
         
         return RetrievalResult(
             method="graph",
             query=query,
             passages=passages,
-            scores=scores,
-        )
-
-    def _entity_distances(self, entity: str, max_hops: int) -> dict[str, int]:
-        """Return deterministic shortest graph distances in either direction."""
-        undirected_graph = self.graph.graph.to_undirected()
-        return dict(
-            nx.single_source_shortest_path_length(
-                undirected_graph, entity, cutoff=max_hops
-            )
         )
     
     def retrieve_vector_only(
@@ -178,7 +159,7 @@ class HybridRetriever:
             RetrievalResult combining both methods
         """
         # Get graph results
-        graph_result = self.retrieve_graph_only(query, max_hops=max_hops, top_k=vector_top_k)
+        graph_result = self.retrieve_graph_only(query, max_hops=max_hops)
         
         # Get vector results
         vector_result = self.retrieve_vector_only(query, top_k=vector_top_k)
@@ -253,7 +234,7 @@ def run_benchmark(
         print(f"[{i+1}/{len(eval_queries)}] {query_id}: {question[:60]}...")
         
         # Retrieve using all three methods
-        graph_result = retriever.retrieve_graph_only(question, top_k=20)
+        graph_result = retriever.retrieve_graph_only(question)
         vector_result = retriever.retrieve_vector_only(question, top_k=20)
         hybrid_result = retriever.retrieve_hybrid(question)
         
