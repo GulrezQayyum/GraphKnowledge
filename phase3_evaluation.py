@@ -22,7 +22,7 @@ class AnswerEvaluator:
     def __init__(self, api_key: Optional[str] = None):
         """Initialize Groq client."""
         self.client = Groq(api_key=api_key or os.getenv("GROQ_API_KEY"))
-        self.model = "mixtral-8x7b-32768"
+        self.model = os.getenv("GROQ_EVAL_MODEL", "openai/gpt-oss-20b")
 
     def extract_score(self, text: str) -> float:
         """Extract score from response."""
@@ -64,12 +64,13 @@ Score 0-1 where 1 = very faithful, 0 = not faithful.
 Score: """
 
         try:
-            response = self.client.messages.create(
+            response = self.client.chat.completions.create(
                 model=self.model,
-                max_tokens=20,
+                max_tokens=100,
+                reasoning_effort="low",
                 messages=[{"role": "user", "content": prompt}],
             )
-            return self.extract_score(response.content[0].text)
+            return self.extract_score(response.choices[0].message.content)
         except:
             return 0.5
 
@@ -89,12 +90,13 @@ Score 0-1 where 1 = directly answers, 0 = doesn't answer.
 Score: """
 
         try:
-            response = self.client.messages.create(
+            response = self.client.chat.completions.create(
                 model=self.model,
-                max_tokens=20,
+                max_tokens=100,
+                reasoning_effort="low",
                 messages=[{"role": "user", "content": prompt}],
             )
-            return self.extract_score(response.content[0].text)
+            return self.extract_score(response.choices[0].message.content)
         except:
             return 0.5
 
@@ -117,12 +119,13 @@ Score 0-1 where 1 = very relevant, 0 = not relevant.
 Score: """
 
         try:
-            response = self.client.messages.create(
+            response = self.client.chat.completions.create(
                 model=self.model,
-                max_tokens=20,
+                max_tokens=100,
+                reasoning_effort="low",
                 messages=[{"role": "user", "content": prompt}],
             )
-            return self.extract_score(response.content[0].text)
+            return self.extract_score(response.choices[0].message.content)
         except:
             return 0.5
 

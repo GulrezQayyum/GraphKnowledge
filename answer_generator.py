@@ -30,7 +30,7 @@ class AnswerGenerator:
     def __init__(self, api_key: Optional[str] = None):
         """Initialize Groq client."""
         self.client = Groq(api_key=api_key or os.getenv("GROQ_API_KEY"))
-        self.model = "mixtral-8x7b-32768"
+        self.model = os.getenv("GROQ_MODEL", "openai/gpt-oss-20b")
 
     def generate_answer(
         self,
@@ -71,12 +71,13 @@ If passages don't address the question, say so clearly.
 Answer:"""
 
         try:
-            response = self.client.messages.create(
+            response = self.client.chat.completions.create(
                 model=self.model,
-                max_tokens=200,
+                max_tokens=500,
+                reasoning_effort="low",
                 messages=[{"role": "user", "content": prompt}],
             )
-            return response.content[0].text.strip()
+            return response.choices[0].message.content.strip()
         except Exception as e:
             return f"Error generating answer: {e}"
 

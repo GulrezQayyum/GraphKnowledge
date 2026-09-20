@@ -1,0 +1,536 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraphKnowledge Phase 3: Complete Results</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .header p { font-size: 1.2em; opacity: 0.9; }
+        .summary {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 40px;
+            background: #f8f9fa;
+        }
+        .metric-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .metric-card .value {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #667eea;
+            margin: 10px 0;
+        }
+        .metric-card .label {
+            font-size: 0.9em;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .queries {
+            padding: 40px;
+        }
+        .query-result {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .query-header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .query-header h3 {
+            color: #667eea;
+            margin-bottom: 8px;
+        }
+        .query-header p {
+            color: #666;
+            font-size: 0.9em;
+        }
+        .query-body {
+            padding: 20px;
+        }
+        .query-body h4 {
+            color: #333;
+            margin: 15px 0 8px 0;
+            font-size: 1em;
+        }
+        .query-body p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        .metrics-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e0e0e0;
+        }
+        .metric {
+            text-align: center;
+        }
+        .metric-score {
+            font-weight: bold;
+            color: #667eea;
+            font-size: 1.2em;
+        }
+        .metric-label {
+            font-size: 0.85em;
+            color: #999;
+        }
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+        }
+        .score-high { color: #22c55e; }
+        .score-medium { color: #f59e0b; }
+        .score-low { color: #ef4444; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>GraphKnowledge Phase 3</h1>
+            <p>Complete Answer Generation & Evaluation Pipeline</p>
+        </div>
+
+        <div class="summary">
+            <div class="metric-card">
+                <div class="label">Faithfulness</div>
+                <div class="metric-card__value" style="color: #667eea;">0.193</div>
+            </div>
+            <div class="metric-card">
+                <div class="label">Relevance</div>
+                <div class="metric-card__value" style="color: #764ba2;">1.000</div>
+            </div>
+            <div class="metric-card">
+                <div class="label">Context Recall</div>
+                <div class="metric-card__value" style="color: #667eea;">0.347</div>
+            </div>
+            <div class="metric-card">
+                <div class="label">Overall Score</div>
+                <div class="metric-card__value" style="color: #764ba2;">0.513</div>
+            </div>
+        </div>
+
+        <div class="queries">
+            <h2 style="margin-bottom: 30px; color: #333;">Answer Results</h2>
+
+            <div class="query-result">
+                <div class="query-header">
+                    <h3>q1: How does Marcus connect fear and reason?</h3>
+                    <p>Method: HYBRID | Passages: 10</p>
+                </div>
+                <div class="query-body">
+                    <h4>Generated Answer:</h4>
+                    <p>Marcus Aurelius links fear and reason by asserting that a mind governed by rational thought will “fearing and desiring nothing.” In other words, when one lets reason guide the mind—examining things objectively, recognizing their nature, and acting in accordance with that understanding—fear and desire become unnecessary, freeing one to live in harmony with nature and maintain inner steadiness.</p>
+                    <div class="metrics-row">
+                        <div class="metric">
+                            <div class="metric-score">0.000</div>
+                            <div class="metric-label">Faithfulness</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">1.000</div>
+                            <div class="metric-label">Relevance</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">0.333</div>
+                            <div class="metric-label">Average</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="query-result">
+                <div class="query-header">
+                    <h3>q2: What practices did Marcus's teachers teach to develop virtue?</h3>
+                    <p>Method: HYBRID | Passages: 10</p>
+                </div>
+                <div class="query-body">
+                    <h4>Generated Answer:</h4>
+                    <p>Marcus’s teachers, especially Rusticus, taught him practical habits for cultivating virtue: avoid the vanity of rhetoric, poetry, and ostentation; write in a plain, unornamental style; be readily reconciled to those who wronged you; read authors carefully and not accept superficial arguments; and keep a sober, honest, and modest disposition. These practices were aimed at fostering humility, patience, and a steadfast, truthful character.</p>
+                    <div class="metrics-row">
+                        <div class="metric">
+                            <div class="metric-score">0.000</div>
+                            <div class="metric-label">Faithfulness</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">1.000</div>
+                            <div class="metric-label">Relevance</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">0.500</div>
+                            <div class="metric-label">Average</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="query-result">
+                <div class="query-header">
+                    <h3>q3: How does discipline lead to tranquility?</h3>
+                    <p>Method: HYBRID | Passages: 10</p>
+                </div>
+                <div class="query-body">
+                    <h4>Generated Answer:</h4>
+                    <p>Discipline, according to the passages, trains the mind to stay governed by reason, to keep passions in check, and to focus only on what is truly good and necessary. When one remains steadfastly “well‑disciplined and purified by philosophy” (P4), there is nothing unsound in him, and he is neither startled by death nor swayed by others’ opinions, which brings a steady, untroubled peace. Thus, disciplined control over desire and anger (P5) frees the soul from disruptive impulses, allowing it to accept events calmly and to live in harmony with nature, producing tranquility.</p>
+                    <div class="metrics-row">
+                        <div class="metric">
+                            <div class="metric-score">0.200</div>
+                            <div class="metric-label">Faithfulness</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">1.000</div>
+                            <div class="metric-label">Relevance</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">0.633</div>
+                            <div class="metric-label">Average</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="query-result">
+                <div class="query-header">
+                    <h3>q4: What does nature teach about virtue?</h3>
+                    <p>Method: HYBRID | Passages: 10</p>
+                </div>
+                <div class="query-body">
+                    <h4>Generated Answer:</h4>
+                    <p>Nature teaches that virtue is inherent in a thing’s own nature and does not depend on external praise or criticism (P2). By living in accordance with nature—accepting one’s fate and exercising honesty and good nature—one can cultivate virtue within one’s own limits and achieve genuine contentment (P3, P5).</p>
+                    <div class="metrics-row">
+                        <div class="metric">
+                            <div class="metric-score">0.000</div>
+                            <div class="metric-label">Faithfulness</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">1.000</div>
+                            <div class="metric-label">Relevance</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">0.667</div>
+                            <div class="metric-label">Average</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="query-result">
+                <div class="query-header">
+                    <h3>q5: How did Marcus's mother influence his character?</h3>
+                    <p>Method: HYBRID | Passages: 10</p>
+                </div>
+                <div class="query-body">
+                    <h4>Generated Answer:</h4>
+                    <p>The passages do not provide any information about how Marcus Aurelius’s mother influenced his character. They mention a letter he wrote to her, but her impact on his development is not discussed.</p>
+                    <div class="metrics-row">
+                        <div class="metric">
+                            <div class="metric-score">1.000</div>
+                            <div class="metric-label">Faithfulness</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">1.000</div>
+                            <div class="metric-label">Relevance</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">0.667</div>
+                            <div class="metric-label">Average</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="query-result">
+                <div class="query-header">
+                    <h3>q6: What emotions oppose virtue?</h3>
+                    <p>Method: HYBRID | Passages: 10</p>
+                </div>
+                <div class="query-body">
+                    <h4>Generated Answer:</h4>
+                    <p>The passages indicate that passion, impulsiveness, and uncontrolled desire oppose virtue. They describe how “being hurried and convulsed with passion” is a quality of beasts and unruly men, contrasting it with the calm, reasoned conduct of a virtuous person.</p>
+                    <div class="metrics-row">
+                        <div class="metric">
+                            <div class="metric-score">0.200</div>
+                            <div class="metric-label">Faithfulness</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">1.000</div>
+                            <div class="metric-label">Relevance</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">0.400</div>
+                            <div class="metric-label">Average</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="query-result">
+                <div class="query-header">
+                    <h3>q7: How does reason help when facing hardship?</h3>
+                    <p>Method: HYBRID | Passages: 10</p>
+                </div>
+                <div class="query-body">
+                    <h4>Generated Answer:</h4>
+                    <p>Reason helps you confront hardship by giving you a clear, rational view of what is truly valuable and what is merely indifferent. By analyzing each situation—identifying its nature, purpose, and moral worth—you can stay focused, act with virtue, and maintain inner peace even when external circumstances are dire. Thus, reason steadies your mind, prevents distraction, and ensures you live in accordance with nature, leading to true contentment.</p>
+                    <div class="metrics-row">
+                        <div class="metric">
+                            <div class="metric-score">0.000</div>
+                            <div class="metric-label">Faithfulness</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">1.000</div>
+                            <div class="metric-label">Relevance</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">0.333</div>
+                            <div class="metric-label">Average</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="query-result">
+                <div class="query-header">
+                    <h3>q8: What is the connection between duty and justice?</h3>
+                    <p>Method: HYBRID | Passages: 10</p>
+                </div>
+                <div class="query-body">
+                    <h4>Generated Answer:</h4>
+                    <p>The passages imply that duty is inherently tied to justice. In P2, Marcus Aurelius describes learning to act with justice and truth as part of his obligations, and P3 reinforces that “doing my duty, that is enough,” suggesting that fulfilling one’s duty naturally involves just behavior. Thus, performing one's duty is itself an expression of justice.</p>
+                    <div class="metrics-row">
+                        <div class="metric">
+                            <div class="metric-score">0.000</div>
+                            <div class="metric-label">Faithfulness</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">1.000</div>
+                            <div class="metric-label">Relevance</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">0.500</div>
+                            <div class="metric-label">Average</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="query-result">
+                <div class="query-header">
+                    <h3>q9: How does acceptance of fate relate to virtue?</h3>
+                    <p>Method: HYBRID | Passages: 10</p>
+                </div>
+                <div class="query-body">
+                    <h4>Generated Answer:</h4>
+                    <p>Acceptance of fate is integral to a virtuous life: by “acquiescing in your fate” (P2) and letting it be your only inclination (P3), one aligns actions with reason and nature, thereby cultivating honesty, good nature, and contentment. This resignation to what is beyond control frees the mind for the noble pursuits of virtue—rational conduct, justice, and benevolence—making virtue itself the most stable and profitable end (P4).</p>
+                    <div class="metrics-row">
+                        <div class="metric">
+                            <div class="metric-score">0.500</div>
+                            <div class="metric-label">Faithfulness</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">1.000</div>
+                            <div class="metric-label">Relevance</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">0.733</div>
+                            <div class="metric-label">Average</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="query-result">
+                <div class="query-header">
+                    <h3>q10: What role does the ruling part play in managing emotions?</h3>
+                    <p>Method: HYBRID | Passages: 10</p>
+                </div>
+                <div class="query-body">
+                    <h4>Generated Answer:</h4>
+                    <p>The ruling part—reason or the mind—serves as the guard that keeps the soul’s passions in check.  As P1 and P2 state, a self‑sufficient mind creates its own wants and, if it resists being led into fanciful fears, remains undisturbed; when governed by reason, it disciplines feelings, keeps the divinity “pure,” and prevents external impressions from disturbing the inner self. Thus, the ruling part must oversee and restrain emotions so that only those aligned with nature are allowed to arise.</p>
+                    <div class="metrics-row">
+                        <div class="metric">
+                            <div class="metric-score">0.000</div>
+                            <div class="metric-label">Faithfulness</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">1.000</div>
+                            <div class="metric-label">Relevance</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">0.667</div>
+                            <div class="metric-label">Average</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="query-result">
+                <div class="query-header">
+                    <h3>q11: How does philosophy help Marcus live well?</h3>
+                    <p>Method: HYBRID | Passages: 10</p>
+                </div>
+                <div class="query-body">
+                    <h4>Generated Answer:</h4>
+                    <p>The passages show that philosophy gives Marcus a disciplined, honest character that prevents him from being surprised by death or swayed by vanity, rhetoric, or affectation (P1, P3). By constantly studying and practicing philosophical principles—such as modesty, generosity, clear expectations, and a plain style—he learns to live rightly, judge situations properly, and make the most of each moment before death (P2–P5). Thus, philosophy helps him live well by cultivating virtue, clarity of judgment, and a focus on the present.</p>
+                    <div class="metrics-row">
+                        <div class="metric">
+                            <div class="metric-score">0.300</div>
+                            <div class="metric-label">Faithfulness</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">1.000</div>
+                            <div class="metric-label">Relevance</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">0.700</div>
+                            <div class="metric-label">Average</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="query-result">
+                <div class="query-header">
+                    <h3>q12: What practices does Marcus recommend for dealing with anger?</h3>
+                    <p>Method: HYBRID | Passages: 10</p>
+                </div>
+                <div class="query-body">
+                    <h4>Generated Answer:</h4>
+                    <p>Marcus urges you to confront anger by using reason: investigate whether the provoker truly deserves your irritation, argue calmly and show the flaw, and if your counsel succeeds, the anger disappears. He stresses that only a rational, measured examination of the situation—rather than a rash reaction—will keep you free from needless wrath.</p>
+                    <div class="metrics-row">
+                        <div class="metric">
+                            <div class="metric-score">0.000</div>
+                            <div class="metric-label">Faithfulness</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">1.000</div>
+                            <div class="metric-label">Relevance</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">0.333</div>
+                            <div class="metric-label">Average</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="query-result">
+                <div class="query-header">
+                    <h3>q13: How does nature support the rational being?</h3>
+                    <p>Method: HYBRID | Passages: 10</p>
+                </div>
+                <div class="query-body">
+                    <h4>Generated Answer:</h4>
+                    <p>Nature sustains a rational being by aligning its design with rational principles. As Marcus Aurelius notes, a rational constitution “enjoins us to do nothing rashly, and to be kindly disposed towards men, and to submit willingly to the gods” (P1), and the cycles of death and generation are “nothing that a man need be ashamed of… opposed to his nature as a rational being” (P5). Thus, nature provides a framework in which reason can govern actions, cultivate virtue, and harmonise with the universal order.</p>
+                    <div class="metrics-row">
+                        <div class="metric">
+                            <div class="metric-score">0.000</div>
+                            <div class="metric-label">Faithfulness</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">1.000</div>
+                            <div class="metric-label">Relevance</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">0.333</div>
+                            <div class="metric-label">Average</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="query-result">
+                <div class="query-header">
+                    <h3>q14: What did Epictetus teach Marcus about control?</h3>
+                    <p>Method: HYBRID | Passages: 10</p>
+                </div>
+                <div class="query-body">
+                    <h4>Generated Answer:</h4>
+                    <p>Epictetus taught Marcus that the only thing truly under one’s control is one’s own rational mind and the way it responds to events. By governing oneself with reason, examining circumstances, and accepting that only our judgments are in our power, Marcus could manage what lies before him and remain undisturbed by external forces.</p>
+                    <div class="metrics-row">
+                        <div class="metric">
+                            <div class="metric-score">0.000</div>
+                            <div class="metric-label">Faithfulness</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">1.000</div>
+                            <div class="metric-label">Relevance</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">0.333</div>
+                            <div class="metric-label">Average</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="query-result">
+                <div class="query-header">
+                    <h3>q15: How are death and transformation related in Marcus's view?</h3>
+                    <p>Method: HYBRID | Passages: 10</p>
+                </div>
+                <div class="query-body">
+                    <h4>Generated Answer:</h4>
+                    <p>In Marcus’s view, death is the inevitable final transformation that all lives undergo, and it should not be feared by a person who has cultivated the soul through philosophy.  A well‑disciplined soul is already “dead” to the passions and thus cannot be surprised by death; the passing from life to whatever follows is merely the natural conclusion of the same rational, divine order that governs daily action.  Thus death is not a punishment or a misfortune but the ordinary completion of the soul’s transformation from the body to its higher, undivided state.</p>
+                    <div class="metrics-row">
+                        <div class="metric">
+                            <div class="metric-score">0.700</div>
+                            <div class="metric-label">Faithfulness</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">1.000</div>
+                            <div class="metric-label">Relevance</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-score">0.567</div>
+                            <div class="metric-label">Average</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p>GraphKnowledge Phase 3 Complete | Generated using Groq + Mixtral-8x7b | Portfolio Ready</p>
+        </div>
+    </div>
+</body>
+</html>

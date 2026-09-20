@@ -121,7 +121,7 @@ def main():
     if not args.no_report:
         print(f"  ✓ phase3_report.html (open in browser)")
 
-    print(f"\n🎓 PROJECT COMPLETE!")
+    print(f"\n PROJECT COMPLETE!")
     print(f"  Phase 1: Entity Extraction ✓")
     print(f"  Phase 2: Multi-hop Evaluation ✓")
     print(f"  Phase 3: Answer Generation ✓")

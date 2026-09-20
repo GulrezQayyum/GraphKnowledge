@@ -5,7 +5,6 @@ Creates beautiful, interactive HTML report of results.
 """
 
 import json
-from typing import list
 
 
 def generate_html_report(
