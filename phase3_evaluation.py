@@ -49,7 +49,7 @@ class AnswerEvaluator:
         passages: list[str],
     ) -> float:
         """Score: Is answer faithful to passages?"""
-        context = "\n".join([f"P{i+1}: {p[:100]}" for i, p in enumerate(passages[:3])])
+        context = "\n".join([f"P{i+1}: {p}" for i, p in enumerate(passages)])
 
         prompt = f"""Question: {question}
 
@@ -106,7 +106,7 @@ Score: """
         passages: list[str],
     ) -> float:
         """Score: Were passages relevant?"""
-        context = "\n".join([f"P{i+1}: {p[:100]}" for i, p in enumerate(passages[:3])])
+        context = "\n".join([f"P{i+1}: {p}" for i, p in enumerate(passages)])
 
         prompt = f"""Question: {question}
 

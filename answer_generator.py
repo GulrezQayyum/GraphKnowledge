@@ -53,7 +53,7 @@ class AnswerGenerator:
             return "No relevant passages found to answer this question."
 
         # Build context
-        passage_text = "\n".join([f"[P{i+1}]\n{p}\n" for i, p in enumerate(passages[:5])])
+        passage_text = "\n".join([f"[P{i+1}]\n{p}\n" for i, p in enumerate(passages[:10])])
 
         extra_context = f"\n\nContext information:\n{context}" if context else ""
 

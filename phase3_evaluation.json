@@ -2,95 +2,18 @@
   {
     "query_id": "q1",
     "question": "How does Marcus connect fear and reason?",
-    "answer": "Marcus Aurelius links fear and reason by asserting that a mind governed by rational thought will \u201cfearing and desiring nothing.\u201d In other words, when one lets reason guide the mind\u2014examining things objectively, recognizing their nature, and acting in accordance with that understanding\u2014fear and desire become unnecessary, freeing one to live in harmony with nature and maintain inner steadiness.",
+    "answer": "Marcus Aurelius links fear and reason by showing that a rational mind discards fear and desire. In P3 he states that a person who is governed by reason will \u201cfearing and desiring nothing,\u201d implying that reason naturally eliminates the anxiety that fear generates. Thus, reason is the antidote to fear, grounding one in calm acceptance of what is allotted.",
     "metrics": {
-      "faithfulness": 0.0,
-      "relevance": 1.0,
+      "faithfulness": 0.2,
+      "relevance": 0.5,
       "context_recall": 0.0,
-      "average": 0.333
+      "average": 0.233
     }
   },
   {
     "query_id": "q2",
     "question": "What practices did Marcus's teachers teach to develop virtue?",
-    "answer": "Marcus\u2019s teachers, especially Rusticus, taught him practical habits for cultivating virtue: avoid the vanity of rhetoric, poetry, and ostentation; write in a plain, unornamental style; be readily reconciled to those who wronged you; read authors carefully and not accept superficial arguments; and keep a sober, honest, and modest disposition. These practices were aimed at fostering humility, patience, and a steadfast, truthful character.",
-    "metrics": {
-      "faithfulness": 0.0,
-      "relevance": 1.0,
-      "context_recall": 0.5,
-      "average": 0.5
-    }
-  },
-  {
-    "query_id": "q3",
-    "question": "How does discipline lead to tranquility?",
-    "answer": "Discipline, according to the passages, trains the mind to stay governed by reason, to keep passions in check, and to focus only on what is truly good and necessary. When one remains steadfastly \u201cwell\u2011disciplined and purified by philosophy\u201d (P4), there is nothing unsound in him, and he is neither startled by death nor swayed by others\u2019 opinions, which brings a steady, untroubled peace. Thus, disciplined control over desire and anger (P5) frees the soul from disruptive impulses, allowing it to accept events calmly and to live in harmony with nature, producing tranquility.",
-    "metrics": {
-      "faithfulness": 0.2,
-      "relevance": 1.0,
-      "context_recall": 0.7,
-      "average": 0.633
-    }
-  },
-  {
-    "query_id": "q4",
-    "question": "What does nature teach about virtue?",
-    "answer": "Nature teaches that virtue is inherent in a thing\u2019s own nature and does not depend on external praise or criticism (P2). By living in accordance with nature\u2014accepting one\u2019s fate and exercising honesty and good nature\u2014one can cultivate virtue within one\u2019s own limits and achieve genuine contentment (P3, P5).",
-    "metrics": {
-      "faithfulness": 0.0,
-      "relevance": 1.0,
-      "context_recall": 1.0,
-      "average": 0.667
-    }
-  },
-  {
-    "query_id": "q5",
-    "question": "How did Marcus's mother influence his character?",
-    "answer": "The passages do not provide any information about how Marcus Aurelius\u2019s mother influenced his character. They mention a letter he wrote to her, but her impact on his development is not discussed.",
-    "metrics": {
-      "faithfulness": 1.0,
-      "relevance": 1.0,
-      "context_recall": 0.0,
-      "average": 0.667
-    }
-  },
-  {
-    "query_id": "q6",
-    "question": "What emotions oppose virtue?",
-    "answer": "The passages indicate that passion, impulsiveness, and uncontrolled desire oppose virtue. They describe how \u201cbeing hurried and convulsed with passion\u201d is a quality of beasts and unruly men, contrasting it with the calm, reasoned conduct of a virtuous person.",
-    "metrics": {
-      "faithfulness": 0.2,
-      "relevance": 1.0,
-      "context_recall": 0.0,
-      "average": 0.4
-    }
-  },
-  {
-    "query_id": "q7",
-    "question": "How does reason help when facing hardship?",
-    "answer": "Reason helps you confront hardship by giving you a clear, rational view of what is truly valuable and what is merely indifferent. By analyzing each situation\u2014identifying its nature, purpose, and moral worth\u2014you can stay focused, act with virtue, and maintain inner peace even when external circumstances are dire. Thus, reason steadies your mind, prevents distraction, and ensures you live in accordance with nature, leading to true contentment.",
-    "metrics": {
-      "faithfulness": 0.0,
-      "relevance": 1.0,
-      "context_recall": 0.0,
-      "average": 0.333
-    }
-  },
-  {
-    "query_id": "q8",
-    "question": "What is the connection between duty and justice?",
-    "answer": "The passages imply that duty is inherently tied to justice. In P2, Marcus Aurelius describes learning to act with justice and truth as part of his obligations, and P3 reinforces that \u201cdoing my duty, that is enough,\u201d suggesting that fulfilling one\u2019s duty naturally involves just behavior. Thus, performing one's duty is itself an expression of justice.",
-    "metrics": {
-      "faithfulness": 0.0,
-      "relevance": 1.0,
-      "context_recall": 0.5,
-      "average": 0.5
-    }
-  },
-  {
-    "query_id": "q9",
-    "question": "How does acceptance of fate relate to virtue?",
-    "answer": "Acceptance of fate is integral to a virtuous life: by \u201cacquiescing in your fate\u201d (P2) and letting it be your only inclination (P3), one aligns actions with reason and nature, thereby cultivating honesty, good nature, and contentment. This resignation to what is beyond control frees the mind for the noble pursuits of virtue\u2014rational conduct, justice, and benevolence\u2014making virtue itself the most stable and profitable end (P4).",
+    "answer": "Marcus\u2019s teachers taught him a range of practical habits to cultivate virtue. Rusticus showed him how to live plainly\u2014writing in an unornamental style, reconciling easily with those who wronged him, and reading authors carefully and thoughtfully; he also gave him Epictetus\u2019s memoirs for study. The example of Antoninus was then used: to be modest, just, pious, temperate, patient, and to examine each situation carefully before acting or speaking, always seeking to align one\u2019s conduct with the good model.",
     "metrics": {
       "faithfulness": 0.5,
       "relevance": 1.0,
@@ -99,69 +22,146 @@
     }
   },
   {
-    "query_id": "q10",
-    "question": "What role does the ruling part play in managing emotions?",
-    "answer": "The ruling part\u2014reason or the mind\u2014serves as the guard that keeps the soul\u2019s passions in check.  As P1 and P2 state, a self\u2011sufficient mind creates its own wants and, if it resists being led into fanciful fears, remains undisturbed; when governed by reason, it disciplines feelings, keeps the divinity \u201cpure,\u201d and prevents external impressions from disturbing the inner self. Thus, the ruling part must oversee and restrain emotions so that only those aligned with nature are allowed to arise.",
+    "query_id": "q3",
+    "question": "How does discipline lead to tranquility?",
+    "answer": "Discipline, as Aurelius explains, keeps the mind \u201cwell\u2011disciplined\u201d and \u201cstaunch\u201d (P2), preventing it from being carried away by desire, anger or curiosity (P5, P3). By retreating into reason when disturbed (P1) and focusing only on what one can truly reveal, the soul remains aligned with nature, free from needless passion and external noise (P10). This ordered, self\u2011contained state of mind yields the tranquility that \u201cgood ordering of the mind\u201d produces, allowing one to accept events without disturbance.",
     "metrics": {
-      "faithfulness": 0.0,
+      "faithfulness": 0.9,
       "relevance": 1.0,
       "context_recall": 1.0,
-      "average": 0.667
+      "average": 0.967
+    }
+  },
+  {
+    "query_id": "q4",
+    "question": "What does nature teach about virtue?",
+    "answer": "Nature teaches that virtue is inherent in things that are good by their own nature, and that a virtuous person must act according to reason, contentment, and the natural order. By examining objects and events in their true nature, one learns that virtues such as truth, justice, temperance, and fortitude are what make actions good, independent of praise or external praise. Thus, virtue is discovered through aligning one\u2019s life with the rational, natural principles that govern all things.",
+    "metrics": {
+      "faithfulness": 0.9,
+      "relevance": 1.0,
+      "context_recall": 1.0,
+      "average": 0.967
+    }
+  },
+  {
+    "query_id": "q5",
+    "question": "How did Marcus's mother influence his character?",
+    "answer": "The passages do not provide any information about how Marcus Aurelius\u2019s mother influenced his character.",
+    "metrics": {
+      "faithfulness": 1.0,
+      "relevance": 0.0,
+      "context_recall": 0.2,
+      "average": 0.4
+    }
+  },
+  {
+    "query_id": "q6",
+    "question": "What emotions oppose virtue?",
+    "answer": "Emotions that run counter to virtue are those that seize the mind with passion or hostility\u2014anger, desire, resentment, aversion, hatred, rashness, and vanity. These feelings withdraw reason from the soul, corrupt the rational conduct that virtue demands, and lead a man away from the calm, resigned state that Marcus Aurelius extols.",
+    "metrics": {
+      "faithfulness": 0.9,
+      "relevance": 1.0,
+      "context_recall": 0.9,
+      "average": 0.933
+    }
+  },
+  {
+    "query_id": "q7",
+    "question": "How does reason help when facing hardship?",
+    "answer": "Reason helps you meet hardship by keeping your mind clear and focused on what truly matters. It lets you view events objectively, accept what is outside your control, and act with virtue, calmness, and resilience. In this way, reason steadies you, prevents passion\u2011driven distress, and enables you to endure adversity with dignity.",
+    "metrics": {
+      "faithfulness": 0.6,
+      "relevance": 1.0,
+      "context_recall": 1.0,
+      "average": 0.867
+    }
+  },
+  {
+    "query_id": "q8",
+    "question": "What is the connection between duty and justice?",
+    "answer": "The passages link duty and justice by showing that fulfilling one\u2019s duty is itself an expression of justice.  As P3 says, \u201cI do my duty, that is enough,\u201d and P8 expands that a person who obeys his duty \u201cis all truth in his words and justice in his actions.\u201d  Thus, performing one\u2019s proper role naturally aligns with acting justly toward others.",
+    "metrics": {
+      "faithfulness": 0.2,
+      "relevance": 1.0,
+      "context_recall": 0.6,
+      "average": 0.6
+    }
+  },
+  {
+    "query_id": "q9",
+    "question": "How does acceptance of fate relate to virtue?",
+    "answer": "Acceptance of fate is presented as a prerequisite for true virtue: by **acquiescing in what is allotted** (P2,\u202fP3) a person aligns reason with nature, thereby freeing the mind from passion and allowing the *divinity* within to guide conduct. This alignment produces a life of *justice, truth, temperance, and fortitude*, the very qualities that constitute virtue (P7).",
+    "metrics": {
+      "faithfulness": 0.8,
+      "relevance": 1.0,
+      "context_recall": 1.0,
+      "average": 0.933
+    }
+  },
+  {
+    "query_id": "q10",
+    "question": "What role does the ruling part play in managing emotions?",
+    "answer": "The ruling part of the soul is the seat of reason and must steer the body\u2019s impulses. It must remain unruffled by selfish passions, not quarrel with fate, and stay free from unease or fear, thereby regulating and tempering emotional responses. In this way the rational faculty keeps the soul from being carried away by distress or pleasure.",
+    "metrics": {
+      "faithfulness": 0.09,
+      "relevance": 1.0,
+      "context_recall": 0.9,
+      "average": 0.663
     }
   },
   {
     "query_id": "q11",
     "question": "How does philosophy help Marcus live well?",
-    "answer": "The passages show that philosophy gives Marcus a disciplined, honest character that prevents him from being surprised by death or swayed by vanity, rhetoric, or affectation (P1, P3). By constantly studying and practicing philosophical principles\u2014such as modesty, generosity, clear expectations, and a plain style\u2014he learns to live rightly, judge situations properly, and make the most of each moment before death (P2\u2013P5). Thus, philosophy helps him live well by cultivating virtue, clarity of judgment, and a focus on the present.",
+    "answer": "Philosophy provides Marcus with a disciplined, rational framework that keeps him free from vanity, speculation, and emotional excess. By continually examining life\u2019s objects, aligning actions with reason, and embracing virtue\u2014justice, truth, and self\u2011sufficiency\u2014he can live fully in the present, act justly toward others, and remain undisturbed by death or external misfortune. Thus, philosophy enables him to conduct himself with integrity, contentment, and calm, ensuring a well-lived life.",
     "metrics": {
-      "faithfulness": 0.3,
+      "faithfulness": 0.9,
       "relevance": 1.0,
-      "context_recall": 0.8,
-      "average": 0.7
+      "context_recall": 1.0,
+      "average": 0.967
     }
   },
   {
     "query_id": "q12",
     "question": "What practices does Marcus recommend for dealing with anger?",
-    "answer": "Marcus urges you to confront anger by using reason: investigate whether the provoker truly deserves your irritation, argue calmly and show the flaw, and if your counsel succeeds, the anger disappears. He stresses that only a rational, measured examination of the situation\u2014rather than a rash reaction\u2014will keep you free from needless wrath.",
+    "answer": "Marcus advises to confront anger with reason: instead of reacting impulsively, examine the cause, use your own rationality to argue with the offender and point out his error. If your advice succeeds, the provocation disappears and you need not feel angry.",
     "metrics": {
-      "faithfulness": 0.0,
+      "faithfulness": 1.0,
       "relevance": 1.0,
-      "context_recall": 0.0,
-      "average": 0.333
+      "context_recall": 0.8,
+      "average": 0.933
     }
   },
   {
     "query_id": "q13",
     "question": "How does nature support the rational being?",
-    "answer": "Nature sustains a rational being by aligning its design with rational principles. As Marcus Aurelius notes, a rational constitution \u201cenjoins us to do nothing rashly, and to be kindly disposed towards men, and to submit willingly to the gods\u201d (P1), and the cycles of death and generation are \u201cnothing that a man need be ashamed of\u2026 opposed to his nature as a rational being\u201d (P5). Thus, nature provides a framework in which reason can govern actions, cultivate virtue, and harmonise with the universal order.",
+    "answer": "Nature supports the rational being by aligning every individual with the universal reason that governs all life; it provides a coherent order and purpose that a rational soul can discern and follow. By recognizing that change, generation, and death are natural processes, a rational person can act in harmony with these laws, allowing reason to guide behavior and maintain inner equanimity.",
     "metrics": {
-      "faithfulness": 0.0,
+      "faithfulness": 0.5,
       "relevance": 1.0,
-      "context_recall": 0.0,
-      "average": 0.333
+      "context_recall": 0.9,
+      "average": 0.8
     }
   },
   {
     "query_id": "q14",
     "question": "What did Epictetus teach Marcus about control?",
-    "answer": "Epictetus taught Marcus that the only thing truly under one\u2019s control is one\u2019s own rational mind and the way it responds to events. By governing oneself with reason, examining circumstances, and accepting that only our judgments are in our power, Marcus could manage what lies before him and remain undisturbed by external forces.",
+    "answer": "Epictetus taught Marcus that the only things one can truly control are one\u2019s own judgments and responses. He urged Marcus to focus on the inner sphere of reason and virtue\u2014examining each event, accepting what is given, and refusing to be swayed by external circumstances or the opinions of others. In short, control lies inward, not in the mutable world outside.",
     "metrics": {
-      "faithfulness": 0.0,
+      "faithfulness": 0.5,
       "relevance": 1.0,
-      "context_recall": 0.0,
-      "average": 0.333
+      "context_recall": 0.3,
+      "average": 0.6
     }
   },
   {
     "query_id": "q15",
     "question": "How are death and transformation related in Marcus's view?",
-    "answer": "In Marcus\u2019s view, death is the inevitable final transformation that all lives undergo, and it should not be feared by a person who has cultivated the soul through philosophy.  A well\u2011disciplined soul is already \u201cdead\u201d to the passions and thus cannot be surprised by death; the passing from life to whatever follows is merely the natural conclusion of the same rational, divine order that governs daily action.  Thus death is not a punishment or a misfortune but the ordinary completion of the soul\u2019s transformation from the body to its higher, undivided state.",
+    "answer": "Marcus sees death not as a tragic end but as the natural completion of the soul\u2019s transformation. A well\u2011disciplined man, whose mind and will have been purified by philosophy, is prepared for this transition; death cannot surprise him because the soul has already \u201cdied\u201d in the sense of leaving the bodily form. Thus, death is simply the final phase of the same constant change that characterises all human existence, and it is the disciplined, rational life that makes this transformation harmonious rather than fearful.",
     "metrics": {
-      "faithfulness": 0.7,
+      "faithfulness": 0.88,
       "relevance": 1.0,
-      "context_recall": 0.0,
-      "average": 0.567
+      "context_recall": 0.2,
+      "average": 0.693
     }
   }
 ]
