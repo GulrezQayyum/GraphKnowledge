@@ -344,10 +344,10 @@ export GROQ_API_KEY='your-groq-key'
 ### Run Everything
 ```bash
 # Test run (3 queries)
-python3 run_phase2_free.py --sample 3
+python3 run_phase2.py --sample 3
 
 # Full run (15 queries)
-python3 run_phase2_free.py
+python3 run_phase2.py
 ```
 
 ### Or Run Components Separately
@@ -356,7 +356,7 @@ python3 run_phase2_free.py
 python3 phase2_benchmark.py
 
 # Just evaluation (with fixed Groq)
-python3 phase2_evaluation_groq_fixed.py --sample 3
+python3 phase2_evaluation.py --sample 3
 ```
 
 ---
@@ -444,7 +444,7 @@ Best Method:
 
 ## Next Steps
 
-1. ✅ Run: `python3 run_phase2_free.py --sample 3`
+1. ✅ Run: `python3 run_phase2.py --sample 3`
 2. ✅ Check results in generated JSON files
 3. ✅ Identify best method (likely hybrid)
 4. ➡️ Phase 3: LLM reasoning over best method
@@ -460,8 +460,8 @@ export GROQ_API_KEY='your-key'
 
 ### "ModuleNotFoundError: phase2_evaluation_groq_fixed"
 Make sure you're using the updated files:
-- `phase2_evaluation_groq_fixed.py` (not the old one)
-- `run_phase2_free.py` (not the old `run_phase2.py`)
+- `phase2_evaluation.py` (not the old one)
+- `run_phase2.py` (not the old `run_phase2.py`)
 
 ### Evaluation is slow
 - Groq API takes ~5-10 seconds per query
@@ -474,7 +474,136 @@ Make sure you're using the updated files:
 
 Run this:
 ```bash
-python3 run_phase2_free.py --sample 3
+python3 run_phase2.py --sample 3
+
 ```
 
-Let me know the results! 
+# Phase 3: Answer Generation & Evaluation (Capstone)
+
+## Overview
+
+Phase 3 is the final capstone that brings everything together:
+
+1. **Answer Generation**: Use hybrid retrieval to generate coherent answers
+2. **Answer Evaluation**: Measure quality with RAGAS metrics
+3. **HTML Report**: Beautiful interactive results page
+4. **Final Insights**: What worked, what didn't, lessons learned
+
+## Setup
+
+```bash
+# Ensure Phase 1 & 2 are complete
+# Verify Groq API key
+export GROQ_API_KEY='your-key'
+```
+
+## Running Phase 3
+
+### Full Run (Recommended)
+```bash
+python3 run_phase3.py
+```
+
+Generates:
+- `phase3_answers.json` — All Q&A pairs
+- `phase3_evaluation.json` — RAGAS scores
+- `phase3_report.html` — Interactive report
+
+### Custom Options
+
+```bash
+# Use specific retrieval method
+python3 run_phase3.py --method hybrid
+python3 run_phase3.py --method graph
+python3 run_phase3.py --method vector
+
+# Skip HTML report
+python3 run_phase3.py --no-report
+```
+
+## Results Interpretation
+
+### Quality Metrics
+
+- **Faithfulness (0-1)**: Answer grounded in passages
+  - 0.8+ = Very faithful
+  - 0.6-0.8 = Good
+  - <0.6 = Weak
+
+- **Relevance (0-1)**: Answer addresses question
+  - 0.8+ = Directly answers
+  - 0.6-0.8 = Somewhat addresses
+  - <0.6 = Misses target
+
+- **Context Recall (0-1)**: Passages were relevant
+  - 0.8+ = Very relevant passages
+  - 0.6-0.8 = Decent passages
+  - <0.6 = Poor passage selection
+
+- **Overall**: Average of above three
+
+### Expected Results
+
+- **Graph-heavy**: ~0.70 (relationship-focused)
+- **Vector-heavy**: ~0.72 (semantic-focused)
+- **Hybrid**: ~0.76 (balanced best)
+
+## Output Files
+
+### phase3_answers.json
+```json
+[
+  {
+    "query_id": "q1",
+    "question": "How does Marcus connect fear and reason?",
+    "answer": "Marcus teaches that reason is the primary weapon against fear...",
+    "passages_used": 10,
+    "method": "hybrid",
+    "model": "mixtral-8x7b-32768"
+  },
+  ...
+]
+```
+
+### phase3_evaluation.json
+```json
+[
+  {
+    "query_id": "q1",
+    "question": "...",
+    "answer": "...",
+    "metrics": {
+      "faithfulness": 0.85,
+      "relevance": 0.82,
+      "context_recall": 0.80,
+      "average": 0.82
+    }
+  },
+  ...
+]
+```
+
+### phase3_report.html
+Open in browser for beautiful interactive dashboard showing:
+- Overall metrics
+- All Q&A pairs with scores
+- Visual design (portfolio-ready)
+
+## Cost
+
+**$0** - Uses existing Groq account (same as Phase 1 & 2)
+
+## Next Steps
+
+1. Run Phase 3
+2. Review `phase3_report.html` in browser
+3. Check `phase3_evaluation.json` for detailed scores
+4. Ready for portfolio/presentation!
+
+---
+
+**Ready?**
+
+```bash
+python3 run_phase3.py
+```
