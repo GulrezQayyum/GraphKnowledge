@@ -4,7 +4,7 @@ Phase 3 Orchestrator: Answer Generation & Evaluation
 
 Complete capstone pipeline:
 1. Generate answers using hybrid retrieval
-2. Evaluate answers with RAGAS
+    2. Evaluate answers with claim-level evidence judgments
 3. Generate HTML report
 4. Summary & insights
 """
@@ -77,7 +77,7 @@ def main():
         sys.exit(1)
 
     # Evaluate answers
-    print("\n[4/5] Evaluating answers with RAGAS...")
+    print("\n[4/5] Evaluating answers with claim-level evidence judgments...")
     try:
         evaluations = run_evaluation()
         print("✓ Evaluation complete")
@@ -104,15 +104,15 @@ def main():
     print(f"  • Evaluations completed: {len(evaluations)}")
 
     # Calculate averages
-    avg_faith = sum(e["metrics"]["faithfulness"] for e in evaluations) / len(evaluations)
-    avg_relevance = sum(e["metrics"]["relevance"] for e in evaluations) / len(evaluations)
-    avg_recall = sum(e["metrics"]["context_recall"] for e in evaluations) / len(evaluations)
+    avg_grounding = sum(e["metrics"]["claim_grounding"] for e in evaluations) / len(evaluations)
+    avg_coverage = sum(e["metrics"]["citation_coverage"] for e in evaluations) / len(evaluations)
+    avg_precision = sum(e["metrics"]["citation_precision"] for e in evaluations) / len(evaluations)
     overall_avg = sum(e["metrics"]["average"] for e in evaluations) / len(evaluations)
 
     print(f"\n QUALITY METRICS:")
-    print(f"  • Faithfulness:   {avg_faith:.3f}")
-    print(f"  • Relevance:      {avg_relevance:.3f}")
-    print(f"  • Context Recall: {avg_recall:.3f}")
+    print(f"  • Claim Grounding:    {avg_grounding:.3f}")
+    print(f"  • Citation Coverage:  {avg_coverage:.3f}")
+    print(f"  • Citation Precision: {avg_precision:.3f}")
     print(f"  • OVERALL SCORE:  {overall_avg:.3f}")
 
     print(f"\n GENERATED FILES:")

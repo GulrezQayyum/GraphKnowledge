@@ -26,9 +26,9 @@ def generate_html_report(
         benchmark = json.load(f)
 
     # Calculate stats
-    avg_faith = sum(e["metrics"]["faithfulness"] for e in evaluations) / len(evaluations)
-    avg_relevance = sum(e["metrics"]["relevance"] for e in evaluations) / len(evaluations)
-    avg_recall = sum(e["metrics"]["context_recall"] for e in evaluations) / len(evaluations)
+    avg_grounding = sum(e["metrics"]["claim_grounding"] for e in evaluations) / len(evaluations)
+    avg_coverage = sum(e["metrics"]["citation_coverage"] for e in evaluations) / len(evaluations)
+    avg_precision = sum(e["metrics"]["citation_precision"] for e in evaluations) / len(evaluations)
     overall_avg = sum(e["metrics"]["average"] for e in evaluations) / len(evaluations)
 
     # Build HTML
@@ -165,16 +165,16 @@ def generate_html_report(
 
         <div class="summary">
             <div class="metric-card">
-                <div class="label">Faithfulness</div>
-                <div class="metric-card__value" style="color: #667eea;">{avg_faith:.3f}</div>
+                <div class="label">Claim Grounding</div>
+                <div class="metric-card__value" style="color: #667eea;">{avg_grounding:.3f}</div>
             </div>
             <div class="metric-card">
-                <div class="label">Relevance</div>
-                <div class="metric-card__value" style="color: #764ba2;">{avg_relevance:.3f}</div>
+                <div class="label">Citation Coverage</div>
+                <div class="metric-card__value" style="color: #764ba2;">{avg_coverage:.3f}</div>
             </div>
             <div class="metric-card">
-                <div class="label">Context Recall</div>
-                <div class="metric-card__value" style="color: #667eea;">{avg_recall:.3f}</div>
+                <div class="label">Citation Precision</div>
+                <div class="metric-card__value" style="color: #667eea;">{avg_precision:.3f}</div>
             </div>
             <div class="metric-card">
                 <div class="label">Overall Score</div>
@@ -206,12 +206,12 @@ def generate_html_report(
                     <p>{answer}</p>
                     <div class="metrics-row">
                         <div class="metric">
-                            <div class="metric-score">{metrics['faithfulness']:.3f}</div>
-                            <div class="metric-label">Faithfulness</div>
+                            <div class="metric-score">{metrics['claim_grounding']:.3f}</div>
+                            <div class="metric-label">Claim Grounding</div>
                         </div>
                         <div class="metric">
-                            <div class="metric-score">{metrics['relevance']:.3f}</div>
-                            <div class="metric-label">Relevance</div>
+                            <div class="metric-score">{metrics['citation_coverage']:.3f}</div>
+                            <div class="metric-label">Citation Coverage</div>
                         </div>
                         <div class="metric">
                             <div class="metric-score">{metrics['average']:.3f}</div>

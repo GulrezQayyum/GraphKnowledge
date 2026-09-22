@@ -37,6 +37,7 @@ class AnswerGenerator:
         question: str,
         passages: list[str],
         context: Optional[str] = None,
+        passage_ids: Optional[list[str]] = None,
     ) -> str:
         """
         Generate answer from retrieved passages.
@@ -53,7 +54,11 @@ class AnswerGenerator:
             return "No relevant passages found to answer this question."
 
         # Build context
-        passage_text = "\n".join([f"[P{i+1}]\n{p}\n" for i, p in enumerate(passages[:10])])
+        selected_passages = passages[:10]
+        selected_ids = (passage_ids or [f"P{i+1}" for i in range(len(selected_passages))])[:10]
+        passage_text = "\n".join(
+            [f"[{passage_id}]\n{passage}\n" for passage_id, passage in zip(selected_ids, selected_passages)]
+        )
 
         extra_context = f"\n\nContext information:\n{context}" if context else ""
 
@@ -65,8 +70,9 @@ Passages:
 {passage_text}
 {extra_context}
 
-Generate a coherent, direct answer (2-3 sentences) grounded in the passages.
-If passages don't address the question, say so clearly.
+Generate a coherent, direct answer (2-3 sentences) grounded only in the passages.
+End every factual sentence with one or more exact passage citations such as [bookI_3].
+Use only passage IDs shown above. If the passages do not address the question, say so clearly and do not invent an answer.
 
 Answer:"""
 
@@ -136,7 +142,12 @@ def run_answer_generation(
                 entity_context = f"Key entities in question: {', '.join(entities[:5])}"
 
         # Generate answer
-        answer = generator.generate_answer(question, passage_texts, entity_context)
+        answer = generator.generate_answer(
+            question,
+            passage_texts,
+            entity_context,
+            passage_ids=passage_ids,
+        )
 
         answers.append({
             "query_id": query_id,

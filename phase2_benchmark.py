@@ -11,6 +11,7 @@ Compare coverage, relevance, and efficiency.
 
 import json
 import os
+import re
 from typing import Optional
 from dataclasses import dataclass
 
@@ -55,6 +56,32 @@ class HybridRetriever:
         self.passage_ids = list(passages.keys())
         self.passage_embeddings = self.embedder.encode(passage_texts, convert_to_numpy=True)
         print(f"Embedded {len(self.passage_ids)} passages")
+
+    @staticmethod
+    def _content_tokens(text: str) -> set[str]:
+        """Return meaningful word tokens for exact lexical matching."""
+        stop_words = {
+            "a", "an", "and", "are", "as", "at", "be", "by", "does",
+            "for", "how", "in", "is", "of", "on", "the", "to", "what",
+            "when", "with", "why",
+        }
+        return {
+            token for token in re.findall(r"[a-z]+", text.lower())
+            if token not in stop_words and len(token) > 2
+        }
+
+    def retrieve_lexical_only(self, query: str, top_k: int = 20):
+        """Rank passages by overlap with meaningful query words."""
+        query_tokens = self._content_tokens(query)
+        scored = []
+        for passage_id, text in self.passages.items():
+            passage_tokens = self._content_tokens(text)
+            overlap = len(query_tokens & passage_tokens)
+            score = overlap / len(query_tokens) if query_tokens else 0.0
+            if score > 0:
+                scored.append((passage_id, score))
+        scored.sort(key=lambda item: (-item[1], item[0]))
+        return scored[:top_k]
     
     def retrieve_graph_only(
         self,
@@ -175,23 +202,28 @@ class HybridRetriever:
         
         # Get vector results
         vector_result = self.retrieve_vector_only(query, top_k=vector_top_k)
+
+        # Preserve direct lexical matches, which can be missed by embeddings
+        # and can be diluted by broad graph neighborhoods.
+        lexical_result = self.retrieve_lexical_only(query, top_k=vector_top_k)
         
         # Combine: union of passages, score by presence in both
-        graph_passages = set(graph_result.passages)
-        vector_passages = set(vector_result.passages)
-        
-        # Passages in both methods get higher score
-        combined_set = graph_passages | vector_passages
+        graph_scores = self.retrieve_graph_scores(query, max_hops, vector_top_k)
+        vector_scores = dict(zip(vector_result.passages, vector_result.scores or []))
+        lexical_scores = dict(lexical_result)
+        combined_set = set(graph_scores) | set(vector_scores) | set(lexical_scores)
+        graph_max = max(graph_scores.values(), default=1.0)
+        vector_max = max(vector_scores.values(), default=1.0)
         
         combined_passages = []
         combined_scores = []
         
         for pid in combined_set:
-            in_graph = pid in graph_passages
-            in_vector = pid in vector_passages
-            
-            # Score: 1.0 if in both, 0.5 if in one
-            score = (in_graph * alpha) + (in_vector * (1 - alpha))
+            graph_score = graph_scores.get(pid, 0.0) / graph_max
+            vector_score = vector_scores.get(pid, 0.0) / vector_max
+            lexical_score = lexical_scores.get(pid, 0.0)
+            score = (alpha * graph_score) + ((1 - alpha) * vector_score)
+            score = (0.65 * score) + (0.35 * lexical_score)
             combined_passages.append((pid, score))
         
         # Sort by score
@@ -206,6 +238,21 @@ class HybridRetriever:
             passages=passages,
             scores=scores,
         )
+
+    def retrieve_graph_scores(self, query: str, max_hops: int, top_k: int):
+        """Return the graph evidence scores used for hybrid ranking."""
+        found_entities = self.graph.search_entities_in_text(query)
+        passage_scores = {}
+        for entity in found_entities:
+            traversal = self.graph.traverse(entity, max_hops=max_hops, direction="both")
+            for passage_id in traversal.passages_reached:
+                passage_scores[passage_id] = passage_scores.get(passage_id, 0) + len(
+                    traversal.traversed_entities
+                )
+            for passage_id in self.graph.entity_to_passages.get(entity, []):
+                passage_scores[passage_id] = passage_scores.get(passage_id, 0) + 2
+        ranked = sorted(passage_scores.items(), key=lambda item: (-item[1], item[0]))
+        return dict(ranked[:top_k])
 
 
 def run_benchmark(

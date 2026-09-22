@@ -6,36 +6,6 @@
       "graph": {
         "method": "graph",
         "num_passages": 10,
-        "faithfulness": 0.5,
-        "relevance": 0.5,
-        "coverage": 1.0,
-        "average": 0.667
-      },
-      "vector": {
-        "method": "vector",
-        "num_passages": 10,
-        "faithfulness": 0.5,
-        "relevance": 0.0,
-        "coverage": 1.0,
-        "average": 0.5
-      },
-      "hybrid": {
-        "method": "hybrid",
-        "num_passages": 10,
-        "faithfulness": 0.0,
-        "relevance": 0.5,
-        "coverage": 1.0,
-        "average": 0.5
-      }
-    }
-  },
-  {
-    "query_id": "q2",
-    "question": "What practices did Marcus's teachers teach to develop virtue?",
-    "methods": {
-      "graph": {
-        "method": "graph",
-        "num_passages": 10,
         "faithfulness": 0.0,
         "relevance": 0.0,
         "coverage": 1.0,
@@ -52,10 +22,40 @@
       "hybrid": {
         "method": "hybrid",
         "num_passages": 10,
+        "faithfulness": 0.0,
+        "relevance": 0.0,
+        "coverage": 1.0,
+        "average": 0.333
+      }
+    }
+  },
+  {
+    "query_id": "q2",
+    "question": "What practices did Marcus's teachers teach to develop virtue?",
+    "methods": {
+      "graph": {
+        "method": "graph",
+        "num_passages": 10,
+        "faithfulness": 0.0,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.5
+      },
+      "vector": {
+        "method": "vector",
+        "num_passages": 10,
         "faithfulness": 0.5,
         "relevance": 0.5,
         "coverage": 1.0,
         "average": 0.667
+      },
+      "hybrid": {
+        "method": "hybrid",
+        "num_passages": 10,
+        "faithfulness": 0.0,
+        "relevance": 0.0,
+        "coverage": 1.0,
+        "average": 0.333
       }
     }
   },
@@ -74,10 +74,370 @@
       "vector": {
         "method": "vector",
         "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      },
+      "hybrid": {
+        "method": "hybrid",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      }
+    }
+  },
+  {
+    "query_id": "q4",
+    "question": "What does nature teach about virtue?",
+    "methods": {
+      "graph": {
+        "method": "graph",
+        "num_passages": 10,
         "faithfulness": 0.0,
         "relevance": 0.0,
         "coverage": 1.0,
         "average": 0.333
+      },
+      "vector": {
+        "method": "vector",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      },
+      "hybrid": {
+        "method": "hybrid",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      }
+    }
+  },
+  {
+    "query_id": "q5",
+    "question": "How did Marcus's mother influence his character?",
+    "methods": {
+      "graph": {
+        "method": "graph",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      },
+      "vector": {
+        "method": "vector",
+        "num_passages": 8,
+        "faithfulness": 0.5,
+        "relevance": 0.0,
+        "coverage": 0.8,
+        "average": 0.433
+      },
+      "hybrid": {
+        "method": "hybrid",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.0,
+        "coverage": 1.0,
+        "average": 0.5
+      }
+    }
+  },
+  {
+    "query_id": "q6",
+    "question": "What emotions oppose virtue?",
+    "methods": {
+      "graph": {
+        "method": "graph",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.0,
+        "coverage": 1.0,
+        "average": 0.5
+      },
+      "vector": {
+        "method": "vector",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      },
+      "hybrid": {
+        "method": "hybrid",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      }
+    }
+  },
+  {
+    "query_id": "q7",
+    "question": "How does reason help when facing hardship?",
+    "methods": {
+      "graph": {
+        "method": "graph",
+        "num_passages": 10,
+        "faithfulness": 0.0,
+        "relevance": 0.0,
+        "coverage": 1.0,
+        "average": 0.333
+      },
+      "vector": {
+        "method": "vector",
+        "num_passages": 10,
+        "faithfulness": 0.0,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.5
+      },
+      "hybrid": {
+        "method": "hybrid",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      }
+    }
+  },
+  {
+    "query_id": "q8",
+    "question": "What is the connection between duty and justice?",
+    "methods": {
+      "graph": {
+        "method": "graph",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      },
+      "vector": {
+        "method": "vector",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      },
+      "hybrid": {
+        "method": "hybrid",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      }
+    }
+  },
+  {
+    "query_id": "q9",
+    "question": "How does acceptance of fate relate to virtue?",
+    "methods": {
+      "graph": {
+        "method": "graph",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      },
+      "vector": {
+        "method": "vector",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      },
+      "hybrid": {
+        "method": "hybrid",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      }
+    }
+  },
+  {
+    "query_id": "q10",
+    "question": "What role does the ruling part play in managing emotions?",
+    "methods": {
+      "graph": {
+        "method": "graph",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      },
+      "vector": {
+        "method": "vector",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      },
+      "hybrid": {
+        "method": "hybrid",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      }
+    }
+  },
+  {
+    "query_id": "q11",
+    "question": "How does philosophy help Marcus live well?",
+    "methods": {
+      "graph": {
+        "method": "graph",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      },
+      "vector": {
+        "method": "vector",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      },
+      "hybrid": {
+        "method": "hybrid",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      }
+    }
+  },
+  {
+    "query_id": "q12",
+    "question": "What practices does Marcus recommend for dealing with anger?",
+    "methods": {
+      "graph": {
+        "method": "graph",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      },
+      "vector": {
+        "method": "vector",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.0,
+        "coverage": 1.0,
+        "average": 0.5
+      },
+      "hybrid": {
+        "method": "hybrid",
+        "num_passages": 10,
+        "faithfulness": 0.0,
+        "relevance": 0.0,
+        "coverage": 1.0,
+        "average": 0.333
+      }
+    }
+  },
+  {
+    "query_id": "q13",
+    "question": "How does nature support the rational being?",
+    "methods": {
+      "graph": {
+        "method": "graph",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      },
+      "vector": {
+        "method": "vector",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      },
+      "hybrid": {
+        "method": "hybrid",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.0,
+        "coverage": 1.0,
+        "average": 0.5
+      }
+    }
+  },
+  {
+    "query_id": "q14",
+    "question": "What did Epictetus teach Marcus about control?",
+    "methods": {
+      "graph": {
+        "method": "graph",
+        "num_passages": 10,
+        "faithfulness": 0.0,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.5
+      },
+      "vector": {
+        "method": "vector",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      },
+      "hybrid": {
+        "method": "hybrid",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      }
+    }
+  },
+  {
+    "query_id": "q15",
+    "question": "How are death and transformation related in Marcus's view?",
+    "methods": {
+      "graph": {
+        "method": "graph",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
+      },
+      "vector": {
+        "method": "vector",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
       },
       "hybrid": {
         "method": "hybrid",

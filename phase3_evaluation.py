@@ -1,15 +1,7 @@
-"""
-Phase 3: Evaluate Generated Answers using RAGAS
-
-Metrics:
-- Faithfulness: Is answer grounded in passages?
-- Relevance: Does answer address the question?
-- Context Recall: Did we use relevant passages?
-"""
+"""Phase 3: Claim-level evaluation of generated answers."""
 
 import json
 import os
-import re
 import statistics
 from typing import Optional
 
@@ -24,32 +16,14 @@ class AnswerEvaluator:
         self.client = Groq(api_key=api_key or os.getenv("GROQ_API_KEY"))
         self.model = os.getenv("GROQ_EVAL_MODEL", "openai/gpt-oss-20b")
 
-    def extract_score(self, text: str) -> float:
-        """Extract score from response."""
-        matches = re.findall(r"(\d+\.?\d*)", text.lower())
-        if matches:
-            score = float(matches[-1])
-            if score > 1:
-                score = score / 100
-            return min(1.0, max(0.0, score))
-
-        if any(w in text.lower() for w in ["high", "very", "excellent", "strong"]):
-            return 0.8
-        if any(w in text.lower() for w in ["moderate", "some", "partial"]):
-            return 0.6
-        if any(w in text.lower() for w in ["low", "weak", "poor", "not"]):
-            return 0.3
-
-        return 0.5
-
-    def evaluate_faithfulness(
+    def evaluate_claims(
         self,
         question: str,
         answer: str,
-        passages: list[str],
-    ) -> float:
-        """Score: Is answer faithful to passages?"""
-        context = "\n".join([f"P{i+1}: {p}" for i, p in enumerate(passages)])
+        passages: dict[str, str],
+    ) -> list[dict]:
+        """Extract atomic claims and verify each against cited evidence."""
+        context = "\n\n".join(f"[{pid}]\n{text}" for pid, text in passages.items())
 
         prompt = f"""Question: {question}
 
@@ -58,76 +32,45 @@ Generated Answer: {answer}
 Passages (source):
 {context}
 
-Is the answer faithful and grounded in the passages?
-Score 0-1 where 1 = very faithful, 0 = not faithful.
+Split the answer into atomic factual claims. For each claim, decide whether it is
+fully supported by the passages. Return JSON only in this exact shape:
+{{"claims": [{{"claim": "...", "supported": true, "evidence_ids": ["bookI_3"]}}]}}
+Use only exact passage IDs shown above. A claim is unsupported if it adds an
+interpretation, detail, or attribution not present in the passages. Do not merge
+multiple independently verifiable facts into one claim.
 
-Score: """
-
-        try:
-            response = self.client.chat.completions.create(
-                model=self.model,
-                max_tokens=100,
-                reasoning_effort="low",
-                messages=[{"role": "user", "content": prompt}],
-            )
-            return self.extract_score(response.choices[0].message.content)
-        except:
-            return 0.5
-
-    def evaluate_relevance(
-        self,
-        question: str,
-        answer: str,
-    ) -> float:
-        """Score: Does answer address the question?"""
-        prompt = f"""Question: {question}
-
-Answer: {answer}
-
-Does the answer directly address the question?
-Score 0-1 where 1 = directly answers, 0 = doesn't answer.
-
-Score: """
+JSON: """
 
         try:
             response = self.client.chat.completions.create(
                 model=self.model,
-                max_tokens=100,
+                max_tokens=500,
                 reasoning_effort="low",
                 messages=[{"role": "user", "content": prompt}],
             )
-            return self.extract_score(response.choices[0].message.content)
-        except:
-            return 0.5
-
-    def evaluate_context_recall(
-        self,
-        question: str,
-        passages: list[str],
-    ) -> float:
-        """Score: Were passages relevant?"""
-        context = "\n".join([f"P{i+1}: {p}" for i, p in enumerate(passages)])
-
-        prompt = f"""Question: {question}
-
-Passages:
-{context}
-
-Are these passages relevant to answer the question?
-Score 0-1 where 1 = very relevant, 0 = not relevant.
-
-Score: """
-
-        try:
-            response = self.client.chat.completions.create(
-                model=self.model,
-                max_tokens=100,
-                reasoning_effort="low",
-                messages=[{"role": "user", "content": prompt}],
-            )
-            return self.extract_score(response.choices[0].message.content)
-        except:
-            return 0.5
+            content = response.choices[0].message.content.strip()
+            if content.startswith("```"):
+                content = content.split("\n", 1)[1].rsplit("```", 1)[0]
+            claims = json.loads(content).get("claims", [])
+            valid_ids = set(passages)
+            return [
+                {
+                    "claim": str(item.get("claim", "")),
+                    "supported": bool(item.get("supported", False)),
+                    "evidence_ids": [
+                        evidence_id
+                        for evidence_id in item.get("evidence_ids", [])
+                        if evidence_id in valid_ids
+                    ],
+                }
+                for item in claims
+                if item.get("claim")
+            ]
+        except (json.JSONDecodeError, AttributeError, TypeError, IndexError):
+            return []
+        except Exception as error:
+            print(f"  Evaluation unavailable: {error}")
+            return []
 
 
 def run_evaluation(
@@ -138,7 +81,7 @@ def run_evaluation(
 ):
     """Evaluate all generated answers."""
     print("=" * 70)
-    print("PHASE 3: ANSWER EVALUATION (RAGAS)")
+    print("PHASE 3: ANSWER EVALUATION (CLAIM LEVEL)")
     print("=" * 70)
 
     # Load answers
@@ -171,28 +114,45 @@ def run_evaluation(
         benchmark = next(b for b in benchmark_results if b["query_id"] == query_id)
         method = answer_data["method"]
         passage_ids = benchmark["methods"][method]["passages"][:10]
-        passage_texts = [passages_dict[pid] for pid in passage_ids if pid in passages_dict]
+        passage_texts = {
+            pid: passages_dict[pid] for pid in passage_ids if pid in passages_dict
+        }
 
-        # Evaluate
-        faith = evaluator.evaluate_faithfulness(question, answer, passage_texts)
-        relevance = evaluator.evaluate_relevance(question, answer)
-        recall = evaluator.evaluate_context_recall(question, passage_texts)
+        claims = evaluator.evaluate_claims(question, answer, passage_texts)
+        claim_count = len(claims)
+        supported_count = sum(claim["supported"] for claim in claims)
+        cited_count = sum(bool(claim["evidence_ids"]) for claim in claims)
+        grounding = supported_count / claim_count if claim_count else 0.0
+        citation_coverage = cited_count / claim_count if claim_count else 0.0
+        citation_precision = (
+            sum(
+                bool(claim["evidence_ids"])
+                for claim in claims
+                if claim["supported"]
+            ) / supported_count
+            if supported_count
+            else 0.0
+        )
 
-        average = (faith + relevance + recall) / 3
+        average = (grounding + citation_coverage + citation_precision) / 3
 
         evaluations.append({
             "query_id": query_id,
             "question": question,
             "answer": answer,
             "metrics": {
-                "faithfulness": round(faith, 3),
-                "relevance": round(relevance, 3),
-                "context_recall": round(recall, 3),
+                "claim_grounding": round(grounding, 3),
+                "citation_coverage": round(citation_coverage, 3),
+                "citation_precision": round(citation_precision, 3),
                 "average": round(average, 3),
             },
+            "claims": claims,
         })
 
-        print(f"  Faithfulness: {faith:.3f}, Relevance: {relevance:.3f}, Avg: {average:.3f}")
+        print(
+            f"  Claims: {claim_count}, Grounding: {grounding:.3f}, "
+            f"Citation coverage: {citation_coverage:.3f}, Avg: {average:.3f}"
+        )
 
     # Save evaluations
     with open(output_file, "w") as f:
@@ -205,14 +165,14 @@ def run_evaluation(
     print("EVALUATION SUMMARY")
     print("=" * 70)
 
-    faith_scores = [e["metrics"]["faithfulness"] for e in evaluations]
-    relevance_scores = [e["metrics"]["relevance"] for e in evaluations]
-    recall_scores = [e["metrics"]["context_recall"] for e in evaluations]
+    grounding_scores = [e["metrics"]["claim_grounding"] for e in evaluations]
+    coverage_scores = [e["metrics"]["citation_coverage"] for e in evaluations]
+    precision_scores = [e["metrics"]["citation_precision"] for e in evaluations]
     avg_scores = [e["metrics"]["average"] for e in evaluations]
 
-    print(f"\nFaithfulness:   {statistics.mean(faith_scores):.3f} (±{statistics.stdev(faith_scores):.3f})")
-    print(f"Relevance:      {statistics.mean(relevance_scores):.3f} (±{statistics.stdev(relevance_scores):.3f})")
-    print(f"Context Recall: {statistics.mean(recall_scores):.3f} (±{statistics.stdev(recall_scores):.3f})")
+    print(f"\nClaim Grounding:    {statistics.mean(grounding_scores):.3f} (±{statistics.stdev(grounding_scores):.3f})")
+    print(f"Citation Coverage:  {statistics.mean(coverage_scores):.3f} (±{statistics.stdev(coverage_scores):.3f})")
+    print(f"Citation Precision: {statistics.mean(precision_scores):.3f} (±{statistics.stdev(precision_scores):.3f})")
     print(f"\nOVERALL AVERAGE: {statistics.mean(avg_scores):.3f} (±{statistics.stdev(avg_scores):.3f})")
 
     return evaluations
