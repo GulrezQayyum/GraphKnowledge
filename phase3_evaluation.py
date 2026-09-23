@@ -21,7 +21,7 @@ class AnswerEvaluator:
         question: str,
         answer: str,
         passages: dict[str, str],
-    ) -> list[dict]:
+    ) -> tuple[list[dict], dict]:
         """Extract atomic claims and verify each against cited evidence."""
         context = "\n\n".join(f"[{pid}]\n{text}" for pid, text in passages.items())
 
@@ -49,11 +49,16 @@ JSON: """
                 messages=[{"role": "user", "content": prompt}],
             )
             content = response.choices[0].message.content.strip()
+            response_preview = content[:1000]
+            response_metadata = {
+                "response_chars": len(content),
+                "finish_reason": response.choices[0].finish_reason,
+            }
             if content.startswith("```"):
                 content = content.split("\n", 1)[1].rsplit("```", 1)[0]
             claims = json.loads(content).get("claims", [])
             valid_ids = set(passages)
-            return [
+            normalized_claims = [
                 {
                     "claim": str(item.get("claim", "")),
                     "supported": bool(item.get("supported", False)),
@@ -66,11 +71,31 @@ JSON: """
                 for item in claims
                 if item.get("claim")
             ]
-        except (json.JSONDecodeError, AttributeError, TypeError, IndexError):
-            return []
+            status = "valid_zero_claims" if not normalized_claims else "ok"
+            return normalized_claims, {
+                "status": status,
+                "response_preview": response_preview,
+                **response_metadata,
+            }
+        except json.JSONDecodeError as error:
+            return [], {
+                "status": "parse_error",
+                "error": str(error),
+                "response_preview": locals().get("content", "")[:1000],
+                "response_chars": len(locals().get("content", "")),
+                "finish_reason": locals().get("response").choices[0].finish_reason
+                if locals().get("response")
+                else None,
+            }
+        except (AttributeError, TypeError, IndexError) as error:
+            return [], {
+                "status": "response_error",
+                "error": str(error),
+                "response_preview": locals().get("content", "")[:1000],
+            }
         except Exception as error:
             print(f"  Evaluation unavailable: {error}")
-            return []
+            return [], {"status": "api_error", "error": str(error)}
 
 
 def run_evaluation(
@@ -118,7 +143,9 @@ def run_evaluation(
             pid: passages_dict[pid] for pid in passage_ids if pid in passages_dict
         }
 
-        claims = evaluator.evaluate_claims(question, answer, passage_texts)
+        claims, evaluator_diagnostics = evaluator.evaluate_claims(
+            question, answer, passage_texts
+        )
         claim_count = len(claims)
         supported_count = sum(claim["supported"] for claim in claims)
         cited_count = sum(bool(claim["evidence_ids"]) for claim in claims)
@@ -146,6 +173,7 @@ def run_evaluation(
                 "citation_precision": round(citation_precision, 3),
                 "average": round(average, 3),
             },
+            "evaluator_diagnostics": evaluator_diagnostics,
             "claims": claims,
         })
 
@@ -169,11 +197,18 @@ def run_evaluation(
     coverage_scores = [e["metrics"]["citation_coverage"] for e in evaluations]
     precision_scores = [e["metrics"]["citation_precision"] for e in evaluations]
     avg_scores = [e["metrics"]["average"] for e in evaluations]
+    diagnostic_counts = {}
+    for evaluation in evaluations:
+        status = evaluation["evaluator_diagnostics"]["status"]
+        diagnostic_counts[status] = diagnostic_counts.get(status, 0) + 1
 
     print(f"\nClaim Grounding:    {statistics.mean(grounding_scores):.3f} (±{statistics.stdev(grounding_scores):.3f})")
     print(f"Citation Coverage:  {statistics.mean(coverage_scores):.3f} (±{statistics.stdev(coverage_scores):.3f})")
     print(f"Citation Precision: {statistics.mean(precision_scores):.3f} (±{statistics.stdev(precision_scores):.3f})")
     print(f"\nOVERALL AVERAGE: {statistics.mean(avg_scores):.3f} (±{statistics.stdev(avg_scores):.3f})")
+    print("\nEVALUATOR DIAGNOSTICS:")
+    for status, count in sorted(diagnostic_counts.items()):
+        print(f"  {status}: {count}")
 
     return evaluations
 
