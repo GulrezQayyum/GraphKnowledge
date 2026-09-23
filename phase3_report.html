@@ -31,7 +31,7 @@
         .header p { font-size: 1.2em; opacity: 0.9; }
         .summary {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
             gap: 20px;
             padding: 40px;
             background: #f8f9fa;
@@ -132,19 +132,31 @@
         <div class="summary">
             <div class="metric-card">
                 <div class="label">Claim Grounding</div>
-                <div class="metric-card__value" style="color: #667eea;">0.661</div>
+                <div class="metric-card__value" style="color: #667eea;">0.333</div>
             </div>
             <div class="metric-card">
                 <div class="label">Citation Coverage</div>
-                <div class="metric-card__value" style="color: #764ba2;">0.594</div>
+                <div class="metric-card__value" style="color: #764ba2;">0.333</div>
             </div>
             <div class="metric-card">
                 <div class="label">Citation Precision</div>
-                <div class="metric-card__value" style="color: #667eea;">0.667</div>
+                <div class="metric-card__value" style="color: #667eea;">0.400</div>
             </div>
             <div class="metric-card">
                 <div class="label">Overall Score</div>
-                <div class="metric-card__value" style="color: #764ba2;">0.641</div>
+                <div class="metric-card__value" style="color: #764ba2;">0.356</div>
+            </div>
+            <div class="metric-card">
+                <div class="label">Retrieval Coverage</div>
+                <div class="metric-card__value" style="color: #667eea;">0.667</div>
+            </div>
+            <div class="metric-card">
+                <div class="label">Abstention Accuracy</div>
+                <div class="metric-card__value" style="color: #764ba2;">1.000</div>
+            </div>
+            <div class="metric-card">
+                <div class="label">Evaluator Validity</div>
+                <div class="metric-card__value" style="color: #667eea;">0.600</div>
             </div>
         </div>
 
@@ -161,17 +173,25 @@
                     <p>Marcus links fear to the lack of reason, arguing that a rational mind would not be troubled by the timing of death because reason dispels such anxieties: “if you would reason right, you would not be much concerned whether your life was to end tomorrow or a thousand years hence” [bookIV_47]. He further claims that a mind guided by reason sees death as a natural, unremarkable event, thus eliminating fear: “the nature of death, which, if once abstracted from the pomp and terror of the idea, will be found nothing more than a pure natural action” [bookII_12]. Consequently, fear is a product of irrationality, while reason provides calm acceptance of nature’s course [bookIII_16].</p>
                     <div class="metrics-row">
                         <div class="metric">
-                            <div class="metric-score">0.000</div>
+                            <div class="metric-score">0.500</div>
                             <div class="metric-label">Claim Grounding</div>
                         </div>
                         <div class="metric">
-                            <div class="metric-score">0.000</div>
+                            <div class="metric-score">0.500</div>
                             <div class="metric-label">Citation Coverage</div>
                         </div>
                         <div class="metric">
-                            <div class="metric-score">0.000</div>
+                            <div class="metric-score">0.667</div>
                             <div class="metric-label">Average</div>
                         </div>
+                            <div class="metric">
+                                <div class="metric-score">1.000</div>
+                                <div class="metric-label">Retrieval Coverage</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-score">Valid</div>
+                                <div class="metric-label">Evaluator</div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -186,17 +206,25 @@
                     <p>Marcus’s teachers instructed him to avoid rhetorical and poetic vanity, write plainly, and keep a plain, unornamental style, as Rusticus told him to write letters in a plain, unornamental style and to refrain from “the vanity of the sophists” [bookI_7]. They also taught him to be easily reconciled with wrongdoers, to read authors carefully without taking superficial views, and to study Epictetus’s memoirs for guidance [bookI_7]. Additionally, he was taught to examine each object and circumstance in its own nature, to contemplate its purpose, and to judge others with justice and friendliness, thereby cultivating self‑sufficiency, fortitude, truth, and simplicity [bookIII_11].</p>
                     <div class="metrics-row">
                         <div class="metric">
-                            <div class="metric-score">1.000</div>
+                            <div class="metric-score">0.000</div>
                             <div class="metric-label">Claim Grounding</div>
                         </div>
                         <div class="metric">
-                            <div class="metric-score">1.000</div>
+                            <div class="metric-score">0.000</div>
                             <div class="metric-label">Citation Coverage</div>
                         </div>
                         <div class="metric">
-                            <div class="metric-score">1.000</div>
+                            <div class="metric-score">0.000</div>
                             <div class="metric-label">Average</div>
                         </div>
+                            <div class="metric">
+                                <div class="metric-score">1.000</div>
+                                <div class="metric-label">Retrieval Coverage</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-score">Invalid</div>
+                                <div class="metric-label">Evaluator</div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -211,17 +239,25 @@
                     <p>Discipline, by keeping the mind in harmony and preventing excesses, restores tranquility: “when you happen to be ruffled a little… retire immediately into your reason… the sooner you return to harmony” [bookVI_11]. A well‑disciplined person, “purified by philosophy,” has no false or unsettling thoughts, so “death can never surprise his life as imperfect” and he remains calm and balanced with others [bookIII_8]. By governing the soul with reason and maintaining a “mind staunch and well disciplined,” one can live up to nature, stand firmly by truth, and achieve lasting happiness, which is the essence of tranquility [bookIII_12].</p>
                     <div class="metrics-row">
                         <div class="metric">
-                            <div class="metric-score">1.000</div>
+                            <div class="metric-score">0.000</div>
                             <div class="metric-label">Claim Grounding</div>
                         </div>
                         <div class="metric">
-                            <div class="metric-score">1.000</div>
+                            <div class="metric-score">0.000</div>
                             <div class="metric-label">Citation Coverage</div>
                         </div>
                         <div class="metric">
-                            <div class="metric-score">1.000</div>
+                            <div class="metric-score">0.000</div>
                             <div class="metric-label">Average</div>
                         </div>
+                            <div class="metric">
+                                <div class="metric-score">1.000</div>
+                                <div class="metric-label">Retrieval Coverage</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-score">Invalid</div>
+                                <div class="metric-label">Evaluator</div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -236,17 +272,25 @@
                     <p>Nature teaches that virtue is an inherent quality that must be pursued by aligning one’s life with the natural order, rather than by seeking external praise; “whatever is good has that quality from itself…a thing is neither better nor worse for being praised”【bookIV_20】. By examining oneself and accepting one’s fate, one can cultivate the good ordering of the mind and achieve tranquility, because “nature has made you one thing, and common mistake another” and “you may live with all the freedom and satisfaction imaginable”【bookVII_68】【bookIV_25】. Thus, living in accordance with nature and understanding its laws enables true virtue, independent of external approval【bookIV_40】.</p>
                     <div class="metrics-row">
                         <div class="metric">
-                            <div class="metric-score">1.000</div>
+                            <div class="metric-score">0.000</div>
                             <div class="metric-label">Claim Grounding</div>
                         </div>
                         <div class="metric">
-                            <div class="metric-score">1.000</div>
+                            <div class="metric-score">0.000</div>
                             <div class="metric-label">Citation Coverage</div>
                         </div>
                         <div class="metric">
-                            <div class="metric-score">1.000</div>
+                            <div class="metric-score">0.000</div>
                             <div class="metric-label">Average</div>
                         </div>
+                            <div class="metric">
+                                <div class="metric-score">0.000</div>
+                                <div class="metric-label">Retrieval Coverage</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-score">Invalid</div>
+                                <div class="metric-label">Evaluator</div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -272,6 +316,14 @@
                             <div class="metric-score">1.000</div>
                             <div class="metric-label">Average</div>
                         </div>
+                            <div class="metric">
+                                <div class="metric-score">1.000</div>
+                                <div class="metric-label">Retrieval Coverage</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-score">Valid</div>
+                                <div class="metric-label">Evaluator</div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -286,7 +338,7 @@
                     <p>The passages do not mention any specific emotions that oppose virtue.</p>
                     <div class="metrics-row">
                         <div class="metric">
-                            <div class="metric-score">1.000</div>
+                            <div class="metric-score">0.000</div>
                             <div class="metric-label">Claim Grounding</div>
                         </div>
                         <div class="metric">
@@ -294,9 +346,17 @@
                             <div class="metric-label">Citation Coverage</div>
                         </div>
                         <div class="metric">
-                            <div class="metric-score">0.333</div>
+                            <div class="metric-score">0.000</div>
                             <div class="metric-label">Average</div>
                         </div>
+                            <div class="metric">
+                                <div class="metric-score">0.000</div>
+                                <div class="metric-label">Retrieval Coverage</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-score">Valid</div>
+                                <div class="metric-label">Evaluator</div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -311,17 +371,25 @@
                     <p>Reason guides a person to accept whatever fate brings, so that the outcome—whether death tomorrow or a thousand years hence—does not disturb the mind or produce misery; it keeps one content and untroubled by appearances [bookIV_47]. By governing oneself with reason, one remains steadfast, preserves inner divinity, and faces hardships with calm, disciplined acceptance, knowing that nothing can hinder a life lived according to nature [bookIII_12]. Thus, reason transforms hardship into an opportunity for virtue, allowing the individual to remain peaceful and true to oneself regardless of circumstance [bookIII_16].</p>
                     <div class="metrics-row">
                         <div class="metric">
-                            <div class="metric-score">0.667</div>
+                            <div class="metric-score">0.000</div>
                             <div class="metric-label">Claim Grounding</div>
                         </div>
                         <div class="metric">
-                            <div class="metric-score">0.667</div>
+                            <div class="metric-score">0.000</div>
                             <div class="metric-label">Citation Coverage</div>
                         </div>
                         <div class="metric">
-                            <div class="metric-score">0.778</div>
+                            <div class="metric-score">0.000</div>
                             <div class="metric-label">Average</div>
                         </div>
+                            <div class="metric">
+                                <div class="metric-score">1.000</div>
+                                <div class="metric-label">Retrieval Coverage</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-score">Valid</div>
+                                <div class="metric-label">Evaluator</div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -348,6 +416,14 @@ Marcus writes that doing one's duty is sufficient and that duty itself must be p
                             <div class="metric-score">0.667</div>
                             <div class="metric-label">Average</div>
                         </div>
+                            <div class="metric">
+                                <div class="metric-score">0.000</div>
+                                <div class="metric-label">Retrieval Coverage</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-score">Valid</div>
+                                <div class="metric-label">Evaluator</div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -365,17 +441,25 @@ Such acceptance is also seen as the only reasonable inclination, guiding one tow
 [bookIV_25] [bookIII_6] [bookVII_57] [bookIV_34]</p>
                     <div class="metrics-row">
                         <div class="metric">
-                            <div class="metric-score">0.750</div>
+                            <div class="metric-score">0.000</div>
                             <div class="metric-label">Claim Grounding</div>
                         </div>
                         <div class="metric">
-                            <div class="metric-score">0.750</div>
+                            <div class="metric-score">0.000</div>
                             <div class="metric-label">Citation Coverage</div>
                         </div>
                         <div class="metric">
-                            <div class="metric-score">0.833</div>
+                            <div class="metric-score">0.000</div>
                             <div class="metric-label">Average</div>
                         </div>
+                            <div class="metric">
+                                <div class="metric-score">1.000</div>
+                                <div class="metric-label">Retrieval Coverage</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-score">Invalid</div>
+                                <div class="metric-label">Evaluator</div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -401,6 +485,14 @@ Such acceptance is also seen as the only reasonable inclination, guiding one tow
                             <div class="metric-score">0.000</div>
                             <div class="metric-label">Average</div>
                         </div>
+                            <div class="metric">
+                                <div class="metric-score">1.000</div>
+                                <div class="metric-label">Retrieval Coverage</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-score">Invalid</div>
+                                <div class="metric-label">Evaluator</div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -428,6 +520,14 @@ By keeping his mind governed by reason, he “does not run out after new distrac
                             <div class="metric-score">1.000</div>
                             <div class="metric-label">Average</div>
                         </div>
+                            <div class="metric">
+                                <div class="metric-score">1.000</div>
+                                <div class="metric-label">Retrieval Coverage</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-score">Valid</div>
+                                <div class="metric-label">Evaluator</div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -453,6 +553,14 @@ By keeping his mind governed by reason, he “does not run out after new distrac
                             <div class="metric-score">1.000</div>
                             <div class="metric-label">Average</div>
                         </div>
+                            <div class="metric">
+                                <div class="metric-score">0.000</div>
+                                <div class="metric-label">Retrieval Coverage</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-score">Valid</div>
+                                <div class="metric-label">Evaluator</div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -478,6 +586,14 @@ By keeping his mind governed by reason, he “does not run out after new distrac
                             <div class="metric-score">0.000</div>
                             <div class="metric-label">Average</div>
                         </div>
+                            <div class="metric">
+                                <div class="metric-score">1.000</div>
+                                <div class="metric-label">Retrieval Coverage</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-score">Invalid</div>
+                                <div class="metric-label">Evaluator</div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -503,6 +619,14 @@ By keeping his mind governed by reason, he “does not run out after new distrac
                             <div class="metric-score">0.000</div>
                             <div class="metric-label">Average</div>
                         </div>
+                            <div class="metric">
+                                <div class="metric-score">0.000</div>
+                                <div class="metric-label">Retrieval Coverage</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-score">Valid</div>
+                                <div class="metric-label">Evaluator</div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -528,6 +652,14 @@ By keeping his mind governed by reason, he “does not run out after new distrac
                             <div class="metric-score">1.000</div>
                             <div class="metric-label">Average</div>
                         </div>
+                            <div class="metric">
+                                <div class="metric-score">1.000</div>
+                                <div class="metric-label">Retrieval Coverage</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-score">Valid</div>
+                                <div class="metric-label">Evaluator</div>
+                            </div>
                     </div>
                 </div>
             </div>

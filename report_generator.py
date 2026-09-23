@@ -30,6 +30,25 @@ def generate_html_report(
     avg_coverage = sum(e["metrics"]["citation_coverage"] for e in evaluations) / len(evaluations)
     avg_precision = sum(e["metrics"]["citation_precision"] for e in evaluations) / len(evaluations)
     overall_avg = sum(e["metrics"]["average"] for e in evaluations) / len(evaluations)
+    avg_retrieval_coverage = sum(
+        e["metrics"]["retrieval_coverage"] for e in evaluations
+    ) / len(evaluations)
+    abstention_scores = [
+        e["metrics"]["abstention_correct"]
+        for e in evaluations
+        if e["metrics"]["abstention_correct"] is not None
+    ]
+    abstention_accuracy = (
+        sum(abstention_scores) / len(abstention_scores)
+        if abstention_scores
+        else None
+    )
+    evaluator_validity = sum(
+        e["metrics"]["evaluator_valid"] for e in evaluations
+    ) / len(evaluations)
+    abstention_display = (
+        f"{abstention_accuracy:.3f}" if abstention_accuracy is not None else "N/A"
+    )
 
     # Build HTML
     html = f"""
@@ -65,7 +84,7 @@ def generate_html_report(
         .header p {{ font-size: 1.2em; opacity: 0.9; }}
         .summary {{
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
             gap: 20px;
             padding: 40px;
             background: #f8f9fa;
@@ -180,6 +199,18 @@ def generate_html_report(
                 <div class="label">Overall Score</div>
                 <div class="metric-card__value" style="color: #764ba2;">{overall_avg:.3f}</div>
             </div>
+            <div class="metric-card">
+                <div class="label">Retrieval Coverage</div>
+                <div class="metric-card__value" style="color: #667eea;">{avg_retrieval_coverage:.3f}</div>
+            </div>
+            <div class="metric-card">
+                <div class="label">Abstention Accuracy</div>
+                <div class="metric-card__value" style="color: #764ba2;">{abstention_display}</div>
+            </div>
+            <div class="metric-card">
+                <div class="label">Evaluator Validity</div>
+                <div class="metric-card__value" style="color: #667eea;">{evaluator_validity:.3f}</div>
+            </div>
         </div>
 
         <div class="queries">
@@ -217,6 +248,14 @@ def generate_html_report(
                             <div class="metric-score">{metrics['average']:.3f}</div>
                             <div class="metric-label">Average</div>
                         </div>
+                            <div class="metric">
+                                <div class="metric-score">{metrics['retrieval_coverage']:.3f}</div>
+                                <div class="metric-label">Retrieval Coverage</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-score">{'Valid' if metrics['evaluator_valid'] else 'Invalid'}</div>
+                                <div class="metric-label">Evaluator</div>
+                            </div>
                     </div>
                 </div>
             </div>

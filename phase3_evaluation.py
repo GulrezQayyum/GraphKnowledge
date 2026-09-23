@@ -2,10 +2,22 @@
 
 import json
 import os
+import re
 import statistics
 from typing import Optional
 
 from groq import Groq
+
+
+# Only queries with an explicit benchmark label contribute to abstention accuracy.
+EXPECTED_ABSTENTIONS = {"q14": True}
+ABSTENTION_MARKERS = (
+    "do not directly address",
+    "does not directly address",
+    "do not address",
+    "does not address",
+    "no relevant passages",
+)
 
 
 class AnswerEvaluator:
@@ -143,6 +155,20 @@ def run_evaluation(
             pid: passages_dict[pid] for pid in passage_ids if pid in passages_dict
         }
 
+        cited_ids = set(re.findall(r"\[(book[A-Za-z0-9_]+)\]", answer))
+        retrieved_ids = set(passage_texts)
+        retrieved_citations = cited_ids & retrieved_ids
+        retrieval_coverage = (
+            len(retrieved_citations) / len(cited_ids) if cited_ids else 0.0
+        )
+        is_abstention = any(marker in answer.lower() for marker in ABSTENTION_MARKERS)
+        expected_abstention = EXPECTED_ABSTENTIONS.get(query_id)
+        abstention_correct = (
+            is_abstention == expected_abstention
+            if expected_abstention is not None
+            else None
+        )
+
         claims, evaluator_diagnostics = evaluator.evaluate_claims(
             question, answer, passage_texts
         )
@@ -172,6 +198,12 @@ def run_evaluation(
                 "citation_coverage": round(citation_coverage, 3),
                 "citation_precision": round(citation_precision, 3),
                 "average": round(average, 3),
+                "retrieval_coverage": round(retrieval_coverage, 3),
+                "is_abstention": is_abstention,
+                "expected_abstention": expected_abstention,
+                "abstention_correct": abstention_correct,
+                "evaluator_valid": evaluator_diagnostics["status"]
+                in {"ok", "valid_zero_claims"},
             },
             "evaluator_diagnostics": evaluator_diagnostics,
             "claims": claims,
@@ -197,6 +229,15 @@ def run_evaluation(
     coverage_scores = [e["metrics"]["citation_coverage"] for e in evaluations]
     precision_scores = [e["metrics"]["citation_precision"] for e in evaluations]
     avg_scores = [e["metrics"]["average"] for e in evaluations]
+    retrieval_scores = [e["metrics"]["retrieval_coverage"] for e in evaluations]
+    abstention_labels = [
+        e["metrics"]["abstention_correct"]
+        for e in evaluations
+        if e["metrics"]["abstention_correct"] is not None
+    ]
+    evaluator_validity = sum(
+        e["metrics"]["evaluator_valid"] for e in evaluations
+    ) / len(evaluations)
     diagnostic_counts = {}
     for evaluation in evaluations:
         status = evaluation["evaluator_diagnostics"]["status"]
@@ -206,6 +247,14 @@ def run_evaluation(
     print(f"Citation Coverage:  {statistics.mean(coverage_scores):.3f} (±{statistics.stdev(coverage_scores):.3f})")
     print(f"Citation Precision: {statistics.mean(precision_scores):.3f} (±{statistics.stdev(precision_scores):.3f})")
     print(f"\nOVERALL AVERAGE: {statistics.mean(avg_scores):.3f} (±{statistics.stdev(avg_scores):.3f})")
+    print(f"Retrieval Coverage:  {statistics.mean(retrieval_scores):.3f}")
+    print(
+        "Abstention Accuracy: "
+        f"{statistics.mean(abstention_labels):.3f} ({len(abstention_labels)} labeled)"
+        if abstention_labels
+        else "Abstention Accuracy: unavailable (no labeled queries)"
+    )
+    print(f"Evaluator Validity:  {evaluator_validity:.3f}")
     print("\nEVALUATOR DIAGNOSTICS:")
     for status, count in sorted(diagnostic_counts.items()):
         print(f"  {status}: {count}")
