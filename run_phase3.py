@@ -103,17 +103,35 @@ def main():
     print(f"  • Answers generated: {len(answers)}")
     print(f"  • Evaluations completed: {len(evaluations)}")
 
-    # Calculate averages
-    avg_grounding = sum(e["metrics"]["claim_grounding"] for e in evaluations) / len(evaluations)
-    avg_coverage = sum(e["metrics"]["citation_coverage"] for e in evaluations) / len(evaluations)
-    avg_precision = sum(e["metrics"]["citation_precision"] for e in evaluations) / len(evaluations)
-    overall_avg = sum(e["metrics"]["average"] for e in evaluations) / len(evaluations)
+    # Exclude unavailable evaluator results from quality averages.
+    valid_evaluations = [
+        e for e in evaluations if e["metrics"].get("evaluator_valid", True)
+    ]
+    evaluator_validity = len(valid_evaluations) / len(evaluations)
+
+    def average_metric(name):
+        if not valid_evaluations:
+            return None
+        return sum(e["metrics"][name] for e in valid_evaluations) / len(valid_evaluations)
+
+    avg_grounding = average_metric("claim_grounding")
+    avg_coverage = average_metric("citation_coverage")
+    avg_precision = average_metric("citation_precision")
+    overall_avg = average_metric("average")
 
     print(f"\n QUALITY METRICS:")
-    print(f"  • Claim Grounding:    {avg_grounding:.3f}")
-    print(f"  • Citation Coverage:  {avg_coverage:.3f}")
-    print(f"  • Citation Precision: {avg_precision:.3f}")
-    print(f"  • OVERALL SCORE:  {overall_avg:.3f}")
+    if valid_evaluations:
+        print(f"  • Claim Grounding:    {avg_grounding:.3f}")
+        print(f"  • Citation Coverage:  {avg_coverage:.3f}")
+        print(f"  • Citation Precision: {avg_precision:.3f}")
+        print(f"  • OVERALL SCORE:      {overall_avg:.3f}")
+        print(f"    (based on {len(valid_evaluations)}/{len(evaluations)} valid evaluator results)")
+    else:
+        print("  • Claim Grounding:    unavailable")
+        print("  • Citation Coverage:  unavailable")
+        print("  • Citation Precision: unavailable")
+        print("  • OVERALL SCORE:      unavailable")
+    print(f"  • Evaluator Validity:  {evaluator_validity:.3f}")
 
     print(f"\n GENERATED FILES:")
     print(f"  ✓ phase3_answers.json")

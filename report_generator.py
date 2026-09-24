@@ -25,11 +25,20 @@ def generate_html_report(
     with open(benchmark_file) as f:
         benchmark = json.load(f)
 
-    # Calculate stats
-    avg_grounding = sum(e["metrics"]["claim_grounding"] for e in evaluations) / len(evaluations)
-    avg_coverage = sum(e["metrics"]["citation_coverage"] for e in evaluations) / len(evaluations)
-    avg_precision = sum(e["metrics"]["citation_precision"] for e in evaluations) / len(evaluations)
-    overall_avg = sum(e["metrics"]["average"] for e in evaluations) / len(evaluations)
+    # Exclude unavailable evaluator results from quality averages.
+    valid_evaluations = [
+        e for e in evaluations if e["metrics"].get("evaluator_valid", True)
+    ]
+
+    def average_metric(name):
+        if not valid_evaluations:
+            return None
+        return sum(e["metrics"][name] for e in valid_evaluations) / len(valid_evaluations)
+
+    avg_grounding = average_metric("claim_grounding")
+    avg_coverage = average_metric("citation_coverage")
+    avg_precision = average_metric("citation_precision")
+    overall_avg = average_metric("average")
     avg_retrieval_coverage = sum(
         e["metrics"]["retrieval_coverage"] for e in evaluations
     ) / len(evaluations)
@@ -46,6 +55,12 @@ def generate_html_report(
     evaluator_validity = sum(
         e["metrics"]["evaluator_valid"] for e in evaluations
     ) / len(evaluations)
+    quality_display = {
+        "grounding": f"{avg_grounding:.3f}" if avg_grounding is not None else "N/A",
+        "coverage": f"{avg_coverage:.3f}" if avg_coverage is not None else "N/A",
+        "precision": f"{avg_precision:.3f}" if avg_precision is not None else "N/A",
+        "overall": f"{overall_avg:.3f}" if overall_avg is not None else "N/A",
+    }
     abstention_display = (
         f"{abstention_accuracy:.3f}" if abstention_accuracy is not None else "N/A"
     )
@@ -185,19 +200,19 @@ def generate_html_report(
         <div class="summary">
             <div class="metric-card">
                 <div class="label">Claim Grounding</div>
-                <div class="metric-card__value" style="color: #667eea;">{avg_grounding:.3f}</div>
+                <div class="metric-card__value" style="color: #667eea;">{quality_display['grounding']}</div>
             </div>
             <div class="metric-card">
                 <div class="label">Citation Coverage</div>
-                <div class="metric-card__value" style="color: #764ba2;">{avg_coverage:.3f}</div>
+                <div class="metric-card__value" style="color: #764ba2;">{quality_display['coverage']}</div>
             </div>
             <div class="metric-card">
                 <div class="label">Citation Precision</div>
-                <div class="metric-card__value" style="color: #667eea;">{avg_precision:.3f}</div>
+                <div class="metric-card__value" style="color: #667eea;">{quality_display['precision']}</div>
             </div>
             <div class="metric-card">
                 <div class="label">Overall Score</div>
-                <div class="metric-card__value" style="color: #764ba2;">{overall_avg:.3f}</div>
+                <div class="metric-card__value" style="color: #764ba2;">{quality_display['overall']}</div>
             </div>
             <div class="metric-card">
                 <div class="label">Retrieval Coverage</div>
