@@ -1,609 +1,247 @@
-# GraphKnowledge — Phase 1: Entity Extraction & Graph Building
+# GraphKnowledge
 
-Building a knowledge graph from *Meditations* by Marcus Aurelius to enable multi-hop reasoning and entity-based retrieval.
+GraphKnowledge is a multi-phase advanced RAG project built around Marcus Aurelius's *Meditations*. It extracts a knowledge graph from the text, compares graph, vector, and hybrid retrieval, and generates evidence-grounded answers with claim-level evaluation.
 
-**Part of Advanced RAG Engineering** — Learn-by-building project series.
+The project demonstrates a complete retrieval-augmented generation workflow:
 
----
+1. Extract entities and relationships from a philosophical corpus.
+2. Deduplicate entities and build a queryable NetworkX graph.
+3. Benchmark graph, vector, and hybrid retrieval.
+4. Generate answers from retrieved passages.
+5. Evaluate claims against cited evidence and produce an HTML report.
 
-## Overview
+## Current Results
 
-### What is GraphKnowledge?
+The checked-in Phase 3 artifacts were produced with hybrid retrieval over 15 evaluation queries:
 
-GraphKnowledge extracts entities (concepts, people, practices, emotions) and their relationships from philosophical texts, then builds a queryable knowledge graph. Unlike pure semantic search, it enables **multi-hop reasoning**: answering questions that require connecting ideas scattered across different passages.
+| Metric | Result |
+| --- | ---: |
+| Claim grounding | 0.867 |
+| Citation coverage | 0.867 |
+| Citation precision | 0.867 |
+| Overall answer score | 0.867 |
+| Retrieval coverage | 1.000 |
+| Abstention accuracy | 1.000* |
+| Evaluator validity | 1.000 |
 
-**Example**:
-- Query: *"How does Marcus connect fear to reason?"*
-- Traditional RAG: Might miss the connection
-- GraphKnowledge: Traverses `fear → relates_to → reason`, collects all connected passages, synthesizes answer
+\* Abstention accuracy is currently based on one explicitly labeled abstention query, q14. Treat it as an initial signal rather than a broad reliability estimate.
 
-### Real-World Reference
-
-See [Graphify](https://graphify.net/) — an open-source implementation for code understanding that builds queryable knowledge graphs from codebases, docs, and diagrams. Same pattern, different domain.
-
----
+The evaluator completed all 15 judgments successfully: 13 evidence-bearing answers received claims and two queries received valid zero-claim judgments. The earlier evaluator truncation problem was addressed with structured JSON output, a larger response budget, and an eight-claim limit.
 
 ## Project Structure
 
-```
+```text
 GraphKnowledge/
 ├── src/
-│   ├── extraction.py          # Entity/relationship extraction with Groq
-│   ├── deduplication.py       # Entity linking & consolidation
-│   ├── graph_builder.py       # NetworkX graph construction
-│   ├── query_engine.py        # Graph traversal & retrieval
+│   ├── chunker.py              # Split the corpus into numbered passages
+│   ├── extraction.py           # Extract entities and relationships with Groq
+│   ├── deduplication.py        # Link entity variants to canonical entities
+│   ├── graph_builder.py        # Build and persist the NetworkX graph
+│   └── query_engine.py         # Entity search, traversal, and passage lookup
 ├── data/
-│   ├── meditations_raw.txt    # Input Meditations corpus
-│   └── graph/
-│       ├── entities.json
-│       ├── canonical_entities.json
-│       ├── relationships.json
-│       ├── relationships_remapped.json
-│       └── knowledge_graph.json
-├── notebooks/                 # Optional exploratory notebooks
-├── phase1_pipeline.py         # Pipeline implementation
-├── run_phase1.py              # CLI launcher
+│   ├── meditations_raw.txt     # Input corpus
+│   └── graph/                  # Phase 1 graph and passage artifacts
+├── evaluation_queries.json     # 15 multi-hop benchmark questions
+├── phase1_pipeline.py         # Phase 1 implementation
+├── run_phase1.py              # Phase 1 CLI
+├── phase2_benchmark.py        # Graph/vector/hybrid retrieval benchmark
+├── phase2_evaluation.py       # Groq retrieval scoring
+├── run_phase2.py              # Phase 2 CLI
+├── answer_generator.py        # Grounded answer generation
+├── phase3_evaluation.py       # Claim-level evidence evaluation
+├── report_generator.py        # HTML report generation
+├── run_phase3.py              # Phase 3 CLI
 ├── tests/                     # Regression tests
+├── phase2_benchmark_results.json
+├── phase2_evaluation_results.json
+├── phase3_answers.json
+├── phase3_evaluation.json
+├── phase3_report.html
 ├── requirements.txt
 └── README.md
 ```
 
----
-
 ## Setup
 
-### 1. Install Dependencies
+Use Python 3.12 or a compatible recent Python version. A virtual environment is recommended:
 
 ```bash
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 2. Set Up API Keys
-
-Create a `.env` file in the project root:
-
-```
-GROQ_API_KEY=your_groq_api_key_here
-```
-
-Get your Groq API key from [https://console.groq.com](https://console.groq.com).
-
-### 3. Prepare Corpus
-
-The checked-in `data/meditations_raw.txt` is the default input. To use a
-different raw text file, pass its path to the launcher.
-
----
-
-## Phase 1 Workflow
-
-### Run the Full Pipeline
+Set the Groq API key before running the LLM-backed phases:
 
 ```bash
-python run_phase1.py
+export GROQ_API_KEY="your-groq-api-key"
 ```
 
-This runs:
-1. **Extraction**: Extract entities & relationships from each chunk using Groq
-2. **Deduplication**: Link entity variants (e.g., "virtue" ↔ "virtues") to canonical forms
-3. **Graph Building**: Build NetworkX directed graph from canonical entities
-4. **Queries**: Test the graph with sample queries
-5. **Queries**: Test the graph with sample queries
-
-Generated artifacts are written to `data/graph/` and reused on later runs.
-Rebuild cached extraction and deduplication artifacts with:
+Optional model overrides are supported through:
 
 ```bash
-python run_phase1.py --force-extraction --force-dedup
+export GROQ_MODEL="openai/gpt-oss-20b"
+export GROQ_EVAL_MODEL="openai/gpt-oss-20b"
 ```
 
-Use a custom input and output directory with:
+Do not edit files inside `venv/`; project configuration belongs in the source files or environment variables.
+
+## Phase 1: Build the Knowledge Graph
+
+Run the full extraction, deduplication, graph-building, and sample-query pipeline:
 
 ```bash
-python run_phase1.py path/to/meditations.txt path/to/output
+python3 run_phase1.py
 ```
 
-### Pipeline Steps (Detailed)
+Optional arguments:
 
-#### Step 1: Entity & Relationship Extraction
-
-Uses Groq to extract structured knowledge:
-- **Entities**: CONCEPT (virtue, fear), PERSON (Epictetus), PRACTICE (meditation), STATE (tranquility)
-- **Relationships**: relates_to, leads_to, teaches, resolved_by, opposes, requires, embodies
-
-Output: `entities.json`, `relationships.json`
-
-```python
-from src.extraction import EntityRelationshipExtractor
-
-extractor = EntityRelationshipExtractor()
-entities, relationships = extractor.extract_batch(passages)
-if extractor.failures:
-  print(f"Failed passages: {len(extractor.failures)}")
+```bash
+python3 run_phase1.py --force-extraction --force-dedup
+python3 run_phase1.py path/to/meditations.txt path/to/output-directory
 ```
 
-#### Step 2: Entity Deduplication
+Phase 1 writes graph artifacts to `data/graph/`, including:
 
-Consolidates entity mentions using embedding similarity + fuzzy matching:
-- "virtue", "virtues" → canonical "virtue"
-- "fear", "fears" → canonical "fear"
-- Handles typos and variations
+- `meditations_chunks.json`
+- `entities.json`
+- `relationships.json`
+- `canonical_entities.json`
+- `relationships_remapped.json`
+- `knowledge_graph.json`
 
-Output: `canonical_entities.json`
+The graph stores canonical entities, typed relationships, passage IDs, and metadata needed for multi-hop retrieval.
 
-```python
-from src.deduplication import EntityDeduplicator
+## Phase 2: Benchmark Retrieval
 
-deduplicator = EntityDeduplicator(similarity_threshold=0.85)
-canonical_map = deduplicator.deduplicate(entities)
+Phase 2 compares three retrieval methods over the questions in `evaluation_queries.json`:
+
+- **Graph:** entity matching and multi-hop graph traversal.
+- **Vector:** sentence-transformer semantic similarity.
+- **Hybrid:** graph scores, vector scores, and lexical overlap combined into a ranked result.
+
+Run the full benchmark and Groq-based retrieval evaluation:
+
+```bash
+python3 run_phase2.py
 ```
 
-#### Step 3: Graph Building
+For a smaller evaluation sample:
 
-Constructs NetworkX directed graph:
-- Nodes: Canonical entities
-- Edges: Relationships with type labels
-- Metadata: Passage IDs, passage counts per entity
-
-Output: `knowledge_graph.json`
-
-```python
-from src.graph_builder import KnowledgeGraph
-
-kg = KnowledgeGraph()
-kg.build_from_canonical(canonical_map, remapped_relationships)
+```bash
+python3 run_phase2.py --sample 3
 ```
 
-#### Step 4: Querying
+The main outputs are:
 
-Search entities and traverse the graph:
+- `phase2_benchmark_results.json`: ranked passage IDs for each method.
+- `phase2_evaluation_results.json`: faithfulness, relevance, coverage, and average retrieval scores.
 
-```python
-from src.query_engine import QueryEngine
+Run only the benchmark implementation directly when needed:
 
-query_engine = QueryEngine(kg, passages)
-result = query_engine.query_entity("fear", max_hops=2)
-# Returns: found entities, traversal paths, retrieved passages
+```bash
+python3 phase2_benchmark.py
 ```
 
-Run the regression tests with:
+## Phase 3: Generate and Evaluate Answers
+
+Run the capstone pipeline with hybrid retrieval:
+
+```bash
+python3 run_phase3.py
+```
+
+Choose another retrieval method or skip report generation:
+
+```bash
+python3 run_phase3.py --method graph
+python3 run_phase3.py --method vector
+python3 run_phase3.py --method hybrid --no-report
+```
+
+Phase 3 performs five steps:
+
+1. Check Phase 1 and Phase 2 prerequisites.
+2. Load the knowledge graph.
+3. Generate answers from the selected method's top 10 passages.
+4. Extract atomic claims and judge each claim against the retrieved passages.
+5. Generate `phase3_report.html`.
+
+The generated answer records contain the query, answer, retrieval method, passage count, and model. The evaluation records contain:
+
+- `claim_grounding`: proportion of claims supported by the passages.
+- `citation_coverage`: proportion of claims with evidence IDs.
+- `citation_precision`: proportion of supported claims that have evidence IDs.
+- `retrieval_coverage`: proportion of evaluator evidence IDs present in the retrieved passages. Abstentions without evidence are reported as `N/A`.
+- `abstention_accuracy`: correctness for queries with an explicit abstention label.
+- `evaluator_valid`: whether the evaluator returned valid claims or a valid zero-claim judgment.
+
+Evaluator diagnostics also record response status, response length, finish reason, parse errors, and a bounded response preview. This distinguishes a genuine zero-claim judgment from JSON truncation or an API failure.
+
+You can run evaluation and report generation separately:
+
+```bash
+python3 phase3_evaluation.py
+python3 -c "from report_generator import generate_html_report; generate_html_report()"
+```
+
+Open `phase3_report.html` in a browser to inspect aggregate and per-query results.
+
+## Testing
+
+Run the regression suite from the project root:
 
 ```bash
 pytest -q
 ```
 
----
+The tests cover chunking, extraction parsing, entity deduplication, graph persistence, graph traversal, and natural-language entity matching.
 
-## Core Concepts
+## Core Graph Concepts
 
-### Entity Types
+The extraction pipeline represents concepts such as virtue, duty, and reason; people such as Marcus and Epictetus; practices such as discipline; and states such as fear, anger, and tranquility.
 
-| Type | Examples | Used For |
-|------|----------|----------|
-| **CONCEPT** | virtue, duty, reason, desire | Core philosophical ideas |
-| **PERSON** | Marcus, Epictetus, Socrates | Historical/philosophical figures |
-| **PRACTICE** | meditation, discipline, reflection | Actions & habits |
-| **STATE** | fear, anger, grief, tranquility | Emotions & mental states |
+Relationships include:
 
-### Relationship Types
+| Relationship | Example | Meaning |
+| --- | --- | --- |
+| `relates_to` | virtue -> duty | General conceptual connection |
+| `leads_to` | discipline -> tranquility | Practice or cause leading to an outcome |
+| `teaches` | Epictetus -> acceptance | Instruction or influence |
+| `resolved_by` | fear -> reason | Problem and response |
+| `opposes` | emotion -> virtue | Tension or contrast |
+| `requires` | virtue -> discipline | Prerequisite relationship |
+| `embodies` | courage -> virtue | Specific expression of a concept |
 
-| Type | Example | Meaning |
-|------|---------|---------|
-| **relates_to** | virtue ↔ duty | Concepts are connected |
-| **leads_to** | discipline → tranquility | Cause/effect or practice/outcome |
-| **teaches** | Epictetus → acceptance | Person teaches concept |
-| **resolved_by** | fear → reason | Problem/solution |
-| **opposes** | virtue ↔ vice | Contrasts |
-| **requires** | virtue ← discipline | Prerequisite |
-| **embodies** | courage ← virtue | Specific instance of general concept |
-
-### Graph Traversal
-
-Given query entity, traverse N hops to find connected entities:
-
-```
-Start: "fear"
-  ↓
-Hop 1: fear → [relates_to → reason, resolved_by → acceptance, opposes → courage]
-  ↓
-Hop 2: reason → [relates_to → virtue], acceptance → [leads_to → peace], ...
-```
-
-Collect all passages tagged with each reached entity → retrieve for LLM synthesis.
-
----
-
-## API Reference
-
-### EntityRelationshipExtractor
-
-```python
-extractor = EntityRelationshipExtractor(api_key=None)
-entities, relationships = extractor.extract(passage, passage_id)
-entities, relationships = extractor.extract_batch(passages_dict)
-```
-
-### EntityDeduplicator
-
-```python
-deduplicator = EntityDeduplicator(similarity_threshold=0.85, fuzzy_threshold=0.80)
-canonical_map = deduplicator.deduplicate(entities)
-remapped = deduplicator.remap_relationships(relationships, canonical_map)
-```
-
-### KnowledgeGraph
-
-```python
-kg = KnowledgeGraph()
-kg.build_from_canonical(canonical_map, relationships)
-
-result = kg.traverse(start_entity="fear", max_hops=2, direction="both")
-entity_info = kg.get_entity_info("virtue")
-matches = kg.search_entities("vir")  # Partial match
-
-kg.save("knowledge_graph.json")
-kg = KnowledgeGraph.load("knowledge_graph.json")
-stats = kg.stats()
-```
-
-### QueryEngine
-
-```python
-query_engine = QueryEngine(kg, passages_dict)
-result = query_engine.query_entity("fear", max_hops=2)
-passages = query_engine.get_passages(result.retrieved_passages)
-formatted = query_engine.format_result(result, show_passages=True)
-query_engine.interactive_session()  # Start interactive CLI
-```
-
----
-
-## Success Metrics (Phase 1)
-
-- [ ] **Extraction**: 100+ unique entities extracted from corpus
-- [ ] **Deduplication**: Entity count reduced by 30-40% via linking
-- [ ] **Graph**: 200+ relationships; graph has interesting structure (not disconnected)
-- [ ] **Queries**: Multi-hop traversal works (e.g., "fear" → "reason" → retrieve passages)
-- [ ] **Corpus Coverage**: 80%+ of passages have at least 1 entity
-
----
-
-## Next Steps (Phase 2)
-
-Once Phase 1 is solid:
-1. **Multi-hop Retrieval**: Compare graph-only vs. vector-only vs. hybrid retrieval
-2. **Benchmark**: Create 15-20 multi-hop evaluation queries
-3. **Metrics**: Use RAGAS (faithfulness, context recall) to measure quality
-
----
+For example, a query about fear and reason can use graph traversal to collect passages connected to both concepts before the answer generator synthesizes a response.
 
 ## Troubleshooting
 
-### Extraction Fails or Returns Empty
+### Missing API key
 
-- Check Groq API key is valid
-- Verify passage length (very short passages may fail)
-- Check JSON output from Groq — may not parse
+Verify that `GROQ_API_KEY` is exported in the same shell used to run the command:
 
-
-### Deduplication Loses Information
-
-- Lower `similarity_threshold` if entities are being over-merged
-- Increase `fuzzy_threshold` if variants aren't being linked
-
-### Graph is Disconnected
-
-- Check relationship extraction — may be filtering too aggressively
-- Increase max_hops in queries to reach distant entities
-
-
-# Phase 2 Fix: Groq Evaluation (Working)
-
-## Problem
-The original evaluation code was using `openai/gpt-oss-20b` which wasn't following the JSON format requirements. Groq was returning narrative text instead of structured output.
-
-## Solution
-✅ **Use `mixtral-8x7b-32768`** (same model from Phase 1)  
-✅ **Simplified prompts** that don't require strict JSON parsing  
-✅ **Smart fallbacks** if Groq returns unexpected text  
-
----
-
-## What Changed
-
-### Files Updated
-
-| Old | New | Purpose |
-|-----|-----|---------|
-| `phase2_evaluation.py` | `phase2_evaluation_groq_fixed.py` | Fixed Groq handling |
-| `run_phase2.py` | `run_phase2_free.py` | Uses fixed evaluation |
-
-### Key Improvements
-
-1. **Switched model**: `openai/gpt-oss-20b` → `mixtral-8x7b-32768`
-2. **Simple prompts**: No JSON requirement, Groq just returns a number
-3. **Smart parsing**:
-   - Extracts score from text like "0.85"
-   - Falls back to keyword matching ("high" → 0.8, "low" → 0.3)
-   - Default: 0.5 if nothing found
-
-4. **Reduced token usage**: Only score first 3 passages per method
-5. **Better error handling**: Prints warnings but continues
-
----
-
-## How to Run (Fixed)
-
-### Prerequisites
 ```bash
-# Ensure Phase 1 is complete
-# Verify Groq API key
-export GROQ_API_KEY='your-groq-key'
+echo "$GROQ_API_KEY"
 ```
 
-### Run Everything
-```bash
-# Test run (3 queries)
-python3 run_phase2.py --sample 3
+### Rate limits
 
-# Full run (15 queries)
+Groq rate limits can cause evaluator requests to return `429`. The pipeline records these as `api_error` and excludes invalid evaluator results from quality averages. Wait for the limit to reset before rerunning evaluation.
+
+### Evaluator parse errors
+
+The evaluator requests JSON output and records `finish_reason`. A response with `finish_reason=length` is truncated and marked `parse_error`. The current implementation uses a 1200-token output budget and limits the evaluator to eight concise claims.
+
+### Stale artifacts
+
+Phase 3 reads the existing Phase 2 benchmark results. Re-run Phase 2 after changing retrieval code, then rerun Phase 3:
+
+```bash
 python3 run_phase2.py
-```
-
-### Or Run Components Separately
-```bash
-# Just benchmark
-python3 phase2_benchmark.py
-
-# Just evaluation (with fixed Groq)
-python3 phase2_evaluation.py --sample 3
-```
-
----
-
-## Results Format
-
-### Benchmark: `phase2_benchmark_results.json`
-```json
-{
-  "query_id": "q1",
-  "question": "How does Marcus connect fear and reason?",
-  "methods": {
-    "graph": { "passages": [...], "num_passages": 20 },
-    "vector": { "passages": [...], "num_passages": 20 },
-    "hybrid": { "passages": [...], "num_passages": 38 }
-  }
-}
-```
-
-### Evaluation: `phase2_evaluation_results.json`
-```json
-{
-  "query_id": "q1",
-  "question": "How does Marcus connect fear and reason?",
-  "methods": {
-    "graph": {
-      "faithfulness": 0.82,
-      "relevance": 0.75,
-      "coverage": 0.80,
-      "average": 0.79
-    },
-    "vector": { ... },
-    "hybrid": { ... }
-  }
-}
-```
-
----
-
-## What the Scores Mean
-
-| Metric | Meaning | Range |
-|--------|---------|-------|
-| **Faithfulness** | Are passages grounded in text? | 0-1 |
-| **Relevance** | Do passages answer the question? | 0-1 |
-| **Coverage** | Did we retrieve enough? | 0-1 |
-| **Average** | Overall quality | 0-1 |
-
-**Higher = Better** ✓
-
----
-
-## Expected Output
-
-```
-[1/3] q1: How does Marcus connect fear and reason?...
-  GRAPH   : 20 passages → 0.79
-  VECTOR  : 20 passages → 0.81
-  HYBRID  : 38 passages → 0.88
-
-[2/3] q2: What practices...
-  GRAPH   : 20 passages → 0.75
-  ...
-```
-
-Then summary:
-```
-SUMMARY
-Average Scores (across all queries):
-  GRAPH   : 0.78 (±0.05)
-  VECTOR  : 0.81 (±0.04)
-  HYBRID  : 0.85 (±0.03)
-
-Best Method:
-  ✓ HYBRID: 0.85
-```
-
----
-
-## Cost
-
-**$0** ✓ (Uses your existing Groq account)
-
----
-
-## Next Steps
-
-1. ✅ Run: `python3 run_phase2.py --sample 3`
-2. ✅ Check results in generated JSON files
-3. ✅ Identify best method (likely hybrid)
-4. ➡️ Phase 3: LLM reasoning over best method
-
----
-
-## Troubleshooting
-
-### "GROQ_API_KEY not found"
-```bash
-export GROQ_API_KEY='your-key'
-```
-
-### "ModuleNotFoundError: phase2_evaluation_groq_fixed"
-Make sure you're using the updated files:
-- `phase2_evaluation.py` (not the old one)
-- `run_phase2.py` (not the old `run_phase2.py`)
-
-### Evaluation is slow
-- Groq API takes ~5-10 seconds per query
-- For 15 queries: ~5-10 minutes total
-- Test with `--sample 3` first
-
----
-
-## Ready?
-
-Run this:
-```bash
-python3 run_phase2.py --sample 3
-
-```
-
-# Phase 3: Answer Generation & Evaluation (Capstone)
-
-## Overview
-
-Phase 3 is the final capstone that brings everything together:
-
-1. **Answer Generation**: Use hybrid retrieval to generate coherent answers
-2. **Answer Evaluation**: Measure quality with RAGAS metrics
-3. **HTML Report**: Beautiful interactive results page
-4. **Final Insights**: What worked, what didn't, lessons learned
-
-## Setup
-
-```bash
-# Ensure Phase 1 & 2 are complete
-# Verify Groq API key
-export GROQ_API_KEY='your-key'
-```
-
-## Running Phase 3
-
-### Full Run (Recommended)
-```bash
 python3 run_phase3.py
 ```
 
-Generates:
-- `phase3_answers.json` — All Q&A pairs
-- `phase3_evaluation.json` — RAGAS scores
-- `phase3_report.html` — Interactive report
+## Project Status
 
-### Custom Options
-
-```bash
-# Use specific retrieval method
-python3 run_phase3.py --method hybrid
-python3 run_phase3.py --method graph
-python3 run_phase3.py --method vector
-
-# Skip HTML report
-python3 run_phase3.py --no-report
-```
-
-## Results Interpretation
-
-### Quality Metrics
-
-- **Faithfulness (0-1)**: Answer grounded in passages
-  - 0.8+ = Very faithful
-  - 0.6-0.8 = Good
-  - <0.6 = Weak
-
-- **Relevance (0-1)**: Answer addresses question
-  - 0.8+ = Directly answers
-  - 0.6-0.8 = Somewhat addresses
-  - <0.6 = Misses target
-
-- **Context Recall (0-1)**: Passages were relevant
-  - 0.8+ = Very relevant passages
-  - 0.6-0.8 = Decent passages
-  - <0.6 = Poor passage selection
-
-- **Overall**: Average of above three
-
-### Expected Results
-
-- **Graph-heavy**: ~0.70 (relationship-focused)
-- **Vector-heavy**: ~0.72 (semantic-focused)
-- **Hybrid**: ~0.76 (balanced best)
-
-## Output Files
-
-### phase3_answers.json
-```json
-[
-  {
-    "query_id": "q1",
-    "question": "How does Marcus connect fear and reason?",
-    "answer": "Marcus teaches that reason is the primary weapon against fear...",
-    "passages_used": 10,
-    "method": "hybrid",
-    "model": "mixtral-8x7b-32768"
-  },
-  ...
-]
-```
-
-### phase3_evaluation.json
-```json
-[
-  {
-    "query_id": "q1",
-    "question": "...",
-    "answer": "...",
-    "metrics": {
-      "faithfulness": 0.85,
-      "relevance": 0.82,
-      "context_recall": 0.80,
-      "average": 0.82
-    }
-  },
-  ...
-]
-```
-
-### phase3_report.html
-Open in browser for beautiful interactive dashboard showing:
-- Overall metrics
-- All Q&A pairs with scores
-- Visual design (portfolio-ready)
-
-## Cost
-
-**$0** - Uses existing Groq account (same as Phase 1 & 2)
-
-## Next Steps
-
-1. Run Phase 3
-2. Review `phase3_report.html` in browser
-3. Check `phase3_evaluation.json` for detailed scores
-4. Ready for portfolio/presentation!
-
----
-
-**Ready?**
-
-```bash
-python3 run_phase3.py
-```
+Phase 1, Phase 2, and Phase 3 are implemented. The current checked-in report is the final hybrid-retrieval baseline. Future evaluation work should add more explicitly labeled answerable and unanswerable queries so abstention accuracy is measured over a broader set.
