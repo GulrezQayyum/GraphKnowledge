@@ -2,7 +2,6 @@
 
 import json
 import os
-import re
 import statistics
 from typing import Optional
 
@@ -51,6 +50,9 @@ Split the answer into atomic factual claims. For each claim, decide whether it i
 Use only exact passage IDs shown above. A claim is unsupported if it adds an
 interpretation, detail, or attribution not present in the passages. Do not merge
 multiple independently verifiable facts into one claim.
+If the generated answer explicitly says the passages do not address the question,
+it is an abstention: return {{"claims": []}} and do not infer claims from the passages.
+Return no more than 8 concise claims.
 
 JSON: """
 
@@ -157,12 +159,6 @@ def run_evaluation(
             pid: passages_dict[pid] for pid in passage_ids if pid in passages_dict
         }
 
-        cited_ids = set(re.findall(r"\[(book[A-Za-z0-9_]+)\]", answer))
-        retrieved_ids = set(passage_texts)
-        retrieved_citations = cited_ids & retrieved_ids
-        retrieval_coverage = (
-            len(retrieved_citations) / len(cited_ids) if cited_ids else 0.0
-        )
         is_abstention = any(marker in answer.lower() for marker in ABSTENTION_MARKERS)
         expected_abstention = EXPECTED_ABSTENTIONS.get(query_id)
         abstention_correct = (
@@ -173,6 +169,17 @@ def run_evaluation(
 
         claims, evaluator_diagnostics = evaluator.evaluate_claims(
             question, answer, passage_texts
+        )
+        evidence_ids = {
+            evidence_id
+            for claim in claims
+            for evidence_id in claim["evidence_ids"]
+        }
+        retrieved_ids = set(passage_texts)
+        retrieval_coverage = (
+            len(evidence_ids & retrieved_ids) / len(evidence_ids)
+            if evidence_ids
+            else None
         )
         claim_count = len(claims)
         supported_count = sum(claim["supported"] for claim in claims)
@@ -200,7 +207,11 @@ def run_evaluation(
                 "citation_coverage": round(citation_coverage, 3),
                 "citation_precision": round(citation_precision, 3),
                 "average": round(average, 3),
-                "retrieval_coverage": round(retrieval_coverage, 3),
+                "retrieval_coverage": (
+                    round(retrieval_coverage, 3)
+                    if retrieval_coverage is not None
+                    else None
+                ),
                 "is_abstention": is_abstention,
                 "expected_abstention": expected_abstention,
                 "abstention_correct": abstention_correct,
@@ -231,7 +242,11 @@ def run_evaluation(
     coverage_scores = [e["metrics"]["citation_coverage"] for e in evaluations]
     precision_scores = [e["metrics"]["citation_precision"] for e in evaluations]
     avg_scores = [e["metrics"]["average"] for e in evaluations]
-    retrieval_scores = [e["metrics"]["retrieval_coverage"] for e in evaluations]
+    retrieval_scores = [
+        e["metrics"]["retrieval_coverage"]
+        for e in evaluations
+        if e["metrics"]["retrieval_coverage"] is not None
+    ]
     abstention_labels = [
         e["metrics"]["abstention_correct"]
         for e in evaluations
@@ -249,7 +264,12 @@ def run_evaluation(
     print(f"Citation Coverage:  {statistics.mean(coverage_scores):.3f} (±{statistics.stdev(coverage_scores):.3f})")
     print(f"Citation Precision: {statistics.mean(precision_scores):.3f} (±{statistics.stdev(precision_scores):.3f})")
     print(f"\nOVERALL AVERAGE: {statistics.mean(avg_scores):.3f} (±{statistics.stdev(avg_scores):.3f})")
-    print(f"Retrieval Coverage:  {statistics.mean(retrieval_scores):.3f}")
+    print(
+        f"Retrieval Coverage:  {statistics.mean(retrieval_scores):.3f} "
+        f"({len(retrieval_scores)} evidence-bearing queries)"
+        if retrieval_scores
+        else "Retrieval Coverage: unavailable (no evidence-bearing queries)"
+    )
     print(
         "Abstention Accuracy: "
         f"{statistics.mean(abstention_labels):.3f} ({len(abstention_labels)} labeled)"

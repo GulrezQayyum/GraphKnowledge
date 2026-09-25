@@ -16,65 +16,65 @@
     },
     "evaluator_diagnostics": {
       "status": "ok",
-      "response_preview": "{\"claims\":[{\"claim\":\"Marcus argues that fear of death is childish and is defeated by reasoning.\",\"supported\":true,\"evidence_ids\":[\"bookII_12\"]},{\"claim\":\"He says that the nature of death, when abstracted, is a pure natural action.\",\"supported\":true,\"evidence_ids\":[\"bookII_12\"]},{\"claim\":\"Marcus claims that the duration of life is insignificant and one need not worry about when death occurs.\",\"supported\":true,\"evidence_ids\":[\"bookIV_47\"]},{\"claim\":\"He asserts that reason removes the irrational fear that otherwise dominates human experience.\",\"supported\":true,\"evidence_ids\":[\"bookIV_47\",\"bookII_12\"]},{\"claim\":\"A man governed by reason will be happy and cannot be hindered.\",\"supported\":true,\"evidence_ids\":[\"bookIII_12\"]},{\"claim\":\"Marcus says that rational beings are not afflicted by the fear of death.\",\"supported\":true,\"evidence_ids\":[\"bookVII_35\"]},{\"claim\":\"He maintains that reason guides practice, leading to contentment with what is allotted and preservation of the divine within.\",\"su",
-      "response_chars": 1200,
+      "response_preview": "{\"claims\":[{\"claim\":\"Marcus argues that fear of death is childish and can be overcome by reason.\",\"supported\":true,\"evidence_ids\":[\"bookII_12\"]},{\"claim\":\"Reason shows that death is a natural action and insignificant.\",\"supported\":true,\"evidence_ids\":[\"bookII_12\"]},{\"claim\":\"Applying reason makes a person unconcerned whether death comes tomorrow or in a thousand years.\",\"supported\":true,\"evidence_ids\":[\"bookIV_47\"]},{\"claim\":\"Marcus says that a person governed by reason should not fear death.\",\"supported\":true,\"evidence_ids\":[\"bookIII_16\"]},{\"claim\":\"He states that a rational person lives in accordance with nature and reason.\",\"supported\":true,\"evidence_ids\":[\"bookVII_11\"]},{\"claim\":\"Marcus asserts that the fear of death is a childlike reaction to nature.\",\"supported\":true,\"evidence_ids\":[\"bookII_12\"]},{\"claim\":\"Reason helps one see that life\u2019s duration is unimportant.\",\"supported\":true,\"evidence_ids\":[\"bookIV_47\"]},{\"claim\":\"Marcus connects fear and reason by suggesting that reasoning",
+      "response_chars": 1087,
       "finish_reason": "stop"
     },
     "claims": [
       {
-        "claim": "Marcus argues that fear of death is childish and is defeated by reasoning.",
+        "claim": "Marcus argues that fear of death is childish and can be overcome by reason.",
         "supported": true,
         "evidence_ids": [
           "bookII_12"
         ]
       },
       {
-        "claim": "He says that the nature of death, when abstracted, is a pure natural action.",
+        "claim": "Reason shows that death is a natural action and insignificant.",
         "supported": true,
         "evidence_ids": [
           "bookII_12"
         ]
       },
       {
-        "claim": "Marcus claims that the duration of life is insignificant and one need not worry about when death occurs.",
+        "claim": "Applying reason makes a person unconcerned whether death comes tomorrow or in a thousand years.",
         "supported": true,
         "evidence_ids": [
           "bookIV_47"
         ]
       },
       {
-        "claim": "He asserts that reason removes the irrational fear that otherwise dominates human experience.",
-        "supported": true,
-        "evidence_ids": [
-          "bookIV_47",
-          "bookII_12"
-        ]
-      },
-      {
-        "claim": "A man governed by reason will be happy and cannot be hindered.",
-        "supported": true,
-        "evidence_ids": [
-          "bookIII_12"
-        ]
-      },
-      {
-        "claim": "Marcus says that rational beings are not afflicted by the fear of death.",
-        "supported": true,
-        "evidence_ids": [
-          "bookVII_35"
-        ]
-      },
-      {
-        "claim": "He maintains that reason guides practice, leading to contentment with what is allotted and preservation of the divine within.",
+        "claim": "Marcus says that a person governed by reason should not fear death.",
         "supported": true,
         "evidence_ids": [
           "bookIII_16"
         ]
       },
       {
-        "claim": "The power of thought shows the insignificance of life events and the fleeting nature of memory.",
+        "claim": "He states that a rational person lives in accordance with nature and reason.",
         "supported": true,
         "evidence_ids": [
+          "bookVII_11"
+        ]
+      },
+      {
+        "claim": "Marcus asserts that the fear of death is a childlike reaction to nature.",
+        "supported": true,
+        "evidence_ids": [
+          "bookII_12"
+        ]
+      },
+      {
+        "claim": "Reason helps one see that life\u2019s duration is unimportant.",
+        "supported": true,
+        "evidence_ids": [
+          "bookIV_47"
+        ]
+      },
+      {
+        "claim": "Marcus connects fear and reason by suggesting that reasoning removes irrational fear.",
+        "supported": true,
+        "evidence_ids": [
+          "bookIV_47",
           "bookII_12"
         ]
       }
@@ -97,62 +97,62 @@
     },
     "evaluator_diagnostics": {
       "status": "ok",
-      "response_preview": "{\"claims\":[{\"claim\":\"Rusticus taught Marcus to write letters plainly\",\"supported\":true,\"evidence_ids\":[\"bookI_7\"]},{\"claim\":\"Rusticus advised Marcus to reconcile readily with those who wronged him\",\"supported\":true,\"evidence_ids\":[\"bookI_7\"]},{\"claim\":\"Rusticus instructed Marcus to read authors carefully\",\"supported\":true,\"evidence_ids\":[\"bookI_7\"]},{\"claim\":\"Rusticus gave Marcus a copy of Epictetus\u2019s memoirs\",\"supported\":true,\"evidence_ids\":[\"bookI_7\"]},{\"claim\":\"Marcus was urged to imitate Emperor Antoninus\u2019s modest conduct\",\"supported\":true,\"evidence_ids\":[\"bookVI_30\"]},{\"claim\":\"Marcus was advised to be candid, virtuous, sincere, and modestly grave\",\"supported\":true,\"evidence_ids\":[\"bookVI_30\"]},{\"claim\":\"Marcus was instructed to let justice and piety influence his character\",\"supported\":true,\"evidence_ids\":[\"bookVI_30\"]},{\"claim\":\"Marcus was told to be patient, temperate, and steadfast in friendships\",\"supported\":true,\"evidence_ids\":[\"bookVI_30\"]}]}",
-      "response_chars": 968,
+      "response_preview": "{\"claims\":[{\"claim\":\"Rusticus taught Marcus to write letters plainly.\",\"supported\":true,\"evidence_ids\":[\"bookI_7\"]},{\"claim\":\"Rusticus taught Marcus to reconcile quickly with those who wronged him when they sought peace.\",\"supported\":true,\"evidence_ids\":[\"bookI_7\"]},{\"claim\":\"Rusticus taught Marcus to read authors carefully, avoiding superficial or idle talk.\",\"supported\":true,\"evidence_ids\":[\"bookI_7\"]},{\"claim\":\"Rusticus gave Marcus a copy of Epictetus\u2019s memoirs.\",\"supported\":true,\"evidence_ids\":[\"bookI_7\"]},{\"claim\":\"Marcus was encouraged to imitate Emperor Antoninus\u2019s calm, modest, and generous conduct.\",\"supported\":true,\"evidence_ids\":[\"bookVI_30\"]},{\"claim\":\"Antoninus\u2019s virtues include sincerity, modesty, justice, piety, mildness, affection, and enterprising vigor.\",\"supported\":true,\"evidence_ids\":[\"bookVI_30\"]},{\"claim\":\"Antoninus advised Marcus to avoid haste and to bear unreasonable remonstrances without retaliation.\",\"supported\":true,\"evidence_ids\":[\"bookVI_30\"]},{\"claim\":\"An",
+      "response_chars": 1132,
       "finish_reason": "stop"
     },
     "claims": [
       {
-        "claim": "Rusticus taught Marcus to write letters plainly",
+        "claim": "Rusticus taught Marcus to write letters plainly.",
         "supported": true,
         "evidence_ids": [
           "bookI_7"
         ]
       },
       {
-        "claim": "Rusticus advised Marcus to reconcile readily with those who wronged him",
+        "claim": "Rusticus taught Marcus to reconcile quickly with those who wronged him when they sought peace.",
         "supported": true,
         "evidence_ids": [
           "bookI_7"
         ]
       },
       {
-        "claim": "Rusticus instructed Marcus to read authors carefully",
+        "claim": "Rusticus taught Marcus to read authors carefully, avoiding superficial or idle talk.",
         "supported": true,
         "evidence_ids": [
           "bookI_7"
         ]
       },
       {
-        "claim": "Rusticus gave Marcus a copy of Epictetus\u2019s memoirs",
+        "claim": "Rusticus gave Marcus a copy of Epictetus\u2019s memoirs.",
         "supported": true,
         "evidence_ids": [
           "bookI_7"
         ]
       },
       {
-        "claim": "Marcus was urged to imitate Emperor Antoninus\u2019s modest conduct",
+        "claim": "Marcus was encouraged to imitate Emperor Antoninus\u2019s calm, modest, and generous conduct.",
         "supported": true,
         "evidence_ids": [
           "bookVI_30"
         ]
       },
       {
-        "claim": "Marcus was advised to be candid, virtuous, sincere, and modestly grave",
+        "claim": "Antoninus\u2019s virtues include sincerity, modesty, justice, piety, mildness, affection, and enterprising vigor.",
         "supported": true,
         "evidence_ids": [
           "bookVI_30"
         ]
       },
       {
-        "claim": "Marcus was instructed to let justice and piety influence his character",
+        "claim": "Antoninus advised Marcus to avoid haste and to bear unreasonable remonstrances without retaliation.",
         "supported": true,
         "evidence_ids": [
           "bookVI_30"
         ]
       },
       {
-        "claim": "Marcus was told to be patient, temperate, and steadfast in friendships",
+        "claim": "Antoninus was a religious prince who practiced generosity and was not superstitious.",
         "supported": true,
         "evidence_ids": [
           "bookVI_30"
@@ -177,65 +177,37 @@
     },
     "evaluator_diagnostics": {
       "status": "ok",
-      "response_preview": "{\"claims\":[{\"claim\":\"Discipline trains the mind to return swiftly to reason when it is disturbed\",\"supported\":true,\"evidence_ids\":[\"bookVI_11\"]},{\"claim\":\"A disciplined person does not get surprised by death\",\"supported\":true,\"evidence_ids\":[\"bookIII_8\"]},{\"claim\":\"Discipline prevents attachment or aloofness toward others\",\"supported\":true,\"evidence_ids\":[\"bookIII_8\"]},{\"claim\":\"The mind can be withdrawn into itself to achieve tranquility\",\"supported\":true,\"evidence_ids\":[\"bookIV_3\"]},{\"claim\":\"Returning to harmony earlier helps keep it in one's own power\",\"supported\":true,\"evidence_ids\":[\"bookVI_11\"]},{\"claim\":\"The soul's disturbance comes from opinions within it\",\"supported\":true,\"evidence_ids\":[\"bookIV_3\"]},{\"claim\":\"The soul should be mastered by the mind\",\"supported\":true,\"evidence_ids\":[\"bookVII_37\"]},{\"claim\":\"A well\u2011disciplined person remains neither overly attached nor aloof\",\"supported\":true,\"evidence_ids\":[\"bookIII_8\"]}]}",
-      "response_chars": 946,
+      "response_preview": "{\"claims\":[{\"claim\":\"Discipline trains the mind to return swiftly to reason when it is disturbed, preventing ongoing turmoil and allowing tranquility to be maintained.\",\"supported\":true,\"evidence_ids\":[\"bookVI_11\"]},{\"claim\":\"A well\u2011disciplined person, purified by philosophy, finds no surprise in death and experiences a steady, serene life untroubled by external events.\",\"supported\":true,\"evidence_ids\":[\"bookIII_8\"]},{\"claim\":\"Discipline enables one to withdraw into oneself whenever desired, creating a private space free from external noise that supports inner tranquility.\",\"supported\":true,\"evidence_ids\":[\"bookIV_3\"]},{\"claim\":\"A disciplined mind achieves lasting calm because it does not let opinions disturb the soul.\",\"supported\":true,\"evidence_ids\":[\"bookVI_31\"]}]}",
+      "response_chars": 778,
       "finish_reason": "stop"
     },
     "claims": [
       {
-        "claim": "Discipline trains the mind to return swiftly to reason when it is disturbed",
+        "claim": "Discipline trains the mind to return swiftly to reason when it is disturbed, preventing ongoing turmoil and allowing tranquility to be maintained.",
         "supported": true,
         "evidence_ids": [
           "bookVI_11"
         ]
       },
       {
-        "claim": "A disciplined person does not get surprised by death",
+        "claim": "A well\u2011disciplined person, purified by philosophy, finds no surprise in death and experiences a steady, serene life untroubled by external events.",
         "supported": true,
         "evidence_ids": [
           "bookIII_8"
         ]
       },
       {
-        "claim": "Discipline prevents attachment or aloofness toward others",
-        "supported": true,
-        "evidence_ids": [
-          "bookIII_8"
-        ]
-      },
-      {
-        "claim": "The mind can be withdrawn into itself to achieve tranquility",
+        "claim": "Discipline enables one to withdraw into oneself whenever desired, creating a private space free from external noise that supports inner tranquility.",
         "supported": true,
         "evidence_ids": [
           "bookIV_3"
         ]
       },
       {
-        "claim": "Returning to harmony earlier helps keep it in one's own power",
+        "claim": "A disciplined mind achieves lasting calm because it does not let opinions disturb the soul.",
         "supported": true,
         "evidence_ids": [
-          "bookVI_11"
-        ]
-      },
-      {
-        "claim": "The soul's disturbance comes from opinions within it",
-        "supported": true,
-        "evidence_ids": [
-          "bookIV_3"
-        ]
-      },
-      {
-        "claim": "The soul should be mastered by the mind",
-        "supported": true,
-        "evidence_ids": [
-          "bookVII_37"
-        ]
-      },
-      {
-        "claim": "A well\u2011disciplined person remains neither overly attached nor aloof",
-        "supported": true,
-        "evidence_ids": [
-          "bookIII_8"
+          "bookVI_31"
         ]
       }
     ]
@@ -257,8 +229,8 @@
     },
     "evaluator_diagnostics": {
       "status": "ok",
-      "response_preview": "{\"claims\":[{\"claim\":\"Virtue is inherent to good things and does not require external praise.\",\"supported\":true,\"evidence_ids\":[\"bookIV_20\"]},{\"claim\":\"Observing nature\u2019s orderly composition helps align one\u2019s mind with reason, sobriety, and beneficence.\",\"supported\":true,\"evidence_ids\":[\"bookVII_67\"]},{\"claim\":\"A person can attain first-rate virtue while remaining obscure.\",\"supported\":true,\"evidence_ids\":[\"bookVII_67\"]},{\"claim\":\"Nature\u2019s composition allows a person to withdraw within their own limits and manage their own business.\",\"supported\":true,\"evidence_ids\":[\"bookVII_67\"]},{\"claim\":\"The world is an animal with a universal soul and body, and everything contributes to the being of everything.\",\"supported\":true,\"evidence_ids\":[\"bookIV_40\"]},{\"claim\":\"All things flow from a providential regulation of nature, and the world subsists upon change.\",\"supported\":true,\"evidence_ids\":[\"bookII_3\"]},{\"claim\":\"Examining and considering all things allows one to understand their purpose and valu",
-      "response_chars": 1208,
+      "response_preview": "{\"claims\":[{\"claim\":\"Virtue is inherent to good things and does not require external praise.\",\"supported\":true,\"evidence_ids\":[\"bookIV_20\"]},{\"claim\":\"Virtue is complete in itself, being finished by its own nature.\",\"supported\":true,\"evidence_ids\":[\"bookIV_20\"]},{\"claim\":\"Observing nature\u2019s orderly composition helps one align one\u2019s mind with reason, sobriety, and beneficence.\",\"supported\":true,\"evidence_ids\":[\"bookIII_11\"]},{\"claim\":\"Cultivating true virtue occurs within one\u2019s own limits, as nature does not prevent withdrawal into those limits.\",\"supported\":true,\"evidence_ids\":[\"bookVII_67\"]}]}",
+      "response_chars": 601,
       "finish_reason": "stop"
     },
     "claims": [
@@ -270,52 +242,24 @@
         ]
       },
       {
-        "claim": "Observing nature\u2019s orderly composition helps align one\u2019s mind with reason, sobriety, and beneficence.",
+        "claim": "Virtue is complete in itself, being finished by its own nature.",
         "supported": true,
         "evidence_ids": [
-          "bookVII_67"
+          "bookIV_20"
         ]
       },
       {
-        "claim": "A person can attain first-rate virtue while remaining obscure.",
-        "supported": true,
-        "evidence_ids": [
-          "bookVII_67"
-        ]
-      },
-      {
-        "claim": "Nature\u2019s composition allows a person to withdraw within their own limits and manage their own business.",
-        "supported": true,
-        "evidence_ids": [
-          "bookVII_67"
-        ]
-      },
-      {
-        "claim": "The world is an animal with a universal soul and body, and everything contributes to the being of everything.",
-        "supported": true,
-        "evidence_ids": [
-          "bookIV_40"
-        ]
-      },
-      {
-        "claim": "All things flow from a providential regulation of nature, and the world subsists upon change.",
-        "supported": true,
-        "evidence_ids": [
-          "bookII_3"
-        ]
-      },
-      {
-        "claim": "Examining and considering all things allows one to understand their purpose and value.",
+        "claim": "Observing nature\u2019s orderly composition helps one align one\u2019s mind with reason, sobriety, and beneficence.",
         "supported": true,
         "evidence_ids": [
           "bookIII_11"
         ]
       },
       {
-        "claim": "A virtuous person can live with freedom and satisfaction, regardless of external circumstances.",
+        "claim": "Cultivating true virtue occurs within one\u2019s own limits, as nature does not prevent withdrawal into those limits.",
         "supported": true,
         "evidence_ids": [
-          "bookVII_68"
+          "bookVII_67"
         ]
       }
     ]
@@ -337,34 +281,34 @@
     },
     "evaluator_diagnostics": {
       "status": "ok",
-      "response_preview": "{\"claims\":[{\"claim\":\"Marcus\u2019s mother taught him to have regard for religion.\",\"supported\":true,\"evidence_ids\":[\"bookI_3\"]},{\"claim\":\"Marcus\u2019s mother taught him to be generous and open\u2011handed.\",\"supported\":true,\"evidence_ids\":[\"bookI_3\"]},{\"claim\":\"Marcus\u2019s mother taught him to refrain from harming others.\",\"supported\":true,\"evidence_ids\":[\"bookI_3\"]},{\"claim\":\"Marcus\u2019s mother taught him to live in a plain, inexpensive way.\",\"supported\":true,\"evidence_ids\":[\"bookI_3\"]}]}",
-      "response_chars": 474,
+      "response_preview": "{\"claims\":[{\"claim\":\"Marcus\u2019s mother taught him to have regard for religion\",\"supported\":true,\"evidence_ids\":[\"bookI_3\"]},{\"claim\":\"Marcus\u2019s mother taught him to be generous and open\u2011handed\",\"supported\":true,\"evidence_ids\":[\"bookI_3\"]},{\"claim\":\"Marcus\u2019s mother taught him to avoid harming others\",\"supported\":true,\"evidence_ids\":[\"bookI_3\"]},{\"claim\":\"Marcus\u2019s mother taught him a plain, inexpensive way of living\",\"supported\":true,\"evidence_ids\":[\"bookI_3\"]}]}",
+      "response_chars": 462,
       "finish_reason": "stop"
     },
     "claims": [
       {
-        "claim": "Marcus\u2019s mother taught him to have regard for religion.",
+        "claim": "Marcus\u2019s mother taught him to have regard for religion",
         "supported": true,
         "evidence_ids": [
           "bookI_3"
         ]
       },
       {
-        "claim": "Marcus\u2019s mother taught him to be generous and open\u2011handed.",
+        "claim": "Marcus\u2019s mother taught him to be generous and open\u2011handed",
         "supported": true,
         "evidence_ids": [
           "bookI_3"
         ]
       },
       {
-        "claim": "Marcus\u2019s mother taught him to refrain from harming others.",
+        "claim": "Marcus\u2019s mother taught him to avoid harming others",
         "supported": true,
         "evidence_ids": [
           "bookI_3"
         ]
       },
       {
-        "claim": "Marcus\u2019s mother taught him to live in a plain, inexpensive way.",
+        "claim": "Marcus\u2019s mother taught him a plain, inexpensive way of living",
         "supported": true,
         "evidence_ids": [
           "bookI_3"
@@ -377,65 +321,23 @@
     "question": "What emotions oppose virtue?",
     "answer": "The passages do not explicitly state which emotions oppose virtue. They focus on cultivating virtue, tranquility, and rationality, but they do not identify specific opposing emotions.",
     "metrics": {
-      "claim_grounding": 0.8,
-      "citation_coverage": 0.8,
-      "citation_precision": 1.0,
-      "average": 0.867,
-      "retrieval_coverage": 0.0,
+      "claim_grounding": 0.0,
+      "citation_coverage": 0.0,
+      "citation_precision": 0.0,
+      "average": 0.0,
+      "retrieval_coverage": null,
       "is_abstention": false,
       "expected_abstention": null,
       "abstention_correct": null,
       "evaluator_valid": true
     },
     "evaluator_diagnostics": {
-      "status": "ok",
-      "response_preview": "{\"claims\":[{\"claim\":\"The passages emphasize the cultivation of virtue.\",\"supported\":true,\"evidence_ids\":[\"bookVII_67\",\"bookVI_17\",\"bookV_16\",\"bookIII_11\",\"bookIV_25\",\"bookIV_3\",\"bookVI_30\"]},{\"claim\":\"The passages emphasize the attainment of tranquility.\",\"supported\":true,\"evidence_ids\":[\"bookIV_3\",\"bookIV_25\"]},{\"claim\":\"The passages emphasize the use of rationality.\",\"supported\":true,\"evidence_ids\":[\"bookIV_3\",\"bookVI_30\"]},{\"claim\":\"The passages do not state which emotions oppose virtue.\",\"supported\":false,\"evidence_ids\":[]},{\"claim\":\"The passages state that happiness has very few wants.\",\"supported\":true,\"evidence_ids\":[\"bookVII_67\"]}]}",
-      "response_chars": 648,
+      "status": "valid_zero_claims",
+      "response_preview": "{\"claims\": []}",
+      "response_chars": 14,
       "finish_reason": "stop"
     },
-    "claims": [
-      {
-        "claim": "The passages emphasize the cultivation of virtue.",
-        "supported": true,
-        "evidence_ids": [
-          "bookVII_67",
-          "bookVI_17",
-          "bookV_16",
-          "bookIII_11",
-          "bookIV_25",
-          "bookIV_3",
-          "bookVI_30"
-        ]
-      },
-      {
-        "claim": "The passages emphasize the attainment of tranquility.",
-        "supported": true,
-        "evidence_ids": [
-          "bookIV_3",
-          "bookIV_25"
-        ]
-      },
-      {
-        "claim": "The passages emphasize the use of rationality.",
-        "supported": true,
-        "evidence_ids": [
-          "bookIV_3",
-          "bookVI_30"
-        ]
-      },
-      {
-        "claim": "The passages do not state which emotions oppose virtue.",
-        "supported": false,
-        "evidence_ids": []
-      },
-      {
-        "claim": "The passages state that happiness has very few wants.",
-        "supported": true,
-        "evidence_ids": [
-          "bookVII_67"
-        ]
-      }
-    ]
+    "claims": []
   },
   {
     "query_id": "q7",
@@ -454,8 +356,8 @@
     },
     "evaluator_diagnostics": {
       "status": "ok",
-      "response_preview": "{\"claims\":[{\"claim\":\"Reason helps a person accept whatever happens.\",\"supported\":true,\"evidence_ids\":[\"bookIV_47\"]},{\"claim\":\"Reason guides a person to treat life as governed by universal law rather than personal desire.\",\"supported\":true,\"evidence_ids\":[\"bookIV_47\"]},{\"claim\":\"Reason allows a person to be free from distress when hardship arrives.\",\"supported\":true,\"evidence_ids\":[\"bookIV_47\"]},{\"claim\":\"If governed by reason, a person can confront trials with industry, vigor, and temper.\",\"supported\":true,\"evidence_ids\":[\"bookIII_12\"]},{\"claim\":\"A person who keeps their mind disciplined and pure will be unhindered by hardship.\",\"supported\":true,\"evidence_ids\":[\"bookIII_12\"]},{\"claim\":\"Reason is the part of the mind that distinguishes a man of probity.\",\"supported\":true,\"evidence_ids\":[\"bookIII_16\"]},{\"claim\":\"Reason guides a person\u2019s practice and keeps them content with what is allotted.\",\"supported\":true,\"evidence_ids\":[\"bookIII_16\"]},{\"claim\":\"A person who follows reason will remain",
-      "response_chars": 1092,
+      "response_preview": "{\"claims\":[{\"claim\":\"Reason helps a person accept whatever happens.\",\"supported\":true,\"evidence_ids\":[\"bookIV_47\"]},{\"claim\":\"Reason guides a person to treat life as governed by universal law rather than personal desire.\",\"supported\":true,\"evidence_ids\":[\"bookIV_47\"]},{\"claim\":\"Reason enables one to be untroubled and content in hardship.\",\"supported\":true,\"evidence_ids\":[\"bookIV_47\"]},{\"claim\":\"Reason encourages disciplined conduct in the face of trials.\",\"supported\":true,\"evidence_ids\":[\"bookIII_12\"]},{\"claim\":\"Reason promotes inner tranquility during hardship.\",\"supported\":true,\"evidence_ids\":[\"bookIII_12\"]},{\"claim\":\"Reason allows a person to act with industry, vigor, and temper when challenged.\",\"supported\":true,\"evidence_ids\":[\"bookIII_12\"]},{\"claim\":\"Reason keeps the mind pure and calm when confronting adversity.\",\"supported\":true,\"evidence_ids\":[\"bookIII_12\"]},{\"claim\":\"Reason is a property of the mind, distinct from body and soul.\",\"supported\":true,\"evidence_ids\":[\"bookIII_16\"]",
+      "response_chars": 1003,
       "finish_reason": "stop"
     },
     "claims": [
@@ -474,42 +376,42 @@
         ]
       },
       {
-        "claim": "Reason allows a person to be free from distress when hardship arrives.",
+        "claim": "Reason enables one to be untroubled and content in hardship.",
         "supported": true,
         "evidence_ids": [
           "bookIV_47"
         ]
       },
       {
-        "claim": "If governed by reason, a person can confront trials with industry, vigor, and temper.",
+        "claim": "Reason encourages disciplined conduct in the face of trials.",
         "supported": true,
         "evidence_ids": [
           "bookIII_12"
         ]
       },
       {
-        "claim": "A person who keeps their mind disciplined and pure will be unhindered by hardship.",
+        "claim": "Reason promotes inner tranquility during hardship.",
         "supported": true,
         "evidence_ids": [
           "bookIII_12"
         ]
       },
       {
-        "claim": "Reason is the part of the mind that distinguishes a man of probity.",
+        "claim": "Reason allows a person to act with industry, vigor, and temper when challenged.",
         "supported": true,
         "evidence_ids": [
-          "bookIII_16"
+          "bookIII_12"
         ]
       },
       {
-        "claim": "Reason guides a person\u2019s practice and keeps them content with what is allotted.",
+        "claim": "Reason keeps the mind pure and calm when confronting adversity.",
         "supported": true,
         "evidence_ids": [
-          "bookIII_16"
+          "bookIII_12"
         ]
       },
       {
-        "claim": "A person who follows reason will remain untroubled by appearances and stay calm.",
+        "claim": "Reason is a property of the mind, distinct from body and soul.",
         "supported": true,
         "evidence_ids": [
           "bookIII_16"
@@ -534,65 +436,65 @@
     },
     "evaluator_diagnostics": {
       "status": "ok",
-      "response_preview": "{\"claims\":[{\"claim\":\"Duty includes a commitment to justice.\",\"supported\":true,\"evidence_ids\":[\"bookII_5\"]},{\"claim\":\"Duty should be performed with justice, humanity, freedom, and fairness.\",\"supported\":true,\"evidence_ids\":[\"bookII_5\"]},{\"claim\":\"Duty is measured by the standard of justice.\",\"supported\":true,\"evidence_ids\":[\"bookIV_12\"]},{\"claim\":\"Justice involves a sovereign distribution of justice that governs cause and effect.\",\"supported\":true,\"evidence_ids\":[\"bookIV_10\"]},{\"claim\":\"Duty should be performed as if it were one's last action.\",\"supported\":true,\"evidence_ids\":[\"bookII_5\"]},{\"claim\":\"Justice is the standard by which duty is executed.\",\"supported\":true,\"evidence_ids\":[\"bookIV_12\"]},{\"claim\":\"To fulfill one\u2019s duty is to act justly.\",\"supported\":true,\"evidence_ids\":[\"bookIV_12\"]},{\"claim\":\"Duty is directed toward the common good and the rational order of nature.\",\"supported\":true,\"evidence_ids\":[\"bookIV_12\"]}]}",
-      "response_chars": 936,
+      "response_preview": "{\"claims\":[{\"claim\":\"Duty involves acting with justice, humanity, freedom, and fairness.\",\"supported\":true,\"evidence_ids\":[\"bookII_5\"]},{\"claim\":\"Performing duty requires treating actions as if they were one's last.\",\"supported\":true,\"evidence_ids\":[\"bookII_5\"]},{\"claim\":\"Justice is the standard by which duty is measured and executed.\",\"supported\":true,\"evidence_ids\":[\"bookIV_12\"]},{\"claim\":\"All events turn out justly according to a sovereign distribution of justice.\",\"supported\":true,\"evidence_ids\":[\"bookIV_10\"]},{\"claim\":\"Observing justice links causes and effects in a rational order.\",\"supported\":true,\"evidence_ids\":[\"bookIV_10\"]},{\"claim\":\"A person who acts justly welcomes all that happens and is allotted to him.\",\"supported\":true,\"evidence_ids\":[\"bookIII_4\"]},{\"claim\":\"Duty is inseparable from justice because it directs conduct toward the common good.\",\"supported\":true,\"evidence_ids\":[\"bookIV_10\"]},{\"claim\":\"Justice directs one\u2019s conduct toward the rational order of nature.\",\"supp",
+      "response_chars": 1043,
       "finish_reason": "stop"
     },
     "claims": [
       {
-        "claim": "Duty includes a commitment to justice.",
+        "claim": "Duty involves acting with justice, humanity, freedom, and fairness.",
         "supported": true,
         "evidence_ids": [
           "bookII_5"
         ]
       },
       {
-        "claim": "Duty should be performed with justice, humanity, freedom, and fairness.",
+        "claim": "Performing duty requires treating actions as if they were one's last.",
         "supported": true,
         "evidence_ids": [
           "bookII_5"
         ]
       },
       {
-        "claim": "Duty is measured by the standard of justice.",
+        "claim": "Justice is the standard by which duty is measured and executed.",
         "supported": true,
         "evidence_ids": [
           "bookIV_12"
         ]
       },
       {
-        "claim": "Justice involves a sovereign distribution of justice that governs cause and effect.",
+        "claim": "All events turn out justly according to a sovereign distribution of justice.",
         "supported": true,
         "evidence_ids": [
           "bookIV_10"
         ]
       },
       {
-        "claim": "Duty should be performed as if it were one's last action.",
+        "claim": "Observing justice links causes and effects in a rational order.",
         "supported": true,
         "evidence_ids": [
-          "bookII_5"
+          "bookIV_10"
         ]
       },
       {
-        "claim": "Justice is the standard by which duty is executed.",
+        "claim": "A person who acts justly welcomes all that happens and is allotted to him.",
         "supported": true,
         "evidence_ids": [
-          "bookIV_12"
+          "bookIII_4"
         ]
       },
       {
-        "claim": "To fulfill one\u2019s duty is to act justly.",
+        "claim": "Duty is inseparable from justice because it directs conduct toward the common good.",
         "supported": true,
         "evidence_ids": [
-          "bookIV_12"
+          "bookIV_10"
         ]
       },
       {
-        "claim": "Duty is directed toward the common good and the rational order of nature.",
+        "claim": "Justice directs one\u2019s conduct toward the rational order of nature.",
         "supported": true,
         "evidence_ids": [
-          "bookIV_12"
+          "bookIV_10"
         ]
       }
     ]
@@ -614,63 +516,62 @@
     },
     "evaluator_diagnostics": {
       "status": "ok",
-      "response_preview": "{\"claims\":[{\"claim\":\"Acceptance of fate is presented as a foundation for a virtuous life.\",\"supported\":true,\"evidence_ids\":[\"bookIV_25\",\"bookIII_6\"]},{\"claim\":\"A virtuous person should be entirely resigned to fate.\",\"supported\":true,\"evidence_ids\":[\"bookIII_6\"]},{\"claim\":\"Resignation to fate helps one avoid corruption by external goods.\",\"supported\":true,\"evidence_ids\":[\"bookIII_6\"]},{\"claim\":\"Letting fate be one's only inclination is considered the most reasonable path to virtue.\",\"supported\":true,\"evidence_ids\":[\"bookVII_57\"]},{\"claim\":\"Virtue involves a mind that is content and honest when acquiescing in fate.\",\"supported\":true,\"evidence_ids\":[\"bookIV_25\"]},{\"claim\":\"Fate is described as having no motion like virtue, which has a nobler kind of progress.\",\"supported\":true,\"evidence_ids\":[\"bookVI_17\"]},{\"claim\":\"The text encourages people to withdraw into themselves and maintain tranquility by ordering the mind.\",\"supported\":true,\"evidence_ids\":[\"bookIV_3\"]},{\"claim\":\"The passages men",
-      "response_chars": 1125,
+      "response_preview": "{\"claims\":[{\"claim\":\"Acceptance of fate is seen as the foundation of a virtuous life.\",\"supported\":true,\"evidence_ids\":[\"bookIV_25\"]},{\"claim\":\"Marcus argues a rational, virtuous person should be entirely resigned to fate.\",\"supported\":true,\"evidence_ids\":[\"bookIII_6\"]},{\"claim\":\"Resignation to fate keeps one from being corrupted by external goods.\",\"supported\":true,\"evidence_ids\":[\"bookIII_6\"]},{\"claim\":\"Acceptance of destiny is essential to living virtuously.\",\"supported\":true,\"evidence_ids\":[\"bookVII_57\"]},{\"claim\":\"Letting fate be one's only inclination is the most reasonable path to virtue.\",\"supported\":true,\"evidence_ids\":[\"bookVII_57\"]},{\"claim\":\"Acceptance of fate leads to contentment and honesty.\",\"supported\":true,\"evidence_ids\":[\"bookIV_25\"]},{\"claim\":\"Acceptance of fate focuses the soul on justice, truth, and fortitude.\",\"supported\":true,\"evidence_ids\":[\"bookIII_6\"]},{\"claim\":\"Marcus states that letting fate be one's inclination is most reasonable.\",\"supported\":true,\"evidenc",
+      "response_chars": 1024,
       "finish_reason": "stop"
     },
     "claims": [
       {
-        "claim": "Acceptance of fate is presented as a foundation for a virtuous life.",
-        "supported": true,
-        "evidence_ids": [
-          "bookIV_25",
-          "bookIII_6"
-        ]
-      },
-      {
-        "claim": "A virtuous person should be entirely resigned to fate.",
-        "supported": true,
-        "evidence_ids": [
-          "bookIII_6"
-        ]
-      },
-      {
-        "claim": "Resignation to fate helps one avoid corruption by external goods.",
-        "supported": true,
-        "evidence_ids": [
-          "bookIII_6"
-        ]
-      },
-      {
-        "claim": "Letting fate be one's only inclination is considered the most reasonable path to virtue.",
-        "supported": true,
-        "evidence_ids": [
-          "bookVII_57"
-        ]
-      },
-      {
-        "claim": "Virtue involves a mind that is content and honest when acquiescing in fate.",
+        "claim": "Acceptance of fate is seen as the foundation of a virtuous life.",
         "supported": true,
         "evidence_ids": [
           "bookIV_25"
         ]
       },
       {
-        "claim": "Fate is described as having no motion like virtue, which has a nobler kind of progress.",
+        "claim": "Marcus argues a rational, virtuous person should be entirely resigned to fate.",
         "supported": true,
         "evidence_ids": [
-          "bookVI_17"
+          "bookIII_6"
         ]
       },
       {
-        "claim": "The text encourages people to withdraw into themselves and maintain tranquility by ordering the mind.",
+        "claim": "Resignation to fate keeps one from being corrupted by external goods.",
         "supported": true,
         "evidence_ids": [
-          "bookIV_3"
+          "bookIII_6"
         ]
       },
       {
-        "claim": "The passages mention that letting fate be one's inclination is the most reasonable option.",
+        "claim": "Acceptance of destiny is essential to living virtuously.",
+        "supported": true,
+        "evidence_ids": [
+          "bookVII_57"
+        ]
+      },
+      {
+        "claim": "Letting fate be one's only inclination is the most reasonable path to virtue.",
+        "supported": true,
+        "evidence_ids": [
+          "bookVII_57"
+        ]
+      },
+      {
+        "claim": "Acceptance of fate leads to contentment and honesty.",
+        "supported": true,
+        "evidence_ids": [
+          "bookIV_25"
+        ]
+      },
+      {
+        "claim": "Acceptance of fate focuses the soul on justice, truth, and fortitude.",
+        "supported": true,
+        "evidence_ids": [
+          "bookIII_6"
+        ]
+      },
+      {
+        "claim": "Marcus states that letting fate be one's inclination is most reasonable.",
         "supported": true,
         "evidence_ids": [
           "bookVII_57"
@@ -683,10 +584,10 @@
     "question": "What role does the ruling part play in managing emotions?",
     "answer": "The ruling part of the mind is the element that must not be moved by selfish passions, and it is the source of all emotional disturbance; it must be kept free from such influence to remain calm. The passages state that the ruling part must \u201cnot be moved by the springs of selfish passions; let it not quarrel with fate, be uneasy at the present, or afraid of the future\u201d [bookII_2], and that \u201cthe governing part of the mind arouses and alters itself; gives what air it pleases to its own likeness, and to all the accidents and circumstances without\u201d [bookVI_8]. Thus, the ruling part governs emotions by controlling the opinions that give rise to fears and passions.",
     "metrics": {
-      "claim_grounding": 0.75,
-      "citation_coverage": 0.75,
+      "claim_grounding": 1.0,
+      "citation_coverage": 1.0,
       "citation_precision": 1.0,
-      "average": 0.833,
+      "average": 1.0,
       "retrieval_coverage": 1.0,
       "is_abstention": false,
       "expected_abstention": null,
@@ -695,8 +596,8 @@
     },
     "evaluator_diagnostics": {
       "status": "ok",
-      "response_preview": "{\"claims\":[{\"claim\":\"The ruling part of the mind must not be moved by selfish passions.\",\"supported\":true,\"evidence_ids\":[\"bookII_2\"]},{\"claim\":\"The ruling part of the mind is the source of all emotional disturbance.\",\"supported\":false,\"evidence_ids\":[]},{\"claim\":\"The ruling part governs emotions by controlling the opinions that give rise to fears and passions.\",\"supported\":false,\"evidence_ids\":[]},{\"claim\":\"The ruling part must remain free from influence to remain calm.\",\"supported\":true,\"evidence_ids\":[\"bookII_2\"]},{\"claim\":\"The ruling part is part of the mind\u2019s composition, along with flesh and breath.\",\"supported\":true,\"evidence_ids\":[\"bookII_2\"]},{\"claim\":\"The governing part of the mind arouses and alters itself.\",\"supported\":true,\"evidence_ids\":[\"bookVI_8\"]},{\"claim\":\"The ruling part can be affected by the opinion within the soul.\",\"supported\":true,\"evidence_ids\":[\"bookIV_3\"]},{\"claim\":\"The mind is self-sufficient and must create its own wants before feeling them.\",\"supported\":tr",
-      "response_chars": 1035,
+      "response_preview": "{\"claims\":[{\"claim\":\"The ruling part of the mind must not be moved by selfish passions.\",\"supported\":true,\"evidence_ids\":[\"bookII_2\"]}]}",
+      "response_chars": 136,
       "finish_reason": "stop"
     },
     "claims": [
@@ -705,51 +606,6 @@
         "supported": true,
         "evidence_ids": [
           "bookII_2"
-        ]
-      },
-      {
-        "claim": "The ruling part of the mind is the source of all emotional disturbance.",
-        "supported": false,
-        "evidence_ids": []
-      },
-      {
-        "claim": "The ruling part governs emotions by controlling the opinions that give rise to fears and passions.",
-        "supported": false,
-        "evidence_ids": []
-      },
-      {
-        "claim": "The ruling part must remain free from influence to remain calm.",
-        "supported": true,
-        "evidence_ids": [
-          "bookII_2"
-        ]
-      },
-      {
-        "claim": "The ruling part is part of the mind\u2019s composition, along with flesh and breath.",
-        "supported": true,
-        "evidence_ids": [
-          "bookII_2"
-        ]
-      },
-      {
-        "claim": "The governing part of the mind arouses and alters itself.",
-        "supported": true,
-        "evidence_ids": [
-          "bookVI_8"
-        ]
-      },
-      {
-        "claim": "The ruling part can be affected by the opinion within the soul.",
-        "supported": true,
-        "evidence_ids": [
-          "bookIV_3"
-        ]
-      },
-      {
-        "claim": "The mind is self-sufficient and must create its own wants before feeling them.",
-        "supported": true,
-        "evidence_ids": [
-          "bookVII_16"
         ]
       }
     ]
@@ -771,66 +627,65 @@
     },
     "evaluator_diagnostics": {
       "status": "ok",
-      "response_preview": "{\"claims\":[{\"claim\":\"Philosophy trains Marcus to live in accordance with nature\",\"supported\":true,\"evidence_ids\":[\"bookIII_12\"]},{\"claim\":\"Philosophy keeps his mind disciplined and free from idle speculation\",\"supported\":true,\"evidence_ids\":[\"bookIII_12\"]},{\"claim\":\"Philosophy focuses him on what he can control\",\"supported\":true,\"evidence_ids\":[\"bookIII_10\"]},{\"claim\":\"Philosophy teaches him to accept events as they occur\",\"supported\":true,\"evidence_ids\":[\"bookII_17\"]},{\"claim\":\"Philosophy helps him remain indifferent to praise or blame\",\"supported\":true,\"evidence_ids\":[\"bookIII_12\"]},{\"claim\":\"Philosophy encourages truth and justice in his actions\",\"supported\":true,\"evidence_ids\":[\"bookIII_16\"]},{\"claim\":\"Philosophy ensures nobody can hinder him\",\"supported\":true,\"evidence_ids\":[\"bookIII_12\"]},{\"claim\":\"Philosophy enables him to live well, untroubled by external fortunes or internal passions\",\"supported\":true,\"evidence_ids\":[\"bookIII_12\",\"bookII_17\"]}]}",
-      "response_chars": 968,
+      "response_preview": "{\"claims\":[{\"claim\":\"Philosophy trains Marcus to live in accordance with nature.\",\"supported\":true,\"evidence_ids\":[\"bookIII_12\"]},{\"claim\":\"Philosophy keeps Marcus's mind disciplined and free from idle speculation.\",\"supported\":true,\"evidence_ids\":[\"bookIII_12\"]},{\"claim\":\"Philosophy helps Marcus focus on what he can control.\",\"supported\":true,\"evidence_ids\":[\"bookIII_10\"]},{\"claim\":\"Philosophy teaches Marcus to accept events as they occur and remain indifferent to praise or blame.\",\"supported\":true,\"evidence_ids\":[\"bookIV_10\"]},{\"claim\":\"Philosophy enables Marcus to act with truth and justice.\",\"supported\":true,\"evidence_ids\":[\"bookIII_12\"]},{\"claim\":\"Philosophy prevents Marcus from being troubled by external fortunes or internal passions.\",\"supported\":true,\"evidence_ids\":[\"bookIII_12\"]},{\"claim\":\"Philosophy allows Marcus to meet his fate with calm acceptance.\",\"supported\":true,\"evidence_ids\":[\"bookIII_12\"]},{\"claim\":\"Philosophy keeps Marcus's mind from speculating on others\u2019 thoughts",
+      "response_chars": 1062,
       "finish_reason": "stop"
     },
     "claims": [
       {
-        "claim": "Philosophy trains Marcus to live in accordance with nature",
+        "claim": "Philosophy trains Marcus to live in accordance with nature.",
         "supported": true,
         "evidence_ids": [
           "bookIII_12"
         ]
       },
       {
-        "claim": "Philosophy keeps his mind disciplined and free from idle speculation",
+        "claim": "Philosophy keeps Marcus's mind disciplined and free from idle speculation.",
         "supported": true,
         "evidence_ids": [
           "bookIII_12"
         ]
       },
       {
-        "claim": "Philosophy focuses him on what he can control",
+        "claim": "Philosophy helps Marcus focus on what he can control.",
         "supported": true,
         "evidence_ids": [
           "bookIII_10"
         ]
       },
       {
-        "claim": "Philosophy teaches him to accept events as they occur",
+        "claim": "Philosophy teaches Marcus to accept events as they occur and remain indifferent to praise or blame.",
         "supported": true,
         "evidence_ids": [
-          "bookII_17"
+          "bookIV_10"
         ]
       },
       {
-        "claim": "Philosophy helps him remain indifferent to praise or blame",
+        "claim": "Philosophy enables Marcus to act with truth and justice.",
         "supported": true,
         "evidence_ids": [
           "bookIII_12"
         ]
       },
       {
-        "claim": "Philosophy encourages truth and justice in his actions",
-        "supported": true,
-        "evidence_ids": [
-          "bookIII_16"
-        ]
-      },
-      {
-        "claim": "Philosophy ensures nobody can hinder him",
+        "claim": "Philosophy prevents Marcus from being troubled by external fortunes or internal passions.",
         "supported": true,
         "evidence_ids": [
           "bookIII_12"
         ]
       },
       {
-        "claim": "Philosophy enables him to live well, untroubled by external fortunes or internal passions",
+        "claim": "Philosophy allows Marcus to meet his fate with calm acceptance.",
         "supported": true,
         "evidence_ids": [
-          "bookIII_12",
-          "bookII_17"
+          "bookIII_12"
+        ]
+      },
+      {
+        "claim": "Philosophy keeps Marcus's mind from speculating on others\u2019 thoughts or actions.",
+        "supported": true,
+        "evidence_ids": [
+          "bookIII_4"
         ]
       }
     ]
@@ -852,27 +707,62 @@
     },
     "evaluator_diagnostics": {
       "status": "ok",
-      "response_preview": "{\"claims\":[{\"claim\":\"When anger rises, use reason to examine the cause and argue with the offending person to dispel it.\",\"supported\":true,\"evidence_ids\":[\"bookV_28\"]},{\"claim\":\"Contemplate that others are ignorant and that true injury cannot be inflicted upon you, so remain calm and not let anger disturb you.\",\"supported\":true,\"evidence_ids\":[\"bookII_1\"]},{\"claim\":\"If someone misbehaves, consider his motives, feel pity, and avoid anger or surprise, allowing yourself to pardon him.\",\"supported\":true,\"evidence_ids\":[\"bookVII_26\"]}]}",
-      "response_chars": 537,
+      "response_preview": "{\"claims\":[{\"claim\":\"Use reason to examine the cause of anger\",\"supported\":true,\"evidence_ids\":[\"bookV_28\"]},{\"claim\":\"Argue with the offending person and show him his error\",\"supported\":true,\"evidence_ids\":[\"bookV_28\"]},{\"claim\":\"Contemplate that others are ignorant and that true injury cannot be inflicted upon you\",\"supported\":true,\"evidence_ids\":[\"bookII_1\"]},{\"claim\":\"Consider the offender's motives, feel pity, and avoid anger\",\"supported\":true,\"evidence_ids\":[\"bookVII_26\"]},{\"claim\":\"Pardon the offender if you find your opinions on good and evil are the same\",\"supported\":true,\"evidence_ids\":[\"bookVII_26\"]},{\"claim\":\"Remain calm and indifferent, never showing anger\",\"supported\":true,\"evidence_ids\":[\"bookI_9\"]},{\"claim\":\"Do not let anger disturb you\",\"supported\":true,\"evidence_ids\":[\"bookII_1\"]},{\"claim\":\"Avoid being angry or surprised when someone misbehaves\",\"supported\":true,\"evidence_ids\":[\"bookVII_26\"]}]}",
+      "response_chars": 925,
       "finish_reason": "stop"
     },
     "claims": [
       {
-        "claim": "When anger rises, use reason to examine the cause and argue with the offending person to dispel it.",
+        "claim": "Use reason to examine the cause of anger",
         "supported": true,
         "evidence_ids": [
           "bookV_28"
         ]
       },
       {
-        "claim": "Contemplate that others are ignorant and that true injury cannot be inflicted upon you, so remain calm and not let anger disturb you.",
+        "claim": "Argue with the offending person and show him his error",
+        "supported": true,
+        "evidence_ids": [
+          "bookV_28"
+        ]
+      },
+      {
+        "claim": "Contemplate that others are ignorant and that true injury cannot be inflicted upon you",
         "supported": true,
         "evidence_ids": [
           "bookII_1"
         ]
       },
       {
-        "claim": "If someone misbehaves, consider his motives, feel pity, and avoid anger or surprise, allowing yourself to pardon him.",
+        "claim": "Consider the offender's motives, feel pity, and avoid anger",
+        "supported": true,
+        "evidence_ids": [
+          "bookVII_26"
+        ]
+      },
+      {
+        "claim": "Pardon the offender if you find your opinions on good and evil are the same",
+        "supported": true,
+        "evidence_ids": [
+          "bookVII_26"
+        ]
+      },
+      {
+        "claim": "Remain calm and indifferent, never showing anger",
+        "supported": true,
+        "evidence_ids": [
+          "bookI_9"
+        ]
+      },
+      {
+        "claim": "Do not let anger disturb you",
+        "supported": true,
+        "evidence_ids": [
+          "bookII_1"
+        ]
+      },
+      {
+        "claim": "Avoid being angry or surprised when someone misbehaves",
         "supported": true,
         "evidence_ids": [
           "bookVII_26"
@@ -897,67 +787,30 @@
     },
     "evaluator_diagnostics": {
       "status": "ok",
-      "response_preview": "{\"claims\":[{\"claim\":\"Nature is designed to serve rational beings.\",\"supported\":true,\"evidence_ids\":[\"bookVII_55\"]},{\"claim\":\"Rational beings should act in accordance with nature and reason.\",\"supported\":true,\"evidence_ids\":[\"bookVII_11\",\"bookIII_9\"]},{\"claim\":\"Rational beings should avoid rashness and be kind to others.\",\"supported\":true,\"evidence_ids\":[\"bookIII_9\"]},{\"claim\":\"Rational beings should submit willingly to the gods.\",\"supported\":true,\"evidence_ids\":[\"bookIII_9\"]},{\"claim\":\"The universe is governed by providence and universal reason.\",\"supported\":true,\"evidence_ids\":[\"bookII_3\"]},{\"claim\":\"Change is essential to nature; the world sustains itself through mutation.\",\"supported\":true,\"evidence_ids\":[\"bookIV_36\",\"bookII_3\"]},{\"claim\":\"Humans are part of a single universal soul and body.\",\"supported\":true,\"evidence_ids\":[\"bookIV_40\"]},{\"claim\":\"Humans should focus on their own conduct rather than prying into others.\",\"supported\":true,\"evidence_ids\":[\"bookIII_4\"]}]}",
-      "response_chars": 986,
+      "response_preview": "{\"claims\":[{\"claim\":\"Nature aligns its design with universal reason and providence, ensuring that every part of the universe serves the advantage of rational creatures.\",\"supported\":true,\"evidence_ids\":[\"bookVII_55\"]},{\"claim\":\"A rational being acts in accordance with nature and reason, which fulfills its proper constitution, promotes kindness, avoids rashness, and submits willingly to the gods, thereby maintaining harmony.\",\"supported\":true,\"evidence_ids\":[\"bookIII_9\"]},{\"claim\":\"The alignment of nature with rational beings guarantees that the world remains serviceable to each rational part, sustaining the rational being\u2019s life and purpose.\",\"supported\":true,\"evidence_ids\":[\"bookII_3\"]}]}",
+      "response_chars": 698,
       "finish_reason": "stop"
     },
     "claims": [
       {
-        "claim": "Nature is designed to serve rational beings.",
+        "claim": "Nature aligns its design with universal reason and providence, ensuring that every part of the universe serves the advantage of rational creatures.",
         "supported": true,
         "evidence_ids": [
           "bookVII_55"
         ]
       },
       {
-        "claim": "Rational beings should act in accordance with nature and reason.",
-        "supported": true,
-        "evidence_ids": [
-          "bookVII_11",
-          "bookIII_9"
-        ]
-      },
-      {
-        "claim": "Rational beings should avoid rashness and be kind to others.",
+        "claim": "A rational being acts in accordance with nature and reason, which fulfills its proper constitution, promotes kindness, avoids rashness, and submits willingly to the gods, thereby maintaining harmony.",
         "supported": true,
         "evidence_ids": [
           "bookIII_9"
         ]
       },
       {
-        "claim": "Rational beings should submit willingly to the gods.",
-        "supported": true,
-        "evidence_ids": [
-          "bookIII_9"
-        ]
-      },
-      {
-        "claim": "The universe is governed by providence and universal reason.",
+        "claim": "The alignment of nature with rational beings guarantees that the world remains serviceable to each rational part, sustaining the rational being\u2019s life and purpose.",
         "supported": true,
         "evidence_ids": [
           "bookII_3"
-        ]
-      },
-      {
-        "claim": "Change is essential to nature; the world sustains itself through mutation.",
-        "supported": true,
-        "evidence_ids": [
-          "bookIV_36",
-          "bookII_3"
-        ]
-      },
-      {
-        "claim": "Humans are part of a single universal soul and body.",
-        "supported": true,
-        "evidence_ids": [
-          "bookIV_40"
-        ]
-      },
-      {
-        "claim": "Humans should focus on their own conduct rather than prying into others.",
-        "supported": true,
-        "evidence_ids": [
-          "bookIII_4"
         ]
       }
     ]
@@ -971,7 +824,7 @@
       "citation_coverage": 0.0,
       "citation_precision": 0.0,
       "average": 0.0,
-      "retrieval_coverage": 0.0,
+      "retrieval_coverage": null,
       "is_abstention": true,
       "expected_abstention": true,
       "abstention_correct": true,
@@ -1002,13 +855,27 @@
     },
     "evaluator_diagnostics": {
       "status": "ok",
-      "response_preview": "{\"claims\":[{\"claim\":\"Death is a natural transformation that dissolves the elements that formed a living body.\",\"supported\":true,\"evidence_ids\":[\"bookIV_5\"]},{\"claim\":\"Death is not an abrupt end but a continuing dissolution of matter.\",\"supported\":true,\"evidence_ids\":[\"bookII_12\"]},{\"claim\":\"The soul, once freed from bodily corruption, simply dissolves into the elements.\",\"supported\":true,\"evidence_ids\":[\"bookII_17\"]},{\"claim\":\"Death and generation are mysteries of nature that resemble each other.\",\"supported\":true,\"evidence_ids\":[\"bookIV_5\"]},{\"claim\":\"A rational being need not be ashamed of death.\",\"supported\":true,\"evidence_ids\":[\"bookIV_5\"]},{\"claim\":\"Death is unremarkable or shame\u2011free for a rational being.\",\"supported\":true,\"evidence_ids\":[\"bookIV_5\"]},{\"claim\":\"Death is part of nature\u2019s orderly cycle.\",\"supported\":true,\"evidence_ids\":[\"bookII_12\"]},{\"claim\":\"The transformation at death is the same mystery as generation.\",\"supported\":true,\"evidence_ids\":[\"bookIV_5\"]}]}",
-      "response_chars": 988,
+      "response_preview": "{\"claims\":[{\"claim\":\"Death is a natural transformation that dissolves the elements that make up a living body.\",\"supported\":true,\"evidence_ids\":[\"bookIV_5\"]},{\"claim\":\"The dissolution of the body in death is similar to the generation of new life.\",\"supported\":true,\"evidence_ids\":[\"bookIV_5\"]},{\"claim\":\"A rational being should feel no shame or fear toward death.\",\"supported\":true,\"evidence_ids\":[\"bookIV_5\"]},{\"claim\":\"Death is not an abrupt end but a continuing dissolution of matter.\",\"supported\":true,\"evidence_ids\":[\"bookII_12\"]},{\"claim\":\"The soul, once freed from bodily corruption, dissolves into the elements in death.\",\"supported\":true,\"evidence_ids\":[\"bookII_17\"]}]}",
+      "response_chars": 678,
       "finish_reason": "stop"
     },
     "claims": [
       {
-        "claim": "Death is a natural transformation that dissolves the elements that formed a living body.",
+        "claim": "Death is a natural transformation that dissolves the elements that make up a living body.",
+        "supported": true,
+        "evidence_ids": [
+          "bookIV_5"
+        ]
+      },
+      {
+        "claim": "The dissolution of the body in death is similar to the generation of new life.",
+        "supported": true,
+        "evidence_ids": [
+          "bookIV_5"
+        ]
+      },
+      {
+        "claim": "A rational being should feel no shame or fear toward death.",
         "supported": true,
         "evidence_ids": [
           "bookIV_5"
@@ -1022,45 +889,10 @@
         ]
       },
       {
-        "claim": "The soul, once freed from bodily corruption, simply dissolves into the elements.",
+        "claim": "The soul, once freed from bodily corruption, dissolves into the elements in death.",
         "supported": true,
         "evidence_ids": [
           "bookII_17"
-        ]
-      },
-      {
-        "claim": "Death and generation are mysteries of nature that resemble each other.",
-        "supported": true,
-        "evidence_ids": [
-          "bookIV_5"
-        ]
-      },
-      {
-        "claim": "A rational being need not be ashamed of death.",
-        "supported": true,
-        "evidence_ids": [
-          "bookIV_5"
-        ]
-      },
-      {
-        "claim": "Death is unremarkable or shame\u2011free for a rational being.",
-        "supported": true,
-        "evidence_ids": [
-          "bookIV_5"
-        ]
-      },
-      {
-        "claim": "Death is part of nature\u2019s orderly cycle.",
-        "supported": true,
-        "evidence_ids": [
-          "bookII_12"
-        ]
-      },
-      {
-        "claim": "The transformation at death is the same mystery as generation.",
-        "supported": true,
-        "evidence_ids": [
-          "bookIV_5"
         ]
       }
     ]

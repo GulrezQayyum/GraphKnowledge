@@ -39,9 +39,16 @@ def generate_html_report(
     avg_coverage = average_metric("citation_coverage")
     avg_precision = average_metric("citation_precision")
     overall_avg = average_metric("average")
-    avg_retrieval_coverage = sum(
-        e["metrics"]["retrieval_coverage"] for e in evaluations
-    ) / len(evaluations)
+    retrieval_scores = [
+        e["metrics"]["retrieval_coverage"]
+        for e in evaluations
+        if e["metrics"]["retrieval_coverage"] is not None
+    ]
+    avg_retrieval_coverage = (
+        sum(retrieval_scores) / len(retrieval_scores)
+        if retrieval_scores
+        else None
+    )
     abstention_scores = [
         e["metrics"]["abstention_correct"]
         for e in evaluations
@@ -63,6 +70,11 @@ def generate_html_report(
     }
     abstention_display = (
         f"{abstention_accuracy:.3f}" if abstention_accuracy is not None else "N/A"
+    )
+    retrieval_display = (
+        f"{avg_retrieval_coverage:.3f}"
+        if avg_retrieval_coverage is not None
+        else "N/A"
     )
 
     # Build HTML
@@ -216,7 +228,7 @@ def generate_html_report(
             </div>
             <div class="metric-card">
                 <div class="label">Retrieval Coverage</div>
-                <div class="metric-card__value" style="color: #667eea;">{avg_retrieval_coverage:.3f}</div>
+                <div class="metric-card__value" style="color: #667eea;">{retrieval_display}</div>
             </div>
             <div class="metric-card">
                 <div class="label">Abstention Accuracy</div>
@@ -240,6 +252,11 @@ def generate_html_report(
 
         eval_data = next(e for e in evaluations if e["query_id"] == query_id)
         metrics = eval_data["metrics"]
+        query_retrieval_display = (
+            f"{metrics['retrieval_coverage']:.3f}"
+            if metrics["retrieval_coverage"] is not None
+            else "N/A"
+        )
 
         html += f"""
             <div class="query-result">
@@ -264,7 +281,7 @@ def generate_html_report(
                             <div class="metric-label">Average</div>
                         </div>
                             <div class="metric">
-                                <div class="metric-score">{metrics['retrieval_coverage']:.3f}</div>
+                            <div class="metric-score">{query_retrieval_display}</div>
                                 <div class="metric-label">Retrieval Coverage</div>
                             </div>
                             <div class="metric">
