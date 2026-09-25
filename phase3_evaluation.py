@@ -45,7 +45,8 @@ Passages (source):
 {context}
 
 Split the answer into atomic factual claims. For each claim, decide whether it is
-fully supported by the passages. Return JSON only in this exact shape:
+    fully supported by the passages. Return no more than 8 atomic claims, and keep
+    each claim concise. Return JSON only in this exact shape:
 {{"claims": [{{"claim": "...", "supported": true, "evidence_ids": ["bookI_3"]}}]}}
 Use only exact passage IDs shown above. A claim is unsupported if it adds an
 interpretation, detail, or attribution not present in the passages. Do not merge
@@ -56,8 +57,9 @@ JSON: """
         try:
             response = self.client.chat.completions.create(
                 model=self.model,
-                max_tokens=500,
+                max_tokens=1200,
                 reasoning_effort="low",
+                response_format={"type": "json_object"},
                 messages=[{"role": "user", "content": prompt}],
             )
             content = response.choices[0].message.content.strip()
@@ -80,7 +82,7 @@ JSON: """
                         if evidence_id in valid_ids
                     ],
                 }
-                for item in claims
+                for item in claims[:8]
                 if item.get("claim")
             ]
             status = "valid_zero_claims" if not normalized_claims else "ok"
