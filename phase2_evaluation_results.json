@@ -15,17 +15,17 @@
         "method": "vector",
         "num_passages": 10,
         "faithfulness": 0.5,
-        "relevance": 0.5,
+        "relevance": 0.0,
         "coverage": 1.0,
-        "average": 0.667
+        "average": 0.5
       },
       "hybrid": {
         "method": "hybrid",
         "num_passages": 10,
         "faithfulness": 0.0,
-        "relevance": 0.0,
+        "relevance": 0.5,
         "coverage": 1.0,
-        "average": 0.333
+        "average": 0.5
       }
     }
   },
@@ -36,10 +36,10 @@
       "graph": {
         "method": "graph",
         "num_passages": 10,
-        "faithfulness": 0.0,
+        "faithfulness": 0.5,
         "relevance": 0.5,
         "coverage": 1.0,
-        "average": 0.5
+        "average": 0.667
       },
       "vector": {
         "method": "vector",
@@ -52,10 +52,10 @@
       "hybrid": {
         "method": "hybrid",
         "num_passages": 10,
-        "faithfulness": 0.0,
-        "relevance": 0.0,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
         "coverage": 1.0,
-        "average": 0.333
+        "average": 0.667
       }
     }
   },
@@ -74,10 +74,10 @@
       "vector": {
         "method": "vector",
         "num_passages": 10,
-        "faithfulness": 0.5,
+        "faithfulness": 0.0,
         "relevance": 0.5,
         "coverage": 1.0,
-        "average": 0.667
+        "average": 0.5
       },
       "hybrid": {
         "method": "hybrid",
@@ -156,10 +156,10 @@
       "graph": {
         "method": "graph",
         "num_passages": 10,
-        "faithfulness": 0.5,
+        "faithfulness": 0.0,
         "relevance": 0.0,
         "coverage": 1.0,
-        "average": 0.5
+        "average": 0.333
       },
       "vector": {
         "method": "vector",
@@ -172,10 +172,10 @@
       "hybrid": {
         "method": "hybrid",
         "num_passages": 10,
-        "faithfulness": 0.5,
-        "relevance": 0.5,
+        "faithfulness": 0.0,
+        "relevance": 0.0,
         "coverage": 1.0,
-        "average": 0.667
+        "average": 0.333
       }
     }
   },
@@ -187,17 +187,17 @@
         "method": "graph",
         "num_passages": 10,
         "faithfulness": 0.0,
-        "relevance": 0.0,
+        "relevance": 0.5,
         "coverage": 1.0,
-        "average": 0.333
+        "average": 0.5
       },
       "vector": {
         "method": "vector",
         "num_passages": 10,
-        "faithfulness": 0.0,
+        "faithfulness": 0.5,
         "relevance": 0.5,
         "coverage": 1.0,
-        "average": 0.5
+        "average": 0.667
       },
       "hybrid": {
         "method": "hybrid",
@@ -344,18 +344,18 @@
       "vector": {
         "method": "vector",
         "num_passages": 10,
-        "faithfulness": 0.5,
-        "relevance": 0.0,
-        "coverage": 1.0,
-        "average": 0.5
-      },
-      "hybrid": {
-        "method": "hybrid",
-        "num_passages": 10,
         "faithfulness": 0.0,
         "relevance": 0.0,
         "coverage": 1.0,
         "average": 0.333
+      },
+      "hybrid": {
+        "method": "hybrid",
+        "num_passages": 10,
+        "faithfulness": 0.5,
+        "relevance": 0.5,
+        "coverage": 1.0,
+        "average": 0.667
       }
     }
   },
@@ -382,8 +382,8 @@
       "hybrid": {
         "method": "hybrid",
         "num_passages": 10,
-        "faithfulness": 0.5,
-        "relevance": 0.0,
+        "faithfulness": 0.0,
+        "relevance": 0.5,
         "coverage": 1.0,
         "average": 0.5
       }
